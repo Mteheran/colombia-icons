@@ -9,6 +9,7 @@ import {
 } from './data/icons'
 import { IconCard } from './components/IconCard'
 import { IconModal } from './components/IconModal'
+import { ThemeToggle } from './components/ThemeToggle'
 import './App.css'
 
 const REPO = 'https://github.com/Mteheran/colombia-icons'
@@ -58,6 +59,8 @@ export default function App() {
 
   return (
     <>
+      <ThemeToggle />
+
       <header className="hero">
         <h1>Colombia Icons</h1>
         <p className="tagline">

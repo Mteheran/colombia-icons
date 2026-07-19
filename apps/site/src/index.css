@@ -1,10 +1,12 @@
+/* Dark is the default theme; the toggle opts into light by stamping
+   data-theme="light" on <html>. */
 :root {
-  --text: #6b6375;
-  --text-h: #08060d;
-  --bg: #fff;
+  --text: #9ca3af;
+  --text-h: #f3f4f6;
+  --bg: #16171d;
 
   font: 18px/145% system-ui, 'Segoe UI', Roboto, sans-serif;
-  color-scheme: light dark;
+  color-scheme: dark;
   color: var(--text);
   background: var(--bg);
   font-synthesis: none;
@@ -13,12 +15,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text: #9ca3af;
-    --text-h: #f3f4f6;
-    --bg: #16171d;
-  }
+:root[data-theme='light'] {
+  --text: #6b6375;
+  --text-h: #08060d;
+  --bg: #fff;
+
+  color-scheme: light;
 }
 
 body {

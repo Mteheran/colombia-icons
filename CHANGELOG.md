@@ -30,6 +30,9 @@ The three published packages (React, Angular, Blazor) share a single version.
   https://mteheran.github.io/colombia-icons/.
 - `deploy-pages.yml` workflow, which lints, builds, and publishes the site on
   every push to `main` that touches `apps/site` or `icons`.
+- Light/dark theme toggle on the site. Dark is the default regardless of the
+  operating system setting; the choice persists across visits and is applied
+  before first paint so the page never flashes the wrong theme.
 
 ### Changed
 

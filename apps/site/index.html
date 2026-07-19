@@ -9,6 +9,13 @@
       content="Librería de íconos line-icon inspirada en Colombia, para React, Angular y Blazor. Explorá, buscá y descargá cada ícono en SVG o PNG."
     />
     <title>Colombia Icons — íconos line-icon inspirados en Colombia</title>
+    <script>
+      // Applied before first paint so a stored light theme does not flash dark.
+      // Dark needs no attribute — it is the CSS default.
+      if (localStorage.getItem('colombia-icons-theme') === 'light') {
+        document.documentElement.dataset.theme = 'light'
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>

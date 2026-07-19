@@ -1,23 +1,21 @@
 :root {
+  --surface: #1d1e26;
+  --border: #2e3039;
+  --muted: #22232c;
+  --accent: #7ea2ff;
+  /* Icon previews sit on a light canvas in both themes so all five colors —
+     black included — stay legible. */
+  --canvas: #eceef2;
+  --canvas-border: #d7dae1;
+}
+
+:root[data-theme='light'] {
   --surface: #fff;
   --border: #e5e7eb;
   --muted: #f9fafb;
   --accent: #003893;
-  /* Icon previews sit on a light canvas in both themes so all five colors —
-     black included — stay legible. */
   --canvas: #fff;
   --canvas-border: #e5e7eb;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --surface: #1d1e26;
-    --border: #2e3039;
-    --muted: #22232c;
-    --accent: #7ea2ff;
-    --canvas: #eceef2;
-    --canvas-border: #d7dae1;
-  }
 }
 
 .hero,
@@ -114,6 +112,33 @@ button[data-active='true'] {
 
 a {
   color: var(--accent);
+}
+
+/* Theme toggle ----------------------------------------------------------- */
+
+.theme-toggle {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: var(--surface);
+  font-size: 0.8rem;
+}
+
+.theme-toggle span[aria-hidden] {
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
+@media (max-width: 520px) {
+  .theme-toggle-label {
+    display: none;
+  }
 }
 
 /* Install ---------------------------------------------------------------- */

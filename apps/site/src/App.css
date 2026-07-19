@@ -298,20 +298,25 @@ code {
   background: var(--bg);
   border: 1px solid var(--border);
   border-radius: 16px;
-  padding: 32px;
+  /* Extra top padding keeps the close button clear of the preview box. */
+  padding: 60px 32px 32px;
   width: min(420px, 100%);
   text-align: center;
 }
 
 .modal-close {
   position: absolute;
-  top: 12px;
-  right: 12px;
+  top: 14px;
+  right: 14px;
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
   border: none;
   background: transparent;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   line-height: 1;
-  padding: 4px 10px;
 }
 
 .modal-preview {

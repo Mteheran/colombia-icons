@@ -3,6 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![Icons](https://img.shields.io/badge/icons-109-blue.svg)](#available-icons)
 [![Status](https://img.shields.io/badge/status-pre--release-orange.svg)](./CHANGELOG.md)
+[![GitHub](https://img.shields.io/badge/GitHub-Mteheran%2Fcolombia--icons-181717?logo=github)](https://github.com/Mteheran/colombia-icons)
 
 A line-icon (outline) SVG icon library inspired by Colombia — available for
 React, Angular, and Blazor, plus a companion site to browse and download

@@ -18,8 +18,12 @@ The three published packages (React, Angular, Blazor) share a single version.
 - 109 approved source icons in `icons/svg/`: 81 genéricos, 11 naturaleza,
   7 gastronomía, 6 cultura, 4 deportes.
 - `README.md` (English) and `README.es.md` (Spanish) with badges, per-category
-  icon counts, and the full icon tables.
+  icon counts, links to the GitHub repo, and the full icon tables.
 - This changelog.
+- Repository metadata (`repository`, `bugs`, `homepage`) in the root
+  `package.json`.
+- `actualizar-changelog` project skill, which keeps this file up to date as
+  part of every commit.
 
 ### Notes
 

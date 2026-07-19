@@ -4,6 +4,12 @@
   "private": true,
   "description": "Line-icon SVG icon library inspired by Colombia — monorepo for the React, Angular, and Blazor packages plus the companion site.",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mteheran/colombia-icons.git"
+  },
+  "bugs": { "url": "https://github.com/Mteheran/colombia-icons/issues" },
+  "homepage": "https://github.com/Mteheran/colombia-icons#readme",
   "workspaces": ["packages/*", "apps/*"],
   "engines": { "node": ">=20" },
   "scripts": { "build": "npm run build --workspaces --if-present" },

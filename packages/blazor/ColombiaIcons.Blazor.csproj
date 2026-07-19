@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>ColombiaIcons.Blazor</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <SupportedPlatform Include="browser" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="10.0.0" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <PackageId>ColombiaIcons.Blazor</PackageId>
+    <Version>0.1.0</Version>
+    <Authors>Miguel Teheran</Authors>
+    <Description>Blazor line-icon components inspired by Colombia.</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageTags>blazor;icons;svg;colombia;line-icons</PackageTags>
+  </PropertyGroup>
+
+</Project>

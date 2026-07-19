@@ -1,0 +1,26 @@
+{
+  "name": "@mteherandev/colombia-icons-react",
+  "version": "0.1.0",
+  "description": "React components for the colombia-icons line-icon library.",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": { "types": "./dist/index.d.mts", "default": "./dist/index.mjs" },
+      "require": { "types": "./dist/index.d.ts", "default": "./dist/index.js" }
+    }
+  },
+  "files": ["dist"],
+  "sideEffects": false,
+  "scripts": { "build": "tsup", "dev": "tsup --watch" },
+  "peerDependencies": { "react": ">=17.0.0" },
+  "devDependencies": {
+    "tsup": "^8.5.1",
+    "typescript": "~6.0.3",
+    "react": "^19.2.7",
+    "@types/react": "^19.2.17"
+  },
+  "publishConfig": { "access": "public" }
+}

@@ -1,0 +1,1647 @@
+{
+  "icons": [
+    {
+      "id": "guardar",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 3,
+      "notas": "",
+      "historial": [
+        { "fecha": "2026-07-13", "accion": "generado", "nota": "" },
+        { "fecha": "2026-07-13", "accion": "feedback", "nota": "grosor reducido de 2px a 1.5px (cambio global de spec, seccion 3) y cuadro central mas pequeno" },
+        { "fecha": "2026-07-13", "accion": "feedback", "nota": "cuadros interno y central mas largos (mas cerca entre si) y linea pequena en el cuadro de arriba simulando la pestana de un disquete real" },
+        { "fecha": "2026-07-13", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "eliminar",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        { "fecha": "2026-07-13", "accion": "generado", "nota": "" },
+        { "fecha": "2026-07-13", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "cancelar",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        { "fecha": "2026-07-13", "accion": "generado", "nota": "" },
+        { "fecha": "2026-07-13", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "cerrar",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        { "fecha": "2026-07-13", "accion": "generado", "nota": "" },
+        { "fecha": "2026-07-13", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "estrella",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        { "fecha": "2026-07-13", "accion": "generado", "nota": "" },
+        { "fecha": "2026-07-13", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "estrella-llena",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "excepcion de spec: fill=currentColor, stroke=none (icono deliberadamente solido, mismo path que estrella)",
+      "historial": [
+        { "fecha": "2026-07-13", "accion": "generado", "nota": "" },
+        { "fecha": "2026-07-13", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "archivo",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 3,
+      "notas": "",
+      "historial": [
+        { "fecha": "2026-07-13", "accion": "generado", "nota": "" },
+        { "fecha": "2026-07-13", "accion": "feedback", "nota": "cuerpo mas ancho (x 5-19) y un poco menos largo (y 4-19)" },
+        { "fecha": "2026-07-13", "accion": "feedback", "nota": "lineas de texto subidas (y 10,13,16) para dejar mas espacio entre la ultima linea y el borde inferior" },
+        { "fecha": "2026-07-13", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "carpeta",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 11,
+      "notas": "",
+      "historial": [
+        { "fecha": "2026-07-13", "accion": "generado", "nota": "" },
+        { "fecha": "2026-07-13", "accion": "feedback", "nota": "linea adicional cerca de la muesca para sugerir archivos dentro de la carpeta" },
+        { "fecha": "2026-07-13", "accion": "feedback", "nota": "referencia visual del usuario: esquinas redondeadas con arco real (no solo linejoin) y contorno unico sin la linea interna de archivo" },
+        { "fecha": "2026-07-13", "accion": "feedback", "nota": "linea diagonal en la parte superior derecha simulando el cierre de la solapa frontal" },
+        { "fecha": "2026-07-13", "accion": "feedback", "nota": "cambiar la diagonal por una linea recta horizontal sobrepuesta bien arriba (y=6, x 14-19)" },
+        { "fecha": "2026-07-13", "accion": "feedback", "nota": "la linea debe ser continua: empezar en la muesca (x=11), cruzar hasta la derecha (x=20) y bajar para unirse con la linea principal en (20, 8.5)" },
+        { "fecha": "2026-07-13", "accion": "feedback", "nota": "subir un poco la linea (y=6 a 5.5) y que el inicio izquierdo cierre un poco antes (x=11 a 10)" },
+        { "fecha": "2026-07-13", "accion": "feedback", "nota": "subir la linea de y=5.5 a y=4.5" },
+        { "fecha": "2026-07-13", "accion": "feedback", "nota": "bajar la linea a y=5 y mover el inicio izquierdo a x=9.5" },
+        { "fecha": "2026-07-13", "accion": "feedback", "nota": "eje Y ya aprobado; el tramo derecho debe bajar antes (x=18 en vez de x=20) sin llegar hasta el borde principal" },
+        { "fecha": "2026-07-13", "accion": "feedback", "nota": "el cierre debe ser una curva (arco), y detenerse justo al llegar al borde principal (y=7) sin pasarse" },
+        { "fecha": "2026-07-13", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "carpetas",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 7,
+      "notas": "",
+      "historial": [
+        { "fecha": "2026-07-13", "accion": "generado", "nota": "" },
+        { "fecha": "2026-07-13", "accion": "feedback", "nota": "rediseno completo: se descarta el enfoque de carpeta+peek, ahora es un grupo de 3 tabs de altura escalonada sobre un cuerpo compartido, como carpetas colgantes agrupadas" },
+        { "fecha": "2026-07-13", "accion": "feedback", "nota": "referencia visual del usuario: 3 carpetas apiladas en diagonal, solo la frontal completa con tab+muesca, las otras 2 solo asoman arriba/derecha (forma L), sin espacios/guiones en el borde" },
+        { "fecha": "2026-07-13", "accion": "feedback", "nota": "las 2 carpetas de atras deben conectarse (tocar) el contorno de la carpeta principal en ambos extremos, y tener mas separacion entre capas" },
+        { "fecha": "2026-07-13", "accion": "feedback", "nota": "segunda referencia visual (version rellena/solida): cada una de las 3 capas debe tener su propia pestana visible, no solo la frontal. Se adapta a outline manteniendo el spec del proyecto" },
+        { "fecha": "2026-07-13", "accion": "feedback", "nota": "las lineas verticales derechas de las 2 carpetas de atras deben ser mas largas hacia abajo" },
+        { "fecha": "2026-07-13", "accion": "feedback", "nota": "la muesca de las 3 carpetas debe ser recta (escalon de 90 grados) en vez de diagonal" },
+        { "fecha": "2026-07-13", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "editar",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        { "fecha": "2026-07-13", "accion": "generado", "nota": "" },
+        { "fecha": "2026-07-13", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "buscar",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        { "fecha": "2026-07-13", "accion": "generado", "nota": "" },
+        { "fecha": "2026-07-13", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "configuracion",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 10,
+      "notas": "retomado: engranaje estandar estilo Lucide (un solo path de 8 lobulos con transiciones concavas suaves) + circulo central r=3",
+      "historial": [
+        { "fecha": "2026-07-13", "accion": "generado", "nota": "engranaje con 8 dientes via rect+transform rotate" },
+        { "fecha": "2026-07-13", "accion": "feedback", "nota": "parecia timon de barco; rediseno completo a hexagono tipo tuerca con hueco circular" },
+        { "fecha": "2026-07-13", "accion": "feedback", "nota": "referencia visual del usuario: engranaje clasico con dientes trapezoidales anchos, no hexagono. Rediseno con path+rotate por diente" },
+        { "fecha": "2026-07-13", "accion": "feedback", "nota": "mas simple: se quita el circulo central; se reconfirma fill=none (ya estaba sin relleno)" },
+        { "fecha": "2026-07-13", "accion": "feedback", "nota": "quitar todo relleno de los dientes: se agranda cada diente y se agrega fill=none explicito por elemento (antes solo heredado de la raiz)" },
+        { "fecha": "2026-07-13", "accion": "feedback", "nota": "prompt detallado tipo generador de imagenes: dientes con borde plano, transicion concava suave (bezier) hacia el cuerpo, circulo central de vuelta, estilo Material/Feather" },
+        { "fecha": "2026-07-13", "accion": "feedback", "nota": "dientes completamente planos y rectos (rects simples), se elimina el circulo exterior que los rodeaba, se mantiene el circulo central" },
+        { "fecha": "2026-07-13", "accion": "feedback", "nota": "rectangulos mas cortos (altura 6.5 a 4) y se elimina tambien el circulo central" },
+        { "fecha": "2026-07-13", "accion": "feedback", "nota": "pidio de nuevo quitar el circulo central pese a que el archivo ya no tenia ninguno; se acortan mas los rects (altura 4 a 2.5) alejando el borde interno del centro para reducir la impresion optica de anillo" },
+        { "fecha": "2026-07-13", "accion": "rechazado", "nota": "se salta por ahora, retomar despues" },
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "retomado con geometria de engranaje estandar (Lucide settings): un solo path continuo de 8 lobulos redondeados con concavidades entre dientes, mas circulo central r=3, coincide con la imagen de referencia Material" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "agregar",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        { "fecha": "2026-07-13", "accion": "generado", "nota": "" },
+        { "fecha": "2026-07-13", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "quitar",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        { "fecha": "2026-07-13", "accion": "generado", "nota": "" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "check",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "alerta",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "informacion",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "candado",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "candado-abierto",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 6,
+      "notas": "retomado: grillete estilo Feather unlock, anclado en la pata izquierda con el extremo derecho levantado y suelto (sin rotar el grillete completo)",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "acortar la pata suelta del grillete (y 8-9 a 8-8.5) para que la separacion con el cuerpo sea mas notoria" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "girar el grillete hacia la derecha (como un candado real pivotando) en vez de solo acortar la pata; se usa transform rotate(35) sobre el ancla derecha" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "referencia visual del usuario: candado abierto clasico con el grillete girado mucho mas dramaticamente hacia arriba; se aumenta la rotacion de 35 a 110 grados" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "el circulo/arco debia quedar a la izquierda, no a la derecha; se cambia a rotacion negativa -45 grados (sentido contrario)" },
+        { "fecha": "2026-07-14", "accion": "rechazado", "nota": "se salta por ahora, retomar despues" },
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "retomado con construccion estandar de unlock: pata izquierda anclada al cuerpo (8,11->8,7), arco hasta (16.5,6) dejando el extremo derecho levantado/suelto, sin transform rotate" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "usuario",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 2,
+      "notas": "",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "el arco de hombros se solapaba con la cabeza; se reduce el radio de 7 a 6.5 para que se toquen sin solapar, y se cierra la parte de abajo con Z (linea entre las dos patas)" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "calendario",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "reloj",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 5,
+      "notas": "",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "manecillas mas largas (hora a y=7, minuto a 17,8) y se agrega un punto central para anclar visualmente el centro" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "la manecilla de minuto (segunda linea) se acorta de (17,8) a (15,9)" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "referencia visual del usuario: 2 manecillas largas (casi tocando el borde) en angulo amplio, una arriba y otra hacia las 4-5. Se quita el punto central" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "las manecillas tocaban el circulo; se acortan un poco (12,6 y 16,16) para dejar un margen visible" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "descargar",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "subir",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "compartir",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "copiar",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "imprimir",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 3,
+      "notas": "",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "bandeja de salida mas alta (15-20 a 15-21) y se agregan 2 lineas de texto para simular una hoja impresa" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "lineas de texto mas delgadas (stroke-width 1), papel superior mas corto (altura 4 a 2.5), y el cuerpo central con esquinas redondeadas via arcos (radio 1.5)" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "menu-opciones",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 2,
+      "notas": "interpretado como menu de 3 puntos (kebab), no hamburguesa de 3 lineas",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "puntos mas gruesos: stroke-width especifico de 3 en vez del 1.5 global" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "refrescar",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 3,
+      "notas": "rediseno a doble arco estilo refresh clasico con ganchos en L (arrowheads en forma de esquina) en vez de chevrons flotantes",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "punta de flecha malformada; se regenera como chevron simetrico (8,17)-(12,19)-(8,21) con la punta en el mismo punto donde termina el arco" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "chevron seguia malformado; rediseno completo a dos arcos opuestos (270 grados combinados) con ganchos en L como puntas de flecha, estilo refresh estandar" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "condor",
+      "categoria": "naturaleza",
+      "estado": "rechazado",
+      "intentos": 3,
+      "notas": "cabeza de condor de perfil, un solo contorno limpio (cabeza redondeada afinando al pico), ojo, y una linea de cuello",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "silueta volando desde abajo con alas extendidas" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "referencia visual del usuario: condor sentado de perfil enfocando la cara. Rediseno completo a retrato de cabeza: cresta arriba, pico ganchudo a la izquierda, ojo, gorguera (collar) debajo" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "segunda referencia: seguia deformado. Se simplifica a un unico contorno continuo cabeza+pico (sin cresta ni gorguera festoneada), ojo, y una sola linea curva de cuello" },
+        { "fecha": "2026-07-14", "accion": "rechazado", "nota": "se salta por ahora, retomar despues" }
+      ]
+    },
+    {
+      "id": "colibri",
+      "categoria": "naturaleza",
+      "estado": "rechazado",
+      "intentos": 1,
+      "notas": "colibri de perfil: cuerpo pequeno, pico largo y fino, ala, cola",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "cuerpo tipo gota, pico largo, ala arriba, cola bifurcada, ojo" },
+        { "fecha": "2026-07-14", "accion": "rechazado", "nota": "se salta por ahora, retomar despues" }
+      ]
+    },
+    {
+      "id": "ceiba",
+      "categoria": "naturaleza",
+      "estado": "aprobado",
+      "intentos": 2,
+      "notas": "arbol ceiba: copa ancha tipo sombrilla, tronco, raices tablares en la base",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "tronco mas grueso: las dos lineas verticales del centro se separan mas (de x11/13 a x9.8/14.2) y las raices tablares nacen desde esas nuevas posiciones" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "palma-de-cera",
+      "categoria": "naturaleza",
+      "estado": "aprobado",
+      "intentos": 3,
+      "notas": "palma de cera del Quindio: tronco muy alto y delgado, penacho de hojas arriba",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "tronco mas delgado (lineas de x11.3/12.7 a x11.7/12.3) y mas hojas en la copa (de 5 a 7 frondas)" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "las 7 frondas se bunchaban en un solo punto arriba; se separan sus origenes en un pequeno abanico (x11.4-12.6, y6.3-7.2) para que no se junten" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "separar aun mas los origenes de las frondas (abanico ampliado a x10.9-13.1) y abrir mas las puntas" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "planta-de-cafe",
+      "categoria": "naturaleza",
+      "estado": "rechazado",
+      "intentos": 1,
+      "notas": "rama de cafe: tallo con hojas y granos (cerezas) de cafe",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "tallo curvo, par de hojas, racimo de 3 cerezas" },
+        { "fecha": "2026-07-14", "accion": "rechazado", "nota": "se salta por ahora, retomar despues" }
+      ]
+    },
+    {
+      "id": "flor-de-mayo",
+      "categoria": "naturaleza",
+      "estado": "rechazado",
+      "intentos": 1,
+      "notas": "flor de mayo (orquidea Cattleya trianae, flor nacional): flor de 5 petalos con labelo central",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "flor generica de 5 petalos radiales + centro" },
+        { "fecha": "2026-07-14", "accion": "rechazado", "nota": "se salta por ahora, retomar despues" }
+      ]
+    },
+    {
+      "id": "rio",
+      "categoria": "naturaleza",
+      "estado": "aprobado",
+      "intentos": 2,
+      "notas": "rio: lineas onduladas paralelas sugiriendo corriente de agua",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "3 lineas onduladas con crestas alternadas (interlazadas)" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "las 3 ondulaciones deben ir en la misma direccion (crestas alineadas), no alternadas; la linea del medio se sincroniza con las otras dos" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "mas ondulaciones por linea: de 3 arcos a 6 (longitud de onda 6, amplitud reducida a 1.3 para no solaparse entre lineas)" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "paramo",
+      "categoria": "naturaleza",
+      "estado": "rechazado",
+      "intentos": 1,
+      "notas": "paramo: frailejon (tallo con anillos + roseta de hojas)",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "frailejon: roseta de 5 hojas + tronco con 2 anillos" },
+        { "fecha": "2026-07-14", "accion": "rechazado", "nota": "se salta por ahora, retomar despues" }
+      ]
+    },
+    {
+      "id": "selva-amazonica",
+      "categoria": "naturaleza",
+      "estado": "rechazado",
+      "intentos": 1,
+      "notas": "selva amazonica: varios arboles tropicales agrupados sugiriendo densidad de selva",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "3 arboles (centro alto, laterales bajos) sobre linea de suelo" },
+        { "fecha": "2026-07-14", "accion": "rechazado", "nota": "se salta por ahora, retomar despues" }
+      ]
+    },
+    {
+      "id": "mar-caribe",
+      "categoria": "naturaleza",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "mar caribe: medio sol poniente con rayos + dos olas",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "medio sol con rayos y 2 olas" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "volcan",
+      "categoria": "naturaleza",
+      "estado": "aprobado",
+      "intentos": 2,
+      "notas": "volcan: montana con cima cortada (crater) y humo/lava saliendo",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "trapezoid recto con crater y 3 chorros de erupcion" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "base mas suave: laderas convertidas en curvas concavas y linea de base con leve curva descendente en vez de recta" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "mariposa",
+      "categoria": "naturaleza",
+      "estado": "aprobado",
+      "intentos": 2,
+      "notas": "mariposa: cuerpo central con antenas y 4 alas simetricas (2 arriba, 2 abajo)",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "cuerpo, 2 antenas, 4 alas (contorno por lado)" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "se agregan 2 lineas curvas pequenas (una por ala superior) como detalle/vena para dar mas forma" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "las 2 lineas de detalle se acercan al centro (de x7/17 a x9.3/14.7)" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "las lineas de detalle ahora horizontales (en el cintura del ala, y=11, saliendo del cuerpo hacia afuera) en vez de verticales" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "lineas de detalle mas cortas (de x6.7-10.5 a x7.7-9.8 por lado)" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "orquidea",
+      "categoria": "naturaleza",
+      "estado": "rechazado",
+      "intentos": 1,
+      "notas": "orquidea de perfil sobre tallo: flor con petalos y labelo, sobre un tallo con hoja",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "flor de 5 petalos + centro sobre tallo curvo con hoja" },
+        { "fecha": "2026-07-14", "accion": "rechazado", "nota": "se salta por ahora, retomar despues" }
+      ]
+    },
+    {
+      "id": "jaguar",
+      "categoria": "naturaleza",
+      "estado": "aprobado",
+      "intentos": 2,
+      "notas": "jaguar: cabeza felina de frente con orejas, ojos, hocico y manchas",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "cara felina: cabeza, 2 orejas, ojos, nariz, boca, 2 manchas" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "orejas mas grandes (apex de y3 a y2, base mas ancha) y mas manchas: se agregan 4 puntos extra (frente y mejillas bajas) ademas de los 2 originales" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "orejas mas redondeadas: de triangulos rectos a curvas bezier con punta redonda" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "las bases de las orejas se apoyan flush sobre la curva de la cabeza (7.2,6.6)-(10,5.7) para no cruzar la linea de la cara; se agrega un punto en el centro de la frente (12,7.4)" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "delfin-rosado",
+      "categoria": "naturaleza",
+      "estado": "rechazado",
+      "intentos": 2,
+      "notas": "delfin rosado del Amazonas: cuerpo curvo saltando, aleta dorsal, pico largo, cola",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "arco simple con aleta y olas" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "referencia visual del usuario: delfin saltando arriba-izquierda con cabeza+ojo, aleta dorsal, hocico, cola bifurcada y 2 olas. Rediseno de cuerpo como contorno tipo coma con aleta dorsal integrada, ojo, hocico y cola" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "forma no parecia delfin; se rehace el contorno completo mas anatomico (melon, aleta dorsal, aleta pectoral, cola bifurcada) + ojo + 2 olas" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "cara y olas aprobadas; se alarga el cuerpo y la cola (tail baja hasta y19) y se afina el cuerpo para que se vea mas delgado" },
+        { "fecha": "2026-07-14", "accion": "rechazado", "nota": "aun necesita correcciones en el cuerpo/cola; se pausa. La cara (melon+ojo) y las 2 olas ya estaban aprobadas, retomar desde ahi" }
+      ]
+    },
+    {
+      "id": "arrecife-coral",
+      "categoria": "naturaleza",
+      "estado": "aprobado",
+      "intentos": 2,
+      "notas": "arrecife de coral: 2 corales ramificados + monticulo, sin linea de lecho marino",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "2 corales ramificados + monticulo sobre linea de lecho marino" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "se quita la linea horizontal del lecho marino y se agrandan los corales (mas altos, llenando mas el icono)" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "cascada",
+      "categoria": "naturaleza",
+      "estado": "aprobado",
+      "intentos": 2,
+      "notas": "cascada: repisas + bordes de roca, 2 chorros internos punteados (stroke-dasharray) y pozo con ondas",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "repisas, 2 bordes de roca, 1 chorro central solido, 2 ondas de pozo" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "los chorros internos ahora son 2 lineas punteadas/cortadas (stroke-dasharray, escalonadas) para dar sensacion de agua cayendo" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "las 2 lineas punteadas del centro se separan mas (de x11.5/12.5 a x11/13)" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "gotas mas pequenas (dasharray 2/1.8 a 1.4/1.6) y lineas mas separadas (x11/13 a x10.5/13.5)" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "estaban muy pegadas a los bordes de roca; las gotas se acercan al centro (x10.5/13.5 a x11.2/12.8)" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "las lineas de gotas se extienden mas hacia arriba (inicio de y8.5/9.5 a y6.5/7) para mostrar mas agua cayendo desde la cima" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "entrada reconstruida: el icono ya estaba en estado aprobado, con su SVG y en ambos README, pero su historial habia quedado cerrado en feedback" }
+      ]
+    },
+    {
+      "id": "frailejon",
+      "categoria": "naturaleza",
+      "estado": "aprobado",
+      "intentos": 4,
+      "notas": "frailejon (Espeletia): roseta de 5 hojas gruesas + 3 hojitas colgantes en la corona; tronco columnar con base redondeada suave y 3 chevrones marcescentes",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "roseta de 5 hojas radiales (2 laterales, 2 diagonales, 1 central) sobre tronco columnar de 2 lineas con 3 chevrones apuntando hacia abajo" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "agregadas 3 lineas pequenas apuntando hacia abajo dentro de la corona (hojitas/brotes colgantes) y cerrado el tronco abajo con base redondeada suave (curva en U) uniendo las 2 lineas" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "las 3 hojitas de la corona alargadas (~1.7 a ~3 unidades, ahora bajan hasta y9.3-9.4) apuntando mas hacia abajo" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "las 3 hojitas de la corona alargadas un poco mas (bajan hasta y10.3-10.4)" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "arbol-tropical",
+      "categoria": "naturaleza",
+      "estado": "aprobado",
+      "intentos": 2,
+      "notas": "arbol tropical generico: copa nube organica sobre tronco central visible con 2 ramas; distinto de ceiba (copa sombrilla + contrafuertes) y palma-de-cera",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "copa circular festoneada de 8 lobulos con arcos hacia afuera, tronco de 2 lineas con raices que se abren en la base" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "no parecia arbol (copa de 8 festones regulares parecia engranaje/flor); rediseñado con referencias de Lucide tree-deciduous y Tabler tree: copa tipo nube organica + tronco central visible que sube por dentro de la copa + 2 ramas pequenas bifurcadas" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "sabueso-fino",
+      "categoria": "naturaleza",
+      "estado": "rechazado",
+      "intentos": 2,
+      "notas": "Sabueso Fino Colombiano (unica raza canina 100% colombiana): silueta de perfil (de lado) con una sola oreja larga colgante pronunciada, hocico alargado y cola en alto. Referencias: Wikipedia raza + estructura de iconos perro Lucide/Tabler",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "cabeza de sabueso de frente (estilo frontal como jaguar): 2 orejas largas colgantes que bajan hasta el hocico, 2 ojos, nariz triangular y boca corta" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "la cabeza de frente se veia mal; rediseñado como silueta de perfil (de lado): cuerpo con 2 patas, hocico alargado, cola en alto y UNA sola oreja larga colgante pronunciada" },
+        { "fecha": "2026-07-14", "accion": "rechazado", "nota": "el usuario pidio omitirlo/saltarlo para retomar despues" }
+      ]
+    },
+    {
+      "id": "arepa",
+      "categoria": "gastronomia",
+      "estado": "aprobado",
+      "intentos": 3,
+      "notas": "arepa base del set (las variantes choclo/huevo/boyacense se diferencian despues): disco redondo visto desde arriba con 3 marcas diagonales de asado",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "circulo r8 centrado + 3 lineas diagonales paralelas de marcas de parrilla, contenidas dentro del disco" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "las 3 marcas de asado acortadas (radio efectivo de 6.4 a 5.2) para dejar mas aire entre las lineas y el borde del disco" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "las 3 marcas de asado acortadas otra vez (radio efectivo de 5.2 a 4.3) y separacion entre lineas reducida de 3.4 a 3.0" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "taza-de-tinto",
+      "categoria": "gastronomia",
+      "estado": "aprobado",
+      "intentos": 2,
+      "notas": "tinto colombiano (cafe negro en taza pequena): taza de perfil conica con asa a la derecha y 2 hilos de vapor, sin platillo",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "taza conica de perfil con base redondeada, asa lateral derecha, platillo tipo plato hondo debajo y 2 hilos de vapor en S sobre la taza" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "eliminado el platillo de abajo, queda solo la taza; taza y vapor bajados 1.8 para recentrar la composicion en el grid" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "grano-de-cafe",
+      "categoria": "gastronomia",
+      "estado": "aprobado",
+      "intentos": 2,
+      "notas": "icono NUEVO, no estaba en la lista de la seccion 4.3 de CLAUDE.md (agregado a peticion del usuario): grano/semilla de cafe, ovalo inclinado con la hendidura central en S",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "elipse rx4.8 ry7.8 inclinada -35 grados + hendidura central en curva S a lo largo del eje mayor" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "invertida la direccion de la inclinacion (-35 a +35 grados), manteniendo identicas la forma del ovalo y la hendidura" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "bandeja-paisa",
+      "categoria": "gastronomia",
+      "estado": "rechazado",
+      "intentos": 1,
+      "notas": "bandeja paisa estilizada: el plato real tiene ~8 componentes, imposibles en 24x24; se reduce a bandeja ovalada vista desde arriba con 3 elementos de forma visualmente distinta (huevo frito, chorizo, frijoles)",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "elipse bandeja rx9.5 ry6.8 + huevo frito (circulo con yema rellena) arriba izq + chorizo (capsula redondeada) arriba der + 4 frijoles (puntos rellenos) en la parte baja" },
+        { "fecha": "2026-07-14", "accion": "rechazado", "nota": "el usuario pidio omitirla/saltarla para retomar despues; pendiente resolver la densidad de elementos en 24x24" }
+      ]
+    },
+    {
+      "id": "aguardiente",
+      "categoria": "gastronomia",
+      "estado": "aprobado",
+      "intentos": 8,
+      "notas": "aguardiente (licor de anis): botella de perfil con silueta tipo cuerpo femenino muy sutil + cuello reducido + hombros convexos redondeados + 2 olas tipo rio (fase invertida, rotadas 30% de pendiente en sentido antihorario, extremo izq abajo) como etiqueta; se elige botella sobre copita por ser mas reconocible como producto",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "botella de perfil (cuello, hombros curvos, cuerpo con base redondeada) + tapa rectangular arriba + 2 lineas horizontales como banda de etiqueta" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "cuerpo de la botella con silueta tipo cuerpo de mujer con curvas suaves (ancho x7.2/16.8 en y13, cintura x8.2/15.8 en y16.2, cadera x7.4/16.6 en y19.2); las 2 lineas de etiqueta ahora son arcos curvos tipo ceja (quadratic, bombeo hacia arriba) e insertados en x9.4-14.6 para no tocar ni salirse de los bordes de la botella" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "las 2 lineas de etiqueta pasan de arcos tipo ceja a olas tipo rio (patron Q...T... alternando arriba/abajo, mismo lenguaje que el icono rio del set); silueta del cuerpo mas sutil (cintura entra 0.7 por lado en vez de 1.0); cuello reducido: mas angosto (3.0 a 2.4 de ancho) y mas corto (3.7 a 2.9 de alto), con tapa achicada de 3.6 a 3.0" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "invertida la fase de las 2 olas (ahora bajan primero y suben despues, control de y13.5/17 a y15.3/18.8); hombros mucho mas redondeados: la transicion cuello-cuerpo pasa de 2 cubicas diagonales a 1 sola cubica convexa amplia (C10.8 9.2 7.3 9.6 7.3 12.8) que entra vertical al cuerpo" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "las 2 olas inclinadas ~10 grados hacia la izquierda (extremo izq arriba, der abajo; pendiente 0.176 horneada en las coordenadas, sin transform); ancho reducido de x9.3-14.7 a x9.4-14.6 para conservar el aire contra los bordes del cuerpo tras la inclinacion" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "CORRECCION: la inclinacion anterior se hizo con un shear (deformaba la ola y parecia invertirla) en vez de una rotacion. Revertido a la forma exacta previa y aplicada una ROTACION rigida de 16.7 grados (30% de pendiente) hacia la izquierda sobre el centro de cada ola, horneada en coordenadas; semiancho reducido de 2.7 a 2.5 para conservar el aire contra los bordes del cuerpo tras rotar" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "invertido el sentido de la rotacion de las 2 olas: de horario (extremo izq arriba) a antihorario (extremo izq abajo, der arriba), mismos 16.7 grados / 30% de pendiente y misma forma de ola" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "las 2 olas subidas 0.7 (centros de y14.4/17.9 a y13.7/17.2); verificado que la punta derecha de la ola inferior conserva ~0.15 de aire contra la cintura del cuerpo contando el grosor de trazo" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "empanada",
+      "categoria": "gastronomia",
+      "estado": "aprobado",
+      "intentos": 2,
+      "notas": "empanada colombiana: media luna organica girada -30 grados, con el doblez arqueado, domo fluido asimetrico, linea de sellado interior y 5 repulgues radiales sobre el borde curvo",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "semidisco r8 centrado en (12,8) con borde recto arriba (doblez) y domo abajo; arco de sellado concentrico r5.9; 5 repulgues radiales a 40/65/90/115/140 grados que van del arco de sellado al borde exterior" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "girada 30 grados a la izquierda (rotate -30 sobre 12,12) y agregado movimiento a las formas: el doblez recto (H) pasa a cubica arqueada suave, el arco exacto del domo pasa a 2 cubicas fluidas y asimetricas, y el arco de sellado concentrico pasa a curva organica que sigue el domo" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "arepa-de-choclo",
+      "categoria": "gastronomia",
+      "estado": "rechazado",
+      "intentos": 2,
+      "notas": "primera variante de arepa: perfil horizontal (vista de lado, cuerpo grueso tipo pastilla) con tajada de queso en triangulo suave encima y granos de maiz en la cara; el queso encima es lo que la ancla al plato real y la distingue de la arepa base (vista superior con rayas de parrilla)",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "disco r8 igual al de arepa + 10 granos de maiz (puntos rellenos r0.8) en 3 filas escalonadas tipo ladrillo (3-4-3), todos contenidos dentro del disco" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "rediseñada con referencias (bonviveur/mycolombianrecipes: se sirve con tajada de queso campesino encima): pasa de vista superior a PERFIL HORIZONTAL (cuerpo tipo pastilla x4-20, y11.9-18.5) + tajada de queso como triangulo de lados curvos y apice redondeado apoyado sobre la cara superior (path abierto, sin base propia, para no duplicar linea con el borde de la arepa) + 7 granos de maiz en 2 filas escalonadas sobre la cara" },
+        { "fecha": "2026-07-14", "accion": "rechazado", "nota": "el usuario pidio omitirla/saltarla para retomar despues" }
+      ]
+    },
+    {
+      "id": "sancocho",
+      "categoria": "gastronomia",
+      "estado": "rechazado",
+      "intentos": 1,
+      "notas": "sancocho: olla/plato hondo de perfil con una mazorca saliendo (el elemento que lo ancla al sancocho colombiano y lo separa de una sopa generica) y 2 hilos de vapor a los lados",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "plato hondo de perfil (semielipse con borde recto arriba en y11.7) + mazorca central como capsula vertical rx1.4 con 3 lineas de granos, apoyada tangente al borde del plato + 2 hilos de vapor en S a los lados (x7 y x17), mismo lenguaje de vapor que taza-de-tinto" },
+        { "fecha": "2026-07-14", "accion": "rechazado", "nota": "el usuario pidio saltarlo para retomar despues" }
+      ]
+    },
+    {
+      "id": "patacon",
+      "categoria": "gastronomia",
+      "estado": "aprobado",
+      "intentos": 4,
+      "notas": "patacon (platano verde aplastado y frito): forma ovalada/eliptica asimetrica con grietas en el borde (el aplastado revienta la orilla), mas 3 fibras longitudinales del platano, girada 51.8 grados a la izquierda",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "contorno organico irregular de 5 anclas con radios variables (7.3 a 8.2) para el borde aplastado + 3 fibras longitudinales curvas en el interior" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "el usuario dice que no se ve como un patacon: la forma debe ser mas ovalada/eliptica y con grietas en el borde, nada recto ni simetrico. Se descartaron 3 candidatos mostrados (picos alrededor / triangulo redondeado / dos picos opuestos). Rediseñado: base eliptica rx8.5 ry6.5 achatada, con 3 grietas en V hacia adentro colocadas de forma asimetrica (abajo, izquierda, arriba-derecha) y radios variables entre anclas para romper la simetria" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "girado 40% a la izquierda = rotate(-21.8 12 12), usando la misma convencion de porcentaje-como-pendiente acordada en las olas del aguardiente (30% = 16.7 grados). Verificado que la silueta rotada cabe en el grid: el punto mas lejano queda a 10.7 del centro, extremos 1.3-22.7 mas 0.75 de trazo" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "girado 30 grados mas a la izquierda: de rotate(-21.8) a rotate(-51.8). Sigue cabiendo en el grid porque la rotacion no cambia la distancia maxima al centro (10.7)" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "arepa-de-huevo",
+      "categoria": "gastronomia",
+      "estado": "rechazado",
+      "intentos": 2,
+      "notas": "arepa de huevo de Luruaco (costa Caribe): arepa partida con corte plano vertical en x14.5 y el huevo cortado EN ese mismo plano de corte (media clara + media yema), no centrado. Contorno no uniforme por el inflado y la fritura",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "disco de radios variables 7.6-8.2 con 7 anclas cubicas para el borde irregular + mordida concava como arco r4.5 entre los angulos -75 y -15 grados + huevo interior (clara organica r2.8 en 11.5,13 y yema rellena r1.1). Verificado que la mordida no colisiona con el huevo: 1.34 de aire contando trazos" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "REARMADA: el usuario dice que no se parecia en nada, que el huevo parecia estar en el centro y que el huevo debe salir cortado. Nueva composicion: la arepa se corta con un plano vertical en x14.5 (el Z del path cierra el corte) y el huevo queda seccionado EN ese plano: la clara es un arco ABIERTO de (14.5,10) a (14.5,14) sin borde de corte propio, y la yema es media luna RELLENA sin trazo apoyada en x14.5. Las 3 piezas comparten el plano de corte, asi que no se dibujan lineas coincidentes: el borde recto de la arepa hace de cara de corte para las tres" },
+        { "fecha": "2026-07-14", "accion": "rechazado", "nota": "el usuario pidio omitirla para retomar despues; quedan 2 enfoques descartados (mordida en el borde con huevo entero centrado, y corte plano con huevo seccionado)" }
+      ]
+    },
+    {
+      "id": "ajiaco",
+      "categoria": "gastronomia",
+      "estado": "rechazado",
+      "intentos": 1,
+      "notas": "ajiaco bogotano: plato hondo con las papas (3 papas es el rasgo del plato) asomando en la superficie y 2 hilos de vapor. Se usan papas en vez de mazorca para separarlo visualmente de sancocho, que ya usaba la mazorca",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "plato hondo de perfil (borde recto en y13 + semielipse) + 3 papas como circulos tangentes al borde del plato (radios 1.5/1.7/1.5, centros calculados para que toquen y13 sin cruzarlo) + 2 hilos de vapor en S a x9 y x15, separados de las papas para que los trazos no se toquen" },
+        { "fecha": "2026-07-14", "accion": "rechazado", "nota": "el usuario pidio omitirlo para retomar despues" }
+      ]
+    },
+    {
+      "id": "arepa-boyacense",
+      "categoria": "gastronomia",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "arepa boyacense (con cuajada, dulzona y notablemente GRUESA): se dibuja en 3/4 como cilindro (cara superior en elipse + grosor visible) porque el grosor es su rasgo, y ademas la separa estructuralmente de la arepa base que es vista superior plana",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "vista 3/4: elipse superior rx8 ry5 en (12,10) + costado con base semieliptica del mismo rx/ry para que el cilindro sea consistente + 1 grieta organica sobre la cara superior. Verificado que la grieta queda dentro de la elipse" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "pescado-frito",
+      "categoria": "gastronomia",
+      "estado": "rechazado",
+      "intentos": 1,
+      "notas": "pescado frito costeño: pescado entero de perfil mirando a la izquierda, con los cortes diagonales que se le hacen al lomo antes de freir (eso es lo que lo hace 'frito' y no un pescado generico)",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "cuerpo en hoja/almendra de (3,12) a (17.5,12) + cola en abanico + aleta dorsal como arco abierto apoyado sobre el lomo (sin base propia, el contorno del cuerpo hace de base) + ojo relleno + 2 cortes diagonales de fritura. Verificado que cortes, ojo y aleta quedan dentro del cuerpo" },
+        { "fecha": "2026-07-14", "accion": "rechazado", "nota": "el usuario pidio omitirlo para retomar despues" }
+      ]
+    },
+    {
+      "id": "chicharron",
+      "categoria": "gastronomia",
+      "estado": "rechazado",
+      "intentos": 2,
+      "notas": "chicharron colombiano: forma de peine. El corte tradicional atraviesa solo la carne y se detiene antes del cuero, dejando las tiras unidas por la corteza; al freir el cuero se curva. Por eso: semiovalo abajo (cuero curvado) + 4 dientes de carne arriba",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "tira de x3.5 a x20.8 con borde superior de 5 ampollas del cuero, extremos redondeados y base plana + linea de grasa que separa cuero y carne, trazada de borde a borde del cuerpo. Se descartaron ticks verticales de textura en la carne: la capa mide 2.9 y con trazo de 1.5 no cabian sin chocar con la base" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "REHECHO con referencias (sweetysalado, mycolombianrecipes, grupoanimal): el corte colombiano hace tiras de ~1.3cm que solo atraviesan la carne y paran antes del cuero, quedando unidas por la corteza — las fuentes lo llaman literalmente 'patas' o 'dientes', forma de peine. Nueva estructura: semiovalo inferior (media elipse rx8.5 ry6.7 con tapa plana en y12.1) como cuero curvado + 4 dientes de carne como paths ABIERTOS (vertical, arco semicircular r1.4 arriba, vertical) que no dibujan base propia: la tapa del semiovalo les hace de base y evita lineas coincidentes" },
+        { "fecha": "2026-07-14", "accion": "rechazado", "nota": "el usuario pidio omitirlo para retomar despues; quedan 2 enfoques descartados (tira con cuero ampollado, y forma de peine con semiovalo + dientes)" }
+      ]
+    },
+    {
+      "id": "sombrero-vueltiao",
+      "categoria": "cultura",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "primer icono de la categoria cultura. Sombrero vueltiao (caña flecha, Cordoba/Sucre): ala ancha y plana + copa baja + la franja geometrica en zigzag, que es el rasgo que lo separa de un sombrero generico",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "ala como elipse rx9.5 ry2.5 en (12,15.5) + copa baja como arco ABIERTO cuyos pies caen exactamente sobre el borde superior de la elipse (calculado: en x7.5 y x16.5 la elipse tiene y13.3), asi la copa se apoya sin cruzar el ala + zigzag de 6 vertices dentro de la copa" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "mochila-wayuu",
+      "categoria": "cultura",
+      "estado": "aprobado",
+      "intentos": 4,
+      "notas": "mochila wayuu: segun las referencias tiene 3 componentes (bolsa, gaza/tira y cordon) y lleva tejidas las kanas, las figuras geometricas que representan la cosmogonia wayuu. Las kanas son el rasgo que la separa de un bolso generico, por eso se priorizan sobre el cordon. La gaza va como onda con movimiento en AMBOS lados: ondula al subir por la izquierda y ondula otra vez al bajar por la derecha",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "cuerpo tipo barril con boca recta arriba (y11) y base redondeada + gaza como arco alto cuyos pies nacen en las esquinas de la boca (union limpia, sin lineas cruzadas) + 2 bandas de kanas en zigzag. Anchos de las kanas calculados contra el contorno del cuerpo a cada altura para que no toquen los bordes" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "la gaza/lazo de arriba pasa de arco simetrico de 2 cubicas a 3 cubicas con curvatura distinta en cada tramo, para darle movimiento: cumbre desplazada a x12.9 (fuera del centro), lado izquierdo mas empinado y lado derecho mas tendido. Los pies siguen anclados en las esquinas de la boca (6.6,11) y (17.4,11)" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "mas movimiento hacia la derecha, que parezca una onda: la gaza pasa a 4 cubicas. Cresta alta a la izquierda (~x11, y2.9), luego cae a (14.4,5.8), y en el lado derecho ondula: baja a un valle en (15.3,7.6), sube a una cresta pequeña en (17.3,7.9) y vuelve a caer al pie derecho. Tangentes verificadas en las uniones para que la onda fluya sin quiebres" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "el lado izquierdo quedaba muy plano comparado con la ondulacion del derecho; el problema era solo la parte de arriba. La gaza pasa de 4 a 5 cubicas: al subir por la izquierda ahora se abre hacia afuera (bulge hasta x5.9) y hace un quiebre de onda en (6.6,5.8) y (9.8,3.8) antes de la cresta (~x11.2, y2.9). Tangentes verificadas en las 4 uniones (6.6,5.8 / 9.8,3.8 / 14.4,5.8 / 16.3,8.1): todas continuan en la misma direccion, asi la onda fluye sin quiebres duros" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "ruana",
+      "categoria": "cultura",
+      "estado": "rechazado",
+      "intentos": 1,
+      "notas": "ruana boyacense (el 'abrigo de cuatro puntas'): manta de lana sin mangas colgando, con orificio central para la cabeza y ABERTURA VERTICAL al frente hasta el dobladillo. La abertura frontal es el rasgo que la separa de un poncho comun, que es cerrado; por eso se prioriza sobre cualquier otro detalle",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "prenda colgando: cuerpo trapezoidal con hombros curvos arriba y dobladillo recto + cuello como elipse (bajada a cy8.4 tras calcular que en cy8.8 su borde chocaba con el hombro contando trazos) + abertura vertical del cuello al dobladillo + 6 flecos de lana en el dobladillo, ninguno en x12 para no continuar la linea de la abertura" },
+        { "fecha": "2026-07-14", "accion": "rechazado", "nota": "el usuario pidio omitirla para retomar despues" }
+      ]
+    },
+    {
+      "id": "acordeon-vallenato",
+      "categoria": "cultura",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "acordeon diatonico vallenato: segun las referencias son 3 partes (fuelle en el medio + 2 cajas armonicas de madera a los lados, la lira con 31 botones y los bajos con 12). Esa estructura de 3 partes es lo que lo define",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "vista frontal: 2 cajas como rects redondeados (x2.8-7.8 y x16.2-21.2, y5.5-18.5) + fuelle en el medio con borde superior e inferior inset (y7.2/16.8, mas angosto que las cajas) y 3 pliegues verticales + 3 botones de la lira centrados en la caja derecha" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "chiva-bus",
+      "categoria": "cultura",
+      "estado": "rechazado",
+      "intentos": 1,
+      "notas": "chiva o bus escalera: los 3 rasgos que la separan de un bus generico segun las referencias son la escalera trasera (de ahi el nombre), la parrilla portaequipajes del techo (capacete) y los costados abiertos sin ventanas, divididos por parales. Se priorizan esos sobre la decoracion",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "vista de perfil mirando a la izquierda: carroceria con frente redondeado y trasera recta + 2 ruedas tangentes a la linea del piso (centros calculados a y17.8 r1.6 para que toquen y16.2 exacto) + 2 parales que dejan los costados abiertos (sin ventanas) + parrilla del techo como riel con 2 postes + escalera trasera de 2 rieles y 3 peldaños. Posiciones de parales y ruedas separadas para que sus trazos no se toquen" },
+        { "fecha": "2026-07-14", "accion": "rechazado", "nota": "el usuario pidio omitirlo para retomar despues" }
+      ]
+    },
+    {
+      "id": "carnaval-barranquilla",
+      "categoria": "cultura",
+      "estado": "rechazado",
+      "intentos": 1,
+      "notas": "carnaval de barranquilla: un carnaval no tiene silueta propia, asi que se ancla a la MARIMONDA, la figura mas iconica de la fiesta. Segun las referencias su mascara tiene 3 rasgos: orejas grandes (simbolizan oir los chismes), ojos saltones y trompa larga (mitad elefante, mitad primate)",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "mascara de marimonda: cara circular r5 + 2 orejas circulares r2.4 colocadas TANGENTES a la cara (centros a distancia 7.4 del centro, calculado como r cara + r oreja) para que no se crucen los trazos + 2 ojos saltones verificados dentro de la cara contando trazos + trompa como path ABIERTO que cuelga desde la cara: sus pies caen exactos sobre el arco inferior (y14.05 en x10.8 y x13.2), asi la cara le hace de base y no se duplica linea" },
+        { "fecha": "2026-07-14", "accion": "rechazado", "nota": "el usuario pidio omitirla para retomar despues" }
+      ]
+    },
+    {
+      "id": "mola-kuna",
+      "categoria": "cultura",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "mola kuna/gunadule: arte textil de aplicacion inversa (se cosen capas de tela de colores y se recorta la de arriba para revelar la de abajo). La firma visual es que cada forma queda rodeada de contornos concentricos que la repiten: son las capas asomando. El icono se ancla a eso",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "panel textil como rect redondeado (x3-21, y4.5-19.5, centrado en el grid) + motivo central de 3 rombos concentricos que representan las capas reveladas por los cortes de la aplicacion inversa. Los 3 rombos verificados dentro del panel" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "feria-de-las-flores",
+      "categoria": "cultura",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "feria de las flores: una feria no tiene silueta propia, se ancla a la SILLETA (el andamio de madera con arreglo floral que carga el silletero a la espalda, entre 15 y 120 kilos). Se elige la silleta sobre el silletero cargandola porque la persona + el arreglo no caben legibles en 24x24",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "silleta de frente: disco floral r6.5 + 3 cabezas de flor en triangulo dentro del disco + andamio de madera abajo (2 patas que nacen exactas sobre el borde del disco en y15.7, calculado, + travesaño con extremos ajustados al angulo de las patas). Verificado que las flores caben dentro del disco y no colisionan entre si" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "tejo",
+      "categoria": "cultura",
+      "estado": "rechazado",
+      "intentos": 1,
+      "notas": "tejo (deporte nacional de Colombia por ley desde 2000, nacido en Turmeque). Se ancla al BOCIN con las MECHAS vistos desde arriba: el aro metalico + los triangulos de polvora que explotan al ser golpeados, mas el disco de tejo en el centro. OJO: la spec lista 'tejo' en la seccion 4.2 (cultura) Y 'tejo-deporte' en la 4.5 (deportes) — hay que definir como se diferencian o si uno sobra",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "vista superior: bocin como aro r3.8 + 4 mechas triangulares en N/S/E/O apuntando hacia afuera + disco de tejo relleno en el centro. Radio del aro bajado de 4.5 a 3.8 tras calcular que a 4.5 los trazos de las mechas chocaban con el del aro; con 3.8 queda 0.3 de aire. Disco central verificado dentro del aro" },
+        { "fecha": "2026-07-14", "accion": "rechazado", "nota": "el usuario pidio omitirlo para retomar despues; queda pendiente resolver el choque con 'tejo-deporte' de la seccion 4.5" }
+      ]
+    },
+    {
+      "id": "guacharaca",
+      "categoria": "cultura",
+      "estado": "rechazado",
+      "intentos": 1,
+      "notas": "guacharaca: idiofono de raspado de caña, uno de los 3 instrumentos base del vallenato. Segun las referencias son DOS piezas: el tubo de superficie corrugada con ranuras y el trinche/peine (alambre duro con mango de madera). Ese par es lo que la identifica, por eso se dibujan los dos",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "tubo horizontal como capsula rx2 con 6 ranuras transversales que lo cruzan de borde a borde + trinche encima: mango de madera como capsula + 3 puas de alambre que se abren y bajan hasta tocar el tubo. Ranuras colocadas dentro del tramo recto de la capsula (x5-19) para que no caigan sobre los extremos redondeados" },
+        { "fecha": "2026-07-14", "accion": "rechazado", "nota": "el usuario pidio omitirla para retomar despues" }
+      ]
+    },
+    {
+      "id": "sombrero-aguadeno",
+      "categoria": "cultura",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "sombrero aguadeño (Aguadas, Caldas; palma de iraca; denominacion de origen desde 2011). Reusa el ala y la altura de copa del sombrero-vueltiao para mantener familia, pero se diferencia por los 2 rasgos que dan las referencias: el PLIEGUE que lo cruza de adelante hacia atras (por el que se dobla para cargarlo) y la CINTA en la base de la copa (que lleva invariablemente). El vueltiao lleva zigzag de caña flecha; este no",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "ala como elipse identica a la del vueltiao (rx9.5 ry2.5 en 12,15.5) para consistencia de familia + copa cuyos pies caen en y13.3 sobre el borde del ala (mismo calculo que el vueltiao) pero con el tope hundido: sube a 7.4, baja a 9 en el centro y vuelve a 7.4, que es el pliegue visto de frente + cinta como linea horizontal en la base de la copa. Tangentes verificadas en las uniones del pliegue" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "registrado como sombrero-aguadeno sin eñe: la spec lo escribe con ñ pero la seccion 3 manda kebab-case y una ñ daria problemas en nombres de archivo y de componente React/Angular/Blazor. Mismo criterio que patacon" }
+      ]
+    },
+    {
+      "id": "silueta-colombia",
+      "categoria": "mapas",
+      "estado": "rechazado",
+      "intentos": 1,
+      "notas": "BLOQUEANTE PARA LAS 5 REGIONES: region-caribe, region-andina, region-pacifica, region-orinoquia y region-amazonia se dibujan sobre este mismo contorno, asi que heredan su problema. No generarlas hasta resolver el contorno trazandolo de una fuente real (Natural Earth / Wikimedia, dominio publico) en vez de dibujarlo a ojo. Primer icono de la categoria mapas. Silueta del pais. A diferencia del resto del set, aca la referencia no es un rasgo caracteristico sino la geometria real: los 3 rasgos que lo hacen reconocible son la peninsula de La Guajira (punta al noreste), el brazo del Darien hacia Panama (noroeste) y el estrechamiento sur que termina en el trapecio amazonico. ADVERTENCIA: el contorno es una aproximacion estilizada dibujada a mano, NO trazada de datos geograficos; si se requiere fidelidad hay que trazarlo de una fuente real (SVG de dominio publico)",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "contorno cerrado de 14 cubicas: punta de La Guajira arriba a la derecha, costa Caribe bajando al oeste, esquina del Darien al noroeste, costa Pacifica por el flanco oeste, estrechamiento hacia el punto sur (Leticia) y frontera oriental subiendo con el ensanchamiento hacia Venezuela" },
+        { "fecha": "2026-07-14", "accion": "rechazado", "nota": "el usuario pidio omitirlo. El contorno se dibujo a ojo, no trazado de datos geograficos; se advirtio que en un mapa del propio pais eso se nota. Pendiente decidir entre aprobar a ojo o trazar de fuente real" }
+      ]
+    },
+    {
+      "id": "bogota-torre",
+      "categoria": "mapas",
+      "estado": "rechazado",
+      "intentos": 1,
+      "notas": "torre de Bogota = Torre Colpatria (50 pisos, 196m). Segun las referencias su fachada son pilares de concreto y barras de vidrio VERTICALES que corren sin interrupcion del suelo al techo, y su otro rasgo iconico es la iluminacion LED nocturna. El icono se ancla a esos dos",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "torre rectangular + 2 lineas verticales de fachada que la cruzan enteras (fiel a que corren sin interrupcion) + 6 destellos laterales de la iluminacion LED. Ancho de la torre reducido de 8 a 7 y lineas de fachada bajadas de 3 a 2 tras calcular que con trazo de 1.5 se fundian entre si; los destellos se separaron hasta dejar 0.2 de aire contra el borde" },
+        { "fecha": "2026-07-14", "accion": "rechazado", "nota": "el usuario pidio omitirlo para retomar despues" }
+      ]
+    },
+    {
+      "id": "cartagena-murallas",
+      "categoria": "mapas",
+      "estado": "rechazado",
+      "intentos": 1,
+      "notas": "murallas de Cartagena de Indias (piedra coralina, 11km, 1614-1796). Segun las referencias los elementos son: baluartes (fortines), cortinas (muros rectos que unen 2 baluartes), troneras para artilleria y garitas (torretas de vigilancia). La garita sobre el baluarte es la silueta mas reconocible, por eso se prioriza",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "muralla de perfil: baluarte central saliente (mas alto) flanqueado por 2 cortinas mas bajas + garita encima del baluarte (cuerpo + cupula redondeada + 2 troneras de vigilancia) + 2 troneras de artilleria en las cortinas + linea de sillares de piedra coralina. La garita se apoya exacta sobre el techo del baluarte (y8.5) sin dibujar base propia" },
+        { "fecha": "2026-07-14", "accion": "rechazado", "nota": "el usuario pidio omitirlo para retomar despues" }
+      ]
+    },
+    {
+      "id": "medellin-metro",
+      "categoria": "mapas",
+      "estado": "rechazado",
+      "intentos": 1,
+      "notas": "metro de Medellin: unico metro de Colombia. Se dibuja el vagon sobre VIADUCTO ELEVADO porque lo elevado es su rasgo. OJO: las referencias dicen que el simbolo de Medellin es el METROCABLE, no el tren (primera ciudad del mundo con teleferico como transporte publico de tiempo completo); si el vagon no convence, el metrocable es la alternativa mas identitaria",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "vagon de frente (cuerpo redondeado + parabrisas + 2 faros) sobre viaducto elevado (tablero + 2 pilas + linea de suelo). El tablero del viaducto hace de base del vagon: el vagon no dibuja borde inferior propio, para no duplicar linea" },
+        { "fecha": "2026-07-14", "accion": "rechazado", "nota": "el usuario pidio omitirlo para retomar despues" }
+      ]
+    },
+    {
+      "id": "ciclismo",
+      "categoria": "deportes",
+      "estado": "aprobado",
+      "intentos": 2,
+      "notas": "primer icono de la categoria deportes. Se deja como la bicicleta limpia y se guarda el angulo montaña/escarabajo (identidad del ciclismo colombiano: escaladores forjados por la altura) para vuelta-a-colombia, que la spec lista aparte en la misma categoria. Referencias: Lucide bike / Tabler bike (estructura) + guias de manillar de ruta (drop bar)",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "bicicleta de perfil: 2 ruedas r3.3 (centros 5.5 y 18.5, separadas 13 asi que no se tocan) + cuadro cerrado (tirantes, tubo superior, tubo diagonal y vaina) + horquilla + sillin + potencia y manillar + plato en el eje. Todo dentro del grid: x1.45-22.55, y8.5-20.8 contando trazo" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "el manillar eran 2 lineas rectas, no leia como manillar. Rehecho como DROP BAR de ruta segun las referencias (bike-components/tuvalum: barra recta arriba = tops + gancho curvo que va adelante y baja hacia atras = drops). Nueva construccion: potencia de (15.2,10.8) a (16,9) + barra recta x15.1-16.8 en y9 + gancho de 2 cubicas que sale adelante hasta x18, baja y vuelve atras terminando en (17,11). El final del gancho se corto en y11 (no y11.75) tras calcular la distancia perpendicular a la horquilla: en y11 da 1.51, justo sobre el minimo de 1.5 que exigen los 2 trazos de 1.5; mas abajo se tocaban" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "futbol",
+      "categoria": "deportes",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "balon de futbol clasico (Mundial 1970) = icosaedro truncado: 32 caras, 20 hexagonos y 12 pentagonos, cada pentagono conectado solo a hexagonos. El icono usa la convencion establecida (Tabler ball-football): pentagono central + radiales que salen de sus vertices, que es como se lee el patron a este tamaño",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "circulo r8 + pentagono regular calculado (no dibujado a ojo): vertices a radio 4.2 desde el centro, en angulos -90/-18/54/126/198 grados + 5 radiales que salen de cada vertice por el mismo angulo hasta radio 8 (el borde del circulo). Separacion angular de 72 grados verificada: a radio 4.2 los radiales quedan a 5.28 de arco entre si, sin riesgo de fundirse" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "vuelta-a-colombia",
+      "categoria": "deportes",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "Vuelta a Colombia (desde el 5 de enero de 1951; cuna del ciclismo colombiano). Se usa el angulo que se reservo al hacer ciclismo: la MONTAÑA como identidad de los escarabajos. Asi no duplica a ciclismo, que es la bicicleta limpia. Compromiso asumido: sin bici, se lee 'carrera de montaña' y depende del nombre para cerrar el sentido; meter una bici legible ademas de la montaña no cabe en 24x24",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "montaña de 2 picos + carretera en zigzag (curvas de herradura) subiendo la ladera + bandera de meta en la cumbre. Trazado de la carretera verificado contra las aristas de la montaña a cada altura para que quede siempre por dentro: en y15.8 la ladera izquierda esta en x4.49 y la carretera en x8.5; en y11 la arista derecha esta en x12.07 y la carretera en x9.5" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "patinaje",
+      "categoria": "deportes",
+      "estado": "rechazado",
+      "intentos": 2,
+      "notas": "patin de VELOCIDAD en linea (Colombia es potencia mundial), no uno generico. Los 3 rasgos que lo definen segun las referencias: bota BAJA, chasis LARGO y ruedas GRANDES (100-125mm). Con ruedas de ese diametro los patines modernos montan 3, no 4 (el reglamento permite ambos), y con 3 se pueden dibujar mucho mas grandes en 24x24",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "patin de perfil mirando a la izquierda: bota de corte bajo como path ABIERTO (el riel le hace de suela, sin linea duplicada) + riel + 4 ejes + 4 ruedas. Geometria calculada: ruedas r1.4 con centros separados 4.3 para dejar exactamente 1.5 entre bordes (el minimo que exigen 2 trazos de 1.5); riel en y15.6 y centros de rueda en y18.4 para que el tope de rueda quede a 1.5 del riel y no se fundan; los ejes bajan del riel al tope de cada rueda en union perpendicular en T" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "REDISEÑADO con nuevas referencias (patines-en-linea, skatepro, roex): el error era 4 ruedas pequeñas r1.4. Las fuentes dicen que el patin de velocidad se distingue por 'bota baja, chasis largo y ruedas grandes (100-125mm)' y que tiene 'linea muy delgada y simplificada'. Con ruedas de 110-125mm los patines modernos montan 3. Cambios: 4 ruedas r1.4 -> 3 ruedas r2 (43% mas grandes, ahora son el rasgo dominante); chasis alargado a x4.5-19.5 y ahora sobresale claramente de la bota (x7-16.5) como el chasis real; bota mas baja (alto 3.7, ratio ~1:1 con el diametro de rueda, que es la proporcion real). Geometria: centros de rueda separados 5.5 para dejar 1.5 entre bordes; riel en y14.3 y centros en y17.8 para que el tope de rueda quede a 1.5 del riel. Sin correa: las fuentes piden linea simplificada y calculado no cabia (la correa quedaba a 0.8 del riel, bajo el minimo de 1.5)" },
+        { "fecha": "2026-07-14", "accion": "rechazado", "nota": "el usuario pidio omitirlo para retomar despues; quedan 2 enfoques descartados (4 ruedas r1.4 con chasis corto, y 3 ruedas r2 con chasis largo). Al retomarlo, el problema probablemente esta en la forma de la bota, no en las ruedas ni el chasis" }
+      ]
+    },
+    {
+      "id": "boxeo",
+      "categoria": "deportes",
+      "estado": "rechazado",
+      "intentos": 1,
+      "notas": "boxeo = guante. Segun las referencias el guante 'se asemeja a un miton liso que solo mantiene el formato del pulgar': no tiene dedos, el pulgar es su unico rasgo articulado. Las partes son relleno, pulgar, muñequera y cierre (cordones o velcro). NOTA: se salto tejo-deporte porque choca con tejo (cultura) y falta definir como se diferencian",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "guante de perfil mirando a la izquierda. Silueta COMPLETA (puño + pulgar + muñequera) en un solo path cerrado, para que no haya lineas duplicadas donde el puño se une a la muñequera; encima van solo 3 detalles: la costura que separa puño y muñequera, el pliegue del pulgar (cuerda entre los 2 puntos donde el lobulo se une al cuerpo) y la correa de velcro. Grid verificado: x3.25-20.45, y4.85-17.55 contando trazo" },
+        { "fecha": "2026-07-14", "accion": "rechazado", "nota": "el usuario pidio omitirlo para retomar despues" }
+      ]
+    },
+    {
+      "id": "atletismo",
+      "categoria": "deportes",
+      "estado": "rechazado",
+      "intentos": 1,
+      "notas": "atletismo: se ancla a la ZAPATILLA DE CLAVOS (spikes) en vez de a un corredor. Razon: una figura humana corriendo es la convencion generica de 'deporte' y no dice atletismo; los clavos en la suela son exclusivos de este deporte. Ademas mantiene la familia con ciclismo y patinaje, que tambien son el objeto y no el atleta",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "zapatilla de perfil mirando a la izquierda como path ABIERTO (la suela le hace de base, sin linea duplicada) + suela + 5 clavos. Clavos separados 2.4 entre si, muy por encima del minimo, y agrupados en la parte delantera de la suela (x6-15.6) porque en las zapatillas reales los clavos van solo en el antepie, no en el talon" },
+        { "fecha": "2026-07-14", "accion": "rechazado", "nota": "el usuario pidio omitirlo para retomar despues" }
+      ]
+    },
+    {
+      "id": "natacion",
+      "categoria": "deportes",
+      "estado": "aprobado",
+      "intentos": 2,
+      "notas": "natacion = NADADOR en estilo libre/crol, a peticion del usuario (se descarto la version de gafas de competicion). Pose anclada a la tecnica real: en el recobro lo primero que sale del agua es el CODO, hacia arriba y adelante, con la mano rezagada. Referencia de convencion: Tabler swimming (cabeza como punto + brazo en zigzag + olas). Las olas reusan el lenguaje del propio set (mismo patron Q...T... de rio y mar-caribe)",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "vista frontal: 2 lentes eliptica rx2.8 ry2.3 + puente nasal + 2 correas. Geometria calculada: centros de lente separados 7.6 para dejar 2.0 entre bordes interiores (sobre el minimo de 1.5); los extremos del puente se calcularon resolviendo la elipse en y13, dando x10.72 y x13.28, para que nazcan exactos sobre el borde de cada lente. Se descarto dibujar la junta de silicona como elipse interior: rx1.8 dejaba solo 1.0 contra el borde exterior, bajo el minimo" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "el usuario prefiere una persona nadando en vez de las gafas. Rehecho: cabeza (circulo r1.2) + brazo y cuerpo en una polilinea de 4 puntos (mano rezagada 6.5/11.8 -> codo alto 10.5/9 -> hombro 14/12 -> caderas 9.5/14.5), que es la pose del recobro del crol segun las referencias + olas con el patron Q...T... de rio/mar-caribe. Distancias verificadas: cabeza a segmento del hombro 2.02 y a su extremo 2.04, ambas sobre el minimo de 1.5; caderas a la cresta de la ola 1.85 (la cresta esta en y16.35, calculada como el punto medio de la cuadratica, no en el control y15.7)" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "camara",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos, no estaba en la lista de la seccion 4.6 de CLAUDE.md (agregado a peticion del usuario al retomar la categoria). Sigue la convencion que comparten Lucide y Tabler: cuerpo con joroba (prisma/visor) + lente circular centrado. Se agrega un flash que ninguna de las dos tiene: con stroke 1.5 (ellas usan 2) sobra espacio, y ayuda a que no se lea como una caja con un circulo",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "cuerpo y joroba en un solo path cerrado (sin lineas duplicadas en la union) + lente r3.2 + flash. Verificado: lente a 3.0 del borde superior y 3.1 del inferior; flash bajado a y10.2 porque en y9.5 quedaba a 1.4 del borde superior, bajo el minimo de 1.5; flash a 3.58 del lente" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "puntero",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 2,
+      "notas": "icono NUEVO de genericos, no estaba en la seccion 4.6 (agregado a peticion del usuario). Puntero = flecha de cursor, que es lo que significa en toda libreria de iconos de UI (Lucide mouse-pointer, Tabler pointer). Se elige la version CLASICA CON COLA (como Tabler) sobre la version dardo sin cola (como Lucide) por ser mas universalmente reconocible. Alternativas descartadas del nombre: puntero laser, mano señalando. GEOMETRIA CLAVE: los 2 bordes largos deben medir casi lo mismo (16.1 vs 15.91) y la punta abrir ~45 grados; esa igualdad es lo que hace que la flecha se vea recta",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "flecha de cursor en un solo path cerrado de 7 vertices: punta, borde izquierdo vertical, muesca, cola (4-5-6) y esquina inferior derecha, cerrando con la diagonal a la punta. La cola se construyo como paralelogramo real: los 2 bordes comparten el vector director (0.371, 0.929) normalizado. Su ancho se subio de 2.69 a 3.16 (moviendo el borde derecho de x12.1 a x12.6) porque a 2.69 el hueco interior quedaba en 1.19, bajo el minimo de 1.5 que exigen los 2 trazos; ahora da 1.66. Verificado que la diagonal de cierre no cruza la muesca: en x9.6 la diagonal va en y6.22 y la muesca en y13.4" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "el usuario dice que se ve torcido y pide dimensiones correctas. Se comparo contra las proporciones del cursor clasico y salieron 3 defectos reales: (1) los bordes de la cola NO eran paralelos, pendientes 0.405 vs 0.377, por eso la cola se abria y se veia torcida; (2) el icono estaba descentrado, su centro caia en (11, 11.2) en vez de (12,12); (3) los 2 bordes largos median 15 vs 14.7, y en el cursor clasico son iguales. Reconstruido con proporciones clasicas escaladas: tip (6.3,3), borde izq 16.1, diagonal 15.91, punta 45.8 grados, centro exacto en (12,12), alto de 15 a 18. La cola ahora usa el MISMO vector (2.4,6) en sus 2 bordes, asi que son paralelos por construccion, y su ancho perpendicular da 3.21 (hueco interior 1.71, sobre el minimo de 1.5)" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "mundo",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos, no estaba en la seccion 4.6 (agregado a peticion del usuario). Globo terraqueo. Se sigue la estructura de Lucide globe (circulo + ecuador + meridiano tipo lente que se abre a un lado y vuelve por el otro, convergiendo en los polos) sobre la de Tabler world (2 latitudes + 2 meridianos separados 1.0), porque los 2 meridianos de Tabler se fundirian cerca de los polos con nuestro trazo",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "circulo r9 + ecuador + meridiano lente. El radio del arco del meridiano se CALCULO, no se estimo: se replico la proporcion de Lucide (su pandeo es 0.4 del radio del globo), lo que da un pandeo objetivo de 3.6 sobre nuestro r9; despejando r = (h2 + s2) / 2s con h=9 y s=3.6 da r=13. Con r13 el meridiano se abre a x8.38 y x15.62 en el ecuador. El ecuador va de x3 a x21, que es justo donde el circulo corta en y12, asi que sus extremos tocan el borde exacto" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "microfono",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos, no estaba en la seccion 4.6 (agregado a peticion del usuario). Estructura que comparten Lucide mic y Tabler microphone: capsula + arco de soporte que pasa por debajo + vastago. Se incluye la BASE, que Tabler tiene y Lucide no, por ser la version mas completa y porque cabe",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "capsula (rect rx3, x9-15, y2.5-14.5) + arco de soporte + vastago + base. El arco resulto ser un SEMICIRCULO exacto: su cuerda va de x5.5 a x18.5 (13) y con r6.5 el diametro coincide, asi que su centro cae justo en (12,12) y su punto mas bajo en (12,18.5). Holguras verificadas: el arco pasa 4 por debajo de la capsula; en y14.5 el arco esta en x6 y x18 mientras la capsula llega a x9 y x15; y entre el fondo de la capsula (arco r3 centrado en 12,11.5) y el arco de soporte quedan 3.0" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "terminal",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos, no estaba en la seccion 4.6 (agregado a peticion del usuario). Lucide square-terminal y Tabler terminal-2 usan exactamente la misma convencion: ventana + chevron > (el prompt) + linea horizontal debajo a la derecha (el cursor). Se sigue tal cual por estar muy asentada",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "ventana (rect rx2, x3-21, y3.5-20.5) + chevron + linea de cursor. El contenido se centro en la ventana a proposito: chevron y linea juntos ocupan x7.5-16.5 (centro 12) y y9-15 (centro 12), que coincide con el centro de la ventana. Margenes verificados: 4.5 a izquierda y derecha, 5.5 arriba y abajo; y la punta del chevron queda a 3.6 de la linea del cursor" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "flecha-derecha",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos, no estaba en la seccion 4.6 (agregado a peticion del usuario). Lucide arrow-right y Tabler arrow-right tienen geometria identica (eje + cabeza en chevron a 45 grados); se sigue el reparto de Lucide (2 paths: eje + chevron de una pieza) sobre el de Tabler (3 paths: eje + 2 diagonales sueltas) porque el chevron de una pieza da una punta limpia en vez de 2 trazos encontrandose. IMPORTANTE: se centro en (12,12) a proposito para que flecha-izquierda, flecha-arriba y flecha-abajo salgan por rotacion exacta de 90/180/270 grados sobre el centro del grid, sin redibujar nada",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "eje de x4 a x20 en y12 + chevron con punta en (20,12) y brazos que retroceden a (13,5) y (13,19). Brazos a 45 grados exactos: su delta es (-7,-7) en ambos. Simetria verificada: el icono va de x4 a x20 (centro 12) y de y5 a y19 (centro 12), asi que su centro coincide con el del grid" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "flecha-abajo",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos, no estaba en la seccion 4.6 (agregado a peticion del usuario). Es flecha-derecha rotada 90 grados en sentido horario sobre el centro del grid, que es justo para lo que se centro aquella en (12,12). La rotacion se HORNEO en las coordenadas en vez de usar transform, para no repetir el caso de grano-de-cafe/empanada, que son los unicos 2 iconos del set con transform",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "rotacion de 90 grados horaria de flecha-derecha sobre (12,12), aplicando (x,y) -> (12-(y-12), 12+(x-12)): el eje x4-x20 en y12 pasa a y4-y20 en x12, y el chevron con punta (20,12) y brazos (13,5)/(13,19) pasa a punta (12,20) y brazos (19,13)/(5,13). Al ser una rotacion rigida sobre el centro, hereda intactas las propiedades verificadas del original: brazos a 45 grados exactos y centro en (12,12)" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "flecha-izquierda",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos, no estaba en la seccion 4.6 (agregado a peticion del usuario). Es flecha-derecha rotada 180 grados sobre el centro del grid; con la de abajo ya son 3 de la familia y solo faltaria flecha-arriba (rotacion de 270). Rotacion horneada en coordenadas, no con transform, igual que en flecha-abajo",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "rotacion de 180 grados de flecha-derecha sobre (12,12), que es el caso mas simple: (x,y) -> (24-x, 24-y). El eje x4-x20 en y12 se mapea sobre si mismo (queda identico, porque es simetrico respecto al centro) y el chevron con punta (20,12) y brazos (13,5)/(13,19) pasa a punta (4,12) y brazos (11,19)/(11,5). Hereda de la original los brazos a 45 grados exactos y el centro en (12,12)" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "flecha-arriba",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos, no estaba en la seccion 4.6 (agregado a peticion del usuario). Es flecha-derecha rotada 270 grados sobre el centro del grid, y CIERRA la familia de 4 flechas (derecha, abajo, izquierda, arriba). Las 4 salen de la misma geometria por rotacion, asi que son consistentes por construccion. Rotacion horneada en coordenadas, no con transform",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "rotacion de 270 grados horaria (equivale a 90 antihoraria) de flecha-derecha sobre (12,12), aplicando (x,y) -> (12+(y-12), 12-(x-12)): el eje x4-x20 en y12 pasa a y20-y4 en x12, y el chevron con punta (20,12) y brazos (13,5)/(13,19) pasa a punta (12,4) y brazos (5,11)/(19,11). Hereda de la original los brazos a 45 grados exactos y el centro en (12,12). Verificado que es exactamente flecha-abajo espejada en vertical, como debe ser" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "el usuario pregunto por que la flecha se veia cortada arriba. Se verificaron los extremos de las 4 flechas contando el trazo: derecha y izquierda dan x3.25-20.75 / y4.25-19.75, y arriba y abajo dan x4.25-19.75 / y3.25-20.75. Ninguna se sale del grid de 24 y las 4 son identicas con los ejes intercambiados, como corresponde a rotaciones. El icono no estaba cortado: era la vista previa la que la mostraba muy pegada al borde del lienzo" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "camara-video",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos, no estaba en la seccion 4.6 (agregado a peticion del usuario). Hace pareja con camara. Lucide video y Tabler video usan la misma convencion: cuerpo rectangular + cuña trapezoidal a la derecha (forma clasica de videocamara), y ambas dibujan la cuña como path ABIERTO para que el borde del cuerpo le haga de lado izquierdo, que es el mismo truco de linea compartida ya usado en queso, huevo, chicharron y boxeo",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "cuerpo (rect rx2, x2.5-15.5, y6.5-17.5) + cuña abierta (x15.5-21.5, y8-16). La cuña replica la proporcion de Lucide: estrecha donde toca el cuerpo (3 de alto) y ancha en el extremo (8 de alto). Verificado que sus 2 puntos de union (15.5,10.5) y (15.5,13.5) caen en el tramo RECTO del borde derecho del cuerpo (y8.5-15.5) y no sobre los arcos de las esquinas. Centrado: contando trazo va de x1.75 a x22.25 y de y5.75 a y18.25, ambos con centro en 12" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "telefono",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos, no estaba en la seccion 4.6 (agregado a peticion del usuario). Lucide phone y Tabler phone usan la misma convencion: el auricular clasico en diagonal, dibujado como UN solo path cerrado y continuo. Se sigue la estructura de Tabler por ser la mas limpia (menos decimales). Un solo path evita cualquier union con lineas duplicadas",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "auricular como path cerrado: borde del audifono, diagonal exterior, muesca de agarre hacia adentro, arco del mango, salida al microfono, y arco grande de vuelta que cierra la silueta. Grid verificado contando trazo: x2.75-20.75 (centro 11.75) y y3.25-21.25 (centro 12.25), practicamente centrado en el grid" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "wifi",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos, no estaba en la seccion 4.6 (agregado a peticion del usuario). Lucide wifi y Tabler wifi usan la misma estructura: 3 arcos concentricos + un punto. Se sigue la de Tabler porque tiene una propiedad limpia: los arcos son circunferencias concentricas centradas JUSTO en el punto, con radios 4/8/12 y 90 grados de apertura cada una (mas/menos 45 de la vertical), en vez de arcos estimados a ojo",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "centro en (12,18) con radios 4/8/12. Extremos calculados como cx +/- r*sin(45): r4 en (9.17,15.17)-(14.83,15.17), r8 en (6.34,12.34)-(17.66,12.34) y r12 en (3.51,9.51)-(20.49,9.51). El punto se dibuja con el truco estandar de ambas librerias: un path de longitud casi cero (h.01) que el linecap redondo convierte en circulo. Resultados: contando trazo el icono va de x2.76 a x21.24 y de y5.25 a y18.75, o sea centrado EXACTO en (12,12) en ambos ejes; holguras de 2.5 entre arcos y 2.5 del punto al primer arco" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "hashtag",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos, no estaba en la seccion 4.6 (agregado a peticion del usuario). Lucide hash y Tabler hash usan 4 lineas (2 horizontales + 2 verticales inclinadas); se sigue la inclinacion de Tabler (4 sobre 16) sobre la de Lucide (2 sobre 18) por parecerse mas al # tipografico real",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "2 horizontales en y9 y y15 (x4.5-19.5) + 2 verticales inclinadas (11,4)-(7,20) y (17,4)-(13,20). Se VERIFICO la propiedad que define al simbolo: tiene simetria de rotacion de 180 grados sobre (12,12), o sea que cada horizontal rotada da la otra y cada vertical rotada da la otra. Contando trazo va de x3.75 a x20.25 y de y3.25 a y20.75, centrado exacto en (12,12). Huecos: 4.50 entre horizontales y 4.32 perpendicular entre verticales (la separacion perpendicular es 5.82, no 6, porque las verticales van inclinadas)" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "inicio",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos, no estaba en la seccion 4.6 (agregado a peticion del usuario). Casita para indicar inicio/home. Se registra como 'inicio' y no 'home' siguiendo el naming en español del resto de genericos (guardar, eliminar, buscar). Se sigue el enfoque de Lucide house (casa completa como UNA silueta cerrada + puerta como path abierto) sobre el de Tabler home (3 paths: techo con aleros, paredes, puerta), porque con una silueta no hay union donde el techo se encuentre con las paredes",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "casa como path cerrado (techo en pico + paredes + esquinas inferiores redondeadas) + puerta como path ABIERTO cuyos extremos caen en y21, o sea que la linea del piso de la casa le hace de base. Pendientes del techo simetricas: (9,-7.5) y (9,7.5). Verificado que la puerta no choca con el techo: en x9.2 la pendiente del techo va en y5.33 y la puerta arranca en y13. Contando trazo y el redondeo del pico (100.4 grados, extiende 0.75 sobre el vertice) va de x2.25 a x21.75 y de y2.25 a y21.75, centrado exacto en (12,12)" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "emoji",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos, no estaba en la seccion 4.6 (agregado a peticion del usuario). Cara sonriente. Lucide smile y Tabler mood-smile usan la misma estructura: circulo + 2 ojos punteados + boca en arco. Los ojos usan el mismo truco que wifi (path de longitud casi cero + linecap redondo = punto). Se registra como 'emoji' segun lo pidio el usuario",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "cara circulo r9 en (12,12) + 2 ojos en (8.5,10) y (15.5,10) + boca en arco de (8.5,14.2) a (15.5,14.2) que baja al centro. Todo simetrico respecto a x=12: ojos espejados y boca con centro en x12. Ojos verificados dentro de la cara (a 4.03 del centro, 3.47 de holgura al borde interior)" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "libro",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos, no estaba en la seccion 4.6 (agregado a peticion del usuario). Se elige LIBRO ABIERTO (Lucide book-open) sobre libro cerrado (Lucide book) porque el abierto se lee mas inequivocamente como libro (2 paginas + lomo), mientras que el cerrado con lomo puede confundirse con un cuaderno o un archivo",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "libro abierto simetrico respecto a x=12: lomo central (linea x12, y6.5-18.7) + 2 paginas como paths abiertos que se abren a x3.5 (izq) y x20.5 (der), ambas a 8.5 del centro. Cada pagina: curva superior del lomo al borde exterior, baja recta, y curva inferior de vuelta al pie del lomo. Las paginas y el lomo solo comparten los 2 extremos (12,6.5) y (12,18.7), no lineas. Contando trazo: x2.75-21.25 (centro 12), y4.25-19.45" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "imagen",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos, no estaba en la seccion 4.6 (agregado a peticion del usuario). Para seleccionar/representar una imagen. Convencion universal que comparten Lucide image y Tabler photo: marco + sol/punto en una esquina + montaña (linea diagonal que sugiere el paisaje). Se sigue Lucide por ser mas limpia. NOTA: se distingue de camara (que es el dispositivo) porque este es el CUADRO/foto resultante, que es lo que espera un selector de imagen",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "marco (rect rx2, x3-21, y3-21) + sol (punto en 8.5,8.5, esquina superior izq) + montaña como path ABIERTO que sube de la esquina inf-izq del interior a un pico y baja al borde derecho; el borde inferior del marco le hace de base. Sol verificado dentro del marco a 3.94 de holgura; pico de la montaña a 2.06 del borde superior" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "enter",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos, no estaba en la seccion 4.6 (agregado a peticion del usuario). Simbolo de la tecla enter/retorno. Se sigue Lucide corner-down-left, que es la forma canonica: linea que baja desde la derecha, gira a la izquierda con arco y termina en flecha apuntando a la izquierda. Se descarto Tabler arrow-back (arco tipo U de 8 de radio) por ser menos parecido al glifo real de la tecla",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "vastago: (19,5) baja a (19,11), arco r4 con centro exacto en (15,11) hasta (15,15), horizontal a (6,15) + flecha con punta en (6,15) y brazos a (10,11)/(10,19), a 45 grados exactos y simetricos respecto a y15. Verificado arco (ambas distancias al centro dan 4). Contando trazo: x5.25-19.75 (centro 12.5), y4.25-19.75 (centro 12)" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "puzzle",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 3,
+      "notas": "icono NUEVO de genericos, no estaba en la seccion 4.6 (agregado a peticion del usuario, que pidio 'un puzzle o una pieza de lego'). Una sola pieza de rompecabezas con 2 knobs BULBOSOS (mas de medio circulo, el bulto sale mas que el ancho del cuello, como un knob real de puzzle) que sobresalen arriba y a la derecha; parte inferior e izquierda planas",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "cuadrado 4-20 en un solo path cerrado. Tab arriba: semicirculo r2 de (10,4) a (14,4) que sube a (12,2), sweep=1. Notch derecha: semicirculo r2 de (20,10) a (20,14) que entra a (18,12), sweep=0. Ambos son semicirculos exactos (cuerda 4 = 2r). Esquinas del cuadrado sin arco, redondeadas por el linejoin. Extremos con trazo: x3.25-20.75 (centro 12), y1.25-20.75. La asimetria vertical es propia de la pieza (tab arriba, no abajo)" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "el usuario pidio que ambas marcas SOBRESALGAN mas, tanto la de arriba como la de la derecha. La de la derecha era un notch (entraba), que no sobresale; se convirtio en un tab que sobresale hacia afuera. Ambos tabs crecidos de r2 a r2.7. Nueva geometria: cuerpo x4-19 / y5-20, tab arriba (8.8,5)-(14.2,5) bulge up a y2.3 (sweep1), tab derecha (19,9.8)-(19,15.2) bulge right a x21.7 (sweep1). Ambos semicirculos exactos (cuerda 5.4=2r). Direccion de arcos verificada por la regla de sweep de SVG. Extremos con trazo x3.25-22.45 (centro 12.85), y1.55-20.75 (centro 11.15): la pieza queda un poco arriba-derecha por los 2 tabs salientes, propio de la forma" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "el usuario pidio que las ondulaciones de arriba y derecha queden AUN mas pronunciadas. Se pasa de semicirculos a knobs BULBOSOS (arco mayor, large-arc=1): cuerpo x3.25-16.25 / y7.75-20.75, cada knob r2.5 sobre un cuello de ancho 3. El knob sobresale 4.5 (vs 2.7 antes) y su bulto es ancho 5 > cuello 3, con overhang de ~1 por lado = forma de knob de puzzle real. Los flags de arco (large-arc=1, sweep=1, centros (9.75,5.75) arriba y (18.25,14.25) derecha) se calcularon con el algoritmo endpoint-to-center de SVG, no a ojo. Resultado CENTRADO EXACTO en (12,12): x3.25-20.75, y3.25-20.75" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "verificado",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos, no estaba en la seccion 4.6 (agregado a peticion del usuario). Escudo con check dentro = verificado. Sigue la convencion de Lucide/Tabler shield-check. El check REUSA el gesto del icono check ya aprobado del set (brazo izq corto, der largo, ratio ~1:2.5) para consistencia, reescalado y centrado dentro del escudo",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "escudo como path cerrado simetrico respecto a x=12 (top center 12,3.2 + 2 hombros + esquinas superiores redondeadas + lados que convergen al punto inferior 12,20.8), centrado exacto en (12,12): x4.6-19.4, y3.2-20.8. Check dentro M8.5 12 L10.5 14 L15.5 9, misma proporcion que el check del set, centrado ~(12,11.5). Verificado que el check no toca el contorno del escudo: la punta (15.5,9) esta a ~3.9 del borde derecho" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "menu-hamburguesa",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos, no estaba en la seccion 4.6 (agregado a peticion del usuario). Menu hamburguesa = 3 lineas horizontales (Lucide menu / Tabler menu-2). NO duplica menu-opciones, que ya existe en el set y es 3 PUNTOS verticales (menu kebab). Este es el hamburguesa clasico de las 3 barras",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "3 lineas horizontales de x4 a x20 en y6, y12, y18. Simetrico y centrado exacto en (12,12): las 3 lineas equidistantes (6 de separacion) y la del medio en y12; ancho de x4-20 centrado en x12" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "correo",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos, no estaba en la seccion 4.6 (agregado a peticion del usuario). Sobre = email/correo. Convencion universal de Lucide mail y Tabler mail: rectangulo + solapa en V. Se registra como 'correo' (naming español del set)",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "sobre: rect x3-21 / y5-19 rx2 + solapa en V como path abierto M3 7 L12 13 L21 7. Los 2 extremos de la solapa (3,7) y (21,7) caen exactos en donde terminan las esquinas redondeadas (rx2 hace que la arista recta empiece en y7), asi la solapa nace de las esquinas del sobre. Centrado exacto en (12,12). Tip de la solapa en y13 = 57% de la altura, proporcion tipica de sobre" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "comentario",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 2,
+      "notas": "icono NUEVO de genericos, no estaba en la seccion 4.6 (agregado a peticion del usuario). Burbuja de dialogo para preguntar/comentar, con la cola en la esquina inferior DERECHA. Se elige el estilo rectangulo-redondeado-con-cola (Lucide message-square) sobre el circulo-con-cola, por ser el mas reconocible como 'comentario'. Se deja PLANA (sin puntos): puntos dentro sugieren chat/escribiendo; una burbuja plana es el comentario generico. Se registra como 'comentario' (naming español)",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "burbuja como un solo path cerrado: cuerpo rect redondeado (x3-21, y4-16, rx2.5) con COLA en la esquina inferior izq (el borde inferior baja hasta x8, diagonal a la punta (3,20), y sube por el borde izquierdo). Direccion de los 3 arcos de esquina verificada (sweep=1, convexos). Centrado exacto en (12,12): x3-21, y4-20" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "el usuario pidio la cola/triangulo a la DERECHA. Se espejo el path horizontalmente (x->24-x y sweep 1->0), quedando la cola en la esquina inferior derecha con la punta en (21,20). Sigue centrado exacto en (12,12): x3-21, y4-20" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "me-gusta",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos, no estaba en la seccion 4.6 (agregado a peticion del usuario: 'manita arriba'). Se registra como 'me-gusta' por su significado de UI (boton de like). Se sigue la estructura de Lucide thumbs-up (2 paths: silueta de la mano con pulgar arriba + linea vertical que separa el puño de la palma) sobre Tabler thumb-up (1 path muy complejo), por ser mas limpia. Gesto canonico, adaptado de Lucide con stroke 1.5",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "silueta de la mano (pulgar arriba a la izq, palma abajo, base de muñeca) como path cerrado + linea vertical x7 y10-22 que marca la separacion del pulgar/puño. Adaptado de la geometria de Lucide thumbs-up (diseñada para 24x24). Ocupa casi todo el grid: x2-21.75, y2-22" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "no-me-gusta",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos, no estaba en la seccion 4.6 (agregado a peticion del usuario: 'manita abajo'). Es me-gusta rotado 180 grados sobre el centro (12,12), que es exactamente como Lucide/Tabler derivan thumbs-down de thumbs-up. Asi los dos son consistentes por construccion. Rotacion horneada en coordenadas, no con transform",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "rotacion 180 de me-gusta sobre (12,12): (x,y)->(24-x,24-y), calculada punto por punto. Los flags de los arcos NO cambian porque una rotacion de 180 preserva la orientacion (no es un espejo). El pulgar ahora apunta abajo. Hereda de me-gusta todas sus proporciones; solo cambia la orientacion" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "circle-check",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos, no estaba en la seccion 4.6 (agregado a peticion del usuario). Parte de un trio de checks: check (chulo suelto, ya existia), circle-check (este) y square-check. Es el check DENTRO DE UN CIRCULO (Lucide/Tabler circle-check), indicador de listo/exito. El check reusa el mismo gesto que verificado (brazo izq corto, der largo). Nombre en ingles (circle-check) por peticion explicita del usuario. Antes se habia registrado como check-circulo",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "circulo r9 en (12,12) + check M8 12.5 L10.8 15.3 L16 9.5 dentro, misma proporcion que el check del set (brazo izq 2.8/2.8, der 5.2/5.8, ratio ~1:2). Check centrado ~(12,12.4). Verificado que el check no toca el circulo: el vertice mas lejano (16,9.5) esta a 4.72 del centro, o sea 3.53 del borde interior del circulo contando trazos" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "renombrado de check-circulo a circle-check por peticion del usuario" }
+      ]
+    },
+    {
+      "id": "square-check",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos, no estaba en la seccion 4.6 (agregado a peticion del usuario). Tercer miembro del trio de checks (check suelto, circle-check, square-check). Es el check dentro de un CUADRADO redondeado (Lucide/Tabler square-check), usado como checkbox marcado. Reusa EXACTAMENTE el mismo check que circle-check para que el trio sea consistente; solo cambia el contenedor de circulo a cuadrado. Nombre en ingles por coherencia con circle-check",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "cuadrado redondeado (rect x3-21, y3-21, rx3) + el mismo check M8 12.5 L10.8 15.3 L16 9.5 de circle-check. Verificado que el check queda holgado dentro del cuadrado: su extremo mas a la derecha/arriba (16,9.5) esta a 5 del borde derecho y 6.5 del borde superior" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "marcador",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos, no estaba en la seccion 4.6 (agregado a peticion del usuario). Bookmark = marcador, para guardar un post. Se registra como 'marcador' y no 'guardar' porque 'guardar' ya existe en el set (es el disquete). Convencion Lucide/Tabler bookmark: cinta con esquinas superiores redondeadas y muesca en V abajo",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "marcador simetrico respecto a x=12 como path cerrado: lados x6 y x18, esquinas superiores redondeadas r2, muesca en V abajo con punta hacia arriba en (12,16.5) y esquinas inferiores en (6,20) y (18,20). Centrado exacto en (12,12): x6-18, y4-20. Proporcion 12x16 (3:4)" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "musica",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 2,
+      "notas": "icono NUEVO de genericos, no estaba en la seccion 4.6 (agregado a peticion del usuario). Nota musical = musica, version estilizada con movimiento: 2 corcheas a distinta altura + barra curva. Registrado como 'musica' (naming español)",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "2 cabezas de nota (circulos r2.5 en (7.5,16.5) y (16.5,16.5)) + 2 plicas verticales que salen del borde derecho de cada cabeza (x10 y x19, de y16.5 a y4) unidas por una barra horizontal arriba (y4). Las plicas nacen tangentes al borde derecho de cada cabeza (3 o'clock), como en una nota real. Centrado en x (x5-19, centro 12), y4-19" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "el usuario pidio estilizarla y darle movimiento. Cambios: (1) las 2 notas van a DISTINTA altura (cabeza izq en y18, der en y14.5) para flujo diagonal; (2) las cabezas pasan de circulos a ELIPSES rx2.5 ry2 (mas parecidas a cabezas de nota reales, achatadas); (3) plica+barra+plica en UN solo trazo continuo con la barra CURVA (cubica que sube de (9.5,6.5) a (18,3.5)) en vez de barra recta horizontal. Las plicas nacen tangentes al borde derecho de cada elipse. Ocupa x4.5-18, y3.5-20" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "maximizar",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos, no estaba en la seccion 4.6 (agregado a peticion del usuario). Boton de maximizar. Se elige la version de 4 CORCHETES en las esquinas apuntando hacia afuera (Lucide maximize), que es la convencion de maximizar/pantalla completa, sobre el cuadrado plano (que es el boton de maximizar de ventana pero se confunde con un rect vacio). Tiene simetria de rotacion de 90 grados: los 4 corchetes son el mismo rotado. Registrado como 'maximizar'",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "4 corchetes en L (uno por esquina), cada uno con 2 brazos de largo 5 que se juntan en una esquina redondeada r2 cerca de la esquina del grid. Adaptado de Lucide maximize. Simetria de rotacion de 90 exacta (cada corchete es el anterior rotado 90 sobre (12,12)). Centrado: x3-21, y3-21, centro (12,12)" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "maximizar-2-flechas",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos, no estaba en la seccion 4.6 (agregado a peticion del usuario). Variante de maximizar con 2 flechas diagonales apuntando a esquinas opuestas (Lucide maximize-2). Familia de maximizar: maximizar (corchetes), maximizar-2-flechas (2 flechas), maximizar-4-flechas (4 flechas). Simetria de rotacion de 180 grados: la flecha SO es la NE rotada. Antes se registro como maximizar-flechas",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "2 flechas diagonales: NE con punta en (20,4) + eje al centro (13,11), y SO con punta en (4,20) + eje (11,13), que es la NE rotada 180 sobre (12,12). Cada flecha: chevron de punta (brazos a 45 grados) + eje diagonal. Los 2 ejes dejan un gap central de 2.83 entre sus extremos internos, asi no se tocan ni forman una linea continua. Cada cabeza calculada con brazos a 45 grados exactos" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "renombrado de maximizar-flechas a maximizar-2-flechas por peticion del usuario, que pidio distinguirlo de la version de 4 flechas" }
+      ]
+    },
+    {
+      "id": "maximizar-4-flechas",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos, no estaba en la seccion 4.6 (agregado a peticion del usuario). Tercera version de maximizar: 4 flechas apuntando a las 4 esquinas (mover/expandir en todas direcciones). Familia: maximizar (corchetes), maximizar-2-flechas, maximizar-4-flechas. Simetria de rotacion de 90 grados: las 4 flechas son la misma rotada",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "4 flechas (NE/SE/SO/NO), cada una = chevron de punta en la esquina (brazos a 45 grados exactos) + eje corto hacia el centro. Se derivan por rotacion de 90 de la flecha NE (punta 20,4; eje a 13.8,10.2). Los 4 extremos internos de los ejes forman un cuadrado a 2.55 del centro (3.6 entre ejes adyacentes), asi ninguno se toca. Reusa la misma cabeza que maximizar-2-flechas pero con ejes mas cortos por ser 4 convergiendo. Centrado exacto en (12,12)" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "cerebro",
+      "categoria": "genericos",
+      "estado": "rechazado",
+      "intentos": 2,
+      "notas": "icono NUEVO de genericos, no estaba en la seccion 4.6 (agregado a peticion del usuario). Cerebro = pensar/razonar (junto con bombillo). VISTA LATERAL/de perfil (no desde arriba): contorno organico + pliegues internos (surcos) + tronco encefalico abajo. Referencias: BioRender brain lateral view + Wikimedia brain-outline-lateral. Registrado como 'cerebro'",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "PRIMERA version (rechazada): Tabler brain, vista desde arriba/frente con 2 hemisferios simetricos de lobulos. El usuario la rechazo, quiere vista de perfil como el emoji." },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "rehecho como vista LATERAL con referencias (BioRender/Wikimedia): contorno organico cerrado (blob redondeado con tronco encefalico como pequeño saliente abajo) + 2 pliegues internos curvos (surcos/circunvoluciones). Ya no es simetrico izq/der porque un cerebro de perfil no lo es" },
+        { "fecha": "2026-07-14", "accion": "rechazado", "nota": "el usuario pidio omitirlo para retomar despues; quedan 2 enfoques descartados (Tabler vista superior de lobulos, y vista lateral con contorno organico + surcos)" }
+      ]
+    },
+    {
+      "id": "bombillo-encendido",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos, no estaba en la seccion 4.6 (agregado a peticion del usuario). Bombillo encendido = idea/pensar/razonar. Se sigue Tabler bulb: bombilla (vidrio circular + base/casquillo con linea de filamento) MAS los rayos de luz alrededor, que son los que le dan el sentido de 'idea encendida'. Hace pareja con bombillo-apagado (el mismo bombillo sin rayos). Antes se registro como 'bombillo'",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "3 paths adaptados de Tabler bulb (stroke 1.5): (1) vidrio circular r5 + casquillo (cup pequeño de y16 a y19) en un path; (2) linea de filamento/rosca a y17; (3) 5 rayos de luz (izq, arriba, der, 2 diagonales superiores) que dan el sentido de idea encendida. Centrado x3-21, y3-19" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "renombrado de bombillo a bombillo-encendido por peticion del usuario, para hacer pareja con bombillo-apagado" }
+      ]
+    },
+    {
+      "id": "bombillo-apagado",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos, no estaba en la seccion 4.6 (agregado a peticion del usuario). Bombillo apagado = el mismo bombillo-encendido pero SIN los rayos de luz. Es EXACTAMENTE la misma bombilla (vidrio + casquillo + filamento), solo se quitan los 5 rayos, para que el par encendido/apagado sea consistente por construccion",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "identico a bombillo-encendido pero quitando el path de los 5 rayos. Quedan 2 paths: vidrio+casquillo y linea de filamento. La bombilla no cambia de posicion ni tamaño, asi el toggle encendido/apagado solo agrega/quita los rayos" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "mano",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos, no estaba en la seccion 4.6 (agregado a peticion del usuario, que eligio mano ABIERTA/palma entre las opciones). Se sigue Tabler hand-stop: palma de frente con 4 dedos + pulgar. Representa saludar/detener/levantar la mano. Distinta de me-gusta/no-me-gusta (pulgares). Registrado como 'mano'",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "4 paths adaptados de Tabler hand-stop (stroke 1.5): 3 dedos como stems con tope redondeado (indice, medio, anular) + 1 path grande que hace el meñique, la palma, la muñeca y el pulgar (con el pliegue del pulgar como el arco de 1.47 abajo-izq). Palma abierta de frente. Ocupa aprox x4-20, y3-22" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "mano-cerrada",
+      "categoria": "genericos",
+      "estado": "rechazado",
+      "intentos": 2,
+      "notas": "icono NUEVO de genericos, no estaba en la seccion 4.6 (agregado a peticion del usuario). Mano cerrada = puño de frente. Contraparte de mano (palma abierta). Registrado como 'mano-cerrada'",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "4 paths adaptados de Lucide hand-fist (stroke 1.5): masa del puño con dedos curvados hacia la palma + pulgar cruzando + los nudillos. Es un puño de frente, la contraparte cerrada de la mano abierta. Ocupa aprox x3-21, y2-22" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "el usuario dice que el hand-fist de Lucide no parecia puño (enredado, con los pulgares en loop hacia arriba). Rehecho con forma clasica y directa de puño de frente: (1) masa del puño como path cerrado con 4 NUDILLOS (semicirculos r1.625) en el borde superior + lados rectos + esquinas inferiores redondeadas r2.5; (2) 3 lineas de separacion de los dedos que bajan de los valles entre nudillos; (3) el pulgar como curva que cruza el frente abajo-izquierda. Centrado x5.5-18.5 (12), y6.4-18" },
+        { "fecha": "2026-07-14", "accion": "rechazado", "nota": "el usuario pidio omitirlo para retomar despues; quedan 2 enfoques descartados (Lucide hand-fist con pulgares en loop, y masa con 4 nudillos + lineas de dedos + pulgar cruzando)" }
+      ]
+    },
+    {
+      "id": "volumen",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos, no estaba en la seccion 4.6 (agregado a peticion del usuario). Volumen activo/con sonido = corneta + ondas (Lucide volume-2). Hace pareja con volumen-silenciado (la misma corneta con una X en vez de ondas). La corneta es IDENTICA en ambos para que el par sea consistente. Registrado como 'volumen'",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "corneta como path cerrado: caja x3-6 y10-14 + cono que se abre a (11,5)/(11,19), simetrica respecto a y12. + 2 ondas de sonido (arcos bulge a la derecha) que nacen ~concentricas del cono: onda chica r4 (x15) y onda grande r9 (x18). Ocupa x3-20, y5-19" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "volumen-silenciado",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos, no estaba en la seccion 4.6 (agregado a peticion del usuario). Volumen apagado/silenciado = la MISMA corneta que volumen pero con una X (mute) en vez de ondas (Lucide volume-x). Corneta identica para que el par activo/silenciado sea consistente. Registrado como 'volumen-silenciado' (la X es propiamente 'silenciado/mute', mas preciso que 'apagado')",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "misma corneta que volumen (M3 10H6L11 5V19L6 14H3Z) + una X de mute: 2 lineas cruzadas M15 9.5 L20 14.5 y M20 9.5 L15 14.5, a la derecha del cono, centradas en (17.5,12). La X ocupa el mismo espacio donde iban las ondas. Ocupa x3-20.5, y5-19" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "corneta",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos, no estaba en la seccion 4.6 (agregado a peticion del usuario). Solo la corneta, sin ondas ni X (Lucide volume). Es EXACTAMENTE la misma corneta base de volumen y volumen-silenciado. Completa la familia de volumen: corneta (sola), volumen (con ondas), volumen-silenciado (con X). Registrado como 'corneta'",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "solo el path de la corneta (M3 10H6L11 5V19L6 14H3Z), identico al de volumen y volumen-silenciado pero sin el 2do/3er path. Caja x3-6 y10-14 + cono a x11, simetrica respecto a y12. Ocupa x3-11, y5-19" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "teclado",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos, no estaba en la seccion 4.6 (agregado a peticion del usuario, que lo quiere para representar accesibilidad -navegacion por teclado / teclado en pantalla-). Se sigue Tabler keyboard: cuerpo rect + teclas (puntos) + barra espaciadora. NOTA: el simbolo universal de accesibilidad es la persona en silla de ruedas; el teclado representa la accesibilidad POR TECLADO especificamente. Registrado como 'teclado'",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "cuerpo rect x2-22 y6-18 rx2 + teclas como puntos (truco H.01 con linecap redondo): fila superior en y10 (x6,10,14,18), fila inferior en y14 con 2 teclas (x6,18) y barra ESPACIADORA como linea de x9 a x15. Todo simetrico y centrado en (12,12)" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "controles",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos, no estaba en la seccion 4.6 (agregado a peticion del usuario). Sliders/controles de ajuste (Lucide sliders). Distinto de configuracion (que es el engranaje). El usuario lo describio: 3 barras, cada una una linea + una perilla (circulo), con la perilla alternando derecha / izquierda / derecha. Registrado como 'controles'",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "3 barras horizontales equidistantes (y6, y12, y18) simetricas respecto a y12: fila1 linea x4-15 + perilla circulo (17,6) r2 a la derecha; fila2 perilla (7,12) r2 a la izquierda + linea x9-20; fila3 igual que fila1. Cada linea termina justo en el borde de su perilla (line end en x15 = borde izq del circulo, o x9 = borde der). Ocupa x4-20 (12), y4-20 (12)" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "mando",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos, no estaba en la seccion 4.6 (agregado a peticion del usuario). Mando/control de consola de videojuegos = gaming. Se sigue Lucide gamepad-2: cuerpo con grips + D-pad (cruceta) a la izquierda + 2 botones a la derecha. Se usa 'mando' (español para control de videojuegos) y no 'control' para no chocar con 'controles' (los sliders). Registrado como 'mando'",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "adaptado de Lucide gamepad-2 (stroke 1.5): cuerpo del mando como path grande (con los 2 grips inferiores) + D-pad como cruz (linea horizontal x6-10 y linea vertical y9-13, cruzando en (8,11)) + 2 botones como puntos (truco H.01) en (15,12) y (18,10). Ocupa aprox x2-22, y5-19" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "quedo pendiente varios turnos porque el usuario paso al siguiente icono sin aprobarlo; aprobado despues" }
+      ]
+    },
+    {
+      "id": "dolar",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 4,
+      "notas": "icono NUEVO de genericos, no estaba en la seccion 4.6 (agregado a peticion del usuario). Signo de dolar clasico ($) = dinero. Primero de un trio: dolar (suelto), dolar-circulo, dolar-cuadrado. S FLUIDA (curva continua de cubicas) + 2 puntas verticales pronunciadas (arriba y abajo). Version suelta a tamaño grande; para circulo/cuadrado se usara una version compacta del mismo $ centrada dentro. Registrado como 'dolar'",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "barra vertical M12 2V22 + S de 2 lobulos (arcos r3.5): M17 5H9.5A3.5 3.5 0 0 0 9.5 12H14.5A3.5 3.5 0 0 1 14.5 19H6. Lobulo superior abre a la izq, inferior a la der, forma clasica del $. Ocupa x6-17, y2-22" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "el usuario pidio DOBLE barra en vez de una sola. Se reemplaza la barra unica x12 por 2 barras en x10.5 y x13.5 (separacion 3 = deja 1.5 de aire entre ellas contando el trazo, el minimo para que se lean como 2 lineas distintas), ambas y2-22, straddling el centro y cruzando la S" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "el usuario cambio de idea: en vez de doble barra cruzando toda la S, quiere el $ clasico = la S con una pequeña linea que asoma arriba y otra abajo. Se quitan las 2 barras y se ponen 2 stubs cortos en x12: arriba de y2.5 a y5 (se conecta al borde superior de la S) y abajo de y19 a y21.5 (se conecta al borde inferior). El bar no se dibuja a traves del medio de la S, solo asoma arriba y abajo" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "el usuario pidio la S mas SUAVE y las puntas mas pronunciadas. La S pasa de arcos+tramos rectos (con esquinas) a una CURVA FLUIDA de 6 cubicas: (16,7)->(12,5)->(8,8.5)->(12,12)->(16,15.5)->(12,19)->(8,17). Verificado que las 4 uniones internas son G1 (tangentes continuas), asi fluye sin quiebres. Puntas alargadas: arriba de y1.5 a y5 (era 2.5-5) y abajo de y19 a y22.5 (era 19-21.5)" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "dolar-circulo",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos, no estaba en la seccion 4.6 (agregado a peticion del usuario). Segundo del trio: el $ aprobado dentro de un CIRCULO. Registrado como 'dolar-circulo'. NOTA: falta dolar-cuadrado (el usuario lo dejo pendiente al saltar a trofeo)",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "circulo r9 en (12,12) + el $ aprobado (S fluida + 2 puntas) reescalado 0.65 sobre el centro. IMPORTANTE: la escala se HORNEO en las coordenadas, NO con transform scale, porque un scale reduciria tambien el stroke (1.5*0.65=0.97) y rompe la consistencia del set. Con coords horneadas el $ queda mas pequeño pero con stroke 1.5. Las puntas del $ quedan a 6.8 del centro, dentro del circulo (interior 8.25) con 1.45 de margen" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "trofeo",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos, no estaba en la seccion 4.6 (agregado a peticion del usuario). Trofeo = premio/ganador. Se sigue Lucide trophy: copa + 2 asas laterales + tallo + base. Registrado como 'trofeo'",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "adaptado de Lucide trophy (stroke 1.5): copa (arco r6) + 2 asas (arcos laterales en x4.5 y x19.5) + tallo de 2 patas que bajan del fondo de la copa + linea de base en y22. Ocupa aprox x4-20, y2-22" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "el usuario pidio reducir la linea de base para que no se salga de los limites de la copa. La base pasa de x4-20 (mas ancha que la copa) a x6.5-17.5: dentro del ancho de la copa (x6-18) y cubriendo los pies del tallo (x7 y x17)" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "codigo",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos, no estaba en la seccion 4.6 (agregado a peticion del usuario). Codigo = un cuadro con < > dentro (code block). Reusa el MISMO cuadro que terminal (rect rx2, x3-21, y3.5-20.5) para consistencia; distinto de terminal (que lleva chevron > + cursor). Registrado como 'codigo'",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "cuadro (rect rx2, x3-21, y3.5-20.5) + 2 chevrones centrados: < con punta en (7,12) y brazos a (11,8)/(11,16), y > con punta en (17,12) y brazos a (13,8)/(13,16). Ambos con brazos a 45 grados exactos, simetricos respecto a x12, con 2 de gap entre sus extremos internos. Contenido centrado en el cuadro" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "el usuario pidio separar mas los caracteres dentro del cuadro. Los 2 chevrones se abren: < con punta en (6,12) y brazos (10,8)/(10,16), > con punta en (18,12) y brazos (14,8)/(14,16). El gap entre extremos internos pasa de 2 a 4 y las puntas de x7/17 a x6/18. Sigue centrado en x12 y dentro del cuadro (interior ~x5-19)" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "bandera",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 2,
+      "notas": "icono NUEVO de genericos, no estaba en la seccion 4.6 (agregado a peticion del usuario). Bandera ondeando en un asta, con MOVIMIENTO. Se sigue el concepto de Lucide flag pero con la tela claramente ondeada. Registrado como 'bandera'",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "asta vertical (M5.5 2V22) + tela como banner cerrado con 2 ondas paralelas: borde superior con 2 ondas (cubicas) de (5.5,3.5) a (19.5,3.5), borde derecho recto (V11) y borde inferior con las mismas 2 ondas de vuelta. Las ondas de arriba y abajo son PARALELAS (altura de tela uniforme 7.5, controles del borde inferior = controles del superior +7.5), asi la tela se ve ondeando de forma coherente. La tela nace del asta en x5.5" },
+        { "fecha": "2026-07-14", "accion": "feedback", "nota": "el usuario pidio la bandera mas arriba, en el limite/tope del asta. Se subio la tela 1.5: su esquina superior izq pasa de (5.5,3.5) a (5.5,2) = coincide con el tope del asta (y2). Tela ahora en y~1.75 (cresta) a ~10.5. Verificado que la cresta superior queda a ~y1 contando el trazo, dentro del grid" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "rayo",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos, no estaba en la seccion 4.6 (agregado a peticion del usuario). Rayo = energia/rapido/electricidad. Se sigue Lucide zap: el rayo clasico como UN solo path cerrado, sin uniones que puedan duplicar lineas. Registrado como 'rayo'",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "adaptado de Lucide zap (stroke 1.5): silueta del rayo en un unico path cerrado, con las 2 diagonales largas (bajada izq-arriba a der-abajo) y el quiebre central. Esquinas suavizadas con arcos r1 en los vertices interiores. Ocupa aprox x3-21, y2-22" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "bateria-horizontal",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos, no estaba en la seccion 4.6 (agregado a peticion del usuario). Bateria horizontal VACIA. Primera de una familia de 4: bateria-horizontal, bateria-horizontal-cargada, bateria-vertical, bateria-vertical-cargada. Se sigue Lucide battery pero con una diferencia: Lucide dibuja el terminal DESPEGADO del cuerpo (linea suelta en x22); aca va PEGADO, como path abierto cuyo lado izquierdo es el borde derecho del cuerpo (mismo truco de linea compartida usado en queso, huevo, camara-video). Antes se registro como 'bateria'",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "cuerpo rect x2-19 y6-18 rx2 + terminal como path ABIERTO M19 10.5H21V13.5H19 (sale del borde derecho del cuerpo, no dibuja lado izquierdo propio). Esquinas del terminal redondeadas por el linejoin. Ocupa x2-21, y6-18" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "renombrada de bateria a bateria-horizontal por peticion del usuario, que pidio una familia de 4 (horizontal/vertical x vacia/cargada)" }
+      ]
+    },
+    {
+      "id": "bateria-horizontal-cargada",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos, no estaba en la seccion 4.6 (agregado a peticion del usuario). Segunda de la familia de 4 baterias. Es EXACTAMENTE bateria-horizontal (mismo cuerpo y mismo terminal) mas 3 barras de carga dentro, para que el par vacia/cargada sea consistente por construccion",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "mismo cuerpo (rect x2-19 y6-18 rx2) y mismo terminal que bateria-horizontal + 3 barras verticales en x6.5, x10.5 y x14.5, de y9 a y15. Barras separadas 4 (deja 2.5 de aire entre trazos) y centradas en el interior del cuerpo (centro x10.5), con 4.5 de margen a cada lado. Alto de barra 6, centrado en y12, con 3 de margen arriba y abajo" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "bateria-vertical",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos, no estaba en la seccion 4.6 (agregado a peticion del usuario). Tercera de la familia de 4 baterias. Es bateria-horizontal rotada 90 grados antihorario sobre el centro del grid, con el terminal arriba. Al derivarse por rotacion rigida, la vertical y la horizontal son consistentes por construccion",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "rotacion 90 CCW de bateria-horizontal sobre (12,12): (x,y)->(y,24-x), calculada punto por punto. Cuerpo pasa de rect x2-19/y6-18 a rect x6-18/y5-22 (rx2 igual) y el terminal de la derecha al ARRIBA: M10.5 5V3H13.5V5, sigue siendo path abierto cuyo lado inferior es el borde superior del cuerpo. Ocupa x6-18 (centro 12), y3-22" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "bateria-vertical-cargada",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos, no estaba en la seccion 4.6 (agregado a peticion del usuario). CIERRA la familia de 4 baterias: horizontal, horizontal-cargada, vertical, vertical-cargada. Es bateria-horizontal-cargada rotada 90 grados antihorario. Las 4 salen de la misma geometria (una base + rotacion + barras), asi que son consistentes por construccion",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "rotacion 90 CCW de bateria-horizontal-cargada sobre (12,12): mismo cuerpo y terminal que bateria-vertical + las 3 barras rotadas, que pasan de verticales a HORIZONTALES apiladas: M9 9.5H15, M9 13.5H15, M9 17.5H15. Barras separadas 4 (2.5 de aire entre trazos), de x9 a x15 con 3 de margen a cada lado del cuerpo, y 4.5 de margen arriba y abajo" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "dolar-cuadrado",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos, no estaba en la seccion 4.6 (agregado a peticion del usuario). CIERRA el trio del dolar: dolar (suelto), dolar-circulo, dolar-cuadrado. Reusa el MISMO $ compacto de dolar-circulo y el MISMO cuadro que square-check (rect rx3, x3-21, y3-21), asi el trio del dolar y la familia de contenedores quedan consistentes. NOTA: no se habia generado antes; el usuario salto a trofeo antes de que se creara",
+      "historial": [
+        { "fecha": "2026-07-14", "accion": "generado", "nota": "cuadro (rect x3-21, y3-21, rx3, identico al de square-check) + el mismo $ compacto de dolar-circulo (S fluida + 2 puntas, escala 0.65 horneada en coordenadas para conservar stroke 1.5). Las puntas del $ llegan a y5.2 y y18.8, con 2.2 de margen a los bordes del cuadro" },
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+      ]
+    }
+  ]
+}

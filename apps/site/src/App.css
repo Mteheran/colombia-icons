@@ -1,6 +1,335 @@
-main {
-  max-width: 640px;
+:root {
+  --surface: #fff;
+  --border: #e5e7eb;
+  --muted: #f9fafb;
+  --accent: #003893;
+  /* Icon previews sit on a light canvas in both themes so all five colors —
+     black included — stay legible. */
+  --canvas: #fff;
+  --canvas-border: #e5e7eb;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --surface: #1d1e26;
+    --border: #2e3039;
+    --muted: #22232c;
+    --accent: #7ea2ff;
+    --canvas: #eceef2;
+    --canvas-border: #d7dae1;
+  }
+}
+
+.hero,
+.section,
+.footer {
+  max-width: 1080px;
   margin: 0 auto;
-  padding: 48px 24px;
+  padding: 0 24px;
+}
+
+.hero {
+  padding-block: 72px 40px;
   text-align: center;
+}
+
+.hero h1 {
+  margin: 0 0 12px;
+  font-size: clamp(2.2rem, 6vw, 3.2rem);
+  letter-spacing: -0.02em;
+}
+
+.tagline {
+  max-width: 620px;
+  margin: 0 auto 28px;
+  font-size: 1rem;
+}
+
+.hero-links {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.section {
+  padding-block: 40px;
+}
+
+.section h2 {
+  color: var(--text-h);
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0 0 20px;
+}
+
+/* Buttons and links ------------------------------------------------------ */
+
+.button,
+button {
+  font: inherit;
+  font-size: 0.85rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-h);
+  padding: 8px 16px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+button:hover,
+.button:hover {
+  border-color: var(--accent);
+}
+
+button:focus-visible,
+.button:focus-visible,
+.search:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.button {
+  background: var(--text-h);
+  color: var(--bg);
+  border-color: var(--text-h);
+  padding: 10px 20px;
+  font-size: 0.9rem;
+}
+
+.button.ghost {
+  background: transparent;
+  color: var(--text-h);
+  border-color: var(--border);
+}
+
+button[data-active='true'] {
+  background: var(--text-h);
+  color: var(--bg);
+  border-color: var(--text-h);
+}
+
+a {
+  color: var(--accent);
+}
+
+/* Install ---------------------------------------------------------------- */
+
+.tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+pre {
+  background: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px 16px;
+  overflow-x: auto;
+  font-size: 0.85rem;
+  margin: 0 0 12px;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.9em;
+}
+
+.note {
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+/* Toolbar ---------------------------------------------------------------- */
+
+.toolbar {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 12px;
+}
+
+.search {
+  font: inherit;
+  font-size: 0.95rem;
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-h);
+}
+
+.chips {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.results,
+.empty {
+  font-size: 0.85rem;
+  margin: 0 0 20px;
+}
+
+/* Grid ------------------------------------------------------------------- */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 14px;
+}
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  padding: 14px 12px 12px;
+  text-align: center;
+  transition: border-color 0.15s;
+}
+
+.card:hover {
+  border-color: var(--accent);
+}
+
+.card-preview {
+  width: 100%;
+  height: 76px;
+  display: grid;
+  place-items: center;
+  background: var(--canvas);
+  border: 1px solid var(--canvas-border);
+  border-radius: 8px;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.card-preview svg {
+  width: 36px;
+  height: 36px;
+}
+
+.card-name {
+  font-size: 0.78rem;
+  color: var(--text-h);
+  margin: 0 0 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.card-actions {
+  display: flex;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.card-actions button {
+  flex: 1;
+  padding: 6px 0;
+  font-size: 0.75rem;
+}
+
+/* Swatches --------------------------------------------------------------- */
+
+.swatches {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+}
+
+.swatch {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  border-radius: 50%;
+  border: 1px solid var(--canvas-border);
+  cursor: pointer;
+}
+
+.swatch[data-active='true'] {
+  box-shadow: 0 0 0 2px var(--surface), 0 0 0 4px var(--accent);
+}
+
+/* Modal ------------------------------------------------------------------ */
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgb(0 0 0 / 55%);
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  z-index: 10;
+}
+
+.modal {
+  position: relative;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 32px;
+  width: min(420px, 100%);
+  text-align: center;
+}
+
+.modal-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  border: none;
+  background: transparent;
+  font-size: 1.5rem;
+  line-height: 1;
+  padding: 4px 10px;
+}
+
+.modal-preview {
+  display: grid;
+  place-items: center;
+  height: 200px;
+  background: var(--canvas);
+  border: 1px solid var(--canvas-border);
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.modal-preview svg {
+  width: 120px;
+  height: 120px;
+}
+
+.modal-name {
+  color: var(--text-h);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0 0 2px;
+}
+
+.modal-category {
+  font-size: 0.8rem;
+  margin: 0 0 18px;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Footer ----------------------------------------------------------------- */
+
+.footer {
+  border-top: 1px solid var(--border);
+  margin-top: 40px;
+  padding-block: 28px 48px;
+  text-align: center;
+  font-size: 0.85rem;
 }

@@ -24,6 +24,18 @@ The three published packages (React, Angular, Blazor) share a single version.
   `package.json`.
 - `actualizar-changelog` project skill, which keeps this file up to date as
   part of every commit.
+- Gallery site (`apps/site`): searchable, category-filtered icon browser with
+  a per-icon color selector (black, gray, and the three flag colors), SVG and
+  PNG download, and an enlarged preview modal. Deployed to GitHub Pages at
+  https://mteheran.github.io/colombia-icons/.
+- `deploy-pages.yml` workflow, which lints, builds, and publishes the site on
+  every push to `main` that touches `apps/site` or `icons`.
+
+### Changed
+
+- The READMEs list icon names instead of embedding SVG previews. GitHub
+  renders `stroke="currentColor"` as black when serving the files directly,
+  which made every preview invisible in dark mode.
 
 ### Notes
 

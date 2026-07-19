@@ -8,6 +8,16 @@ The three published packages (React, Angular, Blazor) share a single version.
 
 Every commit closes a minor version; major versions are cut only on request.
 
+## [0.2.0] - 2026-07-19
+
+### Changed
+
+- The site deploy workflow now runs on actions built for the Node 24 runtime
+  (`checkout@v7`, `setup-node@v7`, `configure-pages@v6`,
+  `upload-pages-artifact@v5`, `deploy-pages@v5`), clearing the Node 20
+  deprecation warning GitHub raises on every run.
+- The workflow builds the site with Node 22 instead of Node 20.
+
 ## [0.1.0] - 2026-07-19
 
 ### Added

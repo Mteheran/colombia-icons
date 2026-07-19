@@ -17,7 +17,7 @@
 
   <PropertyGroup>
     <PackageId>ColombiaIcons.Blazor</PackageId>
-    <Version>0.1.0</Version>
+    <Version>0.2.0</Version>
     <Authors>Miguel Teheran</Authors>
     <Description>Blazor line-icon components inspired by Colombia.</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>

@@ -1,6 +1,6 @@
 {
   "name": "@mteherandev/colombia-icons-angular",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Angular components for the colombia-icons line-icon library.",
   "license": "MIT",
   "scripts": { "build": "ng-packagr -p ng-package.json -c tsconfig.lib.json" },

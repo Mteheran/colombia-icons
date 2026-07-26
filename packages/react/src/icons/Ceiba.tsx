@@ -1,0 +1,16 @@
+import { forwardRef } from 'react';
+import type { IconProps } from '../types';
+
+export const Ceiba = forwardRef<SVGSVGElement, IconProps>(
+  ({ size = 24, color = 'currentColor', style, ...props }, ref) => (
+    <svg
+      ref={ref}
+      xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"
+      style={{ color, ...style }}
+      {...props}
+      dangerouslySetInnerHTML={{ __html: "<path d=\"M3.5 10C3.5 7.5 5.5 6 8 6.3C8.6 4.8 10 4 11.8 4C13.6 4 15 4.8 15.6 6.3C18.1 6 20.5 7.5 20.5 10C20.5 10.8 19.8 11.3 19 11.3H5C4.2 11.3 3.5 10.8 3.5 10Z\"/><path d=\"M9.8 11.3V17M14.2 11.3V17\"/><path d=\"M9.8 17C8.6 18 7 18.8 5.5 19M14.2 17C15.4 18 17 18.8 18.5 19M12 17.5V20\"/>" }}
+    />
+  )
+);
+
+Ceiba.displayName = 'Ceiba';

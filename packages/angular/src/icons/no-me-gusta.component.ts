@@ -1,0 +1,12 @@
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+
+@Component({
+  selector: 'ci-no-me-gusta',
+  standalone: true,
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: `<svg xmlns="http://www.w3.org/2000/svg" [attr.width]="size" [attr.height]="size" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" [style.color]="color"><path d="M9 18.12 10 14H4.17A2 2 0 0 1 2.25 11.44L4.58 3.44A2 2 0 0 1 6.5 2H20A2 2 0 0 1 22 4V12A2 2 0 0 1 20 14H17.24A2 2 0 0 0 15.45 15.11L12 22A3.13 3.13 0 0 1 9 18.12Z"/><path d="M17 2V14"/></svg>`,
+})
+export class NoMeGustaIcon {
+  @Input() size: number | string = 24;
+  @Input() color = 'currentColor';
+}

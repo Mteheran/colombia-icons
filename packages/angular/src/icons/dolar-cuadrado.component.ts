@@ -1,0 +1,12 @@
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+
+@Component({
+  selector: 'ci-dolar-cuadrado',
+  standalone: true,
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: `<svg xmlns="http://www.w3.org/2000/svg" [attr.width]="size" [attr.height]="size" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" [style.color]="color"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M12 5.2V7.5M12 16.5V18.8"/><path d="M14.6 8.8C14.3 8 13.3 7.5 12 7.5C10.4 7.5 9.4 8.4 9.4 9.7C9.4 11 9.7 12 12 12C14.3 12 14.6 13 14.6 14.3C14.6 15.6 13.6 16.5 12 16.5C10.7 16.5 9.7 16 9.4 15.2"/></svg>`,
+})
+export class DolarCuadradoIcon {
+  @Input() size: number | string = 24;
+  @Input() color = 'currentColor';
+}

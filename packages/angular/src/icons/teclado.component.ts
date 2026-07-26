@@ -1,0 +1,12 @@
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+
+@Component({
+  selector: 'ci-teclado',
+  standalone: true,
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: `<svg xmlns="http://www.w3.org/2000/svg" [attr.width]="size" [attr.height]="size" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" [style.color]="color"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 10H6.01M10 10H10.01M14 10H14.01M18 10H18.01"/><path d="M6 14H6.01M18 14H18.01"/><path d="M9 14H15"/></svg>`,
+})
+export class TecladoIcon {
+  @Input() size: number | string = 24;
+  @Input() color = 'currentColor';
+}

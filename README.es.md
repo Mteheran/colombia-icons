@@ -1,9 +1,10 @@
 # Colombia Icons
 
 [![Licencia: MIT](https://img.shields.io/badge/Licencia-MIT-yellow.svg)](./LICENSE)
-[![Íconos](https://img.shields.io/badge/%C3%ADconos-109-blue.svg)](#íconos-disponibles)
+[![Íconos](https://img.shields.io/badge/%C3%ADconos-120-blue.svg)](#íconos-disponibles)
 [![Estado](https://img.shields.io/badge/estado-pre--release-orange.svg)](./CHANGELOG.md)
 [![GitHub](https://img.shields.io/badge/GitHub-Mteheran%2Fcolombia--icons-181717?logo=github)](https://github.com/Mteheran/colombia-icons)
+[![Sitio web](https://img.shields.io/badge/sitio%20web-colombia--icons-2ea44f)](https://mteheran.github.io/colombia-icons/)
 
 Librería de íconos line-icon (outline) inspirada en Colombia — disponible
 para React, Angular y Blazor, más un sitio web para explorar y descargar
@@ -11,6 +12,9 @@ cada ícono individualmente en SVG o PNG.
 
 Todos los íconos están dibujados sobre una grilla de 24x24 con stroke de
 1.5px y `stroke="currentColor"`, así que heredan el color de tu CSS.
+
+**Sitio web:** <https://mteheran.github.io/colombia-icons/> — explora, busca y
+descarga cada ícono en SVG o PNG, sin instalar nada.
 
 Read this in other languages: [English](./README.md)
 
@@ -80,8 +84,8 @@ invisible al mostrarlos fuera de una página con estilos.
 | Gastronomía | 7 |
 | Mapas | 0 |
 | Deportes | 4 |
-| Genéricos | 81 |
-| **Total** | **109** |
+| Genéricos | 92 |
+| **Total** | **120** |
 
 ### Naturaleza (11)
 
@@ -103,9 +107,9 @@ _Ninguno aprobado todavía._
 
 `ciclismo`, `futbol`, `vuelta-a-colombia`, `natacion`
 
-### Genéricos (81)
+### Genéricos (92)
 
-`guardar`, `eliminar`, `cancelar`, `cerrar`, `estrella`, `estrella-llena`, `archivo`, `carpeta`, `carpetas`, `editar`, `buscar`, `configuracion`, `agregar`, `quitar`, `check`, `alerta`, `informacion`, `candado`, `candado-abierto`, `usuario`, `calendario`, `reloj`, `descargar`, `subir`, `compartir`, `copiar`, `imprimir`, `menu-opciones`, `refrescar`, `camara`, `puntero`, `mundo`, `microfono`, `terminal`, `flecha-derecha`, `flecha-abajo`, `flecha-izquierda`, `flecha-arriba`, `camara-video`, `telefono`, `wifi`, `hashtag`, `inicio`, `emoji`, `libro`, `imagen`, `enter`, `puzzle`, `verificado`, `menu-hamburguesa`, `correo`, `comentario`, `me-gusta`, `no-me-gusta`, `circle-check`, `square-check`, `marcador`, `musica`, `maximizar`, `maximizar-2-flechas`, `maximizar-4-flechas`, `bombillo-encendido`, `bombillo-apagado`, `mano`, `volumen`, `volumen-silenciado`, `corneta`, `teclado`, `controles`, `mando`, `dolar`, `dolar-circulo`, `trofeo`, `codigo`, `bandera`, `rayo`, `bateria-horizontal`, `bateria-horizontal-cargada`, `bateria-vertical`, `bateria-vertical-cargada`, `dolar-cuadrado`
+`guardar`, `eliminar`, `cancelar`, `cerrar`, `estrella`, `estrella-llena`, `archivo`, `carpeta`, `carpetas`, `editar`, `buscar`, `configuracion`, `agregar`, `quitar`, `check`, `alerta`, `informacion`, `candado`, `candado-abierto`, `usuario`, `calendario`, `reloj`, `descargar`, `subir`, `compartir`, `copiar`, `imprimir`, `menu-opciones`, `refrescar`, `camara`, `puntero`, `mundo`, `microfono`, `terminal`, `flecha-derecha`, `flecha-abajo`, `flecha-izquierda`, `flecha-arriba`, `camara-video`, `telefono`, `wifi`, `hashtag`, `inicio`, `emoji`, `libro`, `imagen`, `enter`, `puzzle`, `verificado`, `menu-hamburguesa`, `correo`, `comentario`, `me-gusta`, `no-me-gusta`, `circle-check`, `square-check`, `marcador`, `musica`, `maximizar`, `maximizar-2-flechas`, `maximizar-4-flechas`, `bombillo-encendido`, `bombillo-apagado`, `mano`, `volumen`, `volumen-silenciado`, `corneta`, `teclado`, `controles`, `mando`, `dolar`, `dolar-circulo`, `trofeo`, `codigo`, `bandera`, `rayo`, `bateria-horizontal`, `bateria-horizontal-cargada`, `bateria-vertical`, `bateria-vertical-cargada`, `dolar-cuadrado`, `lista-tareas`, `clip`, `clip-vertical`, `usuario-agregar`, `usuario-eliminar`, `usuario-inactivo`, `monitor`, `monitor-configuracion`, `monitor-editar`, `regalo`, `pergamino`
 
 ## Desarrollo
 
@@ -115,6 +119,15 @@ para la arquitectura completa y el flujo de contribución.
 ```bash
 npm install
 ```
+
+## Diseñar íconos
+
+¿Vas a crear un ícono a mano en cualquier herramienta (Figma, Illustrator,
+Inkscape…)? Sigue los estándares de diseño para que quede idéntico al resto
+del set:
+
+- 🇪🇸 [Guía de diseño de íconos](./docs/guia-diseno-iconos.es.md)
+- 🇬🇧 [Icon design guide](./docs/icon-design-guide.md)
 
 ## Licencia
 

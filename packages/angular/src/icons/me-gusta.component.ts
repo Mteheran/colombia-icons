@@ -1,0 +1,12 @@
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+
+@Component({
+  selector: 'ci-me-gusta',
+  standalone: true,
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: `<svg xmlns="http://www.w3.org/2000/svg" [attr.width]="size" [attr.height]="size" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" [style.color]="color"><path d="M15 5.88 14 10H19.83A2 2 0 0 1 21.75 12.56L19.42 20.56A2 2 0 0 1 17.5 22H4A2 2 0 0 1 2 20V12A2 2 0 0 1 4 10H6.76A2 2 0 0 0 8.55 8.89L12 2A3.13 3.13 0 0 1 15 5.88Z"/><path d="M7 10V22"/></svg>`,
+})
+export class MeGustaIcon {
+  @Input() size: number | string = 24;
+  @Input() color = 'currentColor';
+}

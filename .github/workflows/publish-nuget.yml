@@ -1,0 +1,46 @@
+name: Publish NuGet package
+
+# Publishes the Blazor package (ColombiaIcons.Blazor) to NuGet.org.
+# Triggered by pushing a version tag (e.g. v0.2.0), which the /publicar-version
+# skill creates. Requires the NUGET_API_KEY secret (an API key with push access
+# to the ColombiaIcons.Blazor package / your NuGet.org account).
+
+on:
+  push:
+    tags: ['v*.*.*']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+
+      # Fail early if the tag and the csproj version disagree.
+      - name: Verify tag matches package version
+        if: startsWith(github.ref, 'refs/tags/')
+        run: |
+          TAG="${GITHUB_REF#refs/tags/v}"
+          VER="$(sed -n 's|.*<Version>\(.*\)</Version>.*|\1|p' packages/blazor/ColombiaIcons.Blazor.csproj)"
+          echo "tag=$TAG csproj=$VER"
+          if [ "$TAG" != "$VER" ]; then
+            echo "::error::Tag v$TAG does not match csproj <Version> $VER"
+            exit 1
+          fi
+
+      - name: Pack
+        run: dotnet pack packages/blazor/ColombiaIcons.Blazor.csproj -c Release -o ./nupkg
+
+      - name: Push to NuGet.org
+        run: >
+          dotnet nuget push "./nupkg/*.nupkg"
+          --api-key "${{ secrets.NUGET_API_KEY }}"
+          --source https://api.nuget.org/v3/index.json
+          --skip-duplicate

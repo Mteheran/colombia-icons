@@ -1,0 +1,12 @@
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+
+@Component({
+  selector: 'ci-vuelta-a-colombia',
+  standalone: true,
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: `<svg xmlns="http://www.w3.org/2000/svg" [attr.width]="size" [attr.height]="size" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" [style.color]="color"><path d="M2.5 19.5 9.5 6.5 13.5 13.5 17 9 21.5 19.5Z"/><path d="M6.5 19.5C8.5 18.5 6.5 16.8 8.5 15.8C10.5 14.8 8.5 12.8 9.5 11.2"/><path d="M9.5 6.5V3.2"/><path d="M9.5 3.2 12.4 4.2 9.5 5.2Z"/></svg>`,
+})
+export class VueltaAColombiaIcon {
+  @Input() size: number | string = 24;
+  @Input() color = 'currentColor';
+}

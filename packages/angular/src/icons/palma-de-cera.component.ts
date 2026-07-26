@@ -1,0 +1,12 @@
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+
+@Component({
+  selector: 'ci-palma-de-cera',
+  standalone: true,
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: `<svg xmlns="http://www.w3.org/2000/svg" [attr.width]="size" [attr.height]="size" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" [style.color]="color"><path d="M10.9 7.6C9.2 6 6.8 5.4 4.6 5.9"/><path d="M11.3 6.9C9.8 5 7.8 4 5.6 3.6"/><path d="M11.7 6.4C10.7 4.4 9.4 3.1 7.8 2.2"/><path d="M12 6.2V1.8"/><path d="M12.3 6.4C13.3 4.4 14.6 3.1 16.2 2.2"/><path d="M12.7 6.9C14.2 5 16.2 4 18.4 3.6"/><path d="M13.1 7.6C14.8 6 17.2 5.4 19.4 5.9"/><path d="M11.8 8V21M12.2 8V21"/></svg>`,
+})
+export class PalmaDeCeraIcon {
+  @Input() size: number | string = 24;
+  @Input() color = 'currentColor';
+}

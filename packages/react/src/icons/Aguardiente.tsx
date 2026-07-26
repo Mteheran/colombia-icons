@@ -1,0 +1,16 @@
+import { forwardRef } from 'react';
+import type { IconProps } from '../types';
+
+export const Aguardiente = forwardRef<SVGSVGElement, IconProps>(
+  ({ size = 24, color = 'currentColor', style, ...props }, ref) => (
+    <svg
+      ref={ref}
+      xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"
+      style={{ color, ...style }}
+      {...props}
+      dangerouslySetInnerHTML={{ __html: "<rect x=\"10.5\" y=\"3.6\" width=\"3\" height=\"2.2\" rx=\"0.6\"/><path d=\"M10.8 5.5V8.4C10.8 9.2 7.3 9.6 7.3 12.8C7.3 14.2 8 14.9 8 16.2C8 17.5 7.5 18.1 7.5 19.3C7.5 20.5 8.1 21.2 9.2 21.2H14.8C15.9 21.2 16.5 20.5 16.5 19.3C16.5 18.1 16 17.5 16 16.2C16 14.9 16.7 14.2 16.7 12.8C16.7 9.6 13.2 9.2 13.2 8.4V5.5Z\"/><path d=\"M9.61 14.42Q11.06 14.92 12 13.7T14.39 12.98\"/><path d=\"M9.61 17.92Q11.06 18.42 12 17.2T14.39 16.48\"/>" }}
+    />
+  )
+);
+
+Aguardiente.displayName = 'Aguardiente';

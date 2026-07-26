@@ -1,0 +1,12 @@
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+
+@Component({
+  selector: 'ci-dolar',
+  standalone: true,
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: `<svg xmlns="http://www.w3.org/2000/svg" [attr.width]="size" [attr.height]="size" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" [style.color]="color"><path d="M12 1.5V5M12 19V22.5"/><path d="M16 7C15.5 5.8 14 5 12 5C9.5 5 8 6.5 8 8.5C8 10.5 8.5 12 12 12C15.5 12 16 13.5 16 15.5C16 17.5 14.5 19 12 19C10 19 8.5 18.2 8 17"/></svg>`,
+})
+export class DolarIcon {
+  @Input() size: number | string = 24;
+  @Input() color = 'currentColor';
+}

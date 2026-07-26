@@ -17,11 +17,18 @@
 
   <PropertyGroup>
     <PackageId>ColombiaIcons.Blazor</PackageId>
-    <Version>0.2.0</Version>
+    <Version>0.3.0</Version>
     <Authors>Miguel Teheran</Authors>
     <Description>Blazor line-icon components inspired by Colombia.</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageTags>blazor;icons;svg;colombia;line-icons</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageProjectUrl>https://github.com/Mteheran/colombia-icons</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Mteheran/colombia-icons</RepositoryUrl>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
 
 </Project>

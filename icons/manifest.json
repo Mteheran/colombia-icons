@@ -366,6 +366,145 @@
       ]
     },
     {
+      "id": "lista-tareas",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 2,
+      "notas": "lista de tareas / checklist estilo Lucide list-todo: 2 items completados (check) + 1 pendiente (casilla vacia), cada uno con su linea de texto",
+      "historial": [
+        { "fecha": "2026-07-22", "accion": "generado", "nota": "2 checkmarks a la izquierda alineados con lineas de texto, tercer item con casilla vacia (tarea pendiente)" },
+        { "fecha": "2026-07-22", "accion": "feedback", "nota": "casilla final muy grande/pegada; se reduce de 4.5x4.5 a 4x4 y se centra en la linea (y16-20, centro 18); los 3 marcadores quedan alineados con sus lineas (y6/12/18)" },
+        { "fecha": "2026-07-22", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "clip",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "clip / adjuntar estilo Feather-Lucide paperclip: un solo trazo diagonal continuo con curva inferior y gancho interno que se detiene antes de cerrar",
+      "historial": [
+        { "fecha": "2026-07-22", "accion": "generado", "nota": "paperclip diagonal de un solo path, geometria canonica Feather/Lucide" },
+        { "fecha": "2026-07-22", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "clip-vertical",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "misma geometria que clip pero rotada para quedar recto/vertical",
+      "historial": [
+        { "fecha": "2026-07-22", "accion": "generado", "nota": "clip rotado -45 grados sobre el centro (12,12) para enderezar el eje diagonal a vertical" },
+        { "fecha": "2026-07-22", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "usuario-agregar",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono usuario existente desplazado a la izquierda (cabeza en x=9) con un signo + a la derecha, estilo Lucide user-plus",
+      "historial": [
+        { "fecha": "2026-07-22", "accion": "generado", "nota": "reutiliza geometria de usuario (circulo cabeza + arco hombros) corrida a la izquierda + signo mas a la derecha (x=19, y=8)" },
+        { "fecha": "2026-07-22", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "usuario-eliminar",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "misma base que usuario-agregar (usuario corrido a la izquierda) pero con una X a la derecha en vez de +, estilo Lucide user-x",
+      "historial": [
+        { "fecha": "2026-07-22", "accion": "generado", "nota": "usuario corrido a la izquierda + X (dos diagonales cruzadas en x=19, y=8)" },
+        { "fecha": "2026-07-22", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "usuario-inactivo",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "misma base que usuario-agregar (usuario corrido a la izquierda) con simbolo de pausa (dos barras verticales) a la derecha, para representar cuenta pausada/inactiva",
+      "historial": [
+        { "fecha": "2026-07-22", "accion": "generado", "nota": "usuario corrido a la izquierda + pausa (barras verticales en x=17.5 y x=20.5, y5-11)" },
+        { "fecha": "2026-07-22", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "usuario-alerta",
+      "categoria": "genericos",
+      "estado": "rechazado",
+      "intentos": 2,
+      "notas": "misma base que usuario-agregar (usuario corrido a la izquierda) con senal triangular de advertencia (triangulo + ! adentro, reutiliza geometria de alerta) en version chica a la derecha",
+      "historial": [
+        { "fecha": "2026-07-22", "accion": "generado", "nota": "usuario corrido a la izquierda + signo de admiracion (linea y4-9 + punto en y11.5) en x=19" },
+        { "fecha": "2026-07-22", "accion": "feedback", "nota": "que sea la senal triangular completa, no solo el !; se reemplaza por un triangulo de advertencia chico (apex 17.5,2.5 / base 12.5-22.5 en y12) con ! adentro, arriba-derecha" },
+        { "fecha": "2026-07-22", "accion": "feedback", "nota": "advertencia mas a la izquierda y mas grande; se recorta el hombro derecho del usuario (arco abierto que sube y se detiene en 12.5,12.5) dejando un gap de separacion, y el triangulo (apex 16.5,6 / base 11-22 en y20) comparte la linea de base con el usuario" },
+        { "fecha": "2026-07-22", "accion": "feedback", "nota": "triangulo mucho mas chico (tamano de los badges +/X/pausa): se restaura el usuario completo (cx9, hombros a 15.5) y el triangulo queda como badge chico arriba-derecha (apex 19,5 / base 15.5-22.5 en y11) con ! adentro" },
+        { "fecha": "2026-07-22", "accion": "feedback", "nota": "signo de alerta aun mas pequeno: triangulo reducido a ~4.5px (apex 19,6.5 / base 16.25-21.75 en y11) y ! interno afinado a stroke-width 1 (linea y8-9.1 + punto y10.1)" },
+        { "fecha": "2026-07-22", "accion": "feedback", "nota": "solo el ! interno mas chico: linea acortada a 0.7 (y8.4-9.1) + punto y9.9, stroke-width 0.9; el triangulo se mantiene igual" },
+        { "fecha": "2026-07-22", "accion": "rechazado", "nota": "se omite por ahora, retomar despues" }
+      ]
+    },
+    {
+      "id": "monitor",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "monitor / pantalla estilo Lucide-Feather monitor: pantalla rectangular redondeada + cuello corto + base horizontal",
+      "historial": [
+        { "fecha": "2026-07-22", "accion": "generado", "nota": "pantalla rect (2.5,4)-(21.5,17) rx2 + cuello x12 y17-20 + base x8-16 en y20" },
+        { "fecha": "2026-07-22", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "monitor-configuracion",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "mismo monitor con el engranaje de configuracion escalado (0.48) y centrado dentro de la pantalla; stroke-width del grupo compensado a 3 para render efectivo ~1.44",
+      "historial": [
+        { "fecha": "2026-07-22", "accion": "generado", "nota": "monitor + tuerca (reutiliza path de configuracion) centrada en la pantalla (12,10.5) con scale 0.48" },
+        { "fecha": "2026-07-22", "accion": "feedback", "nota": "tuerca mas pequena: scale 0.48 a 0.40 y stroke-width del grupo a 3.6 (render efectivo ~1.44)" },
+        { "fecha": "2026-07-22", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "monitor-editar",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "mismo monitor con el lapiz de editar escalado (0.5) y centrado dentro de la pantalla; stroke-width del grupo compensado a 3 para render efectivo 1.5",
+      "historial": [
+        { "fecha": "2026-07-22", "accion": "generado", "nota": "monitor + lapiz (reutiliza path de editar) centrado en la pantalla (12,10.5) con scale 0.5" },
+        { "fecha": "2026-07-22", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "regalo",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "regalo / obsequio estilo Lucide-Feather gift: caja con tapa que sobresale, cinta vertical y mono de dos lazos arriba",
+      "historial": [
+        { "fecha": "2026-07-22", "accion": "generado", "nota": "tapa rect (3,8)-(21,12) rx1 + cuerpo caja (5-19, y12-20) + cinta vertical x12 y8-20 + mono de 2 lazos (7.5,3)-(16.5,3)" },
+        { "fecha": "2026-07-22", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "pergamino",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "pergamino / scroll para changelog, estilo Lucide scroll-text: rollo con extremos curvados + 2 lineas de texto adentro",
+      "historial": [
+        { "fecha": "2026-07-22", "accion": "generado", "nota": "scroll enrollado con curvas en ambos extremos + 2 lineas de texto (y8 e y12)" },
+        { "fecha": "2026-07-22", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
       "id": "condor",
       "categoria": "naturaleza",
       "estado": "rechazado",

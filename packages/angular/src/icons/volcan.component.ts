@@ -1,0 +1,12 @@
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+
+@Component({
+  selector: 'ci-volcan',
+  standalone: true,
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: `<svg xmlns="http://www.w3.org/2000/svg" [attr.width]="size" [attr.height]="size" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" [style.color]="color"><path d="M3.5 19.5C4.5 15.5 6 12.5 8 10L10.5 12H13.5L16 10C18 12.5 19.5 15.5 20.5 19.5Q12 21.2 3.5 19.5Z"/><path d="M10.3 10.5L9.3 5.5M12 11V4.5M13.7 10.5L14.7 5.5"/></svg>`,
+})
+export class VolcanIcon {
+  @Input() size: number | string = 24;
+  @Input() color = 'currentColor';
+}

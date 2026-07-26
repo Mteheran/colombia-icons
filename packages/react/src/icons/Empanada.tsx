@@ -1,0 +1,16 @@
+import { forwardRef } from 'react';
+import type { IconProps } from '../types';
+
+export const Empanada = forwardRef<SVGSVGElement, IconProps>(
+  ({ size = 24, color = 'currentColor', style, ...props }, ref) => (
+    <svg
+      ref={ref}
+      xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"
+      style={{ color, ...style }}
+      {...props}
+      dangerouslySetInnerHTML={{ __html: "<g transform=\"rotate(-30 12 12)\"><path d=\"M4 8.4C8 6.8 16 6.8 20 8.4C20.4 12.5 17 16.4 12 16.6C7 16.8 3.6 12.8 4 8.4Z\"/><path d=\"M5.9 7.9C5.7 12.2 8.2 14.5 12 14.7C15.8 14.5 18.3 12.2 18.1 7.9\"/><path d=\"M16.67 12.52 18.13 13.74M14.58 14.13 15.38 15.85M12 14.7 12 16.6M9.42 14.13 8.62 15.85M7.33 12.52 5.87 13.74\"/></g>" }}
+    />
+  )
+);
+
+Empanada.displayName = 'Empanada';

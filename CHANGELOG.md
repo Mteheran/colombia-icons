@@ -8,6 +8,25 @@ The three published packages (React, Angular, Blazor) share a single version.
 
 Every commit closes a minor version; major versions are cut only on request.
 
+## [0.3.0] - 2026-07-25
+
+### Added
+
+- Icons (genéricos): `lista-tareas`, `clip`, `clip-vertical`, `usuario-agregar`,
+  `usuario-eliminar`, `usuario-inactivo`, `monitor`, `monitor-configuracion`,
+  `monitor-editar`, `regalo`, `pergamino`.
+- Component generation script (`scripts/generate/index.js`) that turns the
+  `icons/svg/` source of truth into React, Angular and Blazor components.
+- React and Angular packages now ship generated, tree-shakeable icon
+  components built from the approved icon set.
+- Blazor Razor Class Library (`ColombiaIcons.Blazor`) with one component per
+  icon, ready to publish to NuGet.
+- CI/CD workflows to publish the npm packages (`publish-npm.yml`) and the
+  NuGet package (`publish-nuget.yml`) on version tags.
+- Designer documentation: step-by-step icon design guides in English
+  (`docs/icon-design-guide.md`) and Spanish (`docs/guia-diseno-iconos.es.md`),
+  linked from both READMEs.
+
 ## [0.2.0] - 2026-07-19
 
 ### Changed

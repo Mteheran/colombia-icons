@@ -1,0 +1,12 @@
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+
+@Component({
+  selector: 'ci-mar-caribe',
+  standalone: true,
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: `<svg xmlns="http://www.w3.org/2000/svg" [attr.width]="size" [attr.height]="size" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" [style.color]="color"><path d="M8.5 12.5A3.5 3.5 0 0 1 15.5 12.5"/><path d="M12 5V6.5M7.4 7L8.4 8M16.6 7L15.6 8M5 11.2H6.3M17.7 11.2H19"/><path d="M3 15Q6 13.8 9 15T15 15T21 15"/><path d="M3 18.5Q6 17.3 9 18.5T15 18.5T21 18.5"/></svg>`,
+})
+export class MarCaribeIcon {
+  @Input() size: number | string = 24;
+  @Input() color = 'currentColor';
+}

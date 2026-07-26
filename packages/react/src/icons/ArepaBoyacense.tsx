@@ -1,0 +1,16 @@
+import { forwardRef } from 'react';
+import type { IconProps } from '../types';
+
+export const ArepaBoyacense = forwardRef<SVGSVGElement, IconProps>(
+  ({ size = 24, color = 'currentColor', style, ...props }, ref) => (
+    <svg
+      ref={ref}
+      xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"
+      style={{ color, ...style }}
+      {...props}
+      dangerouslySetInnerHTML={{ __html: "<ellipse cx=\"12\" cy=\"10\" rx=\"8\" ry=\"5\"/><path d=\"M4 10V13.5C4 16.26 7.58 18.5 12 18.5C16.42 18.5 20 16.26 20 13.5V10\"/><path d=\"M7.8 9.6C9.5 11 12.4 11.4 14.8 10.4C15.6 10 16.2 9.4 16.6 8.6\"/>" }}
+    />
+  )
+);
+
+ArepaBoyacense.displayName = 'ArepaBoyacense';

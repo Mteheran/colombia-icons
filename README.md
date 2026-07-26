@@ -1,9 +1,10 @@
 # Colombia Icons
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
-[![Icons](https://img.shields.io/badge/icons-109-blue.svg)](#available-icons)
+[![Icons](https://img.shields.io/badge/icons-120-blue.svg)](#available-icons)
 [![Status](https://img.shields.io/badge/status-pre--release-orange.svg)](./CHANGELOG.md)
 [![GitHub](https://img.shields.io/badge/GitHub-Mteheran%2Fcolombia--icons-181717?logo=github)](https://github.com/Mteheran/colombia-icons)
+[![Website](https://img.shields.io/badge/website-colombia--icons-2ea44f)](https://mteheran.github.io/colombia-icons/)
 
 A line-icon (outline) SVG icon library inspired by Colombia — available for
 React, Angular, and Blazor, plus a companion site to browse and download
@@ -11,6 +12,9 @@ every icon individually as SVG or PNG.
 
 All icons are drawn on a 24x24 grid with a 1.5px stroke and
 `stroke="currentColor"`, so they inherit color from your CSS.
+
+**Website:** <https://mteheran.github.io/colombia-icons/> — browse, search, and
+download every icon as SVG or PNG, no install required.
 
 Read this in other languages: [Español](./README.es.md)
 
@@ -80,8 +84,8 @@ GitHub displays them outside a styled page.
 | Gastronomía | 7 |
 | Mapas | 0 |
 | Deportes | 4 |
-| Genéricos | 81 |
-| **Total** | **109** |
+| Genéricos | 92 |
+| **Total** | **120** |
 
 ### Naturaleza (11)
 
@@ -103,9 +107,9 @@ _None approved yet._
 
 `ciclismo`, `futbol`, `vuelta-a-colombia`, `natacion`
 
-### Genéricos (81)
+### Genéricos (92)
 
-`guardar`, `eliminar`, `cancelar`, `cerrar`, `estrella`, `estrella-llena`, `archivo`, `carpeta`, `carpetas`, `editar`, `buscar`, `configuracion`, `agregar`, `quitar`, `check`, `alerta`, `informacion`, `candado`, `candado-abierto`, `usuario`, `calendario`, `reloj`, `descargar`, `subir`, `compartir`, `copiar`, `imprimir`, `menu-opciones`, `refrescar`, `camara`, `puntero`, `mundo`, `microfono`, `terminal`, `flecha-derecha`, `flecha-abajo`, `flecha-izquierda`, `flecha-arriba`, `camara-video`, `telefono`, `wifi`, `hashtag`, `inicio`, `emoji`, `libro`, `imagen`, `enter`, `puzzle`, `verificado`, `menu-hamburguesa`, `correo`, `comentario`, `me-gusta`, `no-me-gusta`, `circle-check`, `square-check`, `marcador`, `musica`, `maximizar`, `maximizar-2-flechas`, `maximizar-4-flechas`, `bombillo-encendido`, `bombillo-apagado`, `mano`, `volumen`, `volumen-silenciado`, `corneta`, `teclado`, `controles`, `mando`, `dolar`, `dolar-circulo`, `trofeo`, `codigo`, `bandera`, `rayo`, `bateria-horizontal`, `bateria-horizontal-cargada`, `bateria-vertical`, `bateria-vertical-cargada`, `dolar-cuadrado`
+`guardar`, `eliminar`, `cancelar`, `cerrar`, `estrella`, `estrella-llena`, `archivo`, `carpeta`, `carpetas`, `editar`, `buscar`, `configuracion`, `agregar`, `quitar`, `check`, `alerta`, `informacion`, `candado`, `candado-abierto`, `usuario`, `calendario`, `reloj`, `descargar`, `subir`, `compartir`, `copiar`, `imprimir`, `menu-opciones`, `refrescar`, `camara`, `puntero`, `mundo`, `microfono`, `terminal`, `flecha-derecha`, `flecha-abajo`, `flecha-izquierda`, `flecha-arriba`, `camara-video`, `telefono`, `wifi`, `hashtag`, `inicio`, `emoji`, `libro`, `imagen`, `enter`, `puzzle`, `verificado`, `menu-hamburguesa`, `correo`, `comentario`, `me-gusta`, `no-me-gusta`, `circle-check`, `square-check`, `marcador`, `musica`, `maximizar`, `maximizar-2-flechas`, `maximizar-4-flechas`, `bombillo-encendido`, `bombillo-apagado`, `mano`, `volumen`, `volumen-silenciado`, `corneta`, `teclado`, `controles`, `mando`, `dolar`, `dolar-circulo`, `trofeo`, `codigo`, `bandera`, `rayo`, `bateria-horizontal`, `bateria-horizontal-cargada`, `bateria-vertical`, `bateria-vertical-cargada`, `dolar-cuadrado`, `lista-tareas`, `clip`, `clip-vertical`, `usuario-agregar`, `usuario-eliminar`, `usuario-inactivo`, `monitor`, `monitor-configuracion`, `monitor-editar`, `regalo`, `pergamino`
 
 ## Development
 
@@ -115,6 +119,14 @@ the full architecture and contribution workflow.
 ```bash
 npm install
 ```
+
+## Designing icons
+
+Creating an icon by hand in any tool (Figma, Illustrator, Inkscape…)? Follow the
+design standards so it matches the rest of the set:
+
+- 🇬🇧 [Icon design guide](./docs/icon-design-guide.md)
+- 🇪🇸 [Guía de diseño de íconos](./docs/guia-diseno-iconos.es.md)
 
 ## License
 

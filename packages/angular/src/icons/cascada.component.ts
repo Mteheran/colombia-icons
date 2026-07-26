@@ -1,0 +1,12 @@
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+
+@Component({
+  selector: 'ci-cascada',
+  standalone: true,
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: `<svg xmlns="http://www.w3.org/2000/svg" [attr.width]="size" [attr.height]="size" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" [style.color]="color"><path d="M3 6H8V8"/><path d="M21 6H16V8"/><path d="M9 8V15"/><path d="M15 8V15"/><path d="M11.2 6.5V15" stroke-dasharray="1.4 1.6"/><path d="M12.8 7V15" stroke-dasharray="1.4 1.6"/><path d="M4 18.5Q7 17.5 10 18.5T16 18.5T20 18.5"/><path d="M4 21Q7 20 10 21T16 21T20 21"/></svg>`,
+})
+export class CascadaIcon {
+  @Input() size: number | string = 24;
+  @Input() color = 'currentColor';
+}

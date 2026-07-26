@@ -1,0 +1,16 @@
+import { forwardRef } from 'react';
+import type { IconProps } from '../types';
+
+export const Emoji = forwardRef<SVGSVGElement, IconProps>(
+  ({ size = 24, color = 'currentColor', style, ...props }, ref) => (
+    <svg
+      ref={ref}
+      xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"
+      style={{ color, ...style }}
+      {...props}
+      dangerouslySetInnerHTML={{ __html: "<circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M8.5 10H8.51\"/><path d=\"M15.5 10H15.51\"/><path d=\"M8.5 14.2A4.5 4.5 0 0 0 15.5 14.2\"/>" }}
+    />
+  )
+);
+
+Emoji.displayName = 'Emoji';

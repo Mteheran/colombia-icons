@@ -1,0 +1,12 @@
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+
+@Component({
+  selector: 'ci-mariposa',
+  standalone: true,
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: `<svg xmlns="http://www.w3.org/2000/svg" [attr.width]="size" [attr.height]="size" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" [style.color]="color"><path d="M12 8.5V16.5"/><path d="M12 8.5C11.4 6.5 10.4 5.2 9.2 4.6"/><path d="M12 8.5C12.6 6.5 13.6 5.2 14.8 4.6"/><path d="M12 9.5C10.2 6.8 6.2 5.5 4.2 7.6C2.8 9 3.8 11.2 6.2 11.8C4.4 12.8 3.8 15.2 5.8 16.2C7.6 17 10.5 15 12 12.5"/><path d="M12 9.5C13.8 6.8 17.8 5.5 19.8 7.6C21.2 9 20.2 11.2 17.8 11.8C19.6 12.8 20.2 15.2 18.2 16.2C16.4 17 13.5 15 12 12.5"/><path d="M9.8 11C9.1 11.3 8.4 11.3 7.7 11"/><path d="M14.2 11C14.9 11.3 15.6 11.3 16.3 11"/></svg>`,
+})
+export class MariposaIcon {
+  @Input() size: number | string = 24;
+  @Input() color = 'currentColor';
+}

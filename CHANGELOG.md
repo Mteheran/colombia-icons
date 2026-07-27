@@ -8,6 +8,15 @@ The three published packages (React, Angular, Blazor) share a single version.
 
 Every commit closes a minor version; major versions are cut only on request.
 
+## [0.4.0] - 2026-07-25
+
+### Added
+
+- README section (English and Spanish) explaining how to register
+  colombia-icons in a consuming project's `CLAUDE.md` / `AGENTS.md`, with a
+  ready-to-paste block and usage conventions so AI coding assistants reach for
+  the library instead of inlining raw SVG or another icon set.
+
 ## [0.3.0] - 2026-07-25
 
 ### Added

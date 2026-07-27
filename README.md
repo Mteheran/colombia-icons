@@ -128,6 +128,36 @@ design standards so it matches the rest of the set:
 - 🇬🇧 [Icon design guide](./docs/icon-design-guide.md)
 - 🇪🇸 [Guía de diseño de íconos](./docs/guia-diseno-iconos.es.md)
 
+## Using with AI assistants (CLAUDE.md / AGENTS.md)
+
+If your project uses an AI coding assistant (Claude Code, Cursor, Copilot,
+etc.) and depends on colombia-icons, add a short note to your project's
+`CLAUDE.md` or `AGENTS.md` so the assistant reaches for these icons instead of
+inlining raw SVG or pulling in another icon set. Copy the block below and drop
+in the line for the framework you use:
+
+```markdown
+## Icons — colombia-icons
+
+This project uses the colombia-icons library for UI icons. Prefer it over
+inline SVGs or other icon packs.
+
+- React: import from `@mteherandev/colombia-icons-react`, e.g.
+  `import { Condor } from '@mteherandev/colombia-icons-react'` →
+  `<Condor size={24} color="currentColor" />`.
+- Angular: `@mteherandev/colombia-icons-angular`, e.g. `<ci-icon name="condor" />`.
+- Blazor: `ColombiaIcons.Blazor`, e.g. `<Condor Size="24" />`.
+
+Conventions:
+- Icons are 24×24, 1.5px stroke, and use `stroke="currentColor"` — set color
+  via CSS `color`, not a hard-coded fill.
+- Icon names are `kebab-case` (Spanish), e.g. `sombrero-vueltiao`,
+  `usuario-agregar`. React/Blazor components are the PascalCase form.
+- Browse and search every available icon name at
+  <https://mteheran.github.io/colombia-icons/>. Do not invent icon names —
+  if one is missing, use the closest existing icon or ask.
+```
+
 ## License
 
 MIT — see [LICENSE](./LICENSE).

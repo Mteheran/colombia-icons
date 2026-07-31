@@ -1,0 +1,31 @@
+{
+  "icons": [
+    {
+      "id": "pescado-frito",
+      "categoria": "gastronomia",
+      "estado": "aprobado",
+      "intentos": 2,
+      "notas": "",
+      "historial": [
+        { "fecha": "2026-07-30", "accion": "generado", "nota": "plato ovalado con pescado (cola bifurcada, ojo, agalla, aleta dorsal) y 2 patacones" },
+        { "fecha": "2026-07-30", "accion": "feedback", "nota": "agregar cortes de fritura al pescado; 3 patacones con contorno irregular (no eliptico) y lineas internas, guiado por patacon.svg 24x24" },
+        { "fecha": "2026-07-30", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "orquidea",
+      "categoria": "naturaleza",
+      "estado": "aprobado",
+      "intentos": 6,
+      "notas": "",
+      "historial": [
+        { "fecha": "2026-07-31", "accion": "generado", "nota": "flor de frente Cattleya: 3 sepalos, 2 petalos, labelo con venas" },
+        { "fecha": "2026-07-31", "accion": "feedback", "nota": "petalos muy finos y en punta, parecia estrella/hoja; hacerlos anchos y redondeados" },
+        { "fecha": "2026-07-31", "accion": "feedback", "nota": "probar vista 3/4 (Phalaenopsis) con trompeta del labio en perspectiva" },
+        { "fecha": "2026-07-31", "accion": "feedback", "nota": "la 3/4 empeoro (petalos espinosos, labio como ojo/espiral); volver a frente y reforzar labelo rizado prominente" },
+        { "fecha": "2026-07-31", "accion": "feedback", "nota": "conectar petalos superiores con la parte de abajo: todos convergen en el centro, sin hueco" },
+        { "fecha": "2026-07-31", "accion": "aprobado", "nota": "" }
+      ]
+    }
+  ]
+}

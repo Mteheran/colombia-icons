@@ -8,6 +8,29 @@ The three published packages (React, Angular, Blazor) share a single version.
 
 Every commit closes a minor version; major versions are cut only on request.
 
+## [0.5.0] - 2026-07-31
+
+### Added
+
+- Large icon set (`icons/large-icons/`): a separate, more-detailed 48×48
+  line-icon set with its own manifest and category folders, independent from
+  the 24×24 base set and drawn from scratch rather than scaled up.
+- Large-set design guide (English and Spanish): `docs/large-icon-design-guide.md`
+  and `docs/guia-diseno-iconos-large.es.md`, documenting the 48×48 / 1.5px spec,
+  optional 1px secondary detail, when an icon earns a large version, and the
+  review flow.
+- Large icons (gastronomia): `pescado-frito`
+- Large icons (naturaleza): `orquidea`
+
+## [0.4.0] - 2026-07-25
+
+### Added
+
+- README section (English and Spanish) explaining how to register
+  colombia-icons in a consuming project's `CLAUDE.md` / `AGENTS.md`, with a
+  ready-to-paste block and usage conventions so AI coding assistants reach for
+  the library instead of inlining raw SVG or another icon set.
+
 ## [0.3.0] - 2026-07-25
 
 ### Added

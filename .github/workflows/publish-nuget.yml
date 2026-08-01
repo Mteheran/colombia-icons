@@ -16,12 +16,26 @@ permissions:
 jobs:
   publish:
     runs-on: ubuntu-latest
+    # Exposed at job level so it can be checked in a step `if` below.
+    env:
+      NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
     steps:
       - uses: actions/checkout@v7
 
       - uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '10.0.x'
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      # Regenerate the .razor components from icons/svg so the published package
+      # can never drift from the source of truth (same guard as publish-npm).
+      - run: npm run generate
 
       # Fail early if the tag and the csproj version disagree.
       - name: Verify tag matches package version
@@ -38,9 +52,17 @@ jobs:
       - name: Pack
         run: dotnet pack packages/blazor/ColombiaIcons.Blazor.csproj -c Release -o ./nupkg
 
+      # Skip (don't fail) when the NuGet token isn't configured yet, so an npm-only
+      # first release isn't blocked. Once NUGET_API_KEY is set, re-run this workflow
+      # (or push the next tag) to publish the Blazor package.
+      - name: Skip note (no NuGet token)
+        if: env.NUGET_API_KEY == ''
+        run: echo "::warning::NUGET_API_KEY is not set — skipping the NuGet push. Add the secret and re-run to publish ColombiaIcons.Blazor."
+
       - name: Push to NuGet.org
+        if: env.NUGET_API_KEY != ''
         run: >
           dotnet nuget push "./nupkg/*.nupkg"
-          --api-key "${{ secrets.NUGET_API_KEY }}"
+          --api-key "$NUGET_API_KEY"
           --source https://api.nuget.org/v3/index.json
           --skip-duplicate

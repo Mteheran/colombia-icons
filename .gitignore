@@ -5,6 +5,7 @@ out-tsc/
 *.tsbuildinfo
 [Bb]in/
 [Oo]bj/
+nupkg/
 *.user
 .angular/
 npm-debug.log*

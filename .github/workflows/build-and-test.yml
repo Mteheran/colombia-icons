@@ -1,0 +1,62 @@
+name: Build and test
+
+# CI on every push / PR (see CLAUDE.md §8): validates the icon source of truth,
+# regenerates the components, and builds the three packages (React, Angular and
+# the Blazor NuGet package). No secrets, no publishing — that lives in
+# publish-npm.yml / publish-nuget.yml, triggered by tags.
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+
+      - run: npm ci
+
+      # Fail if any approved icon is missing its SVG, or there are duplicate ids
+      # or component-name collisions.
+      - name: Validate icon source of truth
+        run: npm run validate
+
+      # Regenerate the components from icons/svg so the build always reflects the
+      # source of truth.
+      - name: Regenerate components
+        run: npm run generate
+
+      # Fail if the committed components drifted from what the source of truth
+      # generates (e.g. an SVG/manifest change that forgot to regenerate).
+      - name: Check generated components are up to date
+        run: |
+          # --porcelain also reports new (untracked) component files, which a
+          # plain `git diff` would miss when a PR adds an icon without regenerating.
+          if [ -n "$(git status --porcelain -- packages)" ]; then
+            echo "::error::Generated components are out of date. Run 'npm run generate' and commit the result."
+            git status --porcelain -- packages
+            exit 1
+          fi
+
+      - name: Build React
+        run: npm run build --workspace @mteherandev/colombia-icons-react
+
+      - name: Build Angular
+        run: npm run build --workspace @mteherandev/colombia-icons-angular
+
+      - name: Build Blazor (NuGet)
+        run: dotnet build packages/blazor/ColombiaIcons.Blazor.csproj -c Release

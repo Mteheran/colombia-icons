@@ -8,6 +8,17 @@ The three published packages (React, Angular, Blazor) share a single version.
 
 Every commit closes a minor version; major versions are cut only on request.
 
+## [0.6.0] - 2026-08-01
+
+### Fixed
+
+- Regenerated the React, Angular and Blazor packages so the 11 generic icons
+  documented back in 0.3.0 (`lista-tareas`, `clip`, `clip-vertical`,
+  `usuario-agregar`, `usuario-eliminar`, `usuario-inactivo`, `monitor`,
+  `monitor-configuracion`, `monitor-editar`, `regalo`, `pergamino`) are now
+  actually shipped as components — they were listed and approved but had never
+  been generated into the packages (109 vs 120).
+
 ## [0.5.0] - 2026-07-31
 
 ### Added

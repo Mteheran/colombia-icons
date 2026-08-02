@@ -8,6 +8,25 @@ The three published packages (React, Angular, Blazor) share a single version.
 
 Every commit closes a minor version; major versions are cut only on request.
 
+## [0.7.0] - 2026-08-01
+
+### Added
+
+- README files for the React and Angular npm packages
+  (`@mteherandev/colombia-icons-react`, `@mteherandev/colombia-icons-angular`),
+  so their npm pages show installation, usage, props and an icon overview
+  (previously the npm pages had no README).
+- Interactive "Colombia Travel" demo on the companion site (`apps/site`): a
+  travel & tourism app mockup that uses the icons for navigation (bottom bar,
+  search) and for the services/experiences it offers, switchable from the
+  gallery. Renders the same source SVGs the gallery does (dogfooding).
+
+### Changed
+
+- The root README's package table now links the "npm" column to the published
+  React and Angular package pages, and the site's install note reflects that
+  both packages are already published (Blazor pending on NuGet).
+
 ## [0.6.0] - 2026-08-01
 
 ### Fixed

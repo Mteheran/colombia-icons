@@ -8,6 +8,22 @@ The three published packages (React, Angular, Blazor) share a single version.
 
 Every commit closes a minor version; major versions are cut only on request.
 
+## [0.8.0] - 2026-08-02
+
+### Fixed
+
+- Companion site (`apps/site`) rendered a blank page on the custom domain
+  `https://colombia-icons.com/`. The build used a `/colombia-icons/` base
+  path (for the old `github.io/colombia-icons/` project URL), so the app's
+  JS and CSS were requested under `/colombia-icons/assets/…` and 404'd on
+  the apex domain, leaving `#root` empty. The base is now `/` so assets load
+  from the domain root.
+
+### Added
+
+- `CNAME` file for the site (`apps/site/public/CNAME` → `colombia-icons.com`)
+  so the custom domain is preserved on every GitHub Pages deploy.
+
 ## [0.7.0] - 2026-08-01
 
 ### Added

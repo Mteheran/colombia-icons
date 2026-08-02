@@ -6,8 +6,10 @@ const repoRoot = fileURLToPath(new URL('../..', import.meta.url))
 
 // https://vite.dev/config/
 export default defineConfig({
-  // The site is served from https://<user>.github.io/colombia-icons/.
-  base: '/colombia-icons/',
+  // The site is served from the custom apex domain https://colombia-icons.com/,
+  // so assets live at the root. (It used to be /colombia-icons/ for the
+  // github.io project-page URL.)
+  base: '/',
   plugins: [react()],
   server: {
     // The gallery reads icons/svg and icons/manifest.json straight from the

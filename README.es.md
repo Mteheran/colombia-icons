@@ -22,12 +22,12 @@ Read this in other languages: [English](./README.md)
 
 | Paquete | Framework | Registro |
 |---|---|---|
-| [`@mteherandev/colombia-icons-react`](./packages/react) | React | npm |
-| [`@mteherandev/colombia-icons-angular`](./packages/angular) | Angular | npm |
+| [`@mteherandev/colombia-icons-react`](./packages/react) | React | [npm](https://www.npmjs.com/package/@mteherandev/colombia-icons-react) |
+| [`@mteherandev/colombia-icons-angular`](./packages/angular) | Angular | [npm](https://www.npmjs.com/package/@mteherandev/colombia-icons-angular) |
 | `ColombiaIcons.Blazor` | Blazor | NuGet |
 
-> Ningún paquete está publicado todavía. Las instrucciones de instalación
-> funcionarán una vez se publique la v1.0.
+> Los paquetes de React y Angular están publicados en npm. El paquete de Blazor
+> (`ColombiaIcons.Blazor`) todavía no está en NuGet.
 
 ## Instalación
 

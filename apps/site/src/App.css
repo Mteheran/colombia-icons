@@ -141,6 +141,17 @@ a {
   }
 }
 
+/* View switch ------------------------------------------------------------ */
+
+.view-switch {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 24px 8px;
+}
+
 /* Install ---------------------------------------------------------------- */
 
 .tabs {

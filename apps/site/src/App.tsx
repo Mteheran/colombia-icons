@@ -10,6 +10,7 @@ import {
 import { IconCard } from './components/IconCard'
 import { IconModal } from './components/IconModal'
 import { ThemeToggle } from './components/ThemeToggle'
+import { TravelDemo } from './components/TravelDemo'
 import './App.css'
 
 const REPO = 'https://github.com/Mteheran/colombia-icons'
@@ -39,7 +40,10 @@ const INSTALL = [
 
 type Expanded = { icon: Icon; color: string }
 
+type View = 'galeria' | 'demo'
+
 export default function App() {
+  const [view, setView] = useState<View>('galeria')
   const [query, setQuery] = useState('')
   const [category, setCategory] = useState<Categoria | 'todas'>('todas')
   const [framework, setFramework] = useState<string>('react')
@@ -78,6 +82,27 @@ export default function App() {
         </div>
       </header>
 
+      <nav className="view-switch" aria-label="Vista">
+        <button
+          type="button"
+          data-active={view === 'galeria'}
+          onClick={() => setView('galeria')}
+        >
+          Galería
+        </button>
+        <button
+          type="button"
+          data-active={view === 'demo'}
+          onClick={() => setView('demo')}
+        >
+          Demo App de turismo
+        </button>
+      </nav>
+
+      {view === 'demo' && <TravelDemo />}
+
+      {view === 'galeria' && (
+      <>
       <section className="section" id="instalacion">
         <h2>Instalación</h2>
         <div className="tabs" role="tablist" aria-label="Framework">
@@ -101,8 +126,9 @@ export default function App() {
           <code>{active.usage}</code>
         </pre>
         <p className="note">
-          Los paquetes todavía no están publicados — estas instrucciones aplican
-          desde la v1.0. Mientras tanto podés descargar cada ícono acá abajo.
+          Los paquetes de React y Angular ya están publicados en npm. El de
+          Blazor (<code>ColombiaIcons.Blazor</code>) llegará pronto a NuGet.
+          También podés descargar cada ícono acá abajo.
         </p>
       </section>
 
@@ -157,6 +183,8 @@ export default function App() {
           </div>
         )}
       </section>
+      </>
+      )}
 
       <footer className="footer">
         <p>

@@ -51,6 +51,11 @@ export const icons: Icon[] = entries
   })
   .filter((icon): icon is Icon => icon !== null)
 
+/** Raw SVG markup by icon id — lets any component render an icon by name. */
+export const svgById: Record<string, string> = Object.fromEntries(
+  icons.map((icon) => [icon.id, icon.svg]),
+)
+
 export const categories = (Object.keys(CATEGORY_LABELS) as Categoria[]).filter(
   (categoria) => icons.some((icon) => icon.categoria === categoria),
 )

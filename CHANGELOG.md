@@ -8,6 +8,12 @@ The three published packages (React, Angular, Blazor) share a single version.
 
 Every commit closes a minor version; major versions are cut only on request.
 
+## [0.9.0] - 2026-08-10
+
+### Added
+
+- Icons (genericos): `microfono-estudio`, `cohete`, `maletin`, `bug`, `bug-mariquita`, `campana`, `campana-sonando`, `corazon`, `ojo`, `ojo-cerrado`, `ubicacion`, `carrito`, `tarjeta`, `enlace`, `reproducir`, `pausa` — 16 new generic UI icons, bringing the library to 136 icons total. Includes a second microphone style (studio/podcast), a rocket, a briefcase, two bug styles (beetle and ladybug), a bell plus a ringing variant, and the first batch of the "most-used app icons" set: heart, show/hide password (eye / eye-closed), map pin, shopping cart, credit card, link, and play/pause media controls.
+
 ## [0.8.0] - 2026-08-02
 
 ### Fixed

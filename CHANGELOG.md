@@ -8,6 +8,12 @@ The three published packages (React, Angular, Blazor) share a single version.
 
 Every commit closes a minor version; major versions are cut only on request.
 
+## [0.10.0] - 2026-08-10
+
+### Added
+
+- Icons (genericos): `enviar`, `sol`, `luna` — completes the "Top 10 most-used app icons" set with send (paper plane) and the light/dark theme toggle pair (sun and moon). Library now at 139 icons total.
+
 ## [0.9.0] - 2026-08-10
 
 ### Added

@@ -1398,6 +1398,39 @@
       ]
     },
     {
+      "id": "enviar",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos (Top 10 a peticion del usuario). Send. Referencia: Lucide send y Tabler send (avion de papel). Outline (22,2)-(15,22)-(11,13)-(2,9) cerrado + linea de pliegue de la punta (22,2) al vertice interior (11,13)",
+      "historial": [
+        { "fecha": "2026-08-10", "accion": "generado", "nota": "avion de papel apuntando arriba-derecha, punta en (22,2), con pliegue interior" },
+        { "fecha": "2026-08-10", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "sol",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos (Top 10 a peticion del usuario). Sol, mitad del toggle tema claro/oscuro (par de luna). Referencia: Lucide sun y Tabler sun. Circle r4 en (12,12) + 8 rayos (4 cardinales de r6 a r? y 4 diagonales a 45 grados en 6.34/17.66). Simetrico en ambos ejes",
+      "historial": [
+        { "fecha": "2026-08-10", "accion": "generado", "nota": "nucleo circle r4 + 8 rayos cortos radiando; diagonales calculadas en 45 grados (7.76/16.24 interior, 6.34/17.66 exterior)" },
+        { "fecha": "2026-08-10", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "luna",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos (Top 10 a peticion del usuario). Luna, mitad del toggle tema claro/oscuro (par de sol). Referencia: Lucide moon y Tabler moon. Creciente de un solo path: arco interior r6 (la mordida) de (12,3) a (21,12) + arco exterior r9 large-arc de vuelta a (12,3)",
+      "historial": [
+        { "fecha": "2026-08-10", "accion": "generado", "nota": "media luna de un path cerrado (mordida r6 + circulo exterior r9)" },
+        { "fecha": "2026-08-10", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
       "id": "terminal",
       "categoria": "genericos",
       "estado": "aprobado",

@@ -89,12 +89,32 @@ cambio, nunca en un commit aparte.
    node -e "const m=require('./icons/manifest.json');const a=m.icons;const c={};a.filter(i=>i.estado==='aprobado').forEach(i=>c[i.categoria]=(c[i.categoria]||0)+1);console.log(c,'total',Object.values(c).reduce((x,y)=>x+y,0))"
    ```
 
-7. **Stageá todo junto** y creá el commit:
+7. **Regenerá los componentes si cambió algún `.svg` o el manifest.**
+   El workflow `build-and-test.yml` corre en cada push y **falla** con
+   `Generated components are out of date` si `packages/` no coincide con
+   `icons/svg/`. Este paso va SIEMPRE que se agregue, quite, apruebe o
+   rediseñe un ícono — **no se difiere "al final"**, aunque `CLAUDE.md`
+   (sección 11.7) lo sugiera; la verificación de CI manda:
 
    ```bash
-   git add CHANGELOG.md package.json packages/*/package.json packages/blazor/*.csproj
+   npm run generate
+   ```
+
+   Reescribe los componentes de React, Angular y Blazor. Verificá que quede
+   idempotente — tras stagear, `git status --porcelain -- packages` no debe
+   reportar nada nuevo. Si `npm run generate` no produce cambios, no había
+   nada que regenerar y seguís normal.
+
+8. **Stageá todo junto** —incluí `packages/` si regeneraste, además de los
+   íconos, el manifest y los READMEs— y creá el commit:
+
+   ```bash
+   git add CHANGELOG.md package.json packages icons README.md README.es.md
    git commit -m "..."
    ```
+
+   Antes de dar por hecho el commit, confirmá que `git status --porcelain
+   -- packages` esté limpio: es exactamente lo que revisa CI.
 
 ## Excepciones
 

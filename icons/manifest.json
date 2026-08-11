@@ -758,13 +758,14 @@
       "id": "arepa",
       "categoria": "gastronomia",
       "estado": "aprobado",
-      "intentos": 3,
-      "notas": "arepa base del set (las variantes choclo/huevo/boyacense se diferencian despues): disco redondo visto desde arriba con 3 marcas diagonales de asado",
+      "intentos": 4,
+      "notas": "arepa base del set: disco en perspectiva (elipse superior + grosor visible) con 3 marcas de asado horizontales sobre la cara",
       "historial": [
         { "fecha": "2026-07-14", "accion": "generado", "nota": "circulo r8 centrado + 3 lineas diagonales paralelas de marcas de parrilla, contenidas dentro del disco" },
         { "fecha": "2026-07-14", "accion": "feedback", "nota": "las 3 marcas de asado acortadas (radio efectivo de 6.4 a 5.2) para dejar mas aire entre las lineas y el borde del disco" },
         { "fecha": "2026-07-14", "accion": "feedback", "nota": "las 3 marcas de asado acortadas otra vez (radio efectivo de 5.2 a 4.3) y separacion entre lineas reducida de 3.4 a 3.0" },
-        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" },
+        { "fecha": "2026-08-10", "accion": "feedback", "nota": "diseño reemplazado por la version aportada por un contribuidor (upload directo a main, commit bc15770); normalizada a la spec e importada, y re-aprobada" }
       ]
     },
     {
@@ -824,83 +825,94 @@
       "id": "empanada",
       "categoria": "gastronomia",
       "estado": "aprobado",
-      "intentos": 2,
-      "notas": "empanada colombiana: media luna organica girada -30 grados, con el doblez arqueado, domo fluido asimetrico, linea de sellado interior y 5 repulgues radiales sobre el borde curvo",
+      "intentos": 3,
+      "notas": "empanada colombiana: media luna con el doblez recto y el borde curvo repulgado (crimped)",
       "historial": [
         { "fecha": "2026-07-14", "accion": "generado", "nota": "semidisco r8 centrado en (12,8) con borde recto arriba (doblez) y domo abajo; arco de sellado concentrico r5.9; 5 repulgues radiales a 40/65/90/115/140 grados que van del arco de sellado al borde exterior" },
         { "fecha": "2026-07-14", "accion": "feedback", "nota": "girada 30 grados a la izquierda (rotate -30 sobre 12,12) y agregado movimiento a las formas: el doblez recto (H) pasa a cubica arqueada suave, el arco exacto del domo pasa a 2 cubicas fluidas y asimetricas, y el arco de sellado concentrico pasa a curva organica que sigue el domo" },
-        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" },
+        { "fecha": "2026-08-10", "accion": "feedback", "nota": "diseño reemplazado por la version aportada por un contribuidor (upload directo a main, commit bc15770); normalizada a la spec e importada, y re-aprobada" }
       ]
     },
     {
       "id": "arepa-de-choclo",
       "categoria": "gastronomia",
-      "estado": "rechazado",
-      "intentos": 2,
-      "notas": "primera variante de arepa: perfil horizontal (vista de lado, cuerpo grueso tipo pastilla) con tajada de queso en triangulo suave encima y granos de maiz en la cara; el queso encima es lo que la ancla al plato real y la distingue de la arepa base (vista superior con rayas de parrilla)",
+      "estado": "aprobado",
+      "intentos": 3,
+      "notas": "arepa de choclo: disco en perspectiva (elipse superior + grosor) con granos de maiz asomando en la cara superior",
       "historial": [
         { "fecha": "2026-07-14", "accion": "generado", "nota": "disco r8 igual al de arepa + 10 granos de maiz (puntos rellenos r0.8) en 3 filas escalonadas tipo ladrillo (3-4-3), todos contenidos dentro del disco" },
         { "fecha": "2026-07-14", "accion": "feedback", "nota": "rediseñada con referencias (bonviveur/mycolombianrecipes: se sirve con tajada de queso campesino encima): pasa de vista superior a PERFIL HORIZONTAL (cuerpo tipo pastilla x4-20, y11.9-18.5) + tajada de queso como triangulo de lados curvos y apice redondeado apoyado sobre la cara superior (path abierto, sin base propia, para no duplicar linea con el borde de la arepa) + 7 granos de maiz en 2 filas escalonadas sobre la cara" },
-        { "fecha": "2026-07-14", "accion": "rechazado", "nota": "el usuario pidio omitirla/saltarla para retomar despues" }
+        { "fecha": "2026-07-14", "accion": "rechazado", "nota": "el usuario pidio omitirla/saltarla para retomar despues" },
+        { "fecha": "2026-08-10", "accion": "generado", "nota": "nuevo diseño aportado por un contribuidor (upload directo a main, commit bc15770); normalizado a la spec (24x24, stroke 1.5, currentColor, sin metadata de Illustrator) e importado a gastronomia/" },
+        { "fecha": "2026-08-10", "accion": "aprobado", "nota": "" }
       ]
     },
     {
       "id": "sancocho",
       "categoria": "gastronomia",
-      "estado": "rechazado",
-      "intentos": 1,
-      "notas": "sancocho: olla/plato hondo de perfil con una mazorca saliendo (el elemento que lo ancla al sancocho colombiano y lo separa de una sopa generica) y 2 hilos de vapor a los lados",
+      "estado": "aprobado",
+      "intentos": 2,
+      "notas": "sancocho: plato hondo en perspectiva con la mazorca y trozos asomando en la superficie del caldo",
       "historial": [
         { "fecha": "2026-07-14", "accion": "generado", "nota": "plato hondo de perfil (semielipse con borde recto arriba en y11.7) + mazorca central como capsula vertical rx1.4 con 3 lineas de granos, apoyada tangente al borde del plato + 2 hilos de vapor en S a los lados (x7 y x17), mismo lenguaje de vapor que taza-de-tinto" },
-        { "fecha": "2026-07-14", "accion": "rechazado", "nota": "el usuario pidio saltarlo para retomar despues" }
+        { "fecha": "2026-07-14", "accion": "rechazado", "nota": "el usuario pidio saltarlo para retomar despues" },
+        { "fecha": "2026-08-10", "accion": "generado", "nota": "nuevo diseño aportado por un contribuidor (upload directo a main, commit bc15770); normalizado a la spec (24x24, stroke 1.5, currentColor, sin metadata de Illustrator) e importado a gastronomia/" },
+        { "fecha": "2026-08-10", "accion": "aprobado", "nota": "" }
       ]
     },
     {
       "id": "patacon",
       "categoria": "gastronomia",
       "estado": "aprobado",
-      "intentos": 4,
-      "notas": "patacon (platano verde aplastado y frito): forma ovalada/eliptica asimetrica con grietas en el borde (el aplastado revienta la orilla), mas 3 fibras longitudinales del platano, girada 51.8 grados a la izquierda",
+      "intentos": 5,
+      "notas": "patacon (platano verde aplastado y frito): disco redondo irregular con grietas en el borde, arco interior y puntos de textura",
       "historial": [
         { "fecha": "2026-07-14", "accion": "generado", "nota": "contorno organico irregular de 5 anclas con radios variables (7.3 a 8.2) para el borde aplastado + 3 fibras longitudinales curvas en el interior" },
         { "fecha": "2026-07-14", "accion": "feedback", "nota": "el usuario dice que no se ve como un patacon: la forma debe ser mas ovalada/eliptica y con grietas en el borde, nada recto ni simetrico. Se descartaron 3 candidatos mostrados (picos alrededor / triangulo redondeado / dos picos opuestos). Rediseñado: base eliptica rx8.5 ry6.5 achatada, con 3 grietas en V hacia adentro colocadas de forma asimetrica (abajo, izquierda, arriba-derecha) y radios variables entre anclas para romper la simetria" },
         { "fecha": "2026-07-14", "accion": "feedback", "nota": "girado 40% a la izquierda = rotate(-21.8 12 12), usando la misma convencion de porcentaje-como-pendiente acordada en las olas del aguardiente (30% = 16.7 grados). Verificado que la silueta rotada cabe en el grid: el punto mas lejano queda a 10.7 del centro, extremos 1.3-22.7 mas 0.75 de trazo" },
         { "fecha": "2026-07-14", "accion": "feedback", "nota": "girado 30 grados mas a la izquierda: de rotate(-21.8) a rotate(-51.8). Sigue cabiendo en el grid porque la rotacion no cambia la distancia maxima al centro (10.7)" },
-        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" },
+        { "fecha": "2026-08-10", "accion": "feedback", "nota": "diseño reemplazado por la version aportada por un contribuidor (upload directo a main, commit bc15770); normalizada a la spec e importada, y re-aprobada" }
       ]
     },
     {
       "id": "arepa-de-huevo",
       "categoria": "gastronomia",
-      "estado": "rechazado",
-      "intentos": 2,
-      "notas": "arepa de huevo de Luruaco (costa Caribe): arepa partida con corte plano vertical en x14.5 y el huevo cortado EN ese mismo plano de corte (media clara + media yema), no centrado. Contorno no uniforme por el inflado y la fritura",
+      "estado": "aprobado",
+      "intentos": 3,
+      "notas": "arepa de huevo de Luruaco: arepa inflada y frita en perspectiva, con contorno redondeado y el huevo insinuado en la cara",
       "historial": [
         { "fecha": "2026-07-14", "accion": "generado", "nota": "disco de radios variables 7.6-8.2 con 7 anclas cubicas para el borde irregular + mordida concava como arco r4.5 entre los angulos -75 y -15 grados + huevo interior (clara organica r2.8 en 11.5,13 y yema rellena r1.1). Verificado que la mordida no colisiona con el huevo: 1.34 de aire contando trazos" },
         { "fecha": "2026-07-14", "accion": "feedback", "nota": "REARMADA: el usuario dice que no se parecia en nada, que el huevo parecia estar en el centro y que el huevo debe salir cortado. Nueva composicion: la arepa se corta con un plano vertical en x14.5 (el Z del path cierra el corte) y el huevo queda seccionado EN ese plano: la clara es un arco ABIERTO de (14.5,10) a (14.5,14) sin borde de corte propio, y la yema es media luna RELLENA sin trazo apoyada en x14.5. Las 3 piezas comparten el plano de corte, asi que no se dibujan lineas coincidentes: el borde recto de la arepa hace de cara de corte para las tres" },
-        { "fecha": "2026-07-14", "accion": "rechazado", "nota": "el usuario pidio omitirla para retomar despues; quedan 2 enfoques descartados (mordida en el borde con huevo entero centrado, y corte plano con huevo seccionado)" }
+        { "fecha": "2026-07-14", "accion": "rechazado", "nota": "el usuario pidio omitirla para retomar despues; quedan 2 enfoques descartados (mordida en el borde con huevo entero centrado, y corte plano con huevo seccionado)" },
+        { "fecha": "2026-08-10", "accion": "generado", "nota": "nuevo diseño aportado por un contribuidor (upload directo a main, commit bc15770); normalizado a la spec (24x24, stroke 1.5, currentColor, sin metadata de Illustrator) e importado a gastronomia/" },
+        { "fecha": "2026-08-10", "accion": "aprobado", "nota": "" }
       ]
     },
     {
       "id": "ajiaco",
       "categoria": "gastronomia",
-      "estado": "rechazado",
-      "intentos": 1,
-      "notas": "ajiaco bogotano: plato hondo con las papas (3 papas es el rasgo del plato) asomando en la superficie y 2 hilos de vapor. Se usan papas en vez de mazorca para separarlo visualmente de sancocho, que ya usaba la mazorca",
+      "estado": "aprobado",
+      "intentos": 2,
+      "notas": "ajiaco bogotano: plato hondo en perspectiva (elipse superior + cuerpo) con papas/granos asomando en la superficie y 2 hilos de vapor",
       "historial": [
         { "fecha": "2026-07-14", "accion": "generado", "nota": "plato hondo de perfil (borde recto en y13 + semielipse) + 3 papas como circulos tangentes al borde del plato (radios 1.5/1.7/1.5, centros calculados para que toquen y13 sin cruzarlo) + 2 hilos de vapor en S a x9 y x15, separados de las papas para que los trazos no se toquen" },
-        { "fecha": "2026-07-14", "accion": "rechazado", "nota": "el usuario pidio omitirlo para retomar despues" }
+        { "fecha": "2026-07-14", "accion": "rechazado", "nota": "el usuario pidio omitirlo para retomar despues" },
+        { "fecha": "2026-08-10", "accion": "generado", "nota": "nuevo diseño aportado por un contribuidor (upload directo a main, commit bc15770); normalizado a la spec (24x24, stroke 1.5, currentColor, sin metadata de Illustrator) e importado a gastronomia/" },
+        { "fecha": "2026-08-10", "accion": "aprobado", "nota": "" }
       ]
     },
     {
       "id": "arepa-boyacense",
       "categoria": "gastronomia",
       "estado": "aprobado",
-      "intentos": 1,
-      "notas": "arepa boyacense (con cuajada, dulzona y notablemente GRUESA): se dibuja en 3/4 como cilindro (cara superior en elipse + grosor visible) porque el grosor es su rasgo, y ademas la separa estructuralmente de la arepa base que es vista superior plana",
+      "intentos": 2,
+      "notas": "arepa boyacense: media arepa de perfil (forma de D) que muestra el relleno de cuajada en el interior",
       "historial": [
         { "fecha": "2026-07-14", "accion": "generado", "nota": "vista 3/4: elipse superior rx8 ry5 en (12,10) + costado con base semieliptica del mismo rx/ry para que el cilindro sea consistente + 1 grieta organica sobre la cara superior. Verificado que la grieta queda dentro de la elipse" },
-        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" },
+        { "fecha": "2026-08-10", "accion": "feedback", "nota": "diseño reemplazado por la version aportada por un contribuidor (upload directo a main, commit bc15770); normalizada a la spec e importada, y re-aprobada" }
       ]
     },
     {
@@ -917,13 +929,15 @@
     {
       "id": "chicharron",
       "categoria": "gastronomia",
-      "estado": "rechazado",
-      "intentos": 2,
-      "notas": "chicharron colombiano: forma de peine. El corte tradicional atraviesa solo la carne y se detiene antes del cuero, dejando las tiras unidas por la corteza; al freir el cuero se curva. Por eso: semiovalo abajo (cuero curvado) + 4 dientes de carne arriba",
+      "estado": "aprobado",
+      "intentos": 3,
+      "notas": "chicharron colombiano: tira de chicharron de perfil, alargada y curva, con la textura del cuero",
       "historial": [
         { "fecha": "2026-07-14", "accion": "generado", "nota": "tira de x3.5 a x20.8 con borde superior de 5 ampollas del cuero, extremos redondeados y base plana + linea de grasa que separa cuero y carne, trazada de borde a borde del cuerpo. Se descartaron ticks verticales de textura en la carne: la capa mide 2.9 y con trazo de 1.5 no cabian sin chocar con la base" },
         { "fecha": "2026-07-14", "accion": "feedback", "nota": "REHECHO con referencias (sweetysalado, mycolombianrecipes, grupoanimal): el corte colombiano hace tiras de ~1.3cm que solo atraviesan la carne y paran antes del cuero, quedando unidas por la corteza — las fuentes lo llaman literalmente 'patas' o 'dientes', forma de peine. Nueva estructura: semiovalo inferior (media elipse rx8.5 ry6.7 con tapa plana en y12.1) como cuero curvado + 4 dientes de carne como paths ABIERTOS (vertical, arco semicircular r1.4 arriba, vertical) que no dibujan base propia: la tapa del semiovalo les hace de base y evita lineas coincidentes" },
-        { "fecha": "2026-07-14", "accion": "rechazado", "nota": "el usuario pidio omitirlo para retomar despues; quedan 2 enfoques descartados (tira con cuero ampollado, y forma de peine con semiovalo + dientes)" }
+        { "fecha": "2026-07-14", "accion": "rechazado", "nota": "el usuario pidio omitirlo para retomar despues; quedan 2 enfoques descartados (tira con cuero ampollado, y forma de peine con semiovalo + dientes)" },
+        { "fecha": "2026-08-10", "accion": "generado", "nota": "nuevo diseño aportado por un contribuidor (upload directo a main, commit bc15770); normalizado a la spec (24x24, stroke 1.5, currentColor, sin metadata de Illustrator) e importado a gastronomia/" },
+        { "fecha": "2026-08-10", "accion": "aprobado", "nota": "" }
       ]
     },
     {

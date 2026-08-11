@@ -8,6 +8,12 @@ The three published packages (React, Angular, Blazor) share a single version.
 
 Every commit closes a minor version; major versions are cut only on request.
 
+## [0.12.0] - 2026-08-11
+
+### Added
+
+- Icons (genericos): `filtro`, `ordenar`, `enlace-externo`, `cuadricula`, `lista-vista`, `escudo`, `llave`, `cerrar-sesion`, `iniciar-sesion`, `interrogacion`, `power`, `chevron-arriba`, `chevron-abajo`, `chevron-izquierda`, `chevron-derecha`, `mas-circulo`, `menos-circulo`, `zoom-mas`, `zoom-menos`, `detener`, `anterior`, `siguiente`, `adelantar`, `retroceder`, `nube`, `nube-descargar`, `nube-subir`, `etiqueta`, `mapa`, `bolsa-compras` — 30 new generic UI icons: navigation/UI helpers (filter, sort, external link, grid/list view toggle, four chevrons), plus/minus-in-circle, zoom in/out, media transport (stop, previous, next, skip forward, rewind), cloud trio (cloud, download, upload), tag, map and shopping bag, plus account/security icons (shield, key, log-out/log-in pair, help, power). Library now at 174 icons total.
+
 ## [0.10.0] - 2026-08-10
 
 ### Added

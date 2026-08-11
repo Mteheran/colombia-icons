@@ -1,7 +1,7 @@
 # Colombia Icons
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
-[![Icons](https://img.shields.io/badge/icons-120-blue.svg)](#available-icons)
+[![Icons](https://img.shields.io/badge/icons-125-blue.svg)](#available-icons)
 [![Status](https://img.shields.io/badge/status-pre--release-orange.svg)](./CHANGELOG.md)
 [![GitHub](https://img.shields.io/badge/GitHub-Mteheran%2Fcolombia--icons-181717?logo=github)](https://github.com/Mteheran/colombia-icons)
 [![Website](https://img.shields.io/badge/website-colombia--icons-2ea44f)](https://mteheran.github.io/colombia-icons/)
@@ -81,11 +81,11 @@ GitHub displays them outside a styled page.
 |---|---:|
 | Naturaleza | 11 |
 | Cultura | 6 |
-| Gastronomía | 7 |
+| Gastronomía | 12 |
 | Mapas | 0 |
 | Deportes | 4 |
 | Genéricos | 92 |
-| **Total** | **120** |
+| **Total** | **125** |
 
 ### Naturaleza (11)
 
@@ -95,9 +95,9 @@ GitHub displays them outside a styled page.
 
 `sombrero-vueltiao`, `mochila-wayuu`, `acordeon-vallenato`, `mola-kuna`, `feria-de-las-flores`, `sombrero-aguadeno`
 
-### Gastronomía (7)
+### Gastronomía (12)
 
-`arepa`, `taza-de-tinto`, `grano-de-cafe`, `aguardiente`, `empanada`, `patacon`, `arepa-boyacense`
+`arepa`, `taza-de-tinto`, `grano-de-cafe`, `aguardiente`, `empanada`, `patacon`, `arepa-boyacense`, `arepa-de-choclo`, `arepa-de-huevo`, `ajiaco`, `sancocho`, `chicharron`
 
 ### Mapas (0)
 

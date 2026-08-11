@@ -1,0 +1,15 @@
+@namespace ColombiaIcons.Blazor.Icons
+
+<svg xmlns="http://www.w3.org/2000/svg" width="@Size" height="@Size" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="color:@Color" @attributes="AdditionalAttributes"><path d="M7 15.5a4.5 4.5 0 0 1 1.6 -8.7a4.2 4.2 0 0 1 7.8 1.1a3.3 3.3 0 0 1 1 6.5" /><path d="M12 19v-7M9 15l3 -3 3 3" /></svg>
+
+@code {
+    /// <summary>Ancho y alto del ícono (px o cualquier unidad CSS). Default: "24".</summary>
+    [Parameter] public string Size { get; set; } = "24";
+
+    /// <summary>Color del trazo/relleno. Default: "currentColor" (hereda del texto).</summary>
+    [Parameter] public string Color { get; set; } = "currentColor";
+
+    /// <summary>Atributos HTML adicionales (class, aria-*, etc.).</summary>
+    [Parameter(CaptureUnmatchedValues = true)]
+    public IDictionary<string, object>? AdditionalAttributes { get; set; }
+}

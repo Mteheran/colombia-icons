@@ -1,0 +1,16 @@
+import { forwardRef } from 'react';
+import type { IconProps } from '../types';
+
+export const BolsaCompras = forwardRef<SVGSVGElement, IconProps>(
+  ({ size = 24, color = 'currentColor', style, ...props }, ref) => (
+    <svg
+      ref={ref}
+      xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"
+      style={{ color, ...style }}
+      {...props}
+      dangerouslySetInnerHTML={{ __html: "<path d=\"M5 7h14l-0.8 12.2a2 2 0 0 1 -2 1.8H7.8a2 2 0 0 1 -2 -1.8z\" /><path d=\"M8.5 10V6.5a3.5 3.5 0 0 1 7 0V10\" />" }}
+    />
+  )
+);
+
+BolsaCompras.displayName = 'BolsaCompras';

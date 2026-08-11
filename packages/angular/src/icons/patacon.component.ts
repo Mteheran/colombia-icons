@@ -4,7 +4,7 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
   selector: 'ci-patacon',
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  template: `<svg xmlns="http://www.w3.org/2000/svg" [attr.width]="size" [attr.height]="size" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" [style.color]="color"><g transform="rotate(-51.8 12 12)"><path d="M20.6 12.3C20.5 14.2 18.6 16.5 16.3 17.7C14.9 18.4 13.1 18.8 11.7 18.6L11.2 16.8 10.3 18.4C8.7 18.1 6.2 16.7 4.9 14.9C4.1 13.7 3.6 12.5 3.7 11.3L5.5 10.7 4.2 9.4C4.9 8 6.5 6.7 8.3 6C9.7 5.5 11.1 5.3 12.5 5.5C14.7 5.8 16.9 6.6 18.5 7.9L17.4 9.3 19.5 9.7C20.2 10.4 20.6 11.3 20.6 12.3Z"/><path d="M9.5 9C10 11 10.2 13 9.9 15.3M12.5 8.4C12.9 10.6 12.9 13 12.6 15.6M15.5 9.4C15.6 11.3 15.5 13.2 15.1 15"/></g></svg>`,
+  template: `<svg xmlns="http://www.w3.org/2000/svg" [attr.width]="size" [attr.height]="size" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" [style.color]="color"><path d="M11.1,10.5s0,.1-.1.1-.1,0-.1-.1,0-.1.1-.1.1,0,.1.1Z" /><path d="M13.6,12s0,.1-.1.1-.1,0-.1-.1,0-.1.1-.1.1,0,.1.1Z" /><path d="M11.3,13.1s0,.1-.1.1-.1,0-.1-.1,0-.1.1-.1.1,0,.1.1Z" /><path d="M12.1,7.1c2.6,0,4.8,2.1,4.8,4.8s-2.1,4.8-4.8,4.8" /><path d="M19.8,17.1c1-1.5,1.6-3.3,1.6-5.2s-.2-2.3-.6-3.3-.6-1-1.1-1.4-.7-.8-.9-1.2-.5-1.1-1-1.5-.7-.5-1-.7c-.8-.5-1.7-.5-2.6-.2s-1.9-.1-2.3-.3c-.8-.5-1.7-.7-2.6-.5-2.3.7-4.3,2.2-5.5,4.2s-.5,1.8-.2,2.7-.1,2-.3,2.4c-.5.8-.7,1.7-.5,2.6.5,1.5,1.3,2.9,2.4,4h0c.9,0,1.8.5,2.3,1.2s.8.9,1.3,1.1c1,.3,2,.5,3.1.5,1.8,0,3.5-.5,5-1.4,0,0,.1-3,2.9-3Z" /></svg>`,
 })
 export class PataconIcon {
   @Input() size: number | string = 24;

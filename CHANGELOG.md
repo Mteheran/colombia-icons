@@ -8,6 +8,20 @@ The three published packages (React, Angular, Blazor) share a single version.
 
 Every commit closes a minor version; major versions are cut only on request.
 
+## [0.9.0] - 2026-08-10
+
+### Added
+
+- Icons (gastronomía): `ajiaco`, `arepa-de-choclo`, `arepa-de-huevo`,
+  `chicharron`, `sancocho` — five dishes that were previously skipped,
+  contributed as new designs and normalized to the icon spec (24x24,
+  1.5px stroke, `currentColor`). Gastronomía now has 12 approved icons.
+
+### Changed
+
+- Redesigned four gastronomía icons with contributed artwork:
+  `arepa`, `arepa-boyacense`, `empanada`, `patacon`.
+
 ## [0.8.0] - 2026-08-02
 
 ### Fixed

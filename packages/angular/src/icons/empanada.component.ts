@@ -4,7 +4,7 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
   selector: 'ci-empanada',
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  template: `<svg xmlns="http://www.w3.org/2000/svg" [attr.width]="size" [attr.height]="size" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" [style.color]="color"><g transform="rotate(-30 12 12)"><path d="M4 8.4C8 6.8 16 6.8 20 8.4C20.4 12.5 17 16.4 12 16.6C7 16.8 3.6 12.8 4 8.4Z"/><path d="M5.9 7.9C5.7 12.2 8.2 14.5 12 14.7C15.8 14.5 18.3 12.2 18.1 7.9"/><path d="M16.67 12.52 18.13 13.74M14.58 14.13 15.38 15.85M12 14.7 12 16.6M9.42 14.13 8.62 15.85M7.33 12.52 5.87 13.74"/></g></svg>`,
+  template: `<svg xmlns="http://www.w3.org/2000/svg" [attr.width]="size" [attr.height]="size" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" [style.color]="color"><path d="M4.2,15.7c0-1.7,8.5-3.2,11.2-10.5,3,2.6,3.1,7.6-.2,11-3.4,3.4-8.4,2.8-11-.5Z" /><path d="M4.2,15.7s-1.6,3.6,2.4,4.3" /><path d="M6.3,17.6s-.9,3.7,3.6,3.4" /><path d="M8.5,18.4s1.3,4.2,4.8,1.8" /><path d="M10.9,18.4s1.7,3.7,4.8.4" /><path d="M13.8,17.6s3.3,2.6,4.6-1.5" /><path d="M15.9,15.4s3.8,3,4.3-3.3" /><path d="M17.1,13.3s3.7.8,3-3.1" /><path d="M17.6,10.9s3.2,0,2.3-3.2" /><path d="M17.5,9s3.7-2,.5-5.2" /><path d="M15.4,5.2s.5-2.4,1.3-2.2c.8.2,1,3.1.1,4" /></svg>`,
 })
 export class EmpanadaIcon {
   @Input() size: number | string = 24;

@@ -8,7 +8,13 @@ The three published packages (React, Angular, Blazor) share a single version.
 
 Every commit closes a minor version; major versions are cut only on request.
 
-## [0.9.0] - 2026-08-10
+## [0.12.0] - 2026-08-11
+
+### Added
+
+- Icons (genericos): `filtro`, `ordenar`, `enlace-externo`, `cuadricula`, `lista-vista`, `escudo`, `llave`, `cerrar-sesion`, `iniciar-sesion`, `interrogacion`, `power`, `chevron-arriba`, `chevron-abajo`, `chevron-izquierda`, `chevron-derecha`, `mas-circulo`, `menos-circulo`, `zoom-mas`, `zoom-menos`, `detener`, `anterior`, `siguiente`, `adelantar`, `retroceder`, `nube`, `nube-descargar`, `nube-subir`, `etiqueta`, `mapa`, `bolsa-compras` — 30 new generic UI icons: navigation/UI helpers (filter, sort, external link, grid/list view toggle, four chevrons), plus/minus-in-circle, zoom in/out, media transport (stop, previous, next, skip forward, rewind), cloud trio (cloud, download, upload), tag, map and shopping bag, plus account/security icons (shield, key, log-out/log-in pair, help, power). Library now at 174 icons total.
+
+## [0.11.0] - 2026-08-10
 
 ### Added
 
@@ -21,6 +27,18 @@ Every commit closes a minor version; major versions are cut only on request.
 
 - Redesigned four gastronomía icons with contributed artwork:
   `arepa`, `arepa-boyacense`, `empanada`, `patacon`.
+
+## [0.10.0] - 2026-08-10
+
+### Added
+
+- Icons (genericos): `enviar`, `sol`, `luna` — completes the "Top 10 most-used app icons" set with send (paper plane) and the light/dark theme toggle pair (sun and moon). Library now at 139 icons total.
+
+## [0.9.0] - 2026-08-10
+
+### Added
+
+- Icons (genericos): `microfono-estudio`, `cohete`, `maletin`, `bug`, `bug-mariquita`, `campana`, `campana-sonando`, `corazon`, `ojo`, `ojo-cerrado`, `ubicacion`, `carrito`, `tarjeta`, `enlace`, `reproducir`, `pausa` — 16 new generic UI icons, bringing the library to 136 icons total. Includes a second microphone style (studio/podcast), a rocket, a briefcase, two bug styles (beetle and ladybug), a bell plus a ringing variant, and the first batch of the "most-used app icons" set: heart, show/hide password (eye / eye-closed), map pin, shopping cart, credit card, link, and play/pause media controls.
 
 ## [0.8.0] - 2026-08-02
 

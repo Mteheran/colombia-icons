@@ -1,0 +1,16 @@
+import { forwardRef } from 'react';
+import type { IconProps } from '../types';
+
+export const OjoCerrado = forwardRef<SVGSVGElement, IconProps>(
+  ({ size = 24, color = 'currentColor', style, ...props }, ref) => (
+    <svg
+      ref={ref}
+      xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"
+      style={{ color, ...style }}
+      {...props}
+      dangerouslySetInnerHTML={{ __html: "<path d=\"M2 11C5 15 8.5 16.5 12 16.5C15.5 16.5 19 15 22 11\"/><path d=\"M3.4 16.2L4.5 14.2\"/><path d=\"M7.4 18.1L8 15.9\"/><path d=\"M12 18.7V16.5\"/><path d=\"M16.6 18.1L16 15.9\"/><path d=\"M20.6 16.2L19.5 14.2\"/>" }}
+    />
+  )
+);
+
+OjoCerrado.displayName = 'OjoCerrado';

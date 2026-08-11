@@ -123,9 +123,12 @@ node -e "const m=require('./icons/manifest.json');const c={};m.icons.forEach(i=>
 
 ## 6. Commit
 
-El commit lo cubre el skill `actualizar-changelog`, que sube la versión y
-lista los íconos nuevos por nombre y categoría. No dupliques ese trabajo
-acá.
+El commit lo cubre el skill `actualizar-changelog`, que sube la versión,
+lista los íconos nuevos por nombre y categoría, **regenera los componentes
+con `npm run generate`** e incluye `packages/` en el commit. No dupliques
+ese trabajo acá — pero no cierres el commit sin ese `npm run generate`: CI
+(`build-and-test.yml`) falla con `Generated components are out of date` si
+`packages/` no refleja el ícono nuevo.
 
 ## Qué no hacer
 

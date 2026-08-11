@@ -1234,6 +1234,552 @@
       ]
     },
     {
+      "id": "microfono-estudio",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos, segundo estilo de microfono (variante del microfono de mano vocal). Microfono de condensador de estudio/podcast: cuerpo redondeado con rejilla de lineas horizontales sobre soporte de escritorio con base. Referencia: Tabler microphone-2 (cuerpo sobre soporte) frente a su microphone clasico; Lucide mic vs mic-vocal. Se diferencia del microfono existente por la rejilla horizontal y el soporte recto con base, en vez de capsula + arco",
+      "historial": [
+        { "fecha": "2026-08-10", "accion": "generado", "nota": "cuerpo (rect rx3.5, x8.5-15.5, y2.5-15.5) + 3 lineas de rejilla horizontales + vastago + base. Rejilla centrada en x12 a y5.5, y8, y10.5" },
+        { "fecha": "2026-08-10", "accion": "feedback", "nota": "lineas del centro un poco mas pequenas: se acortaron de x10.5-13.5 (3 de ancho) a x11-13 (2 de ancho)" },
+        { "fecha": "2026-08-10", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "cohete",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos, no estaba en la seccion 4.6 (agregado a peticion del usuario). Cohete/nave. Referencia: Tabler rocket (mas literal y reconocible) sobre Lucide rocket (mas estilizado). Rasgos: cuerpo capsula con nariz conica, ventanilla circular, dos aletas laterales en la base y estela de escape",
+      "historial": [
+        { "fecha": "2026-08-10", "accion": "generado", "nota": "cuerpo (nariz en 12,2.5, ancho x8.5-15.5 a media altura, base en y16) + ventanilla (circle 12,9.5 r1.75) + 2 aletas (a x5.5 y x18.5) + estela curva bajo la base hasta y21" },
+        { "fecha": "2026-08-10", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "maletin",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos, no estaba en la seccion 4.6 (agregado a peticion del usuario). Simboliza empleo/oferta laboral (el maletin es el simbolo universal de trabajo, como el icono de empleos de LinkedIn). Referencia: Lucide briefcase y Tabler briefcase coinciden: cuerpo redondeado + asa superior + linea divisoria. Se agrega un broche central para reforzar la lectura de maletin",
+      "historial": [
+        { "fecha": "2026-08-10", "accion": "generado", "nota": "cuerpo (rect rx2, x3-21, y7-20) + asa arqueada arriba (x9-15, y3.5-7) + banda divisoria horizontal en y13 + broche central (rect rx0.5, 10.5-13.5, 11.75-14.25) montado sobre el divisor" },
+        { "fecha": "2026-08-10", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "bug",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos, no estaba en la seccion 4.6 (agregado a peticion del usuario). Simboliza un bug de software. Vista superior de escarabajo (el icono universal de debug). Referencia: Lucide bug y Tabler bug (cuerpo capsula + antenas + patas). Es la version 1 de 2; su par es bug-mariquita",
+      "historial": [
+        { "fecha": "2026-08-10", "accion": "generado", "nota": "cuerpo capsula (rect rx4, x8-16, y7-19) + costura central vertical + 2 antenas hacia arriba + 6 patas rectas (3 por lado) que salen a x4 y x20" },
+        { "fecha": "2026-08-10", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "bug-mariquita",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos, no estaba en la seccion 4.6 (agregado a peticion del usuario). Segunda version de bug: mariquita, mas amable y visualmente distinta del escarabajo. Cuerpo redondo con linea central de alas, 2 antenas y 4 puntos (circles con fill=currentColor, como estrella-llena). Es la version 2 de 2; su par es bug",
+      "historial": [
+        { "fecha": "2026-08-10", "accion": "generado", "nota": "cuerpo (circle 12,13 r7) + linea central de alas (y6 a y20) + 2 antenas + 4 puntos rellenos (r0.9) en 8.5/15.5,11 y 9.5/14.5,16" },
+        { "fecha": "2026-08-10", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "campana",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 2,
+      "notas": "icono NUEVO de genericos, no estaba en la seccion 4.6 (Top 10 imprescindibles a peticion del usuario). Notificaciones. Referencia: Lucide bell y Tabler bell (domo acampanado + reborde inferior + badajo). Domo = semicirculo (cuerda x6.5-17.5 = 2*r5.5, apex en 12,3.5), se ensancha a x4/x20 en el reborde y17",
+      "historial": [
+        { "fecha": "2026-08-10", "accion": "generado", "nota": "domo (arc r5.5 de 6.5,9 a 17.5,9) que se ensancha hasta el reborde en y17 (x4-x20) + badajo como arco bajo el reborde en y20" },
+        { "fecha": "2026-08-10", "accion": "feedback", "nota": "reducir el tamano del badajo y que conecte con las lineas de la campana: se achico a r1.5 (x10.5-13.5) y se subio a y17 para que sus extremos toquen el reborde" },
+        { "fecha": "2026-08-10", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "campana-sonando",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos (Top 10 a peticion del usuario). Variante de campana: notificacion activa/sonando. Referencia: Tabler bell-ringing. Misma campana un poco mas chica (x5-19) para dar espacio a 2 arcos tipo onda en los lados superiores que sugieren vibracion/sonido",
+      "historial": [
+        { "fecha": "2026-08-10", "accion": "generado", "nota": "campana reducida (domo r5, reborde x5-19 en y17) + badajo r1.5 + 2 ondas de sonido como arcos r5 en los lados superiores (izq de 4,8 a 5.5,4.5; der espejo)" },
+        { "fecha": "2026-08-10", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "corazon",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos (Top 10 a peticion del usuario). Favorito/me encanta, distinto de me-gusta (pulgar). Referencia: Lucide heart y Tabler heart. Un solo path cerrado, simetrico respecto a x12: 2 lobulos arriba y punta en (12,20.5). Los pares de control son espejo exacto (11.3<->12.7, etc.)",
+      "historial": [
+        { "fecha": "2026-08-10", "accion": "generado", "nota": "path cubico simetrico, x3-21, y3.5-20.5, punta en (12,20.5) y dip central en (12,6)" },
+        { "fecha": "2026-08-10", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "ojo",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos (Top 10 a peticion del usuario). Mostrar/ver (visibility), tipico en campos de contrasena. Referencia: Lucide eye y Tabler eye. Almendra simetrica (arriba/abajo respecto a y12, izq/der respecto a x12) + iris circle r3 al centro. Es la version 1 de 2; su par es ojo-cerrado",
+      "historial": [
+        { "fecha": "2026-08-10", "accion": "generado", "nota": "almendra x2-22, apice y5/y19, con puntos de control espejo (5.5<->18.5, 8.5<->15.5) + iris (circle 12,12 r3)" },
+        { "fecha": "2026-08-10", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "ojo-cerrado",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos (Top 10 a peticion del usuario). Ocultar contrasena, par de ojo. Referencia: Tabler eye-closed (parpado como curva hacia abajo + pestanas). 5 pestanas radiando de la curva, simetricas respecto a x12. Es la version 2 de 2; su par es ojo",
+      "historial": [
+        { "fecha": "2026-08-10", "accion": "generado", "nota": "parpado (curva de 2,11 a 22,11 bombeando a y16.5 en el centro) + 5 pestanas cortas hacia abajo, simetricas (bordes 4.5/19.5, medios 8/16, centro 12 vertical)" },
+        { "fecha": "2026-08-10", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "ubicacion",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos (Top 10 a peticion del usuario). Pin de mapa/localizacion. Referencia: Lucide map-pin y Tabler map-pin (gota + circulo interior). Cabeza = semicirculo (arco r7, cuerda x5-19 = 2*r, apex y3), baja a la punta en (12,21). Simetrico respecto a x12. Iris circle r3 en (12,10)",
+      "historial": [
+        { "fecha": "2026-08-10", "accion": "generado", "nota": "gota (cabeza arco r7 de 5,10 a 19,10 + curvas espejo bajando a la punta 12,21) + circle 12,10 r3" },
+        { "fecha": "2026-08-10", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "carrito",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos (Top 10 a peticion del usuario). Carrito de compras (e-commerce). Referencia: Lucide shopping-cart y Tabler shopping-cart (asa arriba-izq + canasta + 2 ruedas). Canasta trapezoidal (rim superior y7, inferior y15) con asa saliendo en (2.5,3.5); ruedas circle r1.4 en (9/17.5, 18.5)",
+      "historial": [
+        { "fecha": "2026-08-10", "accion": "generado", "nota": "path asa+canasta (M2.5 3.5 H5 baja a 7.5,15 bottom rim a 18.5,15 sube a 20.5,7 top rim a 6.2,7) + 2 ruedas" },
+        { "fecha": "2026-08-10", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "tarjeta",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos (Top 10 a peticion del usuario). Tarjeta de credito/pago. Referencia: Lucide credit-card y Tabler credit-card. Rect rx2.5 (x2-22, y5-19) + banda magnetica horizontal a lo ancho en y9.5 + segmento corto abajo-izq (x6-9.5, y15) como zona del numero",
+      "historial": [
+        { "fecha": "2026-08-10", "accion": "generado", "nota": "rect + linea de banda a todo el ancho en y9.5 + segmento del numero" },
+        { "fecha": "2026-08-10", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "enlace",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos (Top 10 a peticion del usuario). Link/URL. Referencia: Lucide link-2 y Tabler link (dos medios eslabones + barra central), estilo horizontal en vez de la cadena diagonal a 45. Medio eslabon izq (C abierta a la derecha, semicirculo r5 centro 7,12) y der (espejo), barra M8 12 H16. Simetrico respecto a x12",
+      "historial": [
+        { "fecha": "2026-08-10", "accion": "generado", "nota": "2 medios eslabones (arcos r5, y7-17) + conector horizontal. Ancho total x2-22" },
+        { "fecha": "2026-08-10", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "reproducir",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos (Top 10 a peticion del usuario). Play, control de media. Referencia: Lucide play y Tabler player-play. Triangulo hacia la derecha (8,5)-(19,12)-(8,19), esquinas redondeadas por linejoin round. Es la version 1 de 2; su par es pausa. Altura y5-19 para casar con las barras de pausa",
+      "historial": [
+        { "fecha": "2026-08-10", "accion": "generado", "nota": "triangulo de un path cerrado, borde izq vertical x8 (y5-19) y apice en (19,12)" },
+        { "fecha": "2026-08-10", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "pausa",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos (Top 10 a peticion del usuario). Pause, control de media, par de reproducir. Referencia: Lucide pause y Tabler player-pause. Dos barras verticales tipo stadium (rx1.5), x8-11 y x13-16, y5-19 para casar en altura con el triangulo de reproducir. Es la version 2 de 2; su par es reproducir",
+      "historial": [
+        { "fecha": "2026-08-10", "accion": "generado", "nota": "2 rects rx1.5 (w3 h14) centrados en x12 con gap de 2 entre barras" },
+        { "fecha": "2026-08-10", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "enviar",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos (Top 10 a peticion del usuario). Send. Referencia: Lucide send y Tabler send (avion de papel). Outline (22,2)-(15,22)-(11,13)-(2,9) cerrado + linea de pliegue de la punta (22,2) al vertice interior (11,13)",
+      "historial": [
+        { "fecha": "2026-08-10", "accion": "generado", "nota": "avion de papel apuntando arriba-derecha, punta en (22,2), con pliegue interior" },
+        { "fecha": "2026-08-10", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "sol",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos (Top 10 a peticion del usuario). Sol, mitad del toggle tema claro/oscuro (par de luna). Referencia: Lucide sun y Tabler sun. Circle r4 en (12,12) + 8 rayos (4 cardinales de r6 a r? y 4 diagonales a 45 grados en 6.34/17.66). Simetrico en ambos ejes",
+      "historial": [
+        { "fecha": "2026-08-10", "accion": "generado", "nota": "nucleo circle r4 + 8 rayos cortos radiando; diagonales calculadas en 45 grados (7.76/16.24 interior, 6.34/17.66 exterior)" },
+        { "fecha": "2026-08-10", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "luna",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos (Top 10 a peticion del usuario). Luna, mitad del toggle tema claro/oscuro (par de sol). Referencia: Lucide moon y Tabler moon. Creciente de un solo path: arco interior r6 (la mordida) de (12,3) a (21,12) + arco exterior r9 large-arc de vuelta a (12,3)",
+      "historial": [
+        { "fecha": "2026-08-10", "accion": "generado", "nota": "media luna de un path cerrado (mordida r6 + circulo exterior r9)" },
+        { "fecha": "2026-08-10", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "filtro",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos (lista de recomendados, grupo Navegacion/UI). Filter. Referencia: Lucide filter y Tabler filter (embudo). Boca ancha x3-21 en y5, se estrecha al cuello (10-14) y baja al vastago con fondo inclinado (14,18)-(10,20). Simetrico respecto a x12",
+      "historial": [
+        { "fecha": "2026-08-10", "accion": "generado", "nota": "embudo de un path cerrado, boca y5, cuello y13, vastago hasta y20" },
+        { "fecha": "2026-08-10", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "ordenar",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos (lista de recomendados, grupo Navegacion/UI). Sort/ordenar. Referencia: Lucide arrow-up-down y Tabler arrows-sort. Dos flechas paralelas: izq (eje x7) apunta arriba, der (eje x17) apunta abajo. Ejes espejo respecto a x12, y4-20",
+      "historial": [
+        { "fecha": "2026-08-10", "accion": "generado", "nota": "flecha izq hacia arriba (cabeza en y4) + flecha der hacia abajo (cabeza en y20)" },
+        { "fecha": "2026-08-10", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "enlace-externo",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos (lista de recomendados, grupo Navegacion/UI). External link / abrir en nueva pestana. Referencia: Lucide external-link y Tabler external-link. Recinto redondeado abierto en la esquina superior derecha + flecha diagonal a (20,4) con cabeza en escuadra (15,4)-(20,4)-(20,9)",
+      "historial": [
+        { "fecha": "2026-08-10", "accion": "generado", "nota": "caja abierta arriba-derecha + flecha diagonal saliente" },
+        { "fecha": "2026-08-10", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "cuadricula",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos (lista de recomendados, grupo Navegacion/UI). Grid view. Referencia: Lucide layout-grid y Tabler layout-grid. Cuatro cuadrados 7x7 rx1.5 en 2x2 (x3-10/x14-21, y3-10/y14-21), gap 4 en el centro. Par de lista-vista",
+      "historial": [
+        { "fecha": "2026-08-10", "accion": "generado", "nota": "4 rects 7x7 redondeados centrados en el grid" },
+        { "fecha": "2026-08-10", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "lista-vista",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos (lista de recomendados, grupo Navegacion/UI). List view, par de cuadricula. Referencia: Lucide list y Tabler list. Tres filas (y6/12/18): vinneta (circle r1 rellena) a la izq en x4.5 + linea de contenido M9 H20",
+      "historial": [
+        { "fecha": "2026-08-10", "accion": "generado", "nota": "3 filas de vinneta+linea, viñetas rellenas con fill=currentColor" },
+        { "fecha": "2026-08-10", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "escudo",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos (lista de recomendados, grupo Seguridad). Shield. Referencia: Lucide shield y Tabler shield. Contorno de un path cerrado: pico superior en (12,2), hombros a (20,5)/(4,5), lados verticales a y12 y curvas que afinan a la punta inferior (12,22). Simetrico respecto a x12",
+      "historial": [
+        { "fecha": "2026-08-10", "accion": "generado", "nota": "escudo de un path, y2-22, x4-20, punta inferior curva" },
+        { "fecha": "2026-08-10", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "llave",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 3,
+      "notas": "icono NUEVO de genericos (lista de recomendados, grupo Seguridad). Key. Referencia: Lucide key y Tabler key. Anillo (circle r5 en 8,16) + vastago diagonal a 45 de (11.5,12.5) a (21,3) + 2 dientes perpendiculares (down-right): uno al centro del vastago (16.25,7.75) y otro cerca de la punta (20.5,3.5)",
+      "historial": [
+        { "fecha": "2026-08-10", "accion": "generado", "nota": "anillo + vastago diagonal + 2 dientes (M15 9 y M18 6)" },
+        { "fecha": "2026-08-10", "accion": "feedback", "nota": "repartir los 2 dientes: uno al centro del vastago y otro en la punta. Movidos a (16.25,7.75) y (20.5,3.5)" },
+        { "fecha": "2026-08-10", "accion": "feedback", "nota": "mover el 2do diente totalmente a la punta (base en 21,3); luego se pidio volver a la version anterior, quedo en (20.5,3.5)" },
+        { "fecha": "2026-08-10", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "cerrar-sesion",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos (lista de recomendados, grupo Seguridad). Log-out. Referencia: Lucide log-out y Tabler logout. Marco de puerta (C abierta a la derecha, x3-9, y3-21) + flecha saliendo hacia la derecha (eje M21 12 H9, cabeza apice en 21,12). Par de iniciar-sesion",
+      "historial": [
+        { "fecha": "2026-08-10", "accion": "generado", "nota": "puerta izq + flecha hacia afuera (derecha)" },
+        { "fecha": "2026-08-10", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "iniciar-sesion",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos (lista de recomendados, grupo Seguridad). Log-in, par de cerrar-sesion. Referencia: Lucide log-in y Tabler login. Marco de puerta (C abierta a la izquierda, x15-21, y3-21) + flecha entrando (eje M15 12 H3, cabeza apice en 15,12 apuntando a la puerta)",
+      "historial": [
+        { "fecha": "2026-08-10", "accion": "generado", "nota": "puerta der + flecha entrando (hacia la derecha, dentro de la puerta)" },
+        { "fecha": "2026-08-10", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "interrogacion",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos (lista de recomendados, grupo Seguridad). Help/ayuda. Referencia: Lucide circle-help y Tabler help. Circle r9 + signo ? (arco grande r2.5 que forma el gancho superior, baja al centro y stem corto a y14) + punto en (12,17)",
+      "historial": [
+        { "fecha": "2026-08-10", "accion": "generado", "nota": "circulo + interrogacion + punto" },
+        { "fecha": "2026-08-10", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "power",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos (lista de recomendados, grupo Seguridad). Power/encendido-apagado. Referencia: Lucide power y Tabler power. Circulo abierto arriba (arco r9 con hueco superior) + linea vertical M12 3 V12 saliendo por el corte. Simetrico respecto a x12",
+      "historial": [
+        { "fecha": "2026-08-10", "accion": "generado", "nota": "arco r9 abierto arriba (de 18.4,6.6 a 5.6,6.6) + linea vertical central" },
+        { "fecha": "2026-08-10", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "chevron-derecha",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos (lista de recomendados, grupo Navegacion/UI). Chevron-right para acordeones/ver mas, distinto de las flecha-* completas. Referencia: Lucide chevron-right (polyline 9 18,15 12,9 6) y Tabler chevron-right (M9 6l6 6-6 6). V apuntando a la derecha, vertice en (15,12), simetrica respecto a y12. Base de las 4 direcciones",
+      "historial": [
+        { "fecha": "2026-08-11", "accion": "generado", "nota": "path M9 6l6 6-6 6" },
+        { "fecha": "2026-08-11", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "chevron-izquierda",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos (lista de recomendados, grupo Navegacion/UI). Chevron-left, espejo de chevron-derecha. Referencia: Lucide chevron-left (polyline 15 18,9 12,15 6) y Tabler chevron-left (M15 6l-6 6 6 6). V apuntando a la izquierda, vertice en (9,12), simetrica respecto a y12",
+      "historial": [
+        { "fecha": "2026-08-11", "accion": "generado", "nota": "path M15 6l-6 6 6 6" },
+        { "fecha": "2026-08-11", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "chevron-arriba",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos (lista de recomendados, grupo Navegacion/UI). Chevron-up. Referencia: Lucide chevron-up (polyline 18 15,12 9,6 15) y Tabler chevron-up (M6 15l6-6 6 6). V apuntando hacia arriba, vertice en (12,9), simetrica respecto a x12",
+      "historial": [
+        { "fecha": "2026-08-11", "accion": "generado", "nota": "path M6 15l6-6 6 6" },
+        { "fecha": "2026-08-11", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "chevron-abajo",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos (lista de recomendados, grupo Navegacion/UI). Chevron-down, cierra la serie de 4 direcciones. Referencia: Lucide chevron-down (polyline 6 9,12 15,18 9) y Tabler chevron-down (M6 9l6 6 6-6). V apuntando hacia abajo, vertice en (12,15), simetrica respecto a x12",
+      "historial": [
+        { "fecha": "2026-08-11", "accion": "generado", "nota": "path M6 9l6 6 6-6" },
+        { "fecha": "2026-08-11", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "mas-circulo",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos (lista de recomendados, grupo Navegacion/UI). Agregar en circulo (circle-plus). Referencia: Lucide circle-plus y Tabler circle-plus. Circle r9 en (12,12) + signo + de brazos 8px (8 a 16) horizontal y vertical, centrado. Par de menos-circulo",
+      "historial": [
+        { "fecha": "2026-08-11", "accion": "generado", "nota": "circle r9 + path M12 8v8 M8 12h8" },
+        { "fecha": "2026-08-11", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "menos-circulo",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos (lista de recomendados, grupo Navegacion/UI). Quitar en circulo (circle-minus). Referencia: Lucide circle-minus y Tabler circle-minus. Mismo circle r9 en (12,12) que mas-circulo, con un solo brazo horizontal 8px (8 a 16). Par de mas-circulo",
+      "historial": [
+        { "fecha": "2026-08-11", "accion": "generado", "nota": "circle r9 + path M8 12h8" },
+        { "fecha": "2026-08-11", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "detener",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos (lista de recomendados, grupo Media). Stop, control de media junto a reproducir/pausa. Referencia: Lucide square y Tabler player-stop. Cuadrado 14x14 centrado (x5-19, y5-19) rx2, mismas dimensiones verticales que pausa/reproducir para que la familia pese igual",
+      "historial": [
+        { "fecha": "2026-08-11", "accion": "generado", "nota": "rect x5 y5 14x14 rx2" },
+        { "fecha": "2026-08-11", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "siguiente",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos (lista de recomendados, grupo Media). Skip-forward/next. Referencia: Lucide skip-forward y Tabler player-track-next. Dos triangulos hacia la derecha (4,6)-(11,12)-(4,18) y (11,6)-(18,12)-(11,18) + barra vertical en x20 (y6-18). Espejo de anterior",
+      "historial": [
+        { "fecha": "2026-08-11", "accion": "generado", "nota": "2 triangulos derecha + barra M20 6v12" },
+        { "fecha": "2026-08-11", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "anterior",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos (lista de recomendados, grupo Media). Skip-back/previous, espejo de siguiente. Referencia: Lucide skip-back y Tabler player-track-prev. Barra vertical en x4 (y6-18) + dos triangulos hacia la izquierda (20,6)-(13,12)-(20,18) y (13,6)-(6,12)-(13,18)",
+      "historial": [
+        { "fecha": "2026-08-11", "accion": "generado", "nota": "barra M4 6v12 + 2 triangulos izquierda" },
+        { "fecha": "2026-08-11", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "adelantar",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos (lista de recomendados, grupo Media). Fast-forward. Referencia: Lucide fast-forward y Tabler player-track-next (sin barra). Dos triangulos hacia la derecha sin barra: (3,6)-(11,12)-(3,18) y (12,6)-(20,12)-(12,18). Se distingue de siguiente por no tener la linea vertical. Espejo de retroceder",
+      "historial": [
+        { "fecha": "2026-08-11", "accion": "generado", "nota": "2 triangulos derecha sin barra" },
+        { "fecha": "2026-08-11", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "retroceder",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos (lista de recomendados, grupo Media). Rewind, espejo de adelantar. Referencia: Lucide rewind y Tabler player-track-prev (sin barra). Dos triangulos hacia la izquierda sin barra: (21,6)-(13,12)-(21,18) y (12,6)-(4,12)-(12,18)",
+      "historial": [
+        { "fecha": "2026-08-11", "accion": "generado", "nota": "2 triangulos izquierda sin barra" },
+        { "fecha": "2026-08-11", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "nube",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 3,
+      "notas": "icono NUEVO de genericos (lista de recomendados, grupo Archivos/datos). Cloud storage. Referencia: Lucide cloud y Tabler cloud, pero se pidio una silueta mas ondulada. Version final (C): path de un solo trazo cerrado, lobulo izquierdo grande y redondo (arco large-arc a4.8), bulto central y lobulo derecho, base plana. Base de nube-descargar y nube-subir",
+      "historial": [
+        { "fecha": "2026-08-11", "accion": "generado", "nota": "path de Lucide cloud (un lobulo liso a la izquierda)" },
+        { "fecha": "2026-08-11", "accion": "feedback", "nota": "agregar ondulaciones a la izquierda como a la derecha; se rehizo con 3 lobulos" },
+        { "fecha": "2026-08-11", "accion": "feedback", "nota": "la protuberancia izquierda mas grande y redonda; se mostraron variantes A/B/C y se eligio C" },
+        { "fecha": "2026-08-11", "accion": "aprobado", "nota": "version C" }
+      ]
+    },
+    {
+      "id": "nube-descargar",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos (lista de recomendados, grupo Archivos/datos). Cloud-download. Referencia: Lucide cloud-download y Tabler cloud-download. Reusa la silueta de nube (lobulos, abierta abajo para que pase la flecha) + flecha vertical hacia abajo centrada en x12 (M12 12v7) con cabeza chevron (M9 16l3 3 3-3). Par de nube-subir",
+      "historial": [
+        { "fecha": "2026-08-11", "accion": "generado", "nota": "nube abierta + flecha abajo, verificado a 24px" },
+        { "fecha": "2026-08-11", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "nube-subir",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos (lista de recomendados, grupo Archivos/datos). Cloud-upload, par de nube-descargar. Referencia: Lucide cloud-upload y Tabler cloud-upload. Misma nube que nube-descargar con la flecha invertida: vastago M12 19v-7 y cabeza arriba (M9 15l3 -3 3 3), apice en (12,12)",
+      "historial": [
+        { "fecha": "2026-08-11", "accion": "generado", "nota": "nube + flecha arriba (espejo de nube-descargar)" },
+        { "fecha": "2026-08-11", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "etiqueta",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 2,
+      "notas": "icono NUEVO de genericos (lista de recomendados, grupo Archivos/datos). Tag/label. Referencia: Lucide tag y Tabler tag. Cuadrado redondeado rotado (geometria de Lucide tag horneada como espejo horizontal, path absoluto sin transform): punta abajo-izquierda, agujero (circle r1.1) arriba-derecha en (16.5,7.5)",
+      "historial": [
+        { "fecha": "2026-08-11", "accion": "generado", "nota": "primer intento: cuerpo con borde superior plano + punta diagonal; la esquina de la punta quedo con un arco extra" },
+        { "fecha": "2026-08-11", "accion": "feedback", "nota": "en la parte izquierda abajo tenia una muesca desalineada; se rehizo con la geometria limpia de Lucide tag (espejo horneado) sin notch" },
+        { "fecha": "2026-08-11", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "mapa",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos (lista de recomendados, grupo Archivos/datos). Mapa desplegado, complemento de ubicacion. Referencia: Lucide map y Tabler map. Mapa plegado en 3 paneles zig-zag (central abajo, laterales arriba) + 2 lineas de pliegue verticales (M9 4v14, M15 6v14)",
+      "historial": [
+        { "fecha": "2026-08-11", "accion": "generado", "nota": "3 paneles zig-zag + 2 pliegues, verificado a 24px" },
+        { "fecha": "2026-08-11", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "zoom-mas",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos (lista de recomendados, grupo Archivos/datos). Zoom-in. Referencia: Lucide zoom-in y Tabler zoom-in. Reusa la lupa de buscar (circle cx10 cy10 r6.5 + mango M14.6 14.6 L20 20) + signo + centrado en el lente (M10 7v6 M7 10h6). Par de zoom-menos",
+      "historial": [
+        { "fecha": "2026-08-11", "accion": "generado", "nota": "lupa de buscar + signo + en el lente, verificado a 24px" },
+        { "fecha": "2026-08-11", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "zoom-menos",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos (lista de recomendados, grupo Archivos/datos). Zoom-out, par de zoom-mas. Referencia: Lucide zoom-out y Tabler zoom-out. Misma lupa que zoom-mas con un solo brazo horizontal (M7 10h6) en el lente",
+      "historial": [
+        { "fecha": "2026-08-11", "accion": "generado", "nota": "lupa + signo - en el lente" },
+        { "fecha": "2026-08-11", "accion": "aprobado", "nota": "" }
+      ]
+    },
+    {
+      "id": "bolsa-compras",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "icono NUEVO de genericos (lista de recomendados, grupo Comercio/social). Shopping bag, distinta de carrito. Referencia: Lucide shopping-bag y Tabler shopping-bag. Cuerpo trapezoidal redondeado con la boca arriba (M5 7h14...) + asa en U invertida que sobresale por encima del borde (M8.5 10V6.5 a3.5 3.5 arco a 15.5,10). Se mostraron 2 variantes (asa sobresaliente vs asa curva interior) y se eligio la sobresaliente",
+      "historial": [
+        { "fecha": "2026-08-11", "accion": "generado", "nota": "variantes A (asa sobresaliente) y B (asa curva interior); se eligio A por ser mas reconocible a 24px" },
+        { "fecha": "2026-08-11", "accion": "aprobado", "nota": "version A" }
+      ]
+    },
+    {
       "id": "terminal",
       "categoria": "genericos",
       "estado": "aprobado",

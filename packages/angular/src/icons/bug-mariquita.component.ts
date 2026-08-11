@@ -1,0 +1,12 @@
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+
+@Component({
+  selector: 'ci-bug-mariquita',
+  standalone: true,
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: `<svg xmlns="http://www.w3.org/2000/svg" [attr.width]="size" [attr.height]="size" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" [style.color]="color"><circle cx="12" cy="13" r="7"/><path d="M12 6V20"/><path d="M10 6.5L8.5 4.5"/><path d="M14 6.5L15.5 4.5"/><circle cx="8.5" cy="11" r="0.9" fill="currentColor" stroke="none"/><circle cx="15.5" cy="11" r="0.9" fill="currentColor" stroke="none"/><circle cx="9.5" cy="16" r="0.9" fill="currentColor" stroke="none"/><circle cx="14.5" cy="16" r="0.9" fill="currentColor" stroke="none"/></svg>`,
+})
+export class BugMariquitaIcon {
+  @Input() size: number | string = 24;
+  @Input() color = 'currentColor';
+}

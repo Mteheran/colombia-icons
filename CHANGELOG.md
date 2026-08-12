@@ -8,6 +8,13 @@ The three published packages (React, Angular, Blazor) share a single version.
 
 Every commit closes a minor version; major versions are cut only on request.
 
+## [0.13.0] - 2026-08-12
+
+### Changed
+
+- Icon (cultura): `sombrero-vueltiao` redesigned from a flat front view with a zigzag band to a 3/4 profile — crown with band lines on the left and a wide curved brim projecting to the right — making it read more clearly as a hat.
+- Site: replaced the placeholder favicon with the `arepa` icon in the flag palette (yellow `#FCD116` on a rounded blue `#003893` tile).
+
 ## [0.12.0] - 2026-08-11
 
 ### Added

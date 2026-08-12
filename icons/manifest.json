@@ -944,11 +944,12 @@
       "id": "sombrero-vueltiao",
       "categoria": "cultura",
       "estado": "aprobado",
-      "intentos": 1,
-      "notas": "primer icono de la categoria cultura. Sombrero vueltiao (caña flecha, Cordoba/Sucre): ala ancha y plana + copa baja + la franja geometrica en zigzag, que es el rasgo que lo separa de un sombrero generico",
+      "intentos": 2,
+      "notas": "sombrero vueltiao (caña flecha, Cordoba/Sucre) en vista de perfil (3/4): copa a la izquierda con las lineas de banda + ala ancha curvada que se proyecta a la derecha, que es el rasgo que lo separa de un sombrero generico",
       "historial": [
         { "fecha": "2026-07-14", "accion": "generado", "nota": "ala como elipse rx9.5 ry2.5 en (12,15.5) + copa baja como arco ABIERTO cuyos pies caen exactamente sobre el borde superior de la elipse (calculado: en x7.5 y x16.5 la elipse tiene y13.3), asi la copa se apoya sin cruzar el ala + zigzag de 6 vertices dentro de la copa" },
-        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" },
+        { "fecha": "2026-08-12", "accion": "generado", "nota": "rediseño aportado en SVG (Illustrator, anyiorrego). Cambia del frente plano con zigzag a una vista de perfil/3-4: copa rectangular a la izquierda con lineas de banda + ala ancha curvada proyectada a la derecha. Normalizado a la spec: se quita el <style>/clase .st0/stroke:#000 y se pasa stroke=currentColor + fill=none al root, decimales sin coma redundante" }
       ]
     },
     {

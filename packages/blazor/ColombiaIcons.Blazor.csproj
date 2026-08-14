@@ -19,12 +19,13 @@
     <PackageId>ColombiaIcons.Blazor</PackageId>
     <Version>0.13.0</Version>
     <Authors>Miguel Teheran</Authors>
-    <Description>Blazor line-icon components inspired by Colombia.</Description>
+    <Description>Line-icon (outline) SVG components for Blazor, inspired by Colombia. A set of strongly-typed Razor icon components (generic UI icons plus Colombian nature, culture, gastronomy and sports) drawn on a 24x24 grid with stroke="currentColor", so they inherit color from CSS. Packaged as a Razor Class Library for .NET 10.</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageTags>blazor;icons;svg;colombia;line-icons</PackageTags>
+    <PackageTags>blazor;icons;svg;colombia;line-icons;outline;razor;components</PackageTags>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageProjectUrl>https://github.com/Mteheran/colombia-icons</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Mteheran/colombia-icons</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
   <ItemGroup>

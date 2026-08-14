@@ -5,6 +5,7 @@
 [![Status](https://img.shields.io/badge/status-pre--release-orange.svg)](./CHANGELOG.md)
 [![GitHub](https://img.shields.io/badge/GitHub-Mteheran%2Fcolombia--icons-181717?logo=github)](https://github.com/Mteheran/colombia-icons)
 [![Website](https://img.shields.io/badge/website-colombia--icons-2ea44f)](https://mteheran.github.io/colombia-icons/)
+[![NuGet](https://img.shields.io/nuget/v/ColombiaIcons.Blazor?logo=nuget&label=NuGet)](https://www.nuget.org/packages/ColombiaIcons.Blazor)
 
 A line-icon (outline) SVG icon library inspired by Colombia — available for
 React, Angular, and Blazor, plus a companion site to browse and download
@@ -24,10 +25,11 @@ Read this in other languages: [Español](./README.es.md)
 |---|---|---|
 | [`@mteherandev/colombia-icons-react`](./packages/react) | React | [npm](https://www.npmjs.com/package/@mteherandev/colombia-icons-react) |
 | [`@mteherandev/colombia-icons-angular`](./packages/angular) | Angular | [npm](https://www.npmjs.com/package/@mteherandev/colombia-icons-angular) |
-| `ColombiaIcons.Blazor` | Blazor | NuGet |
+| [`ColombiaIcons.Blazor`](./packages/blazor) | Blazor | [NuGet](https://www.nuget.org/packages/ColombiaIcons.Blazor) |
 
-> The React and Angular packages are published on npm. The Blazor package
-> (`ColombiaIcons.Blazor`) is not on NuGet yet.
+> All three packages are published: React and Angular on npm, and
+> `ColombiaIcons.Blazor` on
+> [NuGet.org](https://www.nuget.org/packages/ColombiaIcons.Blazor).
 
 ## Installation
 
@@ -61,9 +63,22 @@ npm install @mteherandev/colombia-icons-angular
 dotnet add package ColombiaIcons.Blazor
 ```
 
+Import the icons namespace once in your `_Imports.razor`:
+
+```razor
+@using ColombiaIcons.Blazor.Icons
+```
+
+Then use any icon component:
+
 ```razor
 <Condor Size="24" />
+<EstrellaLlena Size="48" Color="#FCD116" />
 ```
+
+Each component accepts `Size` (default `"24"`) and `Color` (default
+`"currentColor"`); any extra attributes (`class`, `aria-*`, …) are forwarded to
+the root `<svg>` element.
 
 ## Available Icons
 

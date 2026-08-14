@@ -5,6 +5,7 @@
 [![Estado](https://img.shields.io/badge/estado-pre--release-orange.svg)](./CHANGELOG.md)
 [![GitHub](https://img.shields.io/badge/GitHub-Mteheran%2Fcolombia--icons-181717?logo=github)](https://github.com/Mteheran/colombia-icons)
 [![Sitio web](https://img.shields.io/badge/sitio%20web-colombia--icons-2ea44f)](https://mteheran.github.io/colombia-icons/)
+[![NuGet](https://img.shields.io/nuget/v/ColombiaIcons.Blazor?logo=nuget&label=NuGet)](https://www.nuget.org/packages/ColombiaIcons.Blazor)
 
 Librería de íconos line-icon (outline) inspirada en Colombia — disponible
 para React, Angular y Blazor, más un sitio web para explorar y descargar
@@ -24,10 +25,11 @@ Read this in other languages: [English](./README.md)
 |---|---|---|
 | [`@mteherandev/colombia-icons-react`](./packages/react) | React | [npm](https://www.npmjs.com/package/@mteherandev/colombia-icons-react) |
 | [`@mteherandev/colombia-icons-angular`](./packages/angular) | Angular | [npm](https://www.npmjs.com/package/@mteherandev/colombia-icons-angular) |
-| `ColombiaIcons.Blazor` | Blazor | NuGet |
+| [`ColombiaIcons.Blazor`](./packages/blazor) | Blazor | [NuGet](https://www.nuget.org/packages/ColombiaIcons.Blazor) |
 
-> Los paquetes de React y Angular están publicados en npm. El paquete de Blazor
-> (`ColombiaIcons.Blazor`) todavía no está en NuGet.
+> Los tres paquetes están publicados: React y Angular en npm, y
+> `ColombiaIcons.Blazor` en
+> [NuGet.org](https://www.nuget.org/packages/ColombiaIcons.Blazor).
 
 ## Instalación
 
@@ -61,9 +63,22 @@ npm install @mteherandev/colombia-icons-angular
 dotnet add package ColombiaIcons.Blazor
 ```
 
+Importá el namespace de los íconos una vez en tu `_Imports.razor`:
+
+```razor
+@using ColombiaIcons.Blazor.Icons
+```
+
+Después usá cualquier componente de ícono:
+
 ```razor
 <Condor Size="24" />
+<EstrellaLlena Size="48" Color="#FCD116" />
 ```
+
+Cada componente acepta `Size` (por defecto `"24"`) y `Color` (por defecto
+`"currentColor"`); cualquier atributo extra (`class`, `aria-*`, …) se reenvía al
+elemento raíz `<svg>`.
 
 ## Íconos disponibles
 

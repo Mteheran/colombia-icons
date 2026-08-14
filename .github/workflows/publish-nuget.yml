@@ -1,9 +1,12 @@
 name: Publish NuGet package
 
-# Publishes the Blazor package (ColombiaIcons.Blazor) to NuGet.org.
-# Triggered by pushing a version tag (e.g. v0.2.0), which the /publicar-version
-# skill creates. Requires the NUGET_API_KEY secret (an API key with push access
-# to the ColombiaIcons.Blazor package / your NuGet.org account).
+# Publishes the Blazor package (ColombiaIcons.Blazor) to NuGet.org via
+# Trusted Publishing (OIDC) — no long-lived API key. Triggered by pushing a
+# version tag (e.g. v0.2.0), which the /publicar-version skill creates.
+#
+# Requires a Trusted Publishing policy configured on NuGet.org that points at
+# this repository and this workflow file (owner: mteheran). See:
+# https://learn.microsoft.com/nuget/nuget-org/trusted-publishing
 
 on:
   push:
@@ -12,13 +15,11 @@ on:
 
 permissions:
   contents: read
+  id-token: write # required for the OIDC token exchange with NuGet.org
 
 jobs:
   publish:
     runs-on: ubuntu-latest
-    # Exposed at job level so it can be checked in a step `if` below.
-    env:
-      NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
     steps:
       - uses: actions/checkout@v7
 
@@ -52,17 +53,17 @@ jobs:
       - name: Pack
         run: dotnet pack packages/blazor/ColombiaIcons.Blazor.csproj -c Release -o ./nupkg
 
-      # Skip (don't fail) when the NuGet token isn't configured yet, so an npm-only
-      # first release isn't blocked. Once NUGET_API_KEY is set, re-run this workflow
-      # (or push the next tag) to publish the Blazor package.
-      - name: Skip note (no NuGet token)
-        if: env.NUGET_API_KEY == ''
-        run: echo "::warning::NUGET_API_KEY is not set — skipping the NuGet push. Add the secret and re-run to publish ColombiaIcons.Blazor."
+      # Exchange the GitHub OIDC token for a short-lived NuGet API key using the
+      # Trusted Publishing policy configured on NuGet.org for user 'mteheran'.
+      - name: NuGet login (Trusted Publishing / OIDC)
+        id: nuget-login
+        uses: NuGet/login@v1
+        with:
+          user: mteheran
 
       - name: Push to NuGet.org
-        if: env.NUGET_API_KEY != ''
         run: >
           dotnet nuget push "./nupkg/*.nupkg"
-          --api-key "$NUGET_API_KEY"
+          --api-key "${{ steps.nuget-login.outputs.NUGET_API_KEY }}"
           --source https://api.nuget.org/v3/index.json
           --skip-duplicate

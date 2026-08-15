@@ -1,16 +1,31 @@
 import { useEffect, useRef, useState } from 'react'
-import { CATEGORY_LABELS, type Icon } from '../data/icons'
+import { CATEGORY_LABELS_I18N, type Copy, type Lang } from '../i18n'
+import type { Icon } from '../data/icons'
+import type { ColorKey } from '../lib/colors'
+import {
+  FRAMEWORKS,
+  type Framework,
+  componentRef,
+  iconSnippet,
+} from '../lib/frameworks'
 import { downloadPng, downloadSvg } from '../lib/svg'
-import { Swatches } from './Swatches'
+import { ColorSwatches } from './ColorSwatches'
+import { IconSvg } from './IconSvg'
 
 type Props = {
+  t: Copy
+  lang: Lang
   icon: Icon
-  initialColor: string
+  color: ColorKey
+  onColor: (color: ColorKey) => void
+  fw: Framework
+  onFw: (fw: Framework) => void
   onClose: () => void
 }
 
-export function IconModal({ icon, initialColor, onClose }: Props) {
-  const [color, setColor] = useState(initialColor)
+const SIZES = [16, 24, 48]
+
+export function IconModal({ t, lang, icon, color, onColor, fw, onFw, onClose }: Props) {
   const [copied, setCopied] = useState(false)
   const dialogRef = useRef<HTMLDivElement>(null)
 
@@ -18,15 +33,24 @@ export function IconModal({ icon, initialColor, onClose }: Props) {
     const onKeyDown = (event: KeyboardEvent) => {
       if (event.key === 'Escape') onClose()
     }
-    document.addEventListener('keydown', onKeyDown)
+    window.addEventListener('keydown', onKeyDown)
     dialogRef.current?.focus()
-    return () => document.removeEventListener('keydown', onKeyDown)
+    return () => window.removeEventListener('keydown', onKeyDown)
   }, [onClose])
 
-  const copySvg = async () => {
-    await navigator.clipboard.writeText(icon.svg)
-    setCopied(true)
-    setTimeout(() => setCopied(false), 1500)
+  // Reset the copy feedback whenever a different icon opens.
+  useEffect(() => setCopied(false), [icon.id])
+
+  const snippet = iconSnippet(fw, icon.id, color)
+
+  const copySnippet = async () => {
+    try {
+      await navigator.clipboard.writeText(snippet)
+      setCopied(true)
+      setTimeout(() => setCopied(false), 1500)
+    } catch {
+      /* clipboard unavailable — no-op */
+    }
   }
 
   return (
@@ -44,31 +68,86 @@ export function IconModal({ icon, initialColor, onClose }: Props) {
         aria-label={icon.id}
         tabIndex={-1}
       >
-        <button type="button" className="modal-close" onClick={onClose} aria-label="Cerrar">
-          ×
-        </button>
+        <div className="modal-left">
+          <IconSvg svg={icon.svg} size={140} color={color} />
+          <div className="modal-sizes">
+            {SIZES.map((px) => (
+              <div key={px} className="modal-size">
+                <IconSvg svg={icon.svg} size={px} color={color} />
+                <span className="mono-9">{px}</span>
+              </div>
+            ))}
+          </div>
+          <ColorSwatches value={color} onChange={onColor} lang={lang} />
+        </div>
 
-        <div
-          className="modal-preview"
-          style={{ color }}
-          dangerouslySetInnerHTML={{ __html: icon.svg }}
-        />
+        <div className="modal-right">
+          <div className="modal-head">
+            <div>
+              <h3 className="modal-title">{icon.id}</h3>
+              <div className="modal-sub">
+                {CATEGORY_LABELS_I18N[icon.categoria][lang]} · {componentRef(fw, icon.id)}
+              </div>
+            </div>
+            <button
+              type="button"
+              className="modal-close"
+              onClick={onClose}
+              aria-label="Close"
+            >
+              ×
+            </button>
+          </div>
 
-        <h2 className="modal-name">{icon.id}</h2>
-        <p className="modal-category">{CATEGORY_LABELS[icon.categoria]}</p>
+          <div className="specs">
+            <div className="spec">
+              <div className="mono-9">Grid</div>
+              <div className="spec-value">24 × 24</div>
+            </div>
+            <div className="spec">
+              <div className="mono-9">{t.stroke}</div>
+              <div className="spec-value">1.5 px</div>
+            </div>
+            <div className="spec">
+              <div className="mono-9">Fill</div>
+              <div className="spec-value">none</div>
+            </div>
+          </div>
 
-        <Swatches value={color} onChange={setColor} label={`Color de ${icon.id}`} />
+          <div className="pill-group modal-fw">
+            {FRAMEWORKS.map((f) => (
+              <button
+                key={f.key}
+                type="button"
+                className="pill"
+                data-active={fw === f.key}
+                onClick={() => onFw(f.key)}
+              >
+                {f.label}
+              </button>
+            ))}
+          </div>
+          <pre className="code code-dark modal-snippet">{snippet}</pre>
 
-        <div className="modal-actions">
-          <button type="button" onClick={() => downloadSvg(icon.id, icon.svg, color)}>
-            Descargar SVG
-          </button>
-          <button type="button" onClick={() => downloadPng(icon.id, icon.svg, color)}>
-            Descargar PNG
-          </button>
-          <button type="button" className="ghost" onClick={copySvg}>
-            {copied ? '¡Copiado!' : 'Copiar SVG'}
-          </button>
+          <div className="modal-actions">
+            <button
+              type="button"
+              className="btn btn-dark"
+              onClick={() => downloadSvg(icon.id, icon.svg, color)}
+            >
+              SVG
+            </button>
+            <button
+              type="button"
+              className="btn btn-outline"
+              onClick={() => downloadPng(icon.id, icon.svg, color)}
+            >
+              PNG 512
+            </button>
+            <button type="button" className="btn btn-outline" onClick={copySnippet}>
+              {copied ? t.copied : t.copy}
+            </button>
+          </div>
         </div>
       </div>
     </div>

@@ -4,8 +4,7 @@
     {
       "name": "site",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "dev"],
-      "cwd": "apps/site",
+      "runtimeArgs": ["run", "dev", "--prefix", "apps/site"],
       "port": 5173
     }
   ]

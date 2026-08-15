@@ -1,26 +1,73 @@
-/* Dark is the default theme; the toggle opts into light by stamping
-   data-theme="light" on <html>. */
+/*
+ * Design tokens for the colombia-icons site. Light is the values from the
+ * Claude Design handoff (section 10); dark is a derived palette. The toggle
+ * stamps data-theme on <html>; dark is the default (no attribute needed on
+ * first paint — see index.html).
+ *
+ * Flag colors and the intentionally-dark surfaces (code blocks, the demo phone,
+ * the footer) are fixed in both themes and do NOT use these tokens.
+ */
 :root {
-  --text: #9ca3af;
-  --text-h: #f3f4f6;
-  --bg: #16171d;
+  --bg: #faf8f4;
+  --surface: #ffffff;
+  --surface-alt: #f4f1ea;
+  --surface-alt-2: #f1ede4;
+  --ink: #1c1a17;
+  --ink-72: rgba(28, 26, 23, 0.72);
+  --ink-70: rgba(28, 26, 23, 0.7);
+  --ink-65: rgba(28, 26, 23, 0.65);
+  --ink-55: rgba(28, 26, 23, 0.55);
+  --ink-50: rgba(28, 26, 23, 0.5);
+  --ink-45: rgba(28, 26, 23, 0.45);
+  --ink-40: rgba(28, 26, 23, 0.4);
+  --ink-20: rgba(28, 26, 23, 0.2);
+  --ink-16: rgba(28, 26, 23, 0.16);
+  --hairline: rgba(28, 26, 23, 0.12);
+  --hairline-soft: rgba(28, 26, 23, 0.08);
+  --nav-bg: rgba(250, 248, 244, 0.9);
+  --hover-row: #f7f4ee;
+  --card-shadow: 0 8px 22px rgba(28, 26, 23, 0.1);
 
-  font: 18px/145% system-ui, 'Segoe UI', Roboto, sans-serif;
-  color-scheme: dark;
-  color: var(--text);
-  background: var(--bg);
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+  /* Flag + fixed colors (never themed). */
+  --amarillo: #fcd116;
+  --azul: #003893;
+  --rojo: #ce1126;
+  --dark-ground: #1c1a17;
+  --on-dark: #f6f3ec;
+  --on-dark-72: rgba(246, 243, 236, 0.72);
+  --on-dark-60: rgba(246, 243, 236, 0.6);
+  --on-dark-45: rgba(246, 243, 236, 0.45);
+  --code-bg: #1c1a17;
+  --code-fg: #f2efe8;
 
-:root[data-theme='light'] {
-  --text: #6b6375;
-  --text-h: #08060d;
-  --bg: #fff;
+  --font: 'Archivo', system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
 
   color-scheme: light;
+}
+
+:root[data-theme='dark'] {
+  --bg: #141310;
+  --surface: #1e1b16;
+  --surface-alt: #24201a;
+  --surface-alt-2: #26221b;
+  --ink: #f2efe8;
+  --ink-72: rgba(242, 239, 232, 0.72);
+  --ink-70: rgba(242, 239, 232, 0.7);
+  --ink-65: rgba(242, 239, 232, 0.65);
+  --ink-55: rgba(242, 239, 232, 0.58);
+  --ink-50: rgba(242, 239, 232, 0.52);
+  --ink-45: rgba(242, 239, 232, 0.48);
+  --ink-40: rgba(242, 239, 232, 0.42);
+  --ink-20: rgba(242, 239, 232, 0.24);
+  --ink-16: rgba(242, 239, 232, 0.2);
+  --hairline: rgba(242, 239, 232, 0.14);
+  --hairline-soft: rgba(242, 239, 232, 0.09);
+  --nav-bg: rgba(20, 19, 16, 0.9);
+  --hover-row: #26221b;
+  --card-shadow: 0 8px 22px rgba(0, 0, 0, 0.4);
+
+  color-scheme: dark;
 }
 
 *,
@@ -31,9 +78,44 @@
 
 body {
   margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
-h1 {
-  color: var(--text-h);
-  font-weight: 500;
+a {
+  color: var(--azul);
+  text-decoration: none;
+}
+/* Buttons carry their own text color; the red link-hover must not repaint it
+   (it made the red "Report" button red-on-red). Plain links still get it. */
+a:not(.btn):hover {
+  color: var(--rojo);
+}
+
+input {
+  font-family: inherit;
+}
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+::selection {
+  background: var(--amarillo);
+  color: #1c1a17;
+}
+
+@keyframes ciFade {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }

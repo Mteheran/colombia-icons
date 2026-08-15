@@ -8,6 +8,25 @@ The three published packages (React, Angular, Blazor) share a single version.
 
 Every commit closes a minor version; major versions are cut only on request.
 
+## [0.14.0] - 2026-08-14
+
+### Added
+
+- Site: Portuguese (`pt`) alongside Spanish and English, with an ES / EN / PT switch that persists and follows the browser locale.
+- Site: a sixth `tricolor` icon color — the flag gradient — available in the gallery, the detail modal and both SVG and PNG downloads, next to black, gray, yellow, blue and red.
+- Site: a design-guide section (the icon rules, per language) and an issues section with a ready-to-copy bug / new-icon template.
+- Docs: `docs/diseno-sitio-web.md` documenting the site structure, layout, design tokens and conventions for future changes.
+
+### Changed
+
+- Site: redesigned the gallery page from the design handoff — sticky nav, an editorial hero with a per-framework install card, a live totals bar, and a gallery with instant search, category chips with counts, and grid / compact / list views.
+- Site: the icon detail modal now shows 16 / 24 / 48 px previews, a spec table, a per-framework snippet with copy-to-clipboard, and SVG / PNG 512 downloads.
+- Site: the travel demo is now an interactive mini-app — switchable tabs, selectable categories, a like toggle and a live search field — instead of a static preview.
+
+### Fixed
+
+- Site: buttons no longer repaint their label red on hover; the red "Report a bug" button stayed unreadable (red-on-red) and now darkens instead.
+
 ## [0.13.0] - 2026-08-12
 
 ### Changed

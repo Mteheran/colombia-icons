@@ -8,6 +8,12 @@ The three published packages (React, Angular, Blazor) share a single version.
 
 Every commit closes a minor version; major versions are cut only on request.
 
+## [0.16.0] - 2026-08-15
+
+### Added
+- Contributors section in `README.md` and `README.es.md`, following the [all-contributors](https://allcontributors.org/) specification, crediting Miguel Teheran and Anyi Orrego (icon design)
+- `.all-contributorsrc` config and `contributors:add` / `contributors:generate` / `contributors:check` npm scripts to manage contributor credits
+
 ## [0.15.0] - 2026-08-15
 
 ### Changed

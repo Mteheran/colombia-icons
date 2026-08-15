@@ -8,6 +8,13 @@ The three published packages (React, Angular, Blazor) share a single version.
 
 Every commit closes a minor version; major versions are cut only on request.
 
+## [0.15.0] - 2026-08-15
+
+### Changed
+- Icons (cultura): redesigned `acordeon-vallenato` and `sombrero-aguadeno` from hand-refined artwork
+- Icons (gastronomia): redesigned `patacon` and `sancocho` from hand-refined artwork
+- Icons (naturaleza): redesigned `jaguar` from hand-refined artwork
+
 ## [0.14.0] - 2026-08-14
 
 ### Added

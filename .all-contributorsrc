@@ -1,0 +1,41 @@
+{
+  "projectName": "colombia-icons",
+  "projectOwner": "Mteheran",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md",
+    "README.es.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "commitConvention": "angular",
+  "contributorsPerLine": 7,
+  "contributorsSortAlphabetically": false,
+  "linkToUsage": true,
+  "badgeTemplate": "[![All Contributors](https://img.shields.io/badge/all_contributors-<%= contributors.length %>-orange.svg)](#contributors)",
+  "contributors": [
+    {
+      "login": "Mteheran",
+      "name": "Miguel Teheran",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3578356?v=4",
+      "profile": "https://github.com/Mteheran",
+      "contributions": [
+        "code",
+        "doc",
+        "design",
+        "infra",
+        "maintenance"
+      ]
+    },
+    {
+      "login": "anyiorrego",
+      "name": "Anyi Orrego",
+      "avatar_url": "https://avatars.githubusercontent.com/u/142682665?v=4",
+      "profile": "https://github.com/anyiorrego",
+      "contributions": [
+        "design"
+      ]
+    }
+  ]
+}

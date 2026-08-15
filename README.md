@@ -6,6 +6,9 @@
 [![GitHub](https://img.shields.io/badge/GitHub-Mteheran%2Fcolombia--icons-181717?logo=github)](https://github.com/Mteheran/colombia-icons)
 [![Website](https://img.shields.io/badge/website-colombia--icons-2ea44f)](https://mteheran.github.io/colombia-icons/)
 [![NuGet](https://img.shields.io/nuget/v/ColombiaIcons.Blazor?logo=nuget&label=NuGet)](https://www.nuget.org/packages/ColombiaIcons.Blazor)
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg)](#contributors)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 A line-icon (outline) SVG icon library inspired by Colombia — available for
 React, Angular, and Blazor, plus a companion site to browse and download
@@ -172,6 +175,41 @@ Conventions:
   <https://mteheran.github.io/colombia-icons/>. Do not invent icon names —
   if one is missing, use the closest existing icon or ask.
 ```
+
+## Contributors
+
+Thanks goes to these wonderful people
+([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/Mteheran"><img src="https://avatars.githubusercontent.com/u/3578356?v=4?s=100" width="100px;" alt="Miguel Teheran"/><br /><sub><b>Miguel Teheran</b></sub></a><br /><a href="https://github.com/Mteheran/colombia-icons/commits?author=Mteheran" title="Code">💻</a> <a href="https://github.com/Mteheran/colombia-icons/commits?author=Mteheran" title="Documentation">📖</a> <a href="#design-Mteheran" title="Design">🎨</a> <a href="#infra-Mteheran" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#maintenance-Mteheran" title="Maintenance">🚧</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/anyiorrego"><img src="https://avatars.githubusercontent.com/u/142682665?v=4?s=100" width="100px;" alt="Anyi Orrego"/><br /><sub><b>Anyi Orrego</b></sub></a><br /><a href="#design-anyiorrego" title="Design">🎨</a></td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td align="center" size="13px" colspan="7">
+        <img src="https://raw.githubusercontent.com/all-contributors/all-contributors-cli/1b8533af435da9854653492b1327a23a4dbd0a10/assets/logo-small.svg">
+          <a href="https://all-contributors.js.org/docs/en/bot/usage">Add your contributions</a>
+        </img>
+      </td>
+    </tr>
+  </tfoot>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the
+[all-contributors](https://github.com/all-contributors/all-contributors)
+specification. Contributions of any kind are welcome!
 
 ## License
 

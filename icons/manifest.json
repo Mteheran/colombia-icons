@@ -664,14 +664,16 @@
       "id": "jaguar",
       "categoria": "naturaleza",
       "estado": "aprobado",
-      "intentos": 2,
+      "intentos": 3,
       "notas": "jaguar: cabeza felina de frente con orejas, ojos, hocico y manchas",
       "historial": [
         { "fecha": "2026-07-14", "accion": "generado", "nota": "cara felina: cabeza, 2 orejas, ojos, nariz, boca, 2 manchas" },
         { "fecha": "2026-07-14", "accion": "feedback", "nota": "orejas mas grandes (apex de y3 a y2, base mas ancha) y mas manchas: se agregan 4 puntos extra (frente y mejillas bajas) ademas de los 2 originales" },
         { "fecha": "2026-07-14", "accion": "feedback", "nota": "orejas mas redondeadas: de triangulos rectos a curvas bezier con punta redonda" },
         { "fecha": "2026-07-14", "accion": "feedback", "nota": "las bases de las orejas se apoyan flush sobre la curva de la cabeza (7.2,6.6)-(10,5.7) para no cruzar la linea de la cara; se agrega un punto en el centro de la frente (12,7.4)" },
-        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" },
+        { "fecha": "2026-08-15", "accion": "feedback", "nota": "rediseño manual (Illustrator) integrado: cabeza felina más detallada con orejas, manchas y hocico; normalizado a spec (currentColor); se elimina un <path> vacío degenerado" },
+        { "fecha": "2026-08-15", "accion": "aprobado", "nota": "refinamiento manual aprobado por el autor" }
       ]
     },
     {
@@ -852,20 +854,22 @@
       "id": "sancocho",
       "categoria": "gastronomia",
       "estado": "aprobado",
-      "intentos": 2,
+      "intentos": 3,
       "notas": "sancocho: plato hondo en perspectiva con la mazorca y trozos asomando en la superficie del caldo",
       "historial": [
         { "fecha": "2026-07-14", "accion": "generado", "nota": "plato hondo de perfil (semielipse con borde recto arriba en y11.7) + mazorca central como capsula vertical rx1.4 con 3 lineas de granos, apoyada tangente al borde del plato + 2 hilos de vapor en S a los lados (x7 y x17), mismo lenguaje de vapor que taza-de-tinto" },
         { "fecha": "2026-07-14", "accion": "rechazado", "nota": "el usuario pidio saltarlo para retomar despues" },
         { "fecha": "2026-08-10", "accion": "generado", "nota": "nuevo diseño aportado por un contribuidor (upload directo a main, commit bc15770); normalizado a la spec (24x24, stroke 1.5, currentColor, sin metadata de Illustrator) e importado a gastronomia/" },
-        { "fecha": "2026-08-10", "accion": "aprobado", "nota": "" }
+        { "fecha": "2026-08-10", "accion": "aprobado", "nota": "" },
+        { "fecha": "2026-08-15", "accion": "feedback", "nota": "rediseño manual (Illustrator) integrado: olla de sancocho refinada; normalizado a spec (currentColor)" },
+        { "fecha": "2026-08-15", "accion": "aprobado", "nota": "refinamiento manual aprobado por el autor" }
       ]
     },
     {
       "id": "patacon",
       "categoria": "gastronomia",
       "estado": "aprobado",
-      "intentos": 5,
+      "intentos": 6,
       "notas": "patacon (platano verde aplastado y frito): disco redondo irregular con grietas en el borde, arco interior y puntos de textura",
       "historial": [
         { "fecha": "2026-07-14", "accion": "generado", "nota": "contorno organico irregular de 5 anclas con radios variables (7.3 a 8.2) para el borde aplastado + 3 fibras longitudinales curvas en el interior" },
@@ -873,7 +877,9 @@
         { "fecha": "2026-07-14", "accion": "feedback", "nota": "girado 40% a la izquierda = rotate(-21.8 12 12), usando la misma convencion de porcentaje-como-pendiente acordada en las olas del aguardiente (30% = 16.7 grados). Verificado que la silueta rotada cabe en el grid: el punto mas lejano queda a 10.7 del centro, extremos 1.3-22.7 mas 0.75 de trazo" },
         { "fecha": "2026-07-14", "accion": "feedback", "nota": "girado 30 grados mas a la izquierda: de rotate(-21.8) a rotate(-51.8). Sigue cabiendo en el grid porque la rotacion no cambia la distancia maxima al centro (10.7)" },
         { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" },
-        { "fecha": "2026-08-10", "accion": "feedback", "nota": "diseño reemplazado por la version aportada por un contribuidor (upload directo a main, commit bc15770); normalizada a la spec e importada, y re-aprobada" }
+        { "fecha": "2026-08-10", "accion": "feedback", "nota": "diseño reemplazado por la version aportada por un contribuidor (upload directo a main, commit bc15770); normalizada a la spec e importada, y re-aprobada" },
+        { "fecha": "2026-08-15", "accion": "feedback", "nota": "rediseño manual (Illustrator) integrado: patacón con textura y granos; normalizado a spec (currentColor, puntos con fill=currentColor)" },
+        { "fecha": "2026-08-15", "accion": "aprobado", "nota": "refinamiento manual aprobado por el autor" }
       ]
     },
     {
@@ -981,11 +987,13 @@
       "id": "acordeon-vallenato",
       "categoria": "cultura",
       "estado": "aprobado",
-      "intentos": 1,
+      "intentos": 2,
       "notas": "acordeon diatonico vallenato: segun las referencias son 3 partes (fuelle en el medio + 2 cajas armonicas de madera a los lados, la lira con 31 botones y los bajos con 12). Esa estructura de 3 partes es lo que lo define",
       "historial": [
         { "fecha": "2026-07-14", "accion": "generado", "nota": "vista frontal: 2 cajas como rects redondeados (x2.8-7.8 y x16.2-21.2, y5.5-18.5) + fuelle en el medio con borde superior e inferior inset (y7.2/16.8, mas angosto que las cajas) y 3 pliegues verticales + 3 botones de la lira centrados en la caja derecha" },
-        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" }
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "" },
+        { "fecha": "2026-08-15", "accion": "feedback", "nota": "rediseño manual (Illustrator) integrado: fuelle en perspectiva con teclado y botones; normalizado a spec (currentColor, sin <style>/class, puntos con fill=currentColor)" },
+        { "fecha": "2026-08-15", "accion": "aprobado", "nota": "refinamiento manual aprobado por el autor" }
       ]
     },
     {
@@ -1058,11 +1066,13 @@
       "id": "sombrero-aguadeno",
       "categoria": "cultura",
       "estado": "aprobado",
-      "intentos": 1,
+      "intentos": 2,
       "notas": "sombrero aguadeño (Aguadas, Caldas; palma de iraca; denominacion de origen desde 2011). Reusa el ala y la altura de copa del sombrero-vueltiao para mantener familia, pero se diferencia por los 2 rasgos que dan las referencias: el PLIEGUE que lo cruza de adelante hacia atras (por el que se dobla para cargarlo) y la CINTA en la base de la copa (que lleva invariablemente). El vueltiao lleva zigzag de caña flecha; este no",
       "historial": [
         { "fecha": "2026-07-14", "accion": "generado", "nota": "ala como elipse identica a la del vueltiao (rx9.5 ry2.5 en 12,15.5) para consistencia de familia + copa cuyos pies caen en y13.3 sobre el borde del ala (mismo calculo que el vueltiao) pero con el tope hundido: sube a 7.4, baja a 9 en el centro y vuelve a 7.4, que es el pliegue visto de frente + cinta como linea horizontal en la base de la copa. Tangentes verificadas en las uniones del pliegue" },
-        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "registrado como sombrero-aguadeno sin eñe: la spec lo escribe con ñ pero la seccion 3 manda kebab-case y una ñ daria problemas en nombres de archivo y de componente React/Angular/Blazor. Mismo criterio que patacon" }
+        { "fecha": "2026-07-14", "accion": "aprobado", "nota": "registrado como sombrero-aguadeno sin eñe: la spec lo escribe con ñ pero la seccion 3 manda kebab-case y una ñ daria problemas en nombres de archivo y de componente React/Angular/Blazor. Mismo criterio que patacon" },
+        { "fecha": "2026-08-15", "accion": "feedback", "nota": "rediseño manual (Illustrator) integrado: sombrero aguadeño con banda; normalizado a spec (currentColor); la banda usa fill=currentColor para respetar el selector de color" },
+        { "fecha": "2026-08-15", "accion": "aprobado", "nota": "refinamiento manual aprobado por el autor" }
       ]
     },
     {

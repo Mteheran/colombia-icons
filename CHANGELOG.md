@@ -8,13 +8,7 @@ The three published packages (React, Angular, Blazor) share a single version.
 
 Every commit closes a minor version; major versions are cut only on request.
 
-## [0.16.0] - 2026-08-18
-
-### Added
-
-- Icons (genericos — devices): `laptop`, `tablet`, `auriculares`, `mouse`, `reloj-inteligente`, `altavoz`
-
-## [0.15.0] - 2026-08-18
+## [0.17.0] - 2026-08-18
 
 ### Added
 
@@ -22,6 +16,20 @@ Every commit closes a minor version; major versions are cut only on request.
 - Icons (genericos — weather): `lluvia`, `nieve`, `viento`, `termometro`
 - Icons (genericos — data & charts): `grafico-barras`, `grafico-lineas`, `grafico-circular`, `grafico-area`, `analitica`, `embudo`
 - Icons (genericos — system & infrastructure): `base-de-datos`, `bases-de-datos`, `servidor`, `papelera-reciclaje`, `calculadora`, `disco`
+- Icons (genericos — devices): `laptop`, `tablet`, `auriculares`, `mouse`, `reloj-inteligente`, `altavoz`
+
+## [0.16.0] - 2026-08-15
+
+### Added
+- Contributors section in `README.md` and `README.es.md`, following the [all-contributors](https://allcontributors.org/) specification, crediting Miguel Teheran and Anyi Orrego (icon design)
+- `.all-contributorsrc` config and `contributors:add` / `contributors:generate` / `contributors:check` npm scripts to manage contributor credits
+
+## [0.15.0] - 2026-08-15
+
+### Changed
+- Icons (cultura): redesigned `acordeon-vallenato` and `sombrero-aguadeno` from hand-refined artwork
+- Icons (gastronomia): redesigned `patacon` and `sancocho` from hand-refined artwork
+- Icons (naturaleza): redesigned `jaguar` from hand-refined artwork
 
 ## [0.14.0] - 2026-08-14
 

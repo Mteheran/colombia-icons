@@ -1360,7 +1360,7 @@
       "id": "jaguar",
       "categoria": "naturaleza",
       "estado": "aprobado",
-      "intentos": 2,
+      "intentos": 3,
       "notas": "jaguar: cabeza felina de frente con orejas, ojos, hocico y manchas",
       "historial": [
         {
@@ -1387,6 +1387,16 @@
           "fecha": "2026-07-14",
           "accion": "aprobado",
           "nota": ""
+        },
+        {
+          "fecha": "2026-08-15",
+          "accion": "feedback",
+          "nota": "rediseño manual (Illustrator) integrado: cabeza felina más detallada con orejas, manchas y hocico; normalizado a spec (currentColor); se elimina un <path> vacío degenerado"
+        },
+        {
+          "fecha": "2026-08-15",
+          "accion": "aprobado",
+          "nota": "refinamiento manual aprobado por el autor"
         }
       ]
     },
@@ -1796,7 +1806,7 @@
       "id": "sancocho",
       "categoria": "gastronomia",
       "estado": "aprobado",
-      "intentos": 2,
+      "intentos": 3,
       "notas": "sancocho: plato hondo en perspectiva con la mazorca y trozos asomando en la superficie del caldo",
       "historial": [
         {
@@ -1818,6 +1828,16 @@
           "fecha": "2026-08-10",
           "accion": "aprobado",
           "nota": ""
+        },
+        {
+          "fecha": "2026-08-15",
+          "accion": "feedback",
+          "nota": "rediseño manual (Illustrator) integrado: olla de sancocho refinada; normalizado a spec (currentColor)"
+        },
+        {
+          "fecha": "2026-08-15",
+          "accion": "aprobado",
+          "nota": "refinamiento manual aprobado por el autor"
         }
       ]
     },
@@ -1825,7 +1845,7 @@
       "id": "patacon",
       "categoria": "gastronomia",
       "estado": "aprobado",
-      "intentos": 5,
+      "intentos": 6,
       "notas": "patacon (platano verde aplastado y frito): disco redondo irregular con grietas en el borde, arco interior y puntos de textura",
       "historial": [
         {
@@ -1857,6 +1877,16 @@
           "fecha": "2026-08-10",
           "accion": "feedback",
           "nota": "diseño reemplazado por la version aportada por un contribuidor (upload directo a main, commit bc15770); normalizada a la spec e importada, y re-aprobada"
+        },
+        {
+          "fecha": "2026-08-15",
+          "accion": "feedback",
+          "nota": "rediseño manual (Illustrator) integrado: patacón con textura y granos; normalizado a spec (currentColor, puntos con fill=currentColor)"
+        },
+        {
+          "fecha": "2026-08-15",
+          "accion": "aprobado",
+          "nota": "refinamiento manual aprobado por el autor"
         }
       ]
     },
@@ -2081,7 +2111,7 @@
       "id": "acordeon-vallenato",
       "categoria": "cultura",
       "estado": "aprobado",
-      "intentos": 1,
+      "intentos": 2,
       "notas": "acordeon diatonico vallenato: segun las referencias son 3 partes (fuelle en el medio + 2 cajas armonicas de madera a los lados, la lira con 31 botones y los bajos con 12). Esa estructura de 3 partes es lo que lo define",
       "historial": [
         {
@@ -2093,6 +2123,16 @@
           "fecha": "2026-07-14",
           "accion": "aprobado",
           "nota": ""
+        },
+        {
+          "fecha": "2026-08-15",
+          "accion": "feedback",
+          "nota": "rediseño manual (Illustrator) integrado: fuelle en perspectiva con teclado y botones; normalizado a spec (currentColor, sin <style>/class, puntos con fill=currentColor)"
+        },
+        {
+          "fecha": "2026-08-15",
+          "accion": "aprobado",
+          "nota": "refinamiento manual aprobado por el autor"
         }
       ]
     },
@@ -2214,7 +2254,7 @@
       "id": "sombrero-aguadeno",
       "categoria": "cultura",
       "estado": "aprobado",
-      "intentos": 1,
+      "intentos": 2,
       "notas": "sombrero aguadeño (Aguadas, Caldas; palma de iraca; denominacion de origen desde 2011). Reusa el ala y la altura de copa del sombrero-vueltiao para mantener familia, pero se diferencia por los 2 rasgos que dan las referencias: el PLIEGUE que lo cruza de adelante hacia atras (por el que se dobla para cargarlo) y la CINTA en la base de la copa (que lleva invariablemente). El vueltiao lleva zigzag de caña flecha; este no",
       "historial": [
         {
@@ -2226,6 +2266,16 @@
           "fecha": "2026-07-14",
           "accion": "aprobado",
           "nota": "registrado como sombrero-aguadeno sin eñe: la spec lo escribe con ñ pero la seccion 3 manda kebab-case y una ñ daria problemas en nombres de archivo y de componente React/Angular/Blazor. Mismo criterio que patacon"
+        },
+        {
+          "fecha": "2026-08-15",
+          "accion": "feedback",
+          "nota": "rediseño manual (Illustrator) integrado: sombrero aguadeño con banda; normalizado a spec (currentColor); la banda usa fill=currentColor para respetar el selector de color"
+        },
+        {
+          "fecha": "2026-08-15",
+          "accion": "aprobado",
+          "nota": "refinamiento manual aprobado por el autor"
         }
       ]
     },

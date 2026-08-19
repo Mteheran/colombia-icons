@@ -1,0 +1,12 @@
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+
+@Component({
+  selector: 'ci-lluvia',
+  standalone: true,
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: `<svg xmlns="http://www.w3.org/2000/svg" [attr.width]="size" [attr.height]="size" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" [style.color]="color"><path d="M6.8 15a4.8 4.8 0 1 1 1.7 -9.2a4.2 4.2 0 0 1 7.8 1.1a3.5 3.5 0 0 1 -0.3 8.1Z"/><path d="M6.3 17.5L5.9 18.8"/><path d="M9 17.5L8.6 18.8"/><path d="M12 18L11.6 19.3"/><path d="M15 17.5L14.6 18.8"/></svg>`,
+})
+export class LluviaIcon {
+  @Input() size: number | string = 24;
+  @Input() color = 'currentColor';
+}

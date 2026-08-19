@@ -8,6 +8,15 @@ The three published packages (React, Angular, Blazor) share a single version.
 
 Every commit closes a minor version; major versions are cut only on request.
 
+## [0.15.0] - 2026-08-18
+
+### Added
+
+- Icons (genericos — accessibility): `accesibilidad`, `huella`, `idioma`, `qr`, `sincronizar`
+- Icons (genericos — weather): `lluvia`, `nieve`, `viento`, `termometro`
+- Icons (genericos — data & charts): `grafico-barras`, `grafico-lineas`, `grafico-circular`, `grafico-area`, `analitica`, `embudo`
+- Icons (genericos — system & infrastructure): `base-de-datos`, `bases-de-datos`, `servidor`, `papelera-reciclaje`, `calculadora`, `disco`
+
 ## [0.14.0] - 2026-08-14
 
 ### Added

@@ -5007,6 +5007,130 @@
           "nota": ""
         }
       ]
+    },
+    {
+      "id": "laptop",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 3,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-08-15",
+          "accion": "generado",
+          "nota": "pantalla + base, ref Lucide laptop-minimal"
+        },
+        {
+          "fecha": "2026-08-15",
+          "accion": "feedback",
+          "nota": "base como deck en trapecio con esquinas redondeadas y muesca central del trackpad"
+        },
+        {
+          "fecha": "2026-08-15",
+          "accion": "feedback",
+          "nota": "quitar la muesca central; borde inferior recto"
+        },
+        {
+          "fecha": "2026-08-15",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "tablet",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-08-15",
+          "accion": "generado",
+          "nota": "cuerpo redondeado vertical + boton home, ref Lucide tablet"
+        },
+        {
+          "fecha": "2026-08-15",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "auriculares",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-08-15",
+          "accion": "generado",
+          "nota": "diadema + audifonos, ref Lucide headphones"
+        },
+        {
+          "fecha": "2026-08-15",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "mouse",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-08-15",
+          "accion": "generado",
+          "nota": "cuerpo pildora + rueda scroll, ref Lucide mouse"
+        },
+        {
+          "fecha": "2026-08-15",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "reloj-inteligente",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-08-15",
+          "accion": "generado",
+          "nota": "smartwatch: cuerpo cuadrado redondeado + correas + corona; distinto de reloj (circular)"
+        },
+        {
+          "fecha": "2026-08-15",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "altavoz",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-08-15",
+          "accion": "generado",
+          "nota": "gabinete con tweeter + woofer, ref Lucide speaker"
+        },
+        {
+          "fecha": "2026-08-15",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
     }
   ]
 }

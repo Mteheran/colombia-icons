@@ -1,0 +1,12 @@
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+
+@Component({
+  selector: 'ci-base-de-datos',
+  standalone: true,
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: `<svg xmlns="http://www.w3.org/2000/svg" [attr.width]="size" [attr.height]="size" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" [style.color]="color"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14a8 3 0 0 0 16 0V5"/><path d="M4 12a8 3 0 0 0 16 0"/></svg>`,
+})
+export class BaseDeDatosIcon {
+  @Input() size: number | string = 24;
+  @Input() color = 'currentColor';
+}

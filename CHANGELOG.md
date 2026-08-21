@@ -8,6 +8,13 @@ The three published packages (React, Angular, Blazor) share a single version.
 
 Every commit closes a minor version; major versions are cut only on request.
 
+## [0.18.0] - 2026-08-20
+
+### Added
+
+- Icons (genericos — text formatting): `negrita`, `cursiva`, `subrayado`, `alinear-izquierda`, `alinear-centro`, `alinear-derecha`, `lista-numerada`, `lista-vinetas`
+- Icons (genericos — drawing & editing): `paleta`, `cuentagotas`, `tijeras`, `pegar`, `resaltador`
+
 ## [0.17.0] - 2026-08-18
 
 ### Added

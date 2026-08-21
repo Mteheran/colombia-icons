@@ -5181,6 +5181,312 @@
           "nota": ""
         }
       ]
+    },
+    {
+      "id": "negrita",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-08-20",
+          "accion": "generado",
+          "nota": "B glifica, tallo vertical + dos lobulos, ref Lucide/Tabler bold"
+        },
+        {
+          "fecha": "2026-08-20",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "cursiva",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-08-20",
+          "accion": "generado",
+          "nota": "I italica con serifas + trazo diagonal, ref Lucide/Tabler italic"
+        },
+        {
+          "fecha": "2026-08-20",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "subrayado",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-08-20",
+          "accion": "generado",
+          "nota": "U con arco inferior + linea de subrayado, ref Lucide/Tabler underline"
+        },
+        {
+          "fecha": "2026-08-20",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "alinear-izquierda",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-08-20",
+          "accion": "generado",
+          "nota": "tres lineas de parrafo alineadas a la izquierda, ref Tabler/Lucide align-left"
+        },
+        {
+          "fecha": "2026-08-20",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "alinear-centro",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-08-20",
+          "accion": "generado",
+          "nota": "tres lineas centradas simetricas, ref Tabler/Lucide align-center"
+        },
+        {
+          "fecha": "2026-08-20",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "alinear-derecha",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-08-20",
+          "accion": "generado",
+          "nota": "tres lineas alineadas a la derecha, ref Tabler/Lucide align-right"
+        },
+        {
+          "fecha": "2026-08-20",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "lista-numerada",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-08-20",
+          "accion": "generado",
+          "nota": "numerales 1 y 2 + lineas de texto, ref Lucide list-ordered / Tabler list-numbers"
+        },
+        {
+          "fecha": "2026-08-20",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "lista-vinetas",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-08-20",
+          "accion": "generado",
+          "nota": "tres vinetas + lineas de texto, ref Lucide/Tabler list"
+        },
+        {
+          "fecha": "2026-08-20",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "pincel",
+      "categoria": "genericos",
+      "estado": "rechazado",
+      "intentos": 6,
+      "notas": "SVG queda en disco (v6) para retomar; el compromiso cabeza-fija + mango-conectado no convencio",
+      "historial": [
+        {
+          "fecha": "2026-08-20",
+          "accion": "generado",
+          "nota": "mango en arco + base de cerdas redondeada, ref Tabler brush / Lucide paintbrush"
+        },
+        {
+          "fecha": "2026-08-20",
+          "accion": "feedback",
+          "nota": "disminuir la punta del pincel (base de cerdas mas pequena, radio 3)"
+        },
+        {
+          "fecha": "2026-08-20",
+          "accion": "feedback",
+          "nota": "completar las lineas del mango con la punta; rediseno a Lucide paintbrush rechazado"
+        },
+        {
+          "fecha": "2026-08-20",
+          "accion": "feedback",
+          "nota": "volver a la v2 original (sin rediseno)"
+        },
+        {
+          "fecha": "2026-08-20",
+          "accion": "feedback",
+          "nota": "conectar los arcos del mango con la cabeza circular, sin tocar la cabeza"
+        },
+        {
+          "fecha": "2026-08-20",
+          "accion": "feedback",
+          "nota": "cuerpo muy arriba; bajarlo ~30% manteniendo la cabeza en su lugar"
+        },
+        {
+          "fecha": "2026-08-20",
+          "accion": "rechazado",
+          "nota": "omitido para retomar despues"
+        }
+      ]
+    },
+    {
+      "id": "paleta",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-08-20",
+          "accion": "generado",
+          "nota": "silueta de paleta con muesca de pulgar + 4 gotas (puntos solidos), ref Lucide/Tabler palette"
+        },
+        {
+          "fecha": "2026-08-20",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "cuentagotas",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-08-20",
+          "accion": "generado",
+          "nota": "gotero diagonal con bulbo y perilla, ref Lucide pipette / Tabler color-picker"
+        },
+        {
+          "fecha": "2026-08-20",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "tijeras",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 2,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-08-20",
+          "accion": "generado",
+          "nota": "dos aros + hojas cruzadas, ref Lucide/Tabler scissors"
+        },
+        {
+          "fecha": "2026-08-20",
+          "accion": "feedback",
+          "nota": "alargar la hoja inferior derecha hasta el pivote (12,12) para que conecte"
+        },
+        {
+          "fecha": "2026-08-20",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "pegar",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 3,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-08-20",
+          "accion": "generado",
+          "nota": "portapapeles con pestana + flecha de insercion, ref Lucide clipboard-paste"
+        },
+        {
+          "fecha": "2026-08-20",
+          "accion": "feedback",
+          "nota": "cerrar mas las lineas del cuadrado sobre la flecha (borde derecho v4, inferior h6)"
+        },
+        {
+          "fecha": "2026-08-20",
+          "accion": "feedback",
+          "nota": "agrandar la linea de abajo (inferior h9, hasta x15)"
+        },
+        {
+          "fecha": "2026-08-20",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "resaltador",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-08-20",
+          "accion": "generado",
+          "nota": "marcador diagonal con punta de fieltro biselada, ref Lucide highlighter / Tabler highlight"
+        },
+        {
+          "fecha": "2026-08-20",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
     }
   ]
 }

@@ -5487,6 +5487,375 @@
           "nota": ""
         }
       ]
+    },
+    {
+      "id": "usuarios",
+      "categoria": "genericos",
+      "estado": "rechazado",
+      "intentos": 3,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-08-22",
+          "accion": "generado",
+          "nota": "grupo de personas, patron users de Lucide/Tabler"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "feedback",
+          "nota": "cerrar las lineas del segundo usuario con el primero"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "feedback",
+          "nota": "el aro de la segunda cabeza muy abierto, cerrarlo mas y acercarlo al primero"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "rechazado",
+          "nota": "omitido para retomar despues"
+        }
+      ]
+    },
+    {
+      "id": "deshacer",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-08-22",
+          "accion": "generado",
+          "nota": "par undo/redo, flecha curva, patron Lucide undo-2/redo-2"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "rehacer",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-08-22",
+          "accion": "generado",
+          "nota": "par undo/redo, flecha curva, patron Lucide undo-2/redo-2"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "interruptor",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-08-22",
+          "accion": "generado",
+          "nota": "toggle switch on, patron Lucide toggle-right"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "tabla",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-08-22",
+          "accion": "generado",
+          "nota": "tabla de datos con encabezado/filas/columnas, patron Lucide table"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "documento",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-08-22",
+          "accion": "generado",
+          "nota": "pagina de texto sin doblez, distinta de archivo; patron Lucide file-text"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "mensajes",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-08-22",
+          "accion": "generado",
+          "nota": "dos burbujas de chat, patron Lucide messages-square"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "responder",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-08-22",
+          "accion": "generado",
+          "nota": "par reply/forward, flecha curva espejo, patron Lucide reply/forward"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "reenviar",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-08-22",
+          "accion": "generado",
+          "nota": "par reply/forward, flecha curva espejo, patron Lucide reply/forward"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "bandeja-entrada",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-08-22",
+          "accion": "generado",
+          "nota": "inbox con ranura central, patron Lucide inbox"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "arroba",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-08-22",
+          "accion": "generado",
+          "nota": "simbolo @, patron Lucide at-sign"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "diana",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-08-22",
+          "accion": "generado",
+          "nota": "tres circulos concentricos, patron Lucide target"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "cronometro",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 4,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-08-22",
+          "accion": "generado",
+          "nota": "stopwatch con boton superior y lateral, patron Tabler stopwatch"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "feedback",
+          "nota": "manecilla muy arriba, moverla mas al centro"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "feedback",
+          "nota": "alargar un poco la manecilla hacia abajo"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "feedback",
+          "nota": "acortarla un poco para que quede mas al centro"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "reloj-arena",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 5,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-08-22",
+          "accion": "generado",
+          "nota": "hourglass triangulos, patron Lucide hourglass"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "feedback",
+          "nota": "las 2 partes no estan unidas, unirlas en la cintura"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "feedback",
+          "nota": "lineas mas curvas y no rectangulares"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "feedback",
+          "nota": "en el centro un poco mas separadas, no parecer una X unida (cuello)"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "feedback",
+          "nota": "mas corto y no tan alargado"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "fuego",
+      "categoria": "genericos",
+      "estado": "rechazado",
+      "intentos": 5,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-08-22",
+          "accion": "generado",
+          "nota": "flame de Lucide"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "feedback",
+          "nota": "la curva izquierda deberia estar tambien a la derecha (simetria)"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "feedback",
+          "nota": "regresar al original de Lucide"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "feedback",
+          "nota": "agregar pequena curva derecha con mas movimiento; luego revertir"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "feedback",
+          "nota": "rediseno multi-lengueta usando imagen de referencia adjunta"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "rechazado",
+          "nota": "omitido para retomar despues; explorar version mas fiel a la referencia"
+        }
+      ]
+    },
+    {
+      "id": "brujula",
+      "categoria": "genericos",
+      "estado": "rechazado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-08-22",
+          "accion": "generado",
+          "nota": "compass con aguja rombo, patron Lucide compass"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "rechazado",
+          "nota": "omitido para retomar despues"
+        }
+      ]
     }
   ]
 }

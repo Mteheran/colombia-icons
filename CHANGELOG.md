@@ -8,6 +8,12 @@ The three published packages (React, Angular, Blazor) share a single version.
 
 Every commit closes a minor version; major versions are cut only on request.
 
+## [0.19.0] - 2026-08-22
+
+### Added
+
+- Icons (genericos — Tier 1 UI): `deshacer`, `rehacer`, `interruptor`, `tabla`, `documento`, `mensajes`, `responder`, `reenviar`, `bandeja-entrada`, `arroba`, `diana`, `cronometro`, `reloj-arena`
+
 ## [0.18.0] - 2026-08-20
 
 ### Added

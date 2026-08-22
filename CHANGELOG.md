@@ -8,6 +8,12 @@ The three published packages (React, Angular, Blazor) share a single version.
 
 Every commit closes a minor version; major versions are cut only on request.
 
+## [0.20.0] - 2026-08-22
+
+### Added
+
+- Icons (genericos): `usuarios`, `fuego`, `fuego-llama`, `brujula`
+
 ## [0.19.0] - 2026-08-22
 
 ### Added

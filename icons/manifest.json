@@ -5491,8 +5491,8 @@
     {
       "id": "usuarios",
       "categoria": "genericos",
-      "estado": "rechazado",
-      "intentos": 3,
+      "estado": "aprobado",
+      "intentos": 5,
       "notas": "",
       "historial": [
         {
@@ -5514,6 +5514,21 @@
           "fecha": "2026-08-22",
           "accion": "rechazado",
           "nota": "omitido para retomar despues"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "generado",
+          "nota": "rediseno: extremos del arco de la segunda cabeza calculados sobre la interseccion real con el circulo frontal (antes uno caia fuera y el otro dentro, leia como aro roto); referencias Lucide/Tabler users"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "feedback",
+          "nota": "las lineas del segundo usuario atras no estaban unidas (casquete y hombro sueltos); se unen cabeza y hombro en un solo path continuo por el punto de tangencia (14.5,11.5) y se separan los usuarios a 5u para librar el domo frontal"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "aprobado",
+          "nota": ""
         }
       ]
     },
@@ -5802,9 +5817,9 @@
     {
       "id": "fuego",
       "categoria": "genericos",
-      "estado": "rechazado",
-      "intentos": 5,
-      "notas": "",
+      "estado": "aprobado",
+      "intentos": 6,
+      "notas": "variante base sin llama interna; la version con llama interior vive en fuego-llama",
       "historial": [
         {
           "fecha": "2026-08-22",
@@ -5835,15 +5850,44 @@
           "fecha": "2026-08-22",
           "accion": "rechazado",
           "nota": "omitido para retomar despues; explorar version mas fiel a la referencia"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "generado",
+          "nota": "rediseno completo: el intento previo estaba roto (los dos paths se cruzaban y el tope colapsaba en una mancha solida). Contorno cerrado de 3 lenguetas simetricas sobre x=12, base semicircular r7.2 con union de tangente vertical exacta. Referencia Phosphor fire (la unica multi-lenguetas de las tres consultadas)"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "aprobado",
+          "nota": "aprobadas las dos variantes presentadas; esta (A2, sin llama interna) queda como fuego"
+        }
+      ]
+    },
+    {
+      "id": "fuego-llama",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "mismo contorno de 3 lenguetas de fuego + llama interior (teardrop con base semicircular r2.1 centrada en (12,17))",
+      "historial": [
+        {
+          "fecha": "2026-08-22",
+          "accion": "generado",
+          "nota": "presentada como variante B2 junto al rediseno de fuego"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "aprobado",
+          "nota": "aprobada como icono propio; nombre elegido siguiendo el patron base + lo que se agrega (nube-descargar, dolar-circulo)"
         }
       ]
     },
     {
       "id": "brujula",
       "categoria": "genericos",
-      "estado": "rechazado",
-      "intentos": 1,
-      "notas": "",
+      "estado": "aprobado",
+      "intentos": 2,
+      "notas": "patron Tabler compass: aguja paralelogramo + 4 marcas cardinales hacia adentro desde el borde",
       "historial": [
         {
           "fecha": "2026-08-22",
@@ -5854,6 +5898,16 @@
           "fecha": "2026-08-22",
           "accion": "rechazado",
           "nota": "omitido para retomar despues"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "generado",
+          "nota": "rediseno: la version rechazada era Lucide compass tal cual (circulo + rombo), sin nada que fijara el significado. Se agregan marcas cardinales (patron Tabler). Se descartaron aguja bi-triangulo y su combinacion con cardinales: la aguja se vuelve ilegible a 24 y 16px"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "aprobado",
+          "nota": ""
         }
       ]
     }

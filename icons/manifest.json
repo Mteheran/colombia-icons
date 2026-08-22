@@ -5487,6 +5487,429 @@
           "nota": ""
         }
       ]
+    },
+    {
+      "id": "usuarios",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 5,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-08-22",
+          "accion": "generado",
+          "nota": "grupo de personas, patron users de Lucide/Tabler"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "feedback",
+          "nota": "cerrar las lineas del segundo usuario con el primero"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "feedback",
+          "nota": "el aro de la segunda cabeza muy abierto, cerrarlo mas y acercarlo al primero"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "rechazado",
+          "nota": "omitido para retomar despues"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "generado",
+          "nota": "rediseno: extremos del arco de la segunda cabeza calculados sobre la interseccion real con el circulo frontal (antes uno caia fuera y el otro dentro, leia como aro roto); referencias Lucide/Tabler users"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "feedback",
+          "nota": "las lineas del segundo usuario atras no estaban unidas (casquete y hombro sueltos); se unen cabeza y hombro en un solo path continuo por el punto de tangencia (14.5,11.5) y se separan los usuarios a 5u para librar el domo frontal"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "deshacer",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-08-22",
+          "accion": "generado",
+          "nota": "par undo/redo, flecha curva, patron Lucide undo-2/redo-2"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "rehacer",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-08-22",
+          "accion": "generado",
+          "nota": "par undo/redo, flecha curva, patron Lucide undo-2/redo-2"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "interruptor",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-08-22",
+          "accion": "generado",
+          "nota": "toggle switch on, patron Lucide toggle-right"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "tabla",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-08-22",
+          "accion": "generado",
+          "nota": "tabla de datos con encabezado/filas/columnas, patron Lucide table"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "documento",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-08-22",
+          "accion": "generado",
+          "nota": "pagina de texto sin doblez, distinta de archivo; patron Lucide file-text"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "mensajes",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-08-22",
+          "accion": "generado",
+          "nota": "dos burbujas de chat, patron Lucide messages-square"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "responder",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-08-22",
+          "accion": "generado",
+          "nota": "par reply/forward, flecha curva espejo, patron Lucide reply/forward"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "reenviar",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-08-22",
+          "accion": "generado",
+          "nota": "par reply/forward, flecha curva espejo, patron Lucide reply/forward"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "bandeja-entrada",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-08-22",
+          "accion": "generado",
+          "nota": "inbox con ranura central, patron Lucide inbox"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "arroba",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-08-22",
+          "accion": "generado",
+          "nota": "simbolo @, patron Lucide at-sign"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "diana",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-08-22",
+          "accion": "generado",
+          "nota": "tres circulos concentricos, patron Lucide target"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "cronometro",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 4,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-08-22",
+          "accion": "generado",
+          "nota": "stopwatch con boton superior y lateral, patron Tabler stopwatch"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "feedback",
+          "nota": "manecilla muy arriba, moverla mas al centro"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "feedback",
+          "nota": "alargar un poco la manecilla hacia abajo"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "feedback",
+          "nota": "acortarla un poco para que quede mas al centro"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "reloj-arena",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 5,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-08-22",
+          "accion": "generado",
+          "nota": "hourglass triangulos, patron Lucide hourglass"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "feedback",
+          "nota": "las 2 partes no estan unidas, unirlas en la cintura"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "feedback",
+          "nota": "lineas mas curvas y no rectangulares"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "feedback",
+          "nota": "en el centro un poco mas separadas, no parecer una X unida (cuello)"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "feedback",
+          "nota": "mas corto y no tan alargado"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "fuego",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 6,
+      "notas": "variante base sin llama interna; la version con llama interior vive en fuego-llama",
+      "historial": [
+        {
+          "fecha": "2026-08-22",
+          "accion": "generado",
+          "nota": "flame de Lucide"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "feedback",
+          "nota": "la curva izquierda deberia estar tambien a la derecha (simetria)"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "feedback",
+          "nota": "regresar al original de Lucide"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "feedback",
+          "nota": "agregar pequena curva derecha con mas movimiento; luego revertir"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "feedback",
+          "nota": "rediseno multi-lengueta usando imagen de referencia adjunta"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "rechazado",
+          "nota": "omitido para retomar despues; explorar version mas fiel a la referencia"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "generado",
+          "nota": "rediseno completo: el intento previo estaba roto (los dos paths se cruzaban y el tope colapsaba en una mancha solida). Contorno cerrado de 3 lenguetas simetricas sobre x=12, base semicircular r7.2 con union de tangente vertical exacta. Referencia Phosphor fire (la unica multi-lenguetas de las tres consultadas)"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "aprobado",
+          "nota": "aprobadas las dos variantes presentadas; esta (A2, sin llama interna) queda como fuego"
+        }
+      ]
+    },
+    {
+      "id": "fuego-llama",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "mismo contorno de 3 lenguetas de fuego + llama interior (teardrop con base semicircular r2.1 centrada en (12,17))",
+      "historial": [
+        {
+          "fecha": "2026-08-22",
+          "accion": "generado",
+          "nota": "presentada como variante B2 junto al rediseno de fuego"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "aprobado",
+          "nota": "aprobada como icono propio; nombre elegido siguiendo el patron base + lo que se agrega (nube-descargar, dolar-circulo)"
+        }
+      ]
+    },
+    {
+      "id": "brujula",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 2,
+      "notas": "patron Tabler compass: aguja paralelogramo + 4 marcas cardinales hacia adentro desde el borde",
+      "historial": [
+        {
+          "fecha": "2026-08-22",
+          "accion": "generado",
+          "nota": "compass con aguja rombo, patron Lucide compass"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "rechazado",
+          "nota": "omitido para retomar despues"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "generado",
+          "nota": "rediseno: la version rechazada era Lucide compass tal cual (circulo + rombo), sin nada que fijara el significado. Se agregan marcas cardinales (patron Tabler). Se descartaron aguja bi-triangulo y su combinacion con cardinales: la aguja se vuelve ilegible a 24 y 16px"
+        },
+        {
+          "fecha": "2026-08-22",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
     }
   ]
 }

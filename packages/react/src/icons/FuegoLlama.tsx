@@ -1,0 +1,16 @@
+import { forwardRef } from 'react';
+import type { IconProps } from '../types';
+
+export const FuegoLlama = forwardRef<SVGSVGElement, IconProps>(
+  ({ size = 24, color = 'currentColor', style, ...props }, ref) => (
+    <svg
+      ref={ref}
+      xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"
+      style={{ color, ...style }}
+      {...props}
+      dangerouslySetInnerHTML={{ __html: "<path d=\"M12 2.2C13.5 4.6 14.8 7.2 14.6 9.8C15.4 8.4 16.5 7.6 17.5 7.2C18.7 9.2 19.2 11.6 19.2 14.2A7.2 7.2 0 0 1 4.8 14.2C4.8 11.6 5.3 9.2 6.5 7.2C7.5 7.6 8.6 8.4 9.4 9.8C9.2 7.2 10.5 4.6 12 2.2Z\"/><path d=\"M12 12.2C13.5 14.2 14.1 15.7 14.1 17A2.1 2.1 0 0 1 9.9 17C9.9 15.7 10.5 14.2 12 12.2Z\"/>" }}
+    />
+  )
+);
+
+FuegoLlama.displayName = 'FuegoLlama';

@@ -1,0 +1,12 @@
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+
+@Component({
+  selector: 'ci-region-pacifica',
+  standalone: true,
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: `<svg xmlns="http://www.w3.org/2000/svg" [attr.width]="size" [attr.height]="size" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" [style.color]="color"><path d="M10.4,21.6c-.2.5-.8.7-1.3.6s-1.4-.5-1.4-1.1c0-1.1.4-.4,1.1-.9s1.1-.5,1.1-.9,1.4-.8,1.9-1.6,1.3-1.9,1-2.5.6-.3-.5-1.1,0-.3,0-1.8v-2.7c0-.2,0-.4.2-.6s.2-.7-.2-1.4c-.6-1.1-1.9-.8-.6-1.9s1.2-2.4,1.1-2.4.3-1.9.5-1.1-.1,1.9.4,3.1.3,1.2.9,1.4-.2.5.4,2.1,1.4,2.8.7,3.8-1.1,2.6-1.1,3.3-.6.9-.8,1.9-1,2.9-1.6,2.5-1.3,0-1.3,0l-.7,1.5Z"/></svg>`,
+})
+export class RegionPacificaIcon {
+  @Input() size: number | string = 24;
+  @Input() color = 'currentColor';
+}

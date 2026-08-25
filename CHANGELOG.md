@@ -8,6 +8,27 @@ The three published packages (React, Angular, Blazor) share a single version.
 
 Every commit closes a minor version; major versions are cut only on request.
 
+## [0.21.0] - 2026-08-25
+
+### Added
+
+- Icons (cultura): `tejo`, `ruana`, `carnaval-barranquilla`, `chiva-bus`, `guacharaca`, `guiro`
+- Icons (gastronomia): `bandeja-paisa`
+- Icons (mapas): `silueta-colombia`, `region-caribe`, `region-andina`, `region-pacifica`, `region-orinoquia`, `region-amazonica`
+
+All thirteen were contributed by an external designer. Seven of them
+(`tejo`, `ruana`, `carnaval-barranquilla`, `chiva-bus`, `guacharaca`,
+`bandeja-paisa`, `silueta-colombia`) replace earlier drafts that had been
+rejected and were never published, so this is their first release. The
+approved icon count goes from 231 to 244, and `mapas` ships for the first
+time.
+
+### Changed
+
+- `guiro` joins the cultura list in the icon spec, and the Amazon region
+  icon ships as `region-amazonica` rather than the `region-amazonia` name
+  the spec originally reserved.
+
 ## [0.20.0] - 2026-08-22
 
 ### Added

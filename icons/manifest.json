@@ -1669,8 +1669,8 @@
     {
       "id": "bandeja-paisa",
       "categoria": "gastronomia",
-      "estado": "rechazado",
-      "intentos": 1,
+      "estado": "aprobado",
+      "intentos": 2,
       "notas": "bandeja paisa estilizada: el plato real tiene ~8 componentes, imposibles en 24x24; se reduce a bandeja ovalada vista desde arriba con 3 elementos de forma visualmente distinta (huevo frito, chorizo, frijoles)",
       "historial": [
         {
@@ -1682,6 +1682,16 @@
           "fecha": "2026-07-14",
           "accion": "rechazado",
           "nota": "el usuario pidio omitirla/saltarla para retomar despues; pendiente resolver la densidad de elementos en 24x24"
+        },
+        {
+          "fecha": "2026-08-25",
+          "accion": "generado",
+          "nota": "rediseño aportado por diseñador externo; SVG de Illustrator normalizado a la spec (§3): metadata Adobe eliminada, clases CSS convertidas a atributos de raíz, currentColor, stroke-width 1.5, caps/joins redondeados. retoma del rechazado: bandeja ovalada vista desde arriba con los componentes agrupados y el huevo como ancla"
+        },
+        {
+          "fecha": "2026-08-25",
+          "accion": "aprobado",
+          "nota": ""
         }
       ]
     },
@@ -2091,8 +2101,8 @@
     {
       "id": "ruana",
       "categoria": "cultura",
-      "estado": "rechazado",
-      "intentos": 1,
+      "estado": "aprobado",
+      "intentos": 2,
       "notas": "ruana boyacense (el 'abrigo de cuatro puntas'): manta de lana sin mangas colgando, con orificio central para la cabeza y ABERTURA VERTICAL al frente hasta el dobladillo. La abertura frontal es el rasgo que la separa de un poncho comun, que es cerrado; por eso se prioriza sobre cualquier otro detalle",
       "historial": [
         {
@@ -2104,6 +2114,16 @@
           "fecha": "2026-07-14",
           "accion": "rechazado",
           "nota": "el usuario pidio omitirla para retomar despues"
+        },
+        {
+          "fecha": "2026-08-25",
+          "accion": "generado",
+          "nota": "rediseño aportado por diseñador externo; SVG de Illustrator normalizado a la spec (§3): metadata Adobe eliminada, clases CSS convertidas a atributos de raíz, currentColor, stroke-width 1.5, caps/joins redondeados. retoma del rechazado: ruana vista de frente, con la abertura del cuello y la caída de las cuatro puntas"
+        },
+        {
+          "fecha": "2026-08-25",
+          "accion": "aprobado",
+          "nota": ""
         }
       ]
     },
@@ -2139,8 +2159,8 @@
     {
       "id": "chiva-bus",
       "categoria": "cultura",
-      "estado": "rechazado",
-      "intentos": 1,
+      "estado": "aprobado",
+      "intentos": 2,
       "notas": "chiva o bus escalera: los 3 rasgos que la separan de un bus generico segun las referencias son la escalera trasera (de ahi el nombre), la parrilla portaequipajes del techo (capacete) y los costados abiertos sin ventanas, divididos por parales. Se priorizan esos sobre la decoracion",
       "historial": [
         {
@@ -2152,14 +2172,24 @@
           "fecha": "2026-07-14",
           "accion": "rechazado",
           "nota": "el usuario pidio omitirlo para retomar despues"
+        },
+        {
+          "fecha": "2026-08-25",
+          "accion": "generado",
+          "nota": "rediseño aportado por diseñador externo; SVG de Illustrator normalizado a la spec (§3): metadata Adobe eliminada, clases CSS convertidas a atributos de raíz, currentColor, stroke-width 1.5, caps/joins redondeados. retoma del rechazado: bus escalera en 3/4, con la baca cargada, las bancas laterales y la escalera trasera"
+        },
+        {
+          "fecha": "2026-08-25",
+          "accion": "aprobado",
+          "nota": ""
         }
       ]
     },
     {
       "id": "carnaval-barranquilla",
       "categoria": "cultura",
-      "estado": "rechazado",
-      "intentos": 1,
+      "estado": "aprobado",
+      "intentos": 2,
       "notas": "carnaval de barranquilla: un carnaval no tiene silueta propia, asi que se ancla a la MARIMONDA, la figura mas iconica de la fiesta. Segun las referencias su mascara tiene 3 rasgos: orejas grandes (simbolizan oir los chismes), ojos saltones y trompa larga (mitad elefante, mitad primate)",
       "historial": [
         {
@@ -2171,6 +2201,16 @@
           "fecha": "2026-07-14",
           "accion": "rechazado",
           "nota": "el usuario pidio omitirla para retomar despues"
+        },
+        {
+          "fecha": "2026-08-25",
+          "accion": "generado",
+          "nota": "rediseño aportado por diseñador externo; SVG de Illustrator normalizado a la spec (§3): metadata Adobe eliminada, clases CSS convertidas a atributos de raíz, currentColor, stroke-width 1.5, caps/joins redondeados. retoma del rechazado: máscara de marimonda, con la trompa y las orejas redondas"
+        },
+        {
+          "fecha": "2026-08-25",
+          "accion": "aprobado",
+          "nota": ""
         }
       ]
     },
@@ -2215,8 +2255,8 @@
     {
       "id": "tejo",
       "categoria": "cultura",
-      "estado": "rechazado",
-      "intentos": 1,
+      "estado": "aprobado",
+      "intentos": 2,
       "notas": "tejo (deporte nacional de Colombia por ley desde 2000, nacido en Turmeque). Se ancla al BOCIN con las MECHAS vistos desde arriba: el aro metalico + los triangulos de polvora que explotan al ser golpeados, mas el disco de tejo en el centro. OJO: la spec lista 'tejo' en la seccion 4.2 (cultura) Y 'tejo-deporte' en la 4.5 (deportes) — hay que definir como se diferencian o si uno sobra",
       "historial": [
         {
@@ -2228,14 +2268,24 @@
           "fecha": "2026-07-14",
           "accion": "rechazado",
           "nota": "el usuario pidio omitirlo para retomar despues; queda pendiente resolver el choque con 'tejo-deporte' de la seccion 4.5"
+        },
+        {
+          "fecha": "2026-08-25",
+          "accion": "generado",
+          "nota": "rediseño aportado por diseñador externo; SVG de Illustrator normalizado a la spec (§3): metadata Adobe eliminada, clases CSS convertidas a atributos de raíz, currentColor, stroke-width 1.5, caps/joins redondeados. retoma del rechazado: bocín en perspectiva con las 6 mechas dispuestas en roseta"
+        },
+        {
+          "fecha": "2026-08-25",
+          "accion": "aprobado",
+          "nota": ""
         }
       ]
     },
     {
       "id": "guacharaca",
       "categoria": "cultura",
-      "estado": "rechazado",
-      "intentos": 1,
+      "estado": "aprobado",
+      "intentos": 2,
       "notas": "guacharaca: idiofono de raspado de caña, uno de los 3 instrumentos base del vallenato. Segun las referencias son DOS piezas: el tubo de superficie corrugada con ranuras y el trinche/peine (alambre duro con mango de madera). Ese par es lo que la identifica, por eso se dibujan los dos",
       "historial": [
         {
@@ -2247,6 +2297,16 @@
           "fecha": "2026-07-14",
           "accion": "rechazado",
           "nota": "el usuario pidio omitirla para retomar despues"
+        },
+        {
+          "fecha": "2026-08-25",
+          "accion": "generado",
+          "nota": "rediseño aportado por diseñador externo; SVG de Illustrator normalizado a la spec (§3): metadata Adobe eliminada, clases CSS convertidas a atributos de raíz, currentColor, stroke-width 1.5, caps/joins redondeados. retoma del rechazado: guacharaca con las estrías del raspado y el trinche cruzado; reemplaza el diseño anterior tipo peine/rastrillo"
+        },
+        {
+          "fecha": "2026-08-25",
+          "accion": "aprobado",
+          "nota": ""
         }
       ]
     },
@@ -2282,8 +2342,8 @@
     {
       "id": "silueta-colombia",
       "categoria": "mapas",
-      "estado": "rechazado",
-      "intentos": 1,
+      "estado": "aprobado",
+      "intentos": 2,
       "notas": "BLOQUEANTE PARA LAS 5 REGIONES: region-caribe, region-andina, region-pacifica, region-orinoquia y region-amazonia se dibujan sobre este mismo contorno, asi que heredan su problema. No generarlas hasta resolver el contorno trazandolo de una fuente real (Natural Earth / Wikimedia, dominio publico) en vez de dibujarlo a ojo. Primer icono de la categoria mapas. Silueta del pais. A diferencia del resto del set, aca la referencia no es un rasgo caracteristico sino la geometria real: los 3 rasgos que lo hacen reconocible son la peninsula de La Guajira (punta al noreste), el brazo del Darien hacia Panama (noroeste) y el estrechamiento sur que termina en el trapecio amazonico. ADVERTENCIA: el contorno es una aproximacion estilizada dibujada a mano, NO trazada de datos geograficos; si se requiere fidelidad hay que trazarlo de una fuente real (SVG de dominio publico)",
       "historial": [
         {
@@ -2295,6 +2355,16 @@
           "fecha": "2026-07-14",
           "accion": "rechazado",
           "nota": "el usuario pidio omitirlo. El contorno se dibujo a ojo, no trazado de datos geograficos; se advirtio que en un mapa del propio pais eso se nota. Pendiente decidir entre aprobar a ojo o trazar de fuente real"
+        },
+        {
+          "fecha": "2026-08-25",
+          "accion": "generado",
+          "nota": "rediseño aportado por diseñador externo; SVG de Illustrator normalizado a la spec (§3): metadata Adobe eliminada, clases CSS convertidas a atributos de raíz, currentColor, stroke-width 1.5, caps/joins redondeados. retoma del rechazado: contorno del país retrazado; resuelve el bloqueo de las 5 regiones"
+        },
+        {
+          "fecha": "2026-08-25",
+          "accion": "aprobado",
+          "nota": ""
         }
       ]
     },
@@ -5906,6 +5976,120 @@
         },
         {
           "fecha": "2026-08-22",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "guiro",
+      "categoria": "cultura",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-08-25",
+          "accion": "generado",
+          "nota": "rediseño aportado por diseñador externo; SVG de Illustrator normalizado a la spec (§3): metadata Adobe eliminada, clases CSS convertidas a atributos de raíz, currentColor, stroke-width 1.5, caps/joins redondeados. güiro: tubo con las semillas visibles y la correa; ícono nuevo, no estaba en la lista de CLAUDE.md §4.2"
+        },
+        {
+          "fecha": "2026-08-25",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "region-caribe",
+      "categoria": "mapas",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-08-25",
+          "accion": "generado",
+          "nota": "rediseño aportado por diseñador externo; SVG de Illustrator normalizado a la spec (§3): metadata Adobe eliminada, clases CSS convertidas a atributos de raíz, currentColor, stroke-width 1.5, caps/joins redondeados. región Caribe recortada sobre el contorno de silueta-colombia"
+        },
+        {
+          "fecha": "2026-08-25",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "region-andina",
+      "categoria": "mapas",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-08-25",
+          "accion": "generado",
+          "nota": "rediseño aportado por diseñador externo; SVG de Illustrator normalizado a la spec (§3): metadata Adobe eliminada, clases CSS convertidas a atributos de raíz, currentColor, stroke-width 1.5, caps/joins redondeados. región Andina recortada sobre el contorno de silueta-colombia"
+        },
+        {
+          "fecha": "2026-08-25",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "region-pacifica",
+      "categoria": "mapas",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-08-25",
+          "accion": "generado",
+          "nota": "rediseño aportado por diseñador externo; SVG de Illustrator normalizado a la spec (§3): metadata Adobe eliminada, clases CSS convertidas a atributos de raíz, currentColor, stroke-width 1.5, caps/joins redondeados. región Pacífica recortada sobre el contorno de silueta-colombia"
+        },
+        {
+          "fecha": "2026-08-25",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "region-orinoquia",
+      "categoria": "mapas",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-08-25",
+          "accion": "generado",
+          "nota": "rediseño aportado por diseñador externo; SVG de Illustrator normalizado a la spec (§3): metadata Adobe eliminada, clases CSS convertidas a atributos de raíz, currentColor, stroke-width 1.5, caps/joins redondeados. región Orinoquía recortada sobre el contorno de silueta-colombia"
+        },
+        {
+          "fecha": "2026-08-25",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "region-amazonica",
+      "categoria": "mapas",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-08-25",
+          "accion": "generado",
+          "nota": "rediseño aportado por diseñador externo; SVG de Illustrator normalizado a la spec (§3): metadata Adobe eliminada, clases CSS convertidas a atributos de raíz, currentColor, stroke-width 1.5, caps/joins redondeados. región Amazónica recortada sobre el contorno de silueta-colombia; se conserva el nombre del diseñador en vez de \"region-amazonia\" de CLAUDE.md §4.4"
+        },
+        {
+          "fecha": "2026-08-25",
           "accion": "aprobado",
           "nota": ""
         }

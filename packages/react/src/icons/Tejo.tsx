@@ -1,0 +1,16 @@
+import { forwardRef } from 'react';
+import type { IconProps } from '../types';
+
+export const Tejo = forwardRef<SVGSVGElement, IconProps>(
+  ({ size = 24, color = 'currentColor', style, ...props }, ref) => (
+    <svg
+      ref={ref}
+      xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"
+      style={{ color, ...style }}
+      {...props}
+      dangerouslySetInnerHTML={{ __html: "<polyline points=\"5.8 5.2 6.1 3.2 20.9 3.2 18 20.8 3.1 20.8 4.2 14.7\"/><polygon points=\"20.9 3.2 20.9 19.2 18 20.8 20.9 3.2\"/><path d=\"M10.3,8.8c.5,0,.7.5.4.9-.6.5-1.2,1-1.8,1.5s-.5.3-.7,0-.2-.3-.2-.5c0-.4.3-.9.3-1.4,0-.2.3-.5.6-.5.4,0,1.1,0,1.5,0Z\"/><path d=\"M12.9,7c.2,0,.4,0,.5.1.2.3.6.7.8,1s0,.8-.5.9c-.7,0-1.5,0-2.2,0s-.5-.6-.2-.9c.4-.3.9-.8,1.3-1.1s.2-.1.3-.1Z\"/><path d=\"M8,12.2c.2,0,.3,0,.5.1l1.2,1.5c.2.4-.2.8-.6.9s-1.2,0-1.5,0-.4-.3-.4-.6c0-.5.2-1,.3-1.4,0-.2.3-.4.5-.5Z\"/><path d=\"M15.6,12.2c.3,0,.6.1.6.4-.1.5-.2,1.1-.3,1.5s-.3.5-.6.5-.8,0-1.2,0-.2,0-.3,0c-.5,0-.6-.5-.3-.8.6-.5,1.2-1,1.8-1.4s.2-.2.4-.2Z\"/><path d=\"M14.9,8.8c.5,0,1,0,1.5,0s.5.2.5.5c0,.5-.3,1.1-.4,1.6-.2.3-.6.5-.9.3l-1.2-1.5c-.2-.4.1-.8.5-.8Z\"/><path d=\"M10.6,16.6c-.2-.3-.6-.7-.8-1s0-.9.5-.9c.7,0,1.5,0,2.2,0,.5.1.5.6.2.9s-.9.7-1.3,1c-.2.1-.5.2-.7,0Z\"/><path d=\"M16.8,3.5s2.5.1,1.7,2.3c0,0,2.4.5,1.3,3\"/><path d=\"M6.5,5s-1.7.4-.8,2.5c0,0-1.6.8-.4,3.1,0,0-1.7,1.1-.7,4.3,0,0-2.5,4,.8,5.8\"/>" }}
+    />
+  )
+);
+
+Tejo.displayName = 'Tejo';

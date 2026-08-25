@@ -1,0 +1,16 @@
+import { forwardRef } from 'react';
+import type { IconProps } from '../types';
+
+export const CarnavalBarranquilla = forwardRef<SVGSVGElement, IconProps>(
+  ({ size = 24, color = 'currentColor', style, ...props }, ref) => (
+    <svg
+      ref={ref}
+      xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"
+      style={{ color, ...style }}
+      {...props}
+      dangerouslySetInnerHTML={{ __html: "<path d=\"M10.5,17.6h-2c-1.1,0-1.9-.9-1.9-1.9v-5.2\"/><path d=\"M17.7,10.2v5.5c0,1.1-.9,1.9-1.9,1.9h-2.5\"/><path d=\"M6.5,8.2v-2.9c0-1.3,1-2.3,2.3-2.3h6.5c1.3,0,2.3,1,2.3,2.3v2.9\"/><path d=\"M17.6,16c.3.1.6.2.9.2,1.4,0,2.6-1.1,3-3.1s0-2.2-.4-3.3-.2-1.4,0-2.1.2-.9.2-1.3c0-1.9-1.3-3.4-2.9-3.4s-.8.1-1.2.3\"/><path d=\"M6.4,16c-.3.1-.6.2-.9.2-1.6,0-2.9-1.9-2.9-4.3s0-1,.3-2,.2-1.4,0-2.1-.2-.9-.2-1.3c0-1.9,1.3-3.4,2.9-3.4s.9.1,1.3.4\"/><path d=\"M10.5,10.5c-.4.5-1.2.8-2,.8-1.3,0-2.4-.8-2.4-1.8s1.1-1.8,2.4-1.8,1.8.4,2.2,1\"/><ellipse cx=\"15.5\" cy=\"9.4\" rx=\"2.4\" ry=\"1.8\"/><path d=\"M13.3,15.6c1.3-.4,2.2-1.3,2.2-2.4h-2.4\"/><path d=\"M10.9,13.2h-2.2c0,1.1.9,2,2.2,2.4\"/><path d=\"M10.9,7.1s-.2.9-.1,3.3,1.5,7.4-1.9,9-.7.8-.2,1.4,1.3.4,1.7.3c3.7-1.1,2.5-6.5,2.4-9.5s.3-3.8.3-3.8\"/>" }}
+    />
+  )
+);
+
+CarnavalBarranquilla.displayName = 'CarnavalBarranquilla';

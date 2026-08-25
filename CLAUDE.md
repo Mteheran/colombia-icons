@@ -70,14 +70,14 @@ colombia-icons/
 ### 4.1 Naturaleza (~18)
 cóndor, colibrí, ceiba, palma-de-cera, planta-de-cafe, flor-de-mayo, rio, paramo, selva-amazonica, mar-caribe, volcan, mariposa, orquidea, jaguar, delfin-rosado, arrecife-coral, cascada, arbol-tropical, frailejon, sabueso-fino
 
-### 4.2 Cultura (~11)
-sombrero-vueltiao, mochila-wayuu, carnaval-barranquilla, acordeon-vallenato, mola-kuna, ruana, feria-de-las-flores, tejo, chiva-bus, guacharaca, sombrero-aguadeño
+### 4.2 Cultura (~12)
+sombrero-vueltiao, mochila-wayuu, carnaval-barranquilla, acordeon-vallenato, mola-kuna, ruana, feria-de-las-flores, tejo, chiva-bus, guacharaca, sombrero-aguadeño, guiro
 
 ### 4.3 Gastronomía (~14)
 arepa, bandeja-paisa, taza-de-tinto, aguardiente, empanada, arepa-de-choclo, sancocho, patacón, arepa-de-huevo, ajiaco, arepa-boyacense, pescado-frito, chicharrón, grano-de-cafe
 
 ### 4.4 Mapas y geografía (~14)
-silueta-colombia, region-caribe, region-andina, region-pacifica, region-orinoquia, region-amazonia, bogota-torre, cartagena-murallas, medellin-metro, salto-del-tequendama, sierra-nevada, ciudad-perdida, cocora-valle, isla-san-andres
+silueta-colombia, region-caribe, region-andina, region-pacifica, region-orinoquia, region-amazonica, bogota-torre, cartagena-murallas, medellin-metro, salto-del-tequendama, sierra-nevada, ciudad-perdida, cocora-valle, isla-san-andres
 
 ### 4.5 Deportes (~8)
 ciclismo, futbol, vuelta-a-colombia, patinaje, tejo-deporte, boxeo, atletismo, natacion

@@ -1,7 +1,7 @@
 # Colombia Icons
 
 [![Licencia: MIT](https://img.shields.io/badge/Licencia-MIT-yellow.svg)](./LICENSE)
-[![Íconos](https://img.shields.io/badge/%C3%ADconos-244-blue.svg)](#íconos-disponibles)
+[![Íconos](https://img.shields.io/badge/%C3%ADconos-254-blue.svg)](#íconos-disponibles)
 [![Estado](https://img.shields.io/badge/estado-pre--release-orange.svg)](./CHANGELOG.md)
 [![GitHub](https://img.shields.io/badge/GitHub-Mteheran%2Fcolombia--icons-181717?logo=github)](https://github.com/Mteheran/colombia-icons)
 [![Sitio web](https://img.shields.io/badge/sitio%20web-colombia--icons-2ea44f)](https://mteheran.github.io/colombia-icons/)
@@ -97,17 +97,17 @@ invisible al mostrarlos fuera de una página con estilos.
 
 | Categoría | Aprobados |
 |---|---:|
-| Naturaleza | 11 |
+| Naturaleza | 12 |
 | Cultura | 12 |
 | Gastronomía | 13 |
-| Mapas | 6 |
+| Mapas | 15 |
 | Deportes | 4 |
 | Genéricos | 198 |
-| **Total** | **244** |
+| **Total** | **254** |
 
-### Naturaleza (11)
+### Naturaleza (12)
 
-`ceiba`, `palma-de-cera`, `rio`, `mar-caribe`, `volcan`, `mariposa`, `jaguar`, `arrecife-coral`, `cascada`, `frailejon`, `arbol-tropical`
+`ceiba`, `palma-de-cera`, `rio`, `selva-amazonica`, `mar-caribe`, `volcan`, `mariposa`, `jaguar`, `arrecife-coral`, `cascada`, `frailejon`, `arbol-tropical`
 
 ### Cultura (12)
 
@@ -117,9 +117,9 @@ invisible al mostrarlos fuera de una página con estilos.
 
 `arepa`, `taza-de-tinto`, `grano-de-cafe`, `aguardiente`, `empanada`, `patacon`, `arepa-boyacense`, `arepa-de-choclo`, `arepa-de-huevo`, `ajiaco`, `sancocho`, `chicharron`, `bandeja-paisa`
 
-### Mapas (6)
+### Mapas (15)
 
-`silueta-colombia`, `region-caribe`, `region-andina`, `region-pacifica`, `region-orinoquia`, `region-amazonica`
+`silueta-colombia`, `region-caribe`, `region-andina`, `region-pacifica`, `region-orinoquia`, `region-amazonica`, `bogota-torre`, `cartagena-murallas`, `cartagena-iglesia`, `medellin-metro`, `salto-del-tequendama`, `ciudad-perdida`, `isla-san-andres`, `sierra-nevada`, `cocora-valle`
 
 ### Deportes (4)
 

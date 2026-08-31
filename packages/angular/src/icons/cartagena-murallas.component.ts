@@ -1,0 +1,12 @@
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+
+@Component({
+  selector: 'ci-cartagena-murallas',
+  standalone: true,
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: `<svg xmlns="http://www.w3.org/2000/svg" [attr.width]="size" [attr.height]="size" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" [style.color]="color"><path d="M8.9,8.9c0-2.3,1.8-4.1,4.1-4.1s4.1,1.8,4.1,4.1"/><path d="M13.5,2.9c0,0,0-.1,0-.2,0-.3-.2-.5-.5-.5s-.5.2-.5.5,0,.1,0,.2h0c.3,1,0,1.7,0,1.7h1s-.3-.8,0-1.7h0Z"/><line x1="8.9" y1="15.8" x2="1.4" y2="15.8"/><path d="M14.8,18.7c-.8.7-2.4.8-3.1,0v-8h3.1v8Z"/><line x1="22.6" y1="17.9" x2="17.2" y2="15.6"/><path d="M20.1,21.5l-2.9-1.3v-10.3l1-1c-5.3-1.6-10.1,0-10.1,0l1,1v9.4H2.7"/><path d="M9,19.4c1.2,3.3,7,3,8.1.9"/></svg>`,
+})
+export class CartagenaMurallasIcon {
+  @Input() size: number | string = 24;
+  @Input() color = 'currentColor';
+}

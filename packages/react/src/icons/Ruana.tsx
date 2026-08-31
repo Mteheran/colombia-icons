@@ -8,7 +8,7 @@ export const Ruana = forwardRef<SVGSVGElement, IconProps>(
       xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"
       style={{ color, ...style }}
       {...props}
-      dangerouslySetInnerHTML={{ __html: "<path d=\"M18.9,15.1l3.3-1.6c-.7-2.5-1.2-6.3-2.6-8.2s-3.1-3.3-5.4-3.8l-2.3,5-2.8-4.9c-1.7.4-3.1,1.2-4.3,2.4-2.3,2.4-2.3,4.5-3.9,9.5l3.8,1.6\"/><path d=\"M17.7,6.2l1.6,11.5c0,.4,0,.7-.3,1l-1.6,1.6c-.5.5-1.2.4-1.7,0l-1.2-1.3c-.2-.2-.3-.5-.3-.8v-2.4\"/><path d=\"M6.3,6.2l-1.6,11.5c0,.4,0,.7.3,1l1.6,1.6c.5.5,1.2.4,1.7,0l1.2-1.3c.2-.2.3-.5.3-.8v-2.4\"/><path d=\"M8.9,9.4l-1.2,7s3.6-3.2,7.8,0l-1.1-7\"/><path d=\"M9.8,18s-2-.2-2.1-1.7\"/><path d=\"M14.2,17.5s1.3-.6,1.3-1.1\"/>" }}
+      dangerouslySetInnerHTML={{ __html: "<path d=\"M8.4,2.5l-2.1,1.2c-1,.6-1.8,1.6-2.3,2.7l-3.1,7.1,10.9,8,11.1-8.3-3.4-7.1c-.5-.9-1.2-1.8-2-2.3l-2.2-1.3-2.7,2.7c-.4.4-1.1.4-1.5,0l-2.7-2.7Z\"/><polyline points=\"21.5 10.2 11.9 17.8 2.4 10.8\"/><circle cx=\"13.5\" cy=\"19.7\" r=\"1\"/><circle cx=\"16.1\" cy=\"17.8\" r=\"1\"/><circle cx=\"18.6\" cy=\"15.9\" r=\"1\"/><circle cx=\"21.1\" cy=\"14\" r=\"1\"/><circle cx=\"10.5\" cy=\"19.9\" r=\"1\"/><circle cx=\"8\" cy=\"18\" r=\"1\"/><circle cx=\"5.5\" cy=\"16.1\" r=\"1\"/><circle cx=\"3\" cy=\"14.2\" r=\"1\"/><path d=\"M17.5,3.8l-4.9,4.8c-.4.4-1.1.4-1.5,0L6.3,3.7\"/>" }}
     />
   )
 );

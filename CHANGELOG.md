@@ -8,6 +8,27 @@ The three published packages (React, Angular, Blazor) share a single version.
 
 Every commit closes a minor version; major versions are cut only on request.
 
+## [0.22.0] - 2026-08-31
+
+### Added
+
+- Icons (mapas): `bogota-torre`, `cartagena-murallas`, `cartagena-iglesia`, `medellin-metro`, `salto-del-tequendama`, `ciudad-perdida`, `isla-san-andres`, `sierra-nevada`, `cocora-valle`
+- Icons (naturaleza): `selva-amazonica`
+
+Ten of the eleven icons in this release are new to the packages. Four of
+them (`bogota-torre`, `cartagena-murallas`, `medellin-metro`,
+`selva-amazonica`) replace drafts that had been rejected and never
+published, so this is their first release. `cartagena-iglesia` is new to
+the icon spec, which listed only `cartagena-murallas` for Cartagena. The
+approved icon count goes from 244 to 254, and `mapas` grows from 6 icons to
+15 — it now covers all the landmarks the spec reserved for it.
+
+### Changed
+
+- `ruana` is redrawn: it now shows the garment spread open with the collar
+  flaps falling forward and the fringe running along both lower edges,
+  instead of the front-facing version shipped in 0.21.0.
+
 ## [0.21.0] - 2026-08-25
 
 ### Added

@@ -1239,9 +1239,9 @@
     {
       "id": "selva-amazonica",
       "categoria": "naturaleza",
-      "estado": "rechazado",
-      "intentos": 1,
-      "notas": "selva amazonica: varios arboles tropicales agrupados sugiriendo densidad de selva",
+      "estado": "aprobado",
+      "intentos": 2,
+      "notas": "selva amazonica: el redisenio no dibuja arboles sino la LIANA como rasgo — un bejuco que serpentea y se enrolla cruzando todo el cuadro, rodeado de hojas pequenas. Resuelve el rechazo del primer intento",
       "historial": [
         {
           "fecha": "2026-07-14",
@@ -1252,6 +1252,16 @@
           "fecha": "2026-07-14",
           "accion": "rechazado",
           "nota": "se salta por ahora, retomar despues"
+        },
+        {
+          "fecha": "2026-08-31",
+          "accion": "generado",
+          "nota": "redisenio aportado por disenador externo; SVG de Illustrator normalizado a la spec (§3): metadata Adobe eliminada, clases CSS convertidas a atributos de raiz, currentColor, stroke-width 1.5, caps/joins redondeados. liana serpenteante que cruza el cuadro entero, con 9 hojas pequenas repartidas alrededor"
+        },
+        {
+          "fecha": "2026-08-31",
+          "accion": "aprobado",
+          "nota": ""
         }
       ]
     },
@@ -2102,8 +2112,8 @@
       "id": "ruana",
       "categoria": "cultura",
       "estado": "aprobado",
-      "intentos": 2,
-      "notas": "ruana boyacense (el 'abrigo de cuatro puntas'): manta de lana sin mangas colgando, con orificio central para la cabeza y ABERTURA VERTICAL al frente hasta el dobladillo. La abertura frontal es el rasgo que la separa de un poncho comun, que es cerrado; por eso se prioriza sobre cualquier otro detalle",
+      "intentos": 3,
+      "notas": "ruana boyacense/cundiboyacense: manta de lana con abertura central para la cabeza. Redisenio del ícono aprobado en v0.21.0: la version anterior era la prenda de frente; esta la muestra abierta y extendida, con las 2 solapas del cuello cayendo al frente y los flecos como puntos a lo largo de los dos bordes inferiores",
       "historial": [
         {
           "fecha": "2026-07-14",
@@ -2122,6 +2132,16 @@
         },
         {
           "fecha": "2026-08-25",
+          "accion": "aprobado",
+          "nota": ""
+        },
+        {
+          "fecha": "2026-08-31",
+          "accion": "generado",
+          "nota": "redisenio aportado por disenador externo; SVG de Illustrator normalizado a la spec (§3): metadata Adobe eliminada, clases CSS convertidas a atributos de raiz, currentColor, stroke-width 1.5, caps/joins redondeados. redisenio de la version aprobada en v0.21.0: ruana extendida, solapas de cuello al frente y flecos en ambos bordes"
+        },
+        {
+          "fecha": "2026-08-31",
           "accion": "aprobado",
           "nota": ""
         }
@@ -2371,9 +2391,9 @@
     {
       "id": "bogota-torre",
       "categoria": "mapas",
-      "estado": "rechazado",
-      "intentos": 1,
-      "notas": "torre de Bogota = Torre Colpatria (50 pisos, 196m). Segun las referencias su fachada son pilares de concreto y barras de vidrio VERTICALES que corren sin interrupcion del suelo al techo, y su otro rasgo iconico es la iluminacion LED nocturna. El icono se ancla a esos dos",
+      "estado": "aprobado",
+      "intentos": 2,
+      "notas": "torre de Bogota = Torre Colpatria (50 pisos, 196m). Redisenio en volumen isometrico: la cubierta en rombo y las dos caras visibles dan profundidad, y las barras verticales de la fachada corren por ambas caras. Resuelve el rechazo del primer intento, que era un rectangulo plano con destellos LED al costado",
       "historial": [
         {
           "fecha": "2026-07-14",
@@ -2384,15 +2404,25 @@
           "fecha": "2026-07-14",
           "accion": "rechazado",
           "nota": "el usuario pidio omitirlo para retomar despues"
+        },
+        {
+          "fecha": "2026-08-31",
+          "accion": "generado",
+          "nota": "redisenio aportado por disenador externo; SVG de Illustrator normalizado a la spec (§3): metadata Adobe eliminada, clases CSS convertidas a atributos de raiz, currentColor, stroke-width 1.5, caps/joins redondeados. torre en isometria: cubierta romboidal + 2 caras con 3 filas de barras verticales cada una"
+        },
+        {
+          "fecha": "2026-08-31",
+          "accion": "aprobado",
+          "nota": ""
         }
       ]
     },
     {
       "id": "cartagena-murallas",
       "categoria": "mapas",
-      "estado": "rechazado",
-      "intentos": 1,
-      "notas": "murallas de Cartagena de Indias (piedra coralina, 11km, 1614-1796). Segun las referencias los elementos son: baluartes (fortines), cortinas (muros rectos que unen 2 baluartes), troneras para artilleria y garitas (torretas de vigilancia). La garita sobre el baluarte es la silueta mas reconocible, por eso se prioriza",
+      "estado": "aprobado",
+      "intentos": 2,
+      "notas": "murallas de Cartagena de Indias (piedra coralina, 11km, 1614-1796). El redisenio se ancla en la GARITA como silueta principal (cuerpo, cupula y veleta), con las cortinas de muralla saliendo a ambos lados en dos niveles. Resuelve el rechazo del primer intento, que dibujaba el baluarte de perfil con la garita encima y quedaba ilegible a 24px",
       "historial": [
         {
           "fecha": "2026-07-14",
@@ -2403,15 +2433,25 @@
           "fecha": "2026-07-14",
           "accion": "rechazado",
           "nota": "el usuario pidio omitirlo para retomar despues"
+        },
+        {
+          "fecha": "2026-08-31",
+          "accion": "generado",
+          "nota": "redisenio aportado por disenador externo; SVG de Illustrator normalizado a la spec (§3): metadata Adobe eliminada, clases CSS convertidas a atributos de raiz, currentColor, stroke-width 1.5, caps/joins redondeados. garita de vigilancia al centro (cupula + veleta + tronera) y cortinas de muralla a ambos lados"
+        },
+        {
+          "fecha": "2026-08-31",
+          "accion": "aprobado",
+          "nota": ""
         }
       ]
     },
     {
       "id": "medellin-metro",
       "categoria": "mapas",
-      "estado": "rechazado",
-      "intentos": 1,
-      "notas": "metro de Medellin: unico metro de Colombia. Se dibuja el vagon sobre VIADUCTO ELEVADO porque lo elevado es su rasgo. OJO: las referencias dicen que el simbolo de Medellin es el METROCABLE, no el tren (primera ciudad del mundo con teleferico como transporte publico de tiempo completo); si el vagon no convence, el metrocable es la alternativa mas identitaria",
+      "estado": "aprobado",
+      "intentos": 2,
+      "notas": "metro de Medellin: unico metro de Colombia. El redisenio muestra el vagon en perspectiva 3/4 en vez de frente, que es como se reconoce el tren en las fotos de referencia. Resuelve el rechazo del primer intento (vagon de frente sobre viaducto elevado)",
       "historial": [
         {
           "fecha": "2026-07-14",
@@ -2422,6 +2462,16 @@
           "fecha": "2026-07-14",
           "accion": "rechazado",
           "nota": "el usuario pidio omitirlo para retomar despues"
+        },
+        {
+          "fecha": "2026-08-31",
+          "accion": "generado",
+          "nota": "redisenio aportado por disenador externo; SVG de Illustrator normalizado a la spec (§3): metadata Adobe eliminada, clases CSS convertidas a atributos de raiz, currentColor, stroke-width 1.5, caps/joins redondeados. vagon en perspectiva 3/4 con ventanilla lateral, parabrisas y morro alargado"
+        },
+        {
+          "fecha": "2026-08-31",
+          "accion": "aprobado",
+          "nota": ""
         }
       ]
     },
@@ -6090,6 +6140,120 @@
         },
         {
           "fecha": "2026-08-25",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "cartagena-iglesia",
+      "categoria": "mapas",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "iglesia de Cartagena: la Catedral de Santa Catalina de Alejandria, con su torre-campanario de cupula puntiaguda sobre la fachada. No estaba en la lista de CLAUDE.md §4.4; se suma a mapas como segundo icono de Cartagena junto a cartagena-murallas",
+      "historial": [
+        {
+          "fecha": "2026-08-31",
+          "accion": "generado",
+          "nota": "redisenio aportado por disenador externo; SVG de Illustrator normalizado a la spec (§3): metadata Adobe eliminada, clases CSS convertidas a atributos de raiz, currentColor, stroke-width 1.5, caps/joins redondeados. fachada con 3 arcadas al frente, cuerpo central, campanario con reloj y cupula puntiaguda"
+        },
+        {
+          "fecha": "2026-08-31",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "salto-del-tequendama",
+      "categoria": "mapas",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "Salto del Tequendama (rio Bogota, 157m de caida). Se dibuja el chorro cayendo entre las dos paredes del canon, con las gotas al pie: es la caida encanonada, no una cascada generica — eso lo cubre naturaleza/cascada. El archivo del disenador llegaba como cascada-del-salto-tequendama",
+      "historial": [
+        {
+          "fecha": "2026-08-31",
+          "accion": "generado",
+          "nota": "redisenio aportado por disenador externo; SVG de Illustrator normalizado a la spec (§3): metadata Adobe eliminada, clases CSS convertidas a atributos de raiz, currentColor, stroke-width 1.5, caps/joins redondeados. chorro vertical entre las 2 paredes del canon, gotas al pie y el perfil de las montanas al fondo"
+        },
+        {
+          "fecha": "2026-08-31",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "ciudad-perdida",
+      "categoria": "mapas",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "Ciudad Perdida / Teyuna (Sierra Nevada de Santa Marta, s. VIII). El rasgo es la TERRAZA circular de piedra sobre la ladera, no una construccion: las terrazas son lo unico que queda en pie. El archivo del disenador llegaba como ciudad-perdida-de-teyuna",
+      "historial": [
+        {
+          "fecha": "2026-08-31",
+          "accion": "generado",
+          "nota": "redisenio aportado por disenador externo; SVG de Illustrator normalizado a la spec (§3): metadata Adobe eliminada, clases CSS convertidas a atributos de raiz, currentColor, stroke-width 1.5, caps/joins redondeados. terraza circular de piedra con bohio encima, sobre las lineas de la ladera y los escalones de acceso"
+        },
+        {
+          "fecha": "2026-08-31",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "isla-san-andres",
+      "categoria": "mapas",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "isla de San Andres: igual que silueta-colombia, aca la referencia es la geometria real y no un rasgo. Se traza el contorno de la isla (forma de caballito de mar, alargada norte-sur) como trazo unico y cerrado. El archivo del disenador llegaba como isla-de-san-andres",
+      "historial": [
+        {
+          "fecha": "2026-08-31",
+          "accion": "generado",
+          "nota": "redisenio aportado por disenador externo; SVG de Illustrator normalizado a la spec (§3): metadata Adobe eliminada, clases CSS convertidas a atributos de raiz, currentColor, stroke-width 1.5, caps/joins redondeados. contorno cerrado de la isla en un solo trazo, orientacion norte-sur"
+        },
+        {
+          "fecha": "2026-08-31",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "sierra-nevada",
+      "categoria": "mapas",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "Sierra Nevada de Santa Marta: montana costera mas alta del mundo. Los 2 rasgos que la separan de una montana cualquiera son los picos NEVADOS (Colon y Bolivar) y el sol/estrella de la iconografia kogui arriba. El archivo del disenador llegaba como sierra-nevada-santa-marta",
+      "historial": [
+        {
+          "fecha": "2026-08-31",
+          "accion": "generado",
+          "nota": "redisenio aportado por disenador externo; SVG de Illustrator normalizado a la spec (§3): metadata Adobe eliminada, clases CSS convertidas a atributos de raiz, currentColor, stroke-width 1.5, caps/joins redondeados. dos picos con lineas de nieve en las laderas, estrella kogui y 2 puntos en el cielo, y la linea del pie de monte"
+        },
+        {
+          "fecha": "2026-08-31",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "cocora-valle",
+      "categoria": "mapas",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "Valle de Cocora (Quindio): la palma de cera del Quindio, arbol nacional y la palmera mas alta del mundo. Se dibuja el tronco recto y desnudo hasta muy arriba con la corona compacta encima — esa desproporcion tronco/corona es lo que la hace reconocible — sobre las lomas del valle. El archivo del disenador llegaba como valle-del-cocora",
+      "historial": [
+        {
+          "fecha": "2026-08-31",
+          "accion": "generado",
+          "nota": "redisenio aportado por disenador externo; SVG de Illustrator normalizado a la spec (§3): metadata Adobe eliminada, clases CSS convertidas a atributos de raiz, currentColor, stroke-width 1.5, caps/joins redondeados. palma de cera de tronco largo y recto con corona compacta, sobre las lomas del valle"
+        },
+        {
+          "fecha": "2026-08-31",
           "accion": "aprobado",
           "nota": ""
         }

@@ -1,7 +1,7 @@
 # Colombia Icons
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
-[![Icons](https://img.shields.io/badge/icons-258-blue.svg)](#available-icons)
+[![Icons](https://img.shields.io/badge/icons-256-blue.svg)](#available-icons)
 [![Status](https://img.shields.io/badge/status-pre--release-orange.svg)](./CHANGELOG.md)
 [![GitHub](https://img.shields.io/badge/GitHub-Mteheran%2Fcolombia--icons-181717?logo=github)](https://github.com/Mteheran/colombia-icons)
 [![Website](https://img.shields.io/badge/website-colombia--icons-2ea44f)](https://mteheran.github.io/colombia-icons/)
@@ -97,7 +97,7 @@ GitHub displays them outside a styled page.
 
 | Category | Approved |
 |---|---:|
-| Naturaleza | 18 |
+| Naturaleza | 16 |
 | Cultura | 13 |
 | Gastronomía | 13 |
 | Mapas | 7 |
@@ -105,11 +105,11 @@ GitHub displays them outside a styled page.
 | Historia | 3 |
 | Deportes | 4 |
 | Genéricos | 198 |
-| **Total** | **258** |
+| **Total** | **256** |
 
-### Naturaleza (18)
+### Naturaleza (16)
 
-`ceiba`, `palma-de-cera`, `rio`, `selva-amazonica`, `mar-caribe`, `volcan`, `mariposa`, `jaguar`, `arrecife-coral`, `cascada`, `frailejon`, `arbol-tropical`, `salto-del-tequendama`, `sierra-nevada`, `cocora-valle`, `colibri`, `planta-de-cafe`, `sierra-nevada-santa-marta`
+`ceiba`, `palma-de-cera`, `rio`, `selva-amazonica`, `mar-caribe`, `volcan`, `mariposa`, `jaguar`, `cascada`, `arbol-tropical`, `salto-del-tequendama`, `sierra-nevada`, `cocora-valle`, `colibri`, `planta-de-cafe`, `sierra-nevada-santa-marta`
 
 ### Cultura (13)
 

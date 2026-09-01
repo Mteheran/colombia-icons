@@ -22,15 +22,15 @@ export function installCmd(fw: Framework): string {
     : `npm install @mteherandev/colombia-icons-${fw}`
 }
 
-/** Generic usage snippet for the hero install card (uses Frailejon as example). */
+/** Generic usage snippet for the hero install card (uses Colibri as example). */
 export function usageCode(fw: Framework): string {
   if (fw === 'react') {
-    return "import { Frailejon } from '@mteherandev/colombia-icons-react';\n\n<Frailejon size={24} color=\"currentColor\" />"
+    return "import { Colibri } from '@mteherandev/colombia-icons-react';\n\n<Colibri size={24} color=\"currentColor\" />"
   }
   if (fw === 'angular') {
-    return "import { CiIconComponent } from '@mteherandev/colombia-icons-angular';\n\n<ci-icon name=\"frailejon\" />"
+    return "import { CiIconComponent } from '@mteherandev/colombia-icons-angular';\n\n<ci-icon name=\"colibri\" />"
   }
-  return '@using ColombiaIcons.Blazor.Icons\n\n<Frailejon Size="24" />\n<EstrellaLlena Size="48" Color="#FCD116" />'
+  return '@using ColombiaIcons.Blazor.Icons\n\n<Colibri Size="24" />\n<EstrellaLlena Size="48" Color="#FCD116" />'
 }
 
 /** Short component reference shown as the modal subtitle / list column. */

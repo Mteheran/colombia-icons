@@ -1,7 +1,7 @@
 # Colombia Icons
 
 [![Licencia: MIT](https://img.shields.io/badge/Licencia-MIT-yellow.svg)](./LICENSE)
-[![Íconos](https://img.shields.io/badge/%C3%ADconos-258-blue.svg)](#íconos-disponibles)
+[![Íconos](https://img.shields.io/badge/%C3%ADconos-256-blue.svg)](#íconos-disponibles)
 [![Estado](https://img.shields.io/badge/estado-pre--release-orange.svg)](./CHANGELOG.md)
 [![GitHub](https://img.shields.io/badge/GitHub-Mteheran%2Fcolombia--icons-181717?logo=github)](https://github.com/Mteheran/colombia-icons)
 [![Sitio web](https://img.shields.io/badge/sitio%20web-colombia--icons-2ea44f)](https://mteheran.github.io/colombia-icons/)
@@ -97,7 +97,7 @@ invisible al mostrarlos fuera de una página con estilos.
 
 | Categoría | Aprobados |
 |---|---:|
-| Naturaleza | 18 |
+| Naturaleza | 16 |
 | Cultura | 13 |
 | Gastronomía | 13 |
 | Mapas | 7 |
@@ -105,11 +105,11 @@ invisible al mostrarlos fuera de una página con estilos.
 | Historia | 3 |
 | Deportes | 4 |
 | Genéricos | 198 |
-| **Total** | **258** |
+| **Total** | **256** |
 
-### Naturaleza (18)
+### Naturaleza (16)
 
-`ceiba`, `palma-de-cera`, `rio`, `selva-amazonica`, `mar-caribe`, `volcan`, `mariposa`, `jaguar`, `arrecife-coral`, `cascada`, `frailejon`, `arbol-tropical`, `salto-del-tequendama`, `sierra-nevada`, `cocora-valle`, `colibri`, `planta-de-cafe`, `sierra-nevada-santa-marta`
+`ceiba`, `palma-de-cera`, `rio`, `selva-amazonica`, `mar-caribe`, `volcan`, `mariposa`, `jaguar`, `cascada`, `arbol-tropical`, `salto-del-tequendama`, `sierra-nevada`, `cocora-valle`, `colibri`, `planta-de-cafe`, `sierra-nevada-santa-marta`
 
 ### Cultura (13)
 

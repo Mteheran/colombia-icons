@@ -1,0 +1,16 @@
+import { forwardRef } from 'react';
+import type { IconProps } from '../types';
+
+export const MascaraCarnavalBarranquilla = forwardRef<SVGSVGElement, IconProps>(
+  ({ size = 24, color = 'currentColor', style, ...props }, ref) => (
+    <svg
+      ref={ref}
+      xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"
+      style={{ color, ...style }}
+      {...props}
+      dangerouslySetInnerHTML={{ __html: "<path d=\"M2.17 11.93c2.1 -2.48 4.58 -3.53 7.33 -2.62 1.05 0.4 1.83 1.05 2.49 1.83 0.66 -0.79 1.45 -1.44 2.49 -1.83 2.76 -0.91 5.24 0 7.33 2.62 -1.57 2.49 -3.67 3.93 -6.29 4.19 -1.31 0.14 -2.48 -0.26 -3.53 -1.05 -1.05 0.79 -2.22 1.18 -3.53 1.05 -2.62 -0.26 -4.71 -1.7 -6.29 -4.19Z\"/><path d=\"M6.49 12.19c0.92 -0.79 1.97 -0.91 3.14 -0.26\"/><path d=\"M17.49 12.19c-0.91 -0.79 -1.96 -0.91 -3.14 -0.26\"/><path d=\"M6.89 7.88 5.44 5.52\"/><path d=\"M11.99 7.35V4.34\"/><path d=\"M17.1 7.88 18.54 5.52\"/><path d=\"M9.77 18.88c0.66 0.52 1.45 0.79 2.23 0.79s1.57 -0.26 2.23 -0.79\"/>" }}
+    />
+  )
+);
+
+MascaraCarnavalBarranquilla.displayName = 'MascaraCarnavalBarranquilla';

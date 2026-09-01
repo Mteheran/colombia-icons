@@ -1076,8 +1076,8 @@
     {
       "id": "colibri",
       "categoria": "naturaleza",
-      "estado": "rechazado",
-      "intentos": 1,
+      "estado": "aprobado",
+      "intentos": 2,
       "notas": "colibri de perfil: cuerpo pequeno, pico largo y fino, ala, cola",
       "historial": [
         {
@@ -1089,6 +1089,16 @@
           "fecha": "2026-07-14",
           "accion": "rechazado",
           "nota": "se salta por ahora, retomar despues"
+        },
+        {
+          "fecha": "2026-09-01",
+          "accion": "generado",
+          "nota": "rediseno aportado por disenador externo; SVG normalizado a la spec seccion 3"
+        },
+        {
+          "fecha": "2026-09-01",
+          "accion": "aprobado",
+          "nota": ""
         }
       ]
     },
@@ -1153,8 +1163,8 @@
     {
       "id": "planta-de-cafe",
       "categoria": "naturaleza",
-      "estado": "rechazado",
-      "intentos": 1,
+      "estado": "aprobado",
+      "intentos": 2,
       "notas": "rama de cafe: tallo con hojas y granos (cerezas) de cafe",
       "historial": [
         {
@@ -1166,6 +1176,16 @@
           "fecha": "2026-07-14",
           "accion": "rechazado",
           "nota": "se salta por ahora, retomar despues"
+        },
+        {
+          "fecha": "2026-09-01",
+          "accion": "generado",
+          "nota": "rediseno aportado por disenador externo; SVG normalizado a la spec seccion 3 (reescalado de 100x100 a la grilla 24x24)"
+        },
+        {
+          "fecha": "2026-09-01",
+          "accion": "aprobado",
+          "nota": ""
         }
       ]
     },
@@ -6296,6 +6316,44 @@
           "fecha": "2026-08-31",
           "accion": "recategorizado",
           "nota": "movido de mapas a naturaleza"
+        }
+      ]
+    },
+    {
+      "id": "sierra-nevada-santa-marta",
+      "categoria": "naturaleza",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-09-01",
+          "accion": "generado",
+          "nota": "rediseno aportado por disenador externo; SVG normalizado a la spec seccion 3 (reescalado de 100x100; ajuste de encuadre para respetar el margen 1.4-22.6); variante distinta de sierra-nevada, que se conserva"
+        },
+        {
+          "fecha": "2026-09-01",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "mascara-carnaval-barranquilla",
+      "categoria": "cultura",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-09-01",
+          "accion": "generado",
+          "nota": "rediseno aportado por disenador externo; SVG normalizado a la spec seccion 3 (escalado y recentrado para igualar el tamano optico del set); variante distinta de carnaval-barranquilla, que se conserva"
+        },
+        {
+          "fecha": "2026-09-01",
+          "accion": "aprobado",
+          "nota": ""
         }
       ]
     }

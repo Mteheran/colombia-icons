@@ -8,6 +8,20 @@ The three published packages (React, Angular, Blazor) share a single version.
 
 Every commit closes a minor version; major versions are cut only on request.
 
+## [0.24.0] - 2026-09-01
+
+### Added
+
+- Icons (naturaleza): `colibri`, `planta-de-cafe`, `sierra-nevada-santa-marta`
+- Icons (cultura): `mascara-carnaval-barranquilla`
+
+All four are designer contributions. `colibri` and `planta-de-cafe` replace
+drafts that had been rejected and never published, so this is their first
+release. `sierra-nevada-santa-marta` and `mascara-carnaval-barranquilla` are
+new ids that sit alongside the already published `sierra-nevada` and
+`carnaval-barranquilla` rather than replacing them, giving each subject a
+second treatment. The approved icon count goes from 254 to 258.
+
 ## [0.23.0] - 2026-08-31
 
 ### Added

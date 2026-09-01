@@ -1,5 +1,11 @@
-import { CATEGORY_LABELS_I18N, type Copy, type Lang } from '../i18n'
-import type { Categoria, Icon } from '../data/icons'
+import {
+  CATEGORY_LABELS_I18N,
+  type Copy,
+  type Lang,
+  SET_INFO,
+  guideDoc,
+} from '../i18n'
+import type { Categoria, Icon, IconSet } from '../data/icons'
 import type { ColorKey } from '../lib/colors'
 import { type Framework, componentRef } from '../lib/frameworks'
 import { ColorSwatches } from './ColorSwatches'
@@ -13,6 +19,8 @@ const VIEWS: { key: View; label: string }[] = [
   { key: 'list', label: '☰' },
 ]
 
+const SETS: IconSet[] = ['base', 'large']
+
 type Props = {
   t: Copy
   lang: Lang
@@ -20,6 +28,10 @@ type Props = {
   allIcons: Icon[]
   filtered: Icon[]
   categories: Categoria[]
+  set: IconSet
+  onSet: (set: IconSet) => void
+  /** Approved icons per set — the tab badges show the whole set, not the filter. */
+  setCounts: Record<IconSet, number>
   query: string
   onQuery: (value: string) => void
   cat: Categoria | 'todas'
@@ -38,6 +50,9 @@ export function Gallery({
   allIcons,
   filtered,
   categories,
+  set,
+  onSet,
+  setCounts,
   query,
   onQuery,
   cat,
@@ -58,7 +73,10 @@ export function Gallery({
   ]
 
   const isList = view === 'list'
-  const iconSize = view === 'list' ? 26 : 34
+  const isLarge = set === 'large'
+  const iconSize = isList ? (isLarge ? 34 : 26) : isLarge ? 48 : 34
+  const info = SET_INFO[lang][set]
+  const doc = guideDoc(lang, set)
 
   return (
     <section className="section gallery" id="galeria">
@@ -67,6 +85,42 @@ export function Gallery({
         <span className="gallery-count">
           {filtered.length} / {allIcons.length}
         </span>
+
+        <div className="set-tabs" role="tablist" aria-label={t.gallery}>
+          {SETS.map((key) => (
+            <button
+              key={key}
+              type="button"
+              role="tab"
+              className="set-tab"
+              aria-selected={set === key}
+              data-active={set === key}
+              onClick={() => onSet(key)}
+            >
+              {SET_INFO[lang][key].label}
+              <span className="set-tab-badge">{SET_INFO[lang][key].badge}</span>
+              <span className="set-tab-count">{setCounts[key]}</span>
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <div className="set-note">
+        <div className="set-note-copy">
+          <h3 className="set-note-title">{info.title}</h3>
+          <p className="set-note-body">{info.body}</p>
+          <a className="set-note-link" href={doc.url} target="_blank" rel="noreferrer">
+            {info.cta} →
+          </a>
+        </div>
+        <div className="set-note-specs">
+          {info.specs.map(([label, value]) => (
+            <div key={label} className="spec">
+              <div className="mono-9">{label}</div>
+              <div className="spec-value">{value}</div>
+            </div>
+          ))}
+        </div>
       </div>
 
       <div className="controls">
@@ -141,12 +195,14 @@ export function Gallery({
               <span className="icon-row-cat">
                 {CATEGORY_LABELS_I18N[icon.categoria][lang]}
               </span>
-              <span className="icon-row-cmp">{componentRef(fw, icon.id)}</span>
+              <span className="icon-row-cmp">
+                {isLarge ? '48 × 48' : componentRef(fw, icon.id)}
+              </span>
             </button>
           ))}
         </div>
       ) : (
-        <div className={`icon-grid icon-grid-${view}`}>
+        <div className={`icon-grid icon-grid-${view}`} data-set={set}>
           {filtered.map((icon) => (
             <button
               key={`${icon.categoria}/${icon.id}`}

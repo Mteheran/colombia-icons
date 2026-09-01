@@ -18,6 +18,8 @@ colombia-icons/
 │       ├── cultura/
 │       ├── gastronomia/
 │       ├── mapas/
+│       ├── urbano/
+│       ├── historia/
 │       ├── deportes/
 │       └── genericos/
 │
@@ -68,7 +70,7 @@ colombia-icons/
 ## 4. Lista de íconos v1.0 (propuesta editable)
 
 ### 4.1 Naturaleza (~18)
-cóndor, colibrí, ceiba, palma-de-cera, planta-de-cafe, flor-de-mayo, rio, paramo, selva-amazonica, mar-caribe, volcan, mariposa, orquidea, jaguar, delfin-rosado, arrecife-coral, cascada, arbol-tropical, frailejon, sabueso-fino
+cóndor, colibrí, ceiba, palma-de-cera, planta-de-cafe, flor-de-mayo, rio, paramo, selva-amazonica, mar-caribe, volcan, mariposa, orquidea, jaguar, delfin-rosado, arrecife-coral, cascada, arbol-tropical, frailejon, sabueso-fino, salto-del-tequendama, sierra-nevada, cocora-valle
 
 ### 4.2 Cultura (~12)
 sombrero-vueltiao, mochila-wayuu, carnaval-barranquilla, acordeon-vallenato, mola-kuna, ruana, feria-de-las-flores, tejo, chiva-bus, guacharaca, sombrero-aguadeño, guiro
@@ -76,8 +78,14 @@ sombrero-vueltiao, mochila-wayuu, carnaval-barranquilla, acordeon-vallenato, mol
 ### 4.3 Gastronomía (~14)
 arepa, bandeja-paisa, taza-de-tinto, aguardiente, empanada, arepa-de-choclo, sancocho, patacón, arepa-de-huevo, ajiaco, arepa-boyacense, pescado-frito, chicharrón, grano-de-cafe
 
-### 4.4 Mapas y geografía (~14)
-silueta-colombia, region-caribe, region-andina, region-pacifica, region-orinoquia, region-amazonica, bogota-torre, cartagena-murallas, medellin-metro, salto-del-tequendama, sierra-nevada, ciudad-perdida, cocora-valle, isla-san-andres
+### 4.4 Mapas y geografía (~7)
+silueta-colombia, region-caribe, region-andina, region-pacifica, region-orinoquia, region-amazonica, isla-san-andres
+
+### 4.4.1 Urbano (~2)
+bogota-torre, medellin-metro
+
+### 4.4.2 Historia (~3)
+cartagena-murallas, cartagena-iglesia, ciudad-perdida
 
 ### 4.5 Deportes (~8)
 ciclismo, futbol, vuelta-a-colombia, patinaje, tejo-deporte, boxeo, atletismo, natacion
@@ -120,7 +128,7 @@ guardar, eliminar, cancelar, cerrar, estrella, estrella-llena, archivo, carpeta,
 - Hero / introducción del proyecto, con link a los 3 paquetes
 - Instrucciones de instalación por framework (React / Angular / Blazor), alineadas con la sección 5
 - Buscador de íconos por nombre: filtra la galería en vivo (client-side, sin backend), independiente del filtro por categoría
-- Galería de íconos navegable por categoría (naturaleza, cultura, gastronomía, mapas, deportes, genéricos)
+- Galería de íconos navegable por categoría (naturaleza, cultura, gastronomía, mapas, urbano, historia, deportes, genéricos)
 - Cada ícono en la galería: preview renderizado + selector de color + botón "Descargar SVG" + botón "Descargar PNG"
 - Licencia y link al repo
 

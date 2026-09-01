@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { CATEGORY_LABELS_I18N, type Copy, type Lang } from '../i18n'
+import { CATEGORY_LABELS_I18N, type Copy, type Lang, SET_INFO } from '../i18n'
 import type { Icon } from '../data/icons'
 import type { ColorKey } from '../lib/colors'
 import {
@@ -23,7 +23,11 @@ type Props = {
   onClose: () => void
 }
 
-const SIZES = [16, 24, 48]
+/** Preview sizes per set: each one anchored on its own canvas size. */
+const SIZES: Record<string, number[]> = {
+  base: [16, 24, 48],
+  large: [24, 48, 96],
+}
 
 export function IconModal({ t, lang, icon, color, onColor, fw, onFw, onClose }: Props) {
   const [copied, setCopied] = useState(false)
@@ -41,6 +45,8 @@ export function IconModal({ t, lang, icon, color, onColor, fw, onFw, onClose }: 
   // Reset the copy feedback whenever a different icon opens.
   useEffect(() => setCopied(false), [icon.id])
 
+  const info = SET_INFO[lang][icon.set]
+  const isLarge = icon.set === 'large'
   const snippet = iconSnippet(fw, icon.id, color)
 
   const copySnippet = async () => {
@@ -71,7 +77,7 @@ export function IconModal({ t, lang, icon, color, onColor, fw, onFw, onClose }: 
         <div className="modal-left">
           <IconSvg svg={icon.svg} size={140} color={color} />
           <div className="modal-sizes">
-            {SIZES.map((px) => (
+            {SIZES[icon.set].map((px) => (
               <div key={px} className="modal-size">
                 <IconSvg svg={icon.svg} size={px} color={color} />
                 <span className="mono-9">{px}</span>
@@ -86,7 +92,8 @@ export function IconModal({ t, lang, icon, color, onColor, fw, onFw, onClose }: 
             <div>
               <h3 className="modal-title">{icon.id}</h3>
               <div className="modal-sub">
-                {CATEGORY_LABELS_I18N[icon.categoria][lang]} · {componentRef(fw, icon.id)}
+                {CATEGORY_LABELS_I18N[icon.categoria][lang]} ·{' '}
+                {isLarge ? info.label : componentRef(fw, icon.id)}
               </div>
             </div>
             <button
@@ -102,11 +109,11 @@ export function IconModal({ t, lang, icon, color, onColor, fw, onFw, onClose }: 
           <div className="specs">
             <div className="spec">
               <div className="mono-9">Grid</div>
-              <div className="spec-value">24 × 24</div>
+              <div className="spec-value">{isLarge ? '48 × 48' : '24 × 24'}</div>
             </div>
             <div className="spec">
               <div className="mono-9">{t.stroke}</div>
-              <div className="spec-value">1.5 px</div>
+              <div className="spec-value">{isLarge ? '1.5 + 1 px' : '1.5 px'}</div>
             </div>
             <div className="spec">
               <div className="mono-9">Fill</div>
@@ -114,20 +121,26 @@ export function IconModal({ t, lang, icon, color, onColor, fw, onFw, onClose }: 
             </div>
           </div>
 
-          <div className="pill-group modal-fw">
-            {FRAMEWORKS.map((f) => (
-              <button
-                key={f.key}
-                type="button"
-                className="pill"
-                data-active={fw === f.key}
-                onClick={() => onFw(f.key)}
-              >
-                {f.label}
-              </button>
-            ))}
-          </div>
-          <pre className="code code-dark modal-snippet">{snippet}</pre>
+          {isLarge ? (
+            <p className="modal-note">{info.note}</p>
+          ) : (
+            <>
+              <div className="pill-group modal-fw">
+                {FRAMEWORKS.map((f) => (
+                  <button
+                    key={f.key}
+                    type="button"
+                    className="pill"
+                    data-active={fw === f.key}
+                    onClick={() => onFw(f.key)}
+                  >
+                    {f.label}
+                  </button>
+                ))}
+              </div>
+              <pre className="code code-dark modal-snippet">{snippet}</pre>
+            </>
+          )}
 
           <div className="modal-actions">
             <button
@@ -144,9 +157,11 @@ export function IconModal({ t, lang, icon, color, onColor, fw, onFw, onClose }: 
             >
               PNG 512
             </button>
-            <button type="button" className="btn btn-outline" onClick={copySnippet}>
-              {copied ? t.copied : t.copy}
-            </button>
+            {!isLarge && (
+              <button type="button" className="btn btn-outline" onClick={copySnippet}>
+                {copied ? t.copied : t.copy}
+              </button>
+            )}
           </div>
         </div>
       </div>

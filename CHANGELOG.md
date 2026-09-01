@@ -8,6 +8,31 @@ The three published packages (React, Angular, Blazor) share a single version.
 
 Every commit closes a minor version; major versions are cut only on request.
 
+## [0.23.0] - 2026-08-31
+
+### Added
+
+- Categories `urbano` and `historia`, so city landmarks and heritage sites are
+  no longer filed under maps
+- Gallery on the site now has two icon-set tabs: **Icons** (24 × 24, selected
+  by default and showing exactly what it showed before) and **Large icons**
+  (48 × 48)
+- Each tab carries a spec card with the set's canvas, stroke, safe area and how
+  it is consumed, plus a link to that set's design guide — in Spanish, English
+  and Portuguese
+
+### Changed
+
+- Icons moved out of `mapas`: `bogota-torre` and `medellin-metro` to `urbano`;
+  `cartagena-murallas`, `cartagena-iglesia` and `ciudad-perdida` to `historia`;
+  `sierra-nevada`, `cocora-valle` and `salto-del-tequendama` to `naturaleza`.
+  Icon ids and artwork are untouched, so the generated components are
+  unchanged and no import breaks
+- The icon modal now reads the specs from the icon's own set (48 × 48 and a
+  1.5 + 1 px stroke for the large set) and previews it at 24/48/96
+- Large icons are offered as SVG/PNG downloads only, with a note explaining
+  that the set does not ship in the React, Angular or Blazor packages yet
+
 ## [0.22.0] - 2026-08-31
 
 ### Added

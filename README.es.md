@@ -97,29 +97,39 @@ invisible al mostrarlos fuera de una página con estilos.
 
 | Categoría | Aprobados |
 |---|---:|
-| Naturaleza | 12 |
+| Naturaleza | 15 |
 | Cultura | 12 |
 | Gastronomía | 13 |
-| Mapas | 15 |
+| Mapas | 7 |
+| Urbano | 2 |
+| Historia | 3 |
 | Deportes | 4 |
 | Genéricos | 198 |
 | **Total** | **254** |
 
-### Naturaleza (12)
+### Naturaleza (15)
 
-`ceiba`, `palma-de-cera`, `rio`, `selva-amazonica`, `mar-caribe`, `volcan`, `mariposa`, `jaguar`, `arrecife-coral`, `cascada`, `frailejon`, `arbol-tropical`
+`ceiba`, `palma-de-cera`, `rio`, `selva-amazonica`, `mar-caribe`, `volcan`, `mariposa`, `jaguar`, `arrecife-coral`, `cascada`, `frailejon`, `arbol-tropical`, `salto-del-tequendama`, `sierra-nevada`, `cocora-valle`
 
 ### Cultura (12)
 
-`sombrero-vueltiao`, `mochila-wayuu`, `acordeon-vallenato`, `mola-kuna`, `feria-de-las-flores`, `sombrero-aguadeno`, `tejo`, `ruana`, `carnaval-barranquilla`, `chiva-bus`, `guacharaca`, `guiro`
+`sombrero-vueltiao`, `mochila-wayuu`, `ruana`, `acordeon-vallenato`, `chiva-bus`, `carnaval-barranquilla`, `mola-kuna`, `feria-de-las-flores`, `tejo`, `guacharaca`, `sombrero-aguadeno`, `guiro`
 
 ### Gastronomía (13)
 
-`arepa`, `taza-de-tinto`, `grano-de-cafe`, `aguardiente`, `empanada`, `patacon`, `arepa-boyacense`, `arepa-de-choclo`, `arepa-de-huevo`, `ajiaco`, `sancocho`, `chicharron`, `bandeja-paisa`
+`arepa`, `taza-de-tinto`, `grano-de-cafe`, `bandeja-paisa`, `aguardiente`, `empanada`, `arepa-de-choclo`, `sancocho`, `patacon`, `arepa-de-huevo`, `ajiaco`, `arepa-boyacense`, `chicharron`
 
-### Mapas (15)
+### Mapas (7)
 
-`silueta-colombia`, `region-caribe`, `region-andina`, `region-pacifica`, `region-orinoquia`, `region-amazonica`, `bogota-torre`, `cartagena-murallas`, `cartagena-iglesia`, `medellin-metro`, `salto-del-tequendama`, `ciudad-perdida`, `isla-san-andres`, `sierra-nevada`, `cocora-valle`
+`silueta-colombia`, `region-caribe`, `region-andina`, `region-pacifica`, `region-orinoquia`, `region-amazonica`, `isla-san-andres`
+
+### Urbano (2)
+
+`bogota-torre`, `medellin-metro`
+
+### Historia (3)
+
+`cartagena-murallas`, `cartagena-iglesia`, `ciudad-perdida`
 
 ### Deportes (4)
 
@@ -127,7 +137,7 @@ invisible al mostrarlos fuera de una página con estilos.
 
 ### Genéricos (198)
 
-`guardar`, `eliminar`, `cancelar`, `cerrar`, `estrella`, `estrella-llena`, `archivo`, `carpeta`, `carpetas`, `editar`, `buscar`, `configuracion`, `agregar`, `quitar`, `check`, `alerta`, `informacion`, `candado`, `candado-abierto`, `usuario`, `calendario`, `reloj`, `descargar`, `subir`, `compartir`, `copiar`, `imprimir`, `menu-opciones`, `refrescar`, `camara`, `puntero`, `mundo`, `microfono`, `microfono-estudio`, `terminal`, `flecha-derecha`, `flecha-abajo`, `flecha-izquierda`, `flecha-arriba`, `camara-video`, `telefono`, `wifi`, `hashtag`, `inicio`, `emoji`, `libro`, `imagen`, `enter`, `puzzle`, `verificado`, `menu-hamburguesa`, `correo`, `comentario`, `me-gusta`, `no-me-gusta`, `circle-check`, `square-check`, `marcador`, `musica`, `maximizar`, `maximizar-2-flechas`, `maximizar-4-flechas`, `bombillo-encendido`, `bombillo-apagado`, `mano`, `volumen`, `volumen-silenciado`, `corneta`, `teclado`, `controles`, `mando`, `dolar`, `dolar-circulo`, `trofeo`, `codigo`, `bandera`, `rayo`, `bateria-horizontal`, `bateria-horizontal-cargada`, `bateria-vertical`, `bateria-vertical-cargada`, `dolar-cuadrado`, `lista-tareas`, `clip`, `clip-vertical`, `usuario-agregar`, `usuario-eliminar`, `usuario-inactivo`, `monitor`, `monitor-configuracion`, `monitor-editar`, `regalo`, `pergamino`, `cohete`, `maletin`, `bug`, `bug-mariquita`, `campana`, `campana-sonando`, `corazon`, `ojo`, `ojo-cerrado`, `ubicacion`, `carrito`, `tarjeta`, `enlace`, `reproducir`, `pausa`, `enviar`, `sol`, `luna`, `filtro`, `ordenar`, `enlace-externo`, `cuadricula`, `lista-vista`, `escudo`, `llave`, `cerrar-sesion`, `iniciar-sesion`, `interrogacion`, `power`, `chevron-derecha`, `chevron-izquierda`, `chevron-arriba`, `chevron-abajo`, `mas-circulo`, `menos-circulo`, `detener`, `siguiente`, `anterior`, `adelantar`, `retroceder`, `nube`, `nube-descargar`, `nube-subir`, `etiqueta`, `mapa`, `zoom-mas`, `zoom-menos`, `bolsa-compras`, `accesibilidad`, `huella`, `idioma`, `qr`, `sincronizar`, `lluvia`, `nieve`, `viento`, `termometro`, `grafico-barras`, `grafico-lineas`, `grafico-circular`, `grafico-area`, `analitica`, `embudo`, `base-de-datos`, `bases-de-datos`, `servidor`, `papelera-reciclaje`, `calculadora`, `disco`, `laptop`, `tablet`, `auriculares`, `mouse`, `reloj-inteligente`, `altavoz`, `negrita`, `cursiva`, `subrayado`, `alinear-izquierda`, `alinear-centro`, `alinear-derecha`, `lista-numerada`, `lista-vinetas`, `paleta`, `cuentagotas`, `tijeras`, `pegar`, `resaltador`, `deshacer`, `rehacer`, `interruptor`, `tabla`, `documento`, `mensajes`, `responder`, `reenviar`, `bandeja-entrada`, `arroba`, `diana`, `cronometro`, `reloj-arena`, `usuarios`, `fuego`, `fuego-llama`, `brujula`
+`guardar`, `eliminar`, `cancelar`, `cerrar`, `estrella`, `estrella-llena`, `archivo`, `carpeta`, `carpetas`, `editar`, `buscar`, `configuracion`, `agregar`, `quitar`, `check`, `alerta`, `informacion`, `candado`, `candado-abierto`, `usuario`, `calendario`, `reloj`, `descargar`, `subir`, `compartir`, `copiar`, `imprimir`, `menu-opciones`, `refrescar`, `lista-tareas`, `clip`, `clip-vertical`, `usuario-agregar`, `usuario-eliminar`, `usuario-inactivo`, `monitor`, `monitor-configuracion`, `monitor-editar`, `regalo`, `pergamino`, `camara`, `puntero`, `mundo`, `microfono`, `microfono-estudio`, `cohete`, `maletin`, `bug`, `bug-mariquita`, `campana`, `campana-sonando`, `corazon`, `ojo`, `ojo-cerrado`, `ubicacion`, `carrito`, `tarjeta`, `enlace`, `reproducir`, `pausa`, `enviar`, `sol`, `luna`, `filtro`, `ordenar`, `enlace-externo`, `cuadricula`, `lista-vista`, `escudo`, `llave`, `cerrar-sesion`, `iniciar-sesion`, `interrogacion`, `power`, `chevron-derecha`, `chevron-izquierda`, `chevron-arriba`, `chevron-abajo`, `mas-circulo`, `menos-circulo`, `detener`, `siguiente`, `anterior`, `adelantar`, `retroceder`, `nube`, `nube-descargar`, `nube-subir`, `etiqueta`, `mapa`, `zoom-mas`, `zoom-menos`, `bolsa-compras`, `terminal`, `flecha-derecha`, `flecha-abajo`, `flecha-izquierda`, `flecha-arriba`, `camara-video`, `telefono`, `wifi`, `hashtag`, `inicio`, `emoji`, `libro`, `imagen`, `enter`, `puzzle`, `verificado`, `menu-hamburguesa`, `correo`, `comentario`, `me-gusta`, `no-me-gusta`, `circle-check`, `square-check`, `marcador`, `musica`, `maximizar`, `maximizar-2-flechas`, `maximizar-4-flechas`, `bombillo-encendido`, `bombillo-apagado`, `mano`, `volumen`, `volumen-silenciado`, `corneta`, `teclado`, `controles`, `mando`, `dolar`, `dolar-circulo`, `trofeo`, `codigo`, `bandera`, `rayo`, `bateria-horizontal`, `bateria-horizontal-cargada`, `bateria-vertical`, `bateria-vertical-cargada`, `dolar-cuadrado`, `accesibilidad`, `huella`, `idioma`, `qr`, `sincronizar`, `lluvia`, `nieve`, `viento`, `termometro`, `grafico-barras`, `grafico-lineas`, `grafico-circular`, `grafico-area`, `analitica`, `embudo`, `base-de-datos`, `bases-de-datos`, `servidor`, `papelera-reciclaje`, `calculadora`, `disco`, `laptop`, `tablet`, `auriculares`, `mouse`, `reloj-inteligente`, `altavoz`, `negrita`, `cursiva`, `subrayado`, `alinear-izquierda`, `alinear-centro`, `alinear-derecha`, `lista-numerada`, `lista-vinetas`, `paleta`, `cuentagotas`, `tijeras`, `pegar`, `resaltador`, `usuarios`, `deshacer`, `rehacer`, `interruptor`, `tabla`, `documento`, `mensajes`, `responder`, `reenviar`, `bandeja-entrada`, `arroba`, `diana`, `cronometro`, `reloj-arena`, `fuego`, `fuego-llama`, `brujula`
 
 ## Desarrollo
 

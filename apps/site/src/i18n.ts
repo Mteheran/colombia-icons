@@ -1,4 +1,4 @@
-import type { Categoria } from './data/icons'
+import type { Categoria, IconSet } from './data/icons'
 
 /**
  * Site copy in the three supported languages. The original site shipped only
@@ -22,6 +22,8 @@ export const CATEGORY_LABELS_I18N: Record<Categoria, Record<Lang, string>> = {
   cultura: { es: 'Cultura', en: 'Culture', pt: 'Cultura' },
   gastronomia: { es: 'Gastronomía', en: 'Food', pt: 'Gastronomia' },
   mapas: { es: 'Mapas', en: 'Maps', pt: 'Mapas' },
+  urbano: { es: 'Urbano', en: 'Urban', pt: 'Urbano' },
+  historia: { es: 'Historia', en: 'History', pt: 'História' },
   deportes: { es: 'Deportes', en: 'Sports', pt: 'Esportes' },
   genericos: { es: 'Genéricos', en: 'Generic', pt: 'Genéricos' },
 }
@@ -222,6 +224,115 @@ export const T: Record<Lang, Copy> = {
   },
 }
 
+/**
+ * How each set is built, shown above the gallery: dimensions plus the basic
+ * design rules. Mirrors docs/icon-design-guide.md (24×24) and
+ * docs/large-icon-design-guide.md (48×48) — the docs stay the source of truth.
+ */
+export type SetInfo = {
+  /** Tab label. */
+  label: string
+  /** Mono badge on the tab — the canvas size, the thing that tells them apart. */
+  badge: string
+  title: string
+  body: string
+  /** [label, value] pairs rendered as the spec strip. */
+  specs: Array<[string, string]>
+  cta: string
+  /** Shown in the modal instead of the package snippet, when the set has none. */
+  note?: string
+}
+
+export const SET_INFO: Record<Lang, Record<IconSet, SetInfo>> = {
+  es: {
+    base: {
+      label: 'Iconos',
+      badge: '24 px',
+      title: 'Set estándar · 24 × 24',
+      body: 'El set base, y el que viaja en los paquetes de React, Angular y Blazor. Se dibuja en un lienzo de 24 × 24 px con un único grosor de trazo de 1.5 px, dentro de un área segura de ~20 × 20 (2 px de aire por lado). Sin relleno y con stroke="currentColor", para que herede el color del CSS del proyecto. Terminaciones y uniones redondeadas, y tamaño percibido constante entre iconos.',
+      specs: [
+        ['Grid', '24 × 24'],
+        ['Trazo', '1.5 px'],
+        ['Área segura', '20 × 20'],
+        ['Uso', 'Paquetes + descarga'],
+      ],
+      cta: 'Leer la guía del set estándar',
+    },
+    large: {
+      label: 'Iconos grandes',
+      badge: '48 px',
+      title: 'Set grande · 48 × 48',
+      body: 'Un set independiente, no es el set base ampliado: cada icono se redibuja desde cero en un lienzo de 48 × 48 px para aprovechar el detalle interior. El trazo principal sigue siendo de 1.5 px —la mitad del peso relativo del set base, 1/32 del lienzo— y se permite un trazo secundario de 1 px solo para texturas. Área segura de ~40 × 40 (4 px de aire por lado). Por ahora se usa descargándolo en SVG o PNG: todavía no viaja en los paquetes.',
+      specs: [
+        ['Grid', '48 × 48'],
+        ['Trazo', '1.5 px + 1 px'],
+        ['Área segura', '40 × 40'],
+        ['Uso', 'Descarga SVG · PNG'],
+      ],
+      cta: 'Leer la guía del set grande',
+      note: 'Este set todavía no se publica en los paquetes de React, Angular ni Blazor. Se usa descargando el SVG o el PNG y colocándolo en tu proyecto.',
+    },
+  },
+  en: {
+    base: {
+      label: 'Icons',
+      badge: '24 px',
+      title: 'Standard set · 24 × 24',
+      body: 'The base set, and the one that ships in the React, Angular and Blazor packages. Drawn on a 24 × 24 px canvas with a single 1.5 px stroke weight, inside a ~20 × 20 safe area (2 px of air per side). No fill and stroke="currentColor", so it inherits color from the consumer CSS. Rounded caps and joins, and a consistent perceived size across icons.',
+      specs: [
+        ['Grid', '24 × 24'],
+        ['Stroke', '1.5 px'],
+        ['Safe area', '20 × 20'],
+        ['Use', 'Packages + download'],
+      ],
+      cta: 'Read the standard set guide',
+    },
+    large: {
+      label: 'Large icons',
+      badge: '48 px',
+      title: 'Large set · 48 × 48',
+      body: 'An independent set, not the base set blown up: every icon is redrawn from scratch on a 48 × 48 px canvas to make room for interior detail. The primary stroke stays at 1.5 px — half the base set\'s relative weight, 1/32 of the canvas — and a 1 px secondary stroke is allowed for textures only. ~40 × 40 safe area (4 px of air per side). For now you use it by downloading SVG or PNG: it does not ship in the packages yet.',
+      specs: [
+        ['Grid', '48 × 48'],
+        ['Stroke', '1.5 px + 1 px'],
+        ['Safe area', '40 × 40'],
+        ['Use', 'SVG · PNG download'],
+      ],
+      cta: 'Read the large set guide',
+      note: 'This set is not published in the React, Angular or Blazor packages yet. You use it by downloading the SVG or PNG and dropping it into your project.',
+    },
+  },
+  pt: {
+    base: {
+      label: 'Ícones',
+      badge: '24 px',
+      title: 'Conjunto padrão · 24 × 24',
+      body: 'O conjunto base, e o que viaja nos pacotes de React, Angular e Blazor. Desenhado num canvas de 24 × 24 px com uma única espessura de traço de 1,5 px, dentro de uma área segura de ~20 × 20 (2 px de ar por lado). Sem preenchimento e com stroke="currentColor", para herdar a cor do CSS do projeto. Terminações e junções arredondadas, e tamanho percebido constante entre ícones.',
+      specs: [
+        ['Grid', '24 × 24'],
+        ['Traço', '1,5 px'],
+        ['Área segura', '20 × 20'],
+        ['Uso', 'Pacotes + download'],
+      ],
+      cta: 'Ler o guia do conjunto padrão',
+    },
+    large: {
+      label: 'Ícones grandes',
+      badge: '48 px',
+      title: 'Conjunto grande · 48 × 48',
+      body: 'Um conjunto independente, não é o conjunto base ampliado: cada ícone é redesenhado do zero num canvas de 48 × 48 px para aproveitar o detalhe interior. O traço principal continua em 1,5 px — metade do peso relativo do conjunto base, 1/32 do canvas — e permite-se um traço secundário de 1 px apenas para texturas. Área segura de ~40 × 40 (4 px de ar por lado). Por enquanto usa-se baixando em SVG ou PNG: ainda não viaja nos pacotes.',
+      specs: [
+        ['Grid', '48 × 48'],
+        ['Traço', '1,5 px + 1 px'],
+        ['Área segura', '40 × 40'],
+        ['Uso', 'Download SVG · PNG'],
+      ],
+      cta: 'Ler o guia do conjunto grande',
+      note: 'Este conjunto ainda não é publicado nos pacotes de React, Angular ou Blazor. Usa-se baixando o SVG ou o PNG e colocando-o no seu projeto.',
+    },
+  },
+}
+
 /** Icon design rules shown in the guide section: [number, title, body]. */
 export const RULES: Record<Lang, Array<[string, string, string]>> = {
   es: [
@@ -351,6 +462,27 @@ export const GUIDE_DOC: Record<Lang, { file: string; url: string }> = {
     file: 'docs/icon-design-guide.md',
     url: 'https://github.com/Mteheran/colombia-icons/blob/main/docs/icon-design-guide.md',
   },
+}
+
+/** Large-set guide doc, same fallback rule as GUIDE_DOC. */
+export const GUIDE_DOC_LARGE: Record<Lang, { file: string; url: string }> = {
+  es: {
+    file: 'docs/guia-diseno-iconos-large.es.md',
+    url: 'https://github.com/Mteheran/colombia-icons/blob/main/docs/guia-diseno-iconos-large.es.md',
+  },
+  en: {
+    file: 'docs/large-icon-design-guide.md',
+    url: 'https://github.com/Mteheran/colombia-icons/blob/main/docs/large-icon-design-guide.md',
+  },
+  pt: {
+    file: 'docs/large-icon-design-guide.md',
+    url: 'https://github.com/Mteheran/colombia-icons/blob/main/docs/large-icon-design-guide.md',
+  },
+}
+
+/** The guide doc for a given set. */
+export function guideDoc(lang: Lang, set: IconSet) {
+  return set === 'large' ? GUIDE_DOC_LARGE[lang] : GUIDE_DOC[lang]
 }
 
 /** Resolve the initial language: stored choice, then browser, then Spanish. */

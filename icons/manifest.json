@@ -2390,7 +2390,7 @@
     },
     {
       "id": "bogota-torre",
-      "categoria": "mapas",
+      "categoria": "urbano",
       "estado": "aprobado",
       "intentos": 2,
       "notas": "torre de Bogota = Torre Colpatria (50 pisos, 196m). Redisenio en volumen isometrico: la cubierta en rombo y las dos caras visibles dan profundidad, y las barras verticales de la fachada corren por ambas caras. Resuelve el rechazo del primer intento, que era un rectangulo plano con destellos LED al costado",
@@ -2414,12 +2414,17 @@
           "fecha": "2026-08-31",
           "accion": "aprobado",
           "nota": ""
+        },
+        {
+          "fecha": "2026-08-31",
+          "accion": "recategorizado",
+          "nota": "movido de mapas a urbano"
         }
       ]
     },
     {
       "id": "cartagena-murallas",
-      "categoria": "mapas",
+      "categoria": "historia",
       "estado": "aprobado",
       "intentos": 2,
       "notas": "murallas de Cartagena de Indias (piedra coralina, 11km, 1614-1796). El redisenio se ancla en la GARITA como silueta principal (cuerpo, cupula y veleta), con las cortinas de muralla saliendo a ambos lados en dos niveles. Resuelve el rechazo del primer intento, que dibujaba el baluarte de perfil con la garita encima y quedaba ilegible a 24px",
@@ -2443,12 +2448,17 @@
           "fecha": "2026-08-31",
           "accion": "aprobado",
           "nota": ""
+        },
+        {
+          "fecha": "2026-08-31",
+          "accion": "recategorizado",
+          "nota": "movido de mapas a historia"
         }
       ]
     },
     {
       "id": "medellin-metro",
-      "categoria": "mapas",
+      "categoria": "urbano",
       "estado": "aprobado",
       "intentos": 2,
       "notas": "metro de Medellin: unico metro de Colombia. El redisenio muestra el vagon en perspectiva 3/4 en vez de frente, que es como se reconoce el tren en las fotos de referencia. Resuelve el rechazo del primer intento (vagon de frente sobre viaducto elevado)",
@@ -2472,6 +2482,11 @@
           "fecha": "2026-08-31",
           "accion": "aprobado",
           "nota": ""
+        },
+        {
+          "fecha": "2026-08-31",
+          "accion": "recategorizado",
+          "nota": "movido de mapas a urbano"
         }
       ]
     },
@@ -6147,7 +6162,7 @@
     },
     {
       "id": "cartagena-iglesia",
-      "categoria": "mapas",
+      "categoria": "historia",
       "estado": "aprobado",
       "intentos": 1,
       "notas": "iglesia de Cartagena: la Catedral de Santa Catalina de Alejandria, con su torre-campanario de cupula puntiaguda sobre la fachada. No estaba en la lista de CLAUDE.md §4.4; se suma a mapas como segundo icono de Cartagena junto a cartagena-murallas",
@@ -6161,12 +6176,17 @@
           "fecha": "2026-08-31",
           "accion": "aprobado",
           "nota": ""
+        },
+        {
+          "fecha": "2026-08-31",
+          "accion": "recategorizado",
+          "nota": "movido de mapas a historia"
         }
       ]
     },
     {
       "id": "salto-del-tequendama",
-      "categoria": "mapas",
+      "categoria": "naturaleza",
       "estado": "aprobado",
       "intentos": 1,
       "notas": "Salto del Tequendama (rio Bogota, 157m de caida). Se dibuja el chorro cayendo entre las dos paredes del canon, con las gotas al pie: es la caida encanonada, no una cascada generica — eso lo cubre naturaleza/cascada. El archivo del disenador llegaba como cascada-del-salto-tequendama",
@@ -6180,12 +6200,17 @@
           "fecha": "2026-08-31",
           "accion": "aprobado",
           "nota": ""
+        },
+        {
+          "fecha": "2026-08-31",
+          "accion": "recategorizado",
+          "nota": "movido de mapas a naturaleza"
         }
       ]
     },
     {
       "id": "ciudad-perdida",
-      "categoria": "mapas",
+      "categoria": "historia",
       "estado": "aprobado",
       "intentos": 1,
       "notas": "Ciudad Perdida / Teyuna (Sierra Nevada de Santa Marta, s. VIII). El rasgo es la TERRAZA circular de piedra sobre la ladera, no una construccion: las terrazas son lo unico que queda en pie. El archivo del disenador llegaba como ciudad-perdida-de-teyuna",
@@ -6199,6 +6224,11 @@
           "fecha": "2026-08-31",
           "accion": "aprobado",
           "nota": ""
+        },
+        {
+          "fecha": "2026-08-31",
+          "accion": "recategorizado",
+          "nota": "movido de mapas a historia"
         }
       ]
     },
@@ -6223,7 +6253,7 @@
     },
     {
       "id": "sierra-nevada",
-      "categoria": "mapas",
+      "categoria": "naturaleza",
       "estado": "aprobado",
       "intentos": 1,
       "notas": "Sierra Nevada de Santa Marta: montana costera mas alta del mundo. Los 2 rasgos que la separan de una montana cualquiera son los picos NEVADOS (Colon y Bolivar) y el sol/estrella de la iconografia kogui arriba. El archivo del disenador llegaba como sierra-nevada-santa-marta",
@@ -6237,12 +6267,17 @@
           "fecha": "2026-08-31",
           "accion": "aprobado",
           "nota": ""
+        },
+        {
+          "fecha": "2026-08-31",
+          "accion": "recategorizado",
+          "nota": "movido de mapas a naturaleza"
         }
       ]
     },
     {
       "id": "cocora-valle",
-      "categoria": "mapas",
+      "categoria": "naturaleza",
       "estado": "aprobado",
       "intentos": 1,
       "notas": "Valle de Cocora (Quindio): la palma de cera del Quindio, arbol nacional y la palmera mas alta del mundo. Se dibuja el tronco recto y desnudo hasta muy arriba con la corona compacta encima — esa desproporcion tronco/corona es lo que la hace reconocible — sobre las lomas del valle. El archivo del disenador llegaba como valle-del-cocora",
@@ -6256,6 +6291,11 @@
           "fecha": "2026-08-31",
           "accion": "aprobado",
           "nota": ""
+        },
+        {
+          "fecha": "2026-08-31",
+          "accion": "recategorizado",
+          "nota": "movido de mapas a naturaleza"
         }
       ]
     }

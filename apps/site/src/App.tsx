@@ -1,9 +1,13 @@
 import { useEffect, useMemo, useState } from 'react'
 import {
+  categoriesOf,
   categories as allCategories,
   icons,
+  iconsOf,
+  largeIcons,
   svgById,
   type Categoria,
+  type IconSet,
 } from './data/icons'
 import { type Lang, T, detectLang } from './i18n'
 import { GRADIENT_MARKUP } from './lib/colors'
@@ -33,6 +37,7 @@ export default function App() {
   const [lang, setLang] = useState<Lang>(detectLang)
   const [theme, setTheme] = useState<Theme>(readTheme)
   const [query, setQuery] = useState('')
+  const [set, setSet] = useState<IconSet>('base')
   const [cat, setCat] = useState<Categoria | 'todas'>('todas')
   const [color, setColor] = useState<ColorKey>(DEFAULT_COLOR)
   const [fw, setFw] = useState<Framework>('react')
@@ -51,18 +56,29 @@ export default function App() {
 
   const t = T[lang]
 
+  // The two sets have different categories, so switching sets clears the
+  // category filter (the search text carries over — it still makes sense).
+  const activeIcons = iconsOf(set)
+  const activeCategories = categoriesOf(set)
+
+  const changeSet = (next: IconSet) => {
+    if (next === set) return
+    setSet(next)
+    setCat('todas')
+  }
+
   // Search and category filter are independent (CLAUDE.md section 6); search is
   // diacritic-insensitive on both the query and the icon id.
   const filtered = useMemo(() => {
     const needle = normalize(query.trim())
-    return icons.filter(
+    return activeIcons.filter(
       (icon) =>
         (cat === 'todas' || icon.categoria === cat) &&
         (needle === '' || normalize(icon.id).includes(needle)),
     )
-  }, [query, cat])
+  }, [query, cat, activeIcons])
 
-  const openIcon = open ? icons.find((icon) => icon.id === open) ?? null : null
+  const openIcon = open ? activeIcons.find((icon) => icon.id === open) ?? null : null
 
   return (
     <>
@@ -86,9 +102,12 @@ export default function App() {
           t={t}
           lang={lang}
           fw={fw}
-          allIcons={icons}
+          allIcons={activeIcons}
           filtered={filtered}
-          categories={allCategories}
+          categories={activeCategories}
+          set={set}
+          onSet={changeSet}
+          setCounts={{ base: icons.length, large: largeIcons.length }}
           query={query}
           onQuery={setQuery}
           cat={cat}

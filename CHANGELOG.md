@@ -8,6 +8,45 @@ The three published packages (React, Angular, Blazor) share a single version.
 
 Every commit closes a minor version; major versions are cut only on request.
 
+## [0.25.0] - 2026-09-01
+
+### Removed
+
+- Icons (naturaleza): `frailejon`, `arrecife-coral`
+
+Both are deactivated for legibility: they did not read clearly at small sizes.
+They move to `rechazado` in the manifest and drop out of the packages, the
+gallery and the READMEs, but their SVG files are kept so they can be redrawn
+and brought back later. The approved icon count goes from 258 to 256.
+
+**Breaking:** the `Frailejon` and `ArrecifeCoral` components (and the
+`frailejon` / `arrecife-coral` names for `<ci-icon>`) are no longer exported by
+any of the three packages.
+
+### Changed
+
+- The home page no longer uses either icon: the hero strip swaps them for
+  `colibri` and `mar-caribe`, and the install snippet now shows `Colibri`
+  instead of `Frailejon`
+- The demo phone's fifth category tile becomes "Palmas" / "Palms" /
+  "Palmeiras" with `palma-de-cera`, replacing the "Páramo" tile that depended
+  on `frailejon`
+- The gallery search placeholder suggests `colibri` instead of `frailejon`
+
+## [0.24.0] - 2026-09-01
+
+### Added
+
+- Icons (naturaleza): `colibri`, `planta-de-cafe`, `sierra-nevada-santa-marta`
+- Icons (cultura): `mascara-carnaval-barranquilla`
+
+All four are designer contributions. `colibri` and `planta-de-cafe` replace
+drafts that had been rejected and never published, so this is their first
+release. `sierra-nevada-santa-marta` and `mascara-carnaval-barranquilla` are
+new ids that sit alongside the already published `sierra-nevada` and
+`carnaval-barranquilla` rather than replacing them, giving each subject a
+second treatment. The approved icon count goes from 254 to 258.
+
 ## [0.23.0] - 2026-08-31
 
 ### Added

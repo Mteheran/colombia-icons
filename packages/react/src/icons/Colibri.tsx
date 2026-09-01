@@ -1,0 +1,16 @@
+import { forwardRef } from 'react';
+import type { IconProps } from '../types';
+
+export const Colibri = forwardRef<SVGSVGElement, IconProps>(
+  ({ size = 24, color = 'currentColor', style, ...props }, ref) => (
+    <svg
+      ref={ref}
+      xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"
+      style={{ color, ...style }}
+      {...props}
+      dangerouslySetInnerHTML={{ __html: "<path d=\"M10.3 10.4C8.5 7.3 5.7 5.1 3.4 4.6c.4 2.8 2.1 5.1 5.1 6.9\"/><path d=\"M10.7 10.1c.8-1.6 2.1-2.5 3.5-2.4 1.2.1 2 .8 2.5 1.9\"/><path d=\"M16.6 9.4 21 7.9\"/><path d=\"M16.6 10.2c-.2 2.1-1.1 3.7-2.7 4.8-1.2.8-2.6 1.4-4.2 1.7\"/><path d=\"M9.7 16.7 7.3 20\"/><path d=\"M10.5 17.1 9.5 20.4\"/><path d=\"M14.4 9.1h.1\"/>" }}
+    />
+  )
+);
+
+Colibri.displayName = 'Colibri';

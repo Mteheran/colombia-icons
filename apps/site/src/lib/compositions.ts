@@ -8,7 +8,7 @@
 /** 16 icons shown as a strip in the editorial hero. */
 export const HERO_STRIP = [
   'sombrero-vueltiao',
-  'frailejon',
+  'colibri',
   'palma-de-cera',
   'arepa',
   'taza-de-tinto',
@@ -19,7 +19,7 @@ export const HERO_STRIP = [
   'ciclismo',
   'volcan',
   'cascada',
-  'arrecife-coral',
+  'mar-caribe',
   'ceiba',
   'empanada',
   'futbol',
@@ -31,7 +31,7 @@ export const DEMO_CATS = [
   'mapa',
   'mar-caribe',
   'sombrero-vueltiao',
-  'frailejon',
+  'palma-de-cera',
   'arepa',
   'mariposa',
   'ubicacion',

@@ -1,0 +1,12 @@
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+
+@Component({
+  selector: 'ci-sierra-nevada-santa-marta',
+  standalone: true,
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: `<svg xmlns="http://www.w3.org/2000/svg" [attr.width]="size" [attr.height]="size" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" [style.color]="color"><path d="M2.21 17.34l3.56 -5.34l1.96 2.23"/><path d="M7.73 14.23l4.27 -7.56l4.27 7.57"/><path d="M16.27 14.23l1.96 -2.22l3.56 5.34"/><path d="M9.51 11.08c0.8 -0.89 4.19 -0.89 4.99 0"/><path d="M5.24 17.34c1.34 -0.62 2.67 -0.62 4.01 0"/><path d="M14.76 17.34c1.34 -0.62 2.67 -0.62 4.01 0"/></svg>`,
+})
+export class SierraNevadaSantaMartaIcon {
+  @Input() size: number | string = 24;
+  @Input() color = 'currentColor';
+}

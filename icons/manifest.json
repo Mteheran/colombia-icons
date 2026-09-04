@@ -6366,6 +6366,373 @@
           "nota": ""
         }
       ]
+    },
+    {
+      "id": "carpeta-abierta",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-09-03",
+          "accion": "generado",
+          "nota": "referencias: folder-open de Lucide y Tabler; construccion de contorno trasero + panel frontal inclinado, reutilizando la caja de carpeta.svg (4..20, radio 1.5); diagonal anclada en (5.5,19) sin extremo flotante; sin linea de pestana interior"
+        },
+        {
+          "fecha": "2026-09-03",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "minimizar",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-09-03",
+          "accion": "generado",
+          "nota": "referencia: minimize de Lucide; contraparte exacta de maximizar.svg (mismas coordenadas 3/8/16/21 y radio 2, esquinas rotadas 180 grados hacia adentro, sweep 0 0 1)"
+        },
+        {
+          "fecha": "2026-09-03",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "alinear-justificado",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-09-03",
+          "accion": "generado",
+          "nota": "referencias: align-justified de Tabler y text-align-justify de Lucide; se sigue Tabler (dos lineas completas + ultima corta) porque la variante de Lucide seria identica a menu-hamburguesa.svg; mismo grid de la familia: y 6/12/18, x 4..20, ultima a 16, elementos line"
+        },
+        {
+          "fecha": "2026-09-03",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "tachado",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-09-03",
+          "accion": "generado",
+          "nota": "referencias: strikethrough de Lucide y Tabler; se sigue Lucide por consistencia de familia (negrita y subrayado ya son bold/underline de Lucide) y porque su S partida en dos arcos deja el hueco donde pasa la linea del medio, evitando el empaste del cruce; linea de 4 a 20 en y=12"
+        },
+        {
+          "fecha": "2026-09-03",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "campana-silenciada",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-09-03",
+          "accion": "generado",
+          "nota": "referencias: bell-off de Lucide y Tabler, ambas con diagonal de esquina a esquina; se descarta esa diagonal porque el set nunca la usa (volumen-silenciado usa X al lado, ojo-cerrado redibuja, bombillo-apagado quita rayos, usuario-inactivo usa barras). Se sigue el patron de volumen-silenciado: campana.svg escalada 0.72 con coordenadas horneadas a la izquierda + X en las mismas coordenadas de volumen (x 16..21, y 9.5..14.5)"
+        },
+        {
+          "fecha": "2026-09-03",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "usuario-check",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-09-03",
+          "accion": "generado",
+          "nota": "sin referencia externa: sigue la regla interna de la familia usuario-agregar/usuario-eliminar (persona identica desplazada a la izquierda + distintivo en la caja 6x6 de x16..22 y5..11); el check reusa las proporciones del de circle-check escaladas 0.75"
+        },
+        {
+          "fecha": "2026-09-03",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "usuario-editar",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 2,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-09-03",
+          "accion": "generado",
+          "nota": "referencias: user-pen de Lucide y user-edit de Tabler, ambas con lapiz abajo a la derecha y cuerpo truncado; se descarta esa composicion para respetar la familia (persona intacta + distintivo arriba a la derecha). Lapiz reusado de editar.svg via g transform con stroke-width compensado, mismo mecanismo que monitor-editar.svg"
+        },
+        {
+          "fecha": "2026-09-03",
+          "accion": "feedback",
+          "nota": "reducir el tamano del lapiz: de scale(0.5) (8 unidades) a scale(0.42) (6.7 unidades), stroke-width recalculado a 3.57; queda dentro de la caja 6x6 de los hermanos. No se baja mas porque a 0.40 se cierra el hueco interior del cuerpo del lapiz"
+        },
+        {
+          "fecha": "2026-09-03",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "escudo-alerta",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "reemplaza el slot que iba a ser escudo-check, descartado por duplicar a verificado",
+      "historial": [
+        {
+          "fecha": "2026-09-03",
+          "accion": "generado",
+          "nota": "referencia: shield-alert de Lucide. Se descarto escudo-check porque verificado.svg ya es un shield-check y a 24px serian indistinguibles. Escudo copiado literal de escudo.svg (tapa recta, que queda como marca de la familia escudo* frente a la tapa ondulada de verificado); signo de admiracion con la notacion de alerta.svg (barra + punto .01 en un solo path), subido 1 unidad por el interior util del escudo"
+        },
+        {
+          "fecha": "2026-09-03",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "grabar",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 2,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-09-03",
+          "accion": "generado",
+          "nota": "referencia: player-record de Tabler (circulo r=7 centrado); r=7 da los 14 de diametro de la caja de la familia de transporte (detener es rect 14x14)"
+        },
+        {
+          "fecha": "2026-09-03",
+          "accion": "feedback",
+          "nota": "parecia solo un circulo: se rehace como boton REC de camara, anillo r=7 + punto solido r=3 con fill=currentColor stroke=none, tecnica que ya usan camara.svg y lista-vista.svg. Se descarto el disco lleno sin anillo (mancha a 24px) y no se confunde con diana, que son tres anillos huecos"
+        },
+        {
+          "fecha": "2026-09-03",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "aleatorio",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-09-03",
+          "accion": "generado",
+          "nota": "referencia: arrows-shuffle de Tabler; contrastado antes contra ordenar, reenviar, responder, enlace y sincronizar para descartar duplicado. Un camino continuo (dos arcos r=5 encadenados en 11,12) y el otro partido con hueco entre 13,8.2 y 9,15.8 para que lea el cruce por debajo; chevrons de 3 unidades, mas chicos que los 4 de sincronizar porque van apilados"
+        },
+        {
+          "fecha": "2026-09-03",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "nublado-parcial",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 4,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-09-03",
+          "accion": "generado",
+          "nota": "referencia: cloud-sun de Lucide. El sol no puede ser un circulo completo porque la nube no tiene relleno: se dibuja solo el arco visible. Nube copiada de nube.svg en g transform con stroke-width compensado (1.97 = 1.5/0.76); sol arriba a la derecha porque el bulto alto de la nube esta a la izquierda"
+        },
+        {
+          "fecha": "2026-09-03",
+          "accion": "feedback",
+          "nota": "el sol quedaba lejos de la nube y con pocos rayos: sol bajado a (14.5,10) para apoyarse en el hombro derecho y rayos de 3 a 5"
+        },
+        {
+          "fecha": "2026-09-03",
+          "accion": "feedback",
+          "nota": "debia verse medio circulo y tocarse las lineas: arco de 180 exactos con r=3.6. Para anclar los extremos al contorno se reconstruyo la nube real (arcos del path convertidos a centro-radio, muestreados y transformados) y se barrieron posiciones hasta dejar ambos extremos a menos de 0.05 del contorno"
+        },
+        {
+          "fecha": "2026-09-03",
+          "accion": "feedback",
+          "nota": "alejar el sol un poco y quitar 2 lineas: centro corrido 0.9 en diagonal sobre el mismo eje, rayos de 5 a 3 (se conservan los de -70, 0 y +70 grados)"
+        },
+        {
+          "fecha": "2026-09-03",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "niebla",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-09-03",
+          "accion": "generado",
+          "nota": "referencias: cloud-fog de Lucide (nube + 2 lineas desfasadas) y de Tabler (nube + 1 linea); se sigue Lucide y el desfase es deliberado, dos lineas alineadas leerian como subrayado. Nube copiada literal de lluvia.svg (la variante subida que usa el set cuando algo cuelga debajo). Contrastado contra viento para descartar duplicado"
+        },
+        {
+          "fecha": "2026-09-03",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "gota",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-09-03",
+          "accion": "generado",
+          "nota": "referencias: droplet de Lucide (cuatro beziers) y de Tabler (arco de 300 grados + dos rectas); se sigue Tabler porque el set resuelve todo con arcos explicitos y no con beziers a mano. Circulo r=6 en (12,14), extremos del arco a mas/menos 30 grados sobre la horizontal, punta en (12,3)"
+        },
+        {
+          "fecha": "2026-09-03",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "alarma",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-09-03",
+          "accion": "generado",
+          "nota": "referencias: alarm-clock de Lucide y alarm de Tabler; se sigue Tabler (solo las dos orejas) porque las cuatro diagonales de Lucide se vuelven ruido a 24px. Circulo r=7.5 en (12,13) con el mismo corrimiento hacia abajo que cronometro para dejar aire arriba; manecillas en el estilo de reloj (dos trazos desde el centro) escaladas al radio menor"
+        },
+        {
+          "fecha": "2026-09-03",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "historial",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-09-03",
+          "accion": "generado",
+          "nota": "referencia: history de Tabler (Lucide ya no publica history.svg, devuelve 404). Contrastado contra refrescar (dos medios arcos), deshacer (U sin circulo) y reloj (circulo cerrado) para descartar duplicado. Arco de 320 grados sobre el mismo circulo de reloj (r=8 en 12,12), corchete en L de 5 unidades por brazo como el de refrescar, y manecillas copiadas literal de reloj"
+        },
+        {
+          "fecha": "2026-09-03",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "calendario-evento",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-09-03",
+          "accion": "generado",
+          "nota": "referencia: calendar-event de Tabler (dia marcado con cuadrado relleno). Calendario copiado literal de calendario.svg, con sus esquinas rectas; marcador de 3x3 en (7.5,12.5) con fill=currentColor stroke=none, la tecnica de camara, lista-vista y grabar. Se descartaron contorno 3.5 (enclenque), relleno 4x4 (pesado) y punto redondo (lee como vineta)"
+        },
+        {
+          "fecha": "2026-09-03",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "tendencia-arriba",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-09-03",
+          "accion": "generado",
+          "nota": "referencia: trending-up de Lucide; zigzag con el mismo ritmo reescalado a la caja 4..20 de la familia de graficos, sin ejes porque la tendencia es el dato suelto. Punta como corchete en L de 5 unidades (convencion ya usada por refrescar e historial), naciendo en el punto final de la linea"
+        },
+        {
+          "fecha": "2026-09-03",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "tendencia-abajo",
+      "categoria": "genericos",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        {
+          "fecha": "2026-09-03",
+          "accion": "generado",
+          "nota": "referencia: trending-down de Lucide; espejo exacto en y de tendencia-arriba (cada punto y pasa a 24-y), con el corchete volteado hacia arriba para abrazar la esquina desde el lado correcto"
+        },
+        {
+          "fecha": "2026-09-03",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
     }
   ]
 }

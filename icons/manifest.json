@@ -2232,6 +2232,11 @@
           "fecha": "2026-08-25",
           "accion": "aprobado",
           "nota": ""
+        },
+        {
+          "fecha": "2026-09-04",
+          "accion": "feedback",
+          "nota": "corregido: al normalizar el SVG de Illustrator se perdio el relleno solido de 3 formas (letrero frontal y los 2 puntos del costado), que quedaron como contornos huecos por el fill=none de la raiz. Se restauro con fill=currentColor stroke=none; geometria intacta e identica al archivo del disenador"
         }
       ]
     },
@@ -6092,6 +6097,11 @@
           "fecha": "2026-08-25",
           "accion": "aprobado",
           "nota": ""
+        },
+        {
+          "fecha": "2026-09-04",
+          "accion": "feedback",
+          "nota": "corregido: al normalizar el SVG de Illustrator se perdio el relleno solido de los 10 puntos (muescas del tubo), que quedaron como anillos huecos por el fill=none de la raiz. Se restauro con fill=currentColor stroke=none; geometria intacta e identica al archivo del disenador"
         }
       ]
     },
@@ -6302,6 +6312,11 @@
           "fecha": "2026-08-31",
           "accion": "recategorizado",
           "nota": "movido de mapas a naturaleza"
+        },
+        {
+          "fecha": "2026-09-04",
+          "accion": "feedback",
+          "nota": "corregido: al normalizar el SVG de Illustrator se perdio el relleno solido de los 2 puntos del cielo, que quedaron como anillos huecos por el fill=none de la raiz. Se restauro con fill=currentColor stroke=none; geometria intacta e identica al archivo del disenador"
         }
       ]
     },

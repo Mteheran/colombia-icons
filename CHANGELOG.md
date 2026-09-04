@@ -8,6 +8,18 @@ The three published packages (React, Angular, Blazor) share a single version.
 
 Every commit closes a minor version; major versions are cut only on request.
 
+## [0.27.0] - 2026-09-04
+
+### Fixed
+
+- Icons (cultura): `chiva-bus`, `guiro` — restores the solid fills that were
+  lost when the designer's Illustrator files were normalized. Fifteen shapes
+  across three icons (the chiva's front sign and side dots, the guiro's ten
+  notches, the sierra's two sky dots) were rendering as hollow outlines
+  because the root `fill="none"` overrode them.
+- Icons (naturaleza): `sierra-nevada` — same fill restoration; geometry is
+  unchanged and now matches the designer's originals exactly.
+
 ## [0.26.0] - 2026-09-03
 
 ### Added

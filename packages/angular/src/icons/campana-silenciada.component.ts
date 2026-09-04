@@ -1,0 +1,12 @@
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+
+@Component({
+  selector: 'ci-campana-silenciada',
+  standalone: true,
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: `<svg xmlns="http://www.w3.org/2000/svg" [attr.width]="size" [attr.height]="size" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" [style.color]="color"><path d="M3.8 10.56A3.96 3.96 0 0 1 11.72 10.56C11.72 14.88 13.52 16.32 13.52 16.32H2C2 16.32 3.8 14.88 3.8 10.56Z"/><path d="M6.68 16.32A1.08 1.08 0 0 0 8.84 16.32"/><path d="M16 9.5 21 14.5"/><path d="M21 9.5 16 14.5"/></svg>`,
+})
+export class CampanaSilenciadaIcon {
+  @Input() size: number | string = 24;
+  @Input() color = 'currentColor';
+}

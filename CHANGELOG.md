@@ -8,6 +8,23 @@ The three published packages (React, Angular, Blazor) share a single version.
 
 Every commit closes a minor version; major versions are cut only on request.
 
+## [0.26.0] - 2026-09-03
+
+### Added
+
+- Icons (genericos): `carpeta-abierta`, `minimizar`, `alinear-justificado`,
+  `tachado`, `campana-silenciada`, `usuario-check`, `usuario-editar`,
+  `escudo-alerta`, `grabar`, `aleatorio`, `nublado-parcial`, `niebla`,
+  `gota`, `alarma`, `historial`, `calendario-evento`, `tendencia-arriba`,
+  `tendencia-abajo`
+
+All eighteen close gaps in families the set already had: the fourth text
+alignment and the fourth text style, the counterpart to `maximizar`, the
+muted bell alongside `volumen-silenciado`, two more user badges, the two
+transport controls missing next to `reproducir`/`pausa`/`detener`, three
+weather states, three time icons, and the trend pair for the chart family.
+The approved icon count goes from 256 to 274.
+
 ## [0.25.0] - 2026-09-01
 
 ### Removed

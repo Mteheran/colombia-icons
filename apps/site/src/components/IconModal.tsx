@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { CATEGORY_LABELS_I18N, type Copy, type Lang, SET_INFO } from '../i18n'
-import type { Icon } from '../data/icons'
+import type { Icon, IconSet } from '../data/icons'
 import type { ColorKey } from '../lib/colors'
 import {
   FRAMEWORKS,
@@ -24,9 +24,23 @@ type Props = {
 }
 
 /** Preview sizes per set: each one anchored on its own canvas size. */
-const SIZES: Record<string, number[]> = {
+const SIZES: Record<IconSet, number[]> = {
   base: [16, 24, 48],
   large: [24, 48, 96],
+  symbols: [32, 64, 128],
+}
+
+/** Canvas and stroke shown in the spec strip, per set. */
+const GRID: Record<IconSet, string> = {
+  base: '24 × 24',
+  large: '48 × 48',
+  symbols: '64 × 64',
+}
+
+const STROKE: Record<IconSet, string> = {
+  base: '1.5 px',
+  large: '1.5 + 1 px',
+  symbols: '2 px',
 }
 
 export function IconModal({ t, lang, icon, color, onColor, fw, onFw, onClose }: Props) {
@@ -46,7 +60,9 @@ export function IconModal({ t, lang, icon, color, onColor, fw, onFw, onClose }: 
   useEffect(() => setCopied(false), [icon.id])
 
   const info = SET_INFO[lang][icon.set]
-  const isLarge = icon.set === 'large'
+  // Only the base set ships in the packages, so only it gets a code snippet;
+  // the other two are used by downloading the SVG or PNG.
+  const inPackages = icon.set === 'base'
   const snippet = iconSnippet(fw, icon.id, color)
 
   const copySnippet = async () => {
@@ -93,7 +109,7 @@ export function IconModal({ t, lang, icon, color, onColor, fw, onFw, onClose }: 
               <h3 className="modal-title">{icon.id}</h3>
               <div className="modal-sub">
                 {CATEGORY_LABELS_I18N[icon.categoria][lang]} ·{' '}
-                {isLarge ? info.label : componentRef(fw, icon.id)}
+                {inPackages ? componentRef(fw, icon.id) : info.label}
               </div>
             </div>
             <button
@@ -109,11 +125,11 @@ export function IconModal({ t, lang, icon, color, onColor, fw, onFw, onClose }: 
           <div className="specs">
             <div className="spec">
               <div className="mono-9">Grid</div>
-              <div className="spec-value">{isLarge ? '48 × 48' : '24 × 24'}</div>
+              <div className="spec-value">{GRID[icon.set]}</div>
             </div>
             <div className="spec">
               <div className="mono-9">{t.stroke}</div>
-              <div className="spec-value">{isLarge ? '1.5 + 1 px' : '1.5 px'}</div>
+              <div className="spec-value">{STROKE[icon.set]}</div>
             </div>
             <div className="spec">
               <div className="mono-9">Fill</div>
@@ -121,7 +137,7 @@ export function IconModal({ t, lang, icon, color, onColor, fw, onFw, onClose }: 
             </div>
           </div>
 
-          {isLarge ? (
+          {!inPackages ? (
             <p className="modal-note">{info.note}</p>
           ) : (
             <>
@@ -157,7 +173,7 @@ export function IconModal({ t, lang, icon, color, onColor, fw, onFw, onClose }: 
             >
               PNG 512
             </button>
-            {!isLarge && (
+            {inPackages && (
               <button type="button" className="btn btn-outline" onClick={copySnippet}>
                 {copied ? t.copied : t.copy}
               </button>

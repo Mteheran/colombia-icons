@@ -45,6 +45,8 @@ export type Copy = {
   all: string
   noResults: string
   proposeIt: string
+  setEmpty: string
+  setEmptyCta: string
   stroke: string
   iconsWord: string
   statIcons: string
@@ -95,6 +97,8 @@ export const T: Record<Lang, Copy> = {
     all: 'Todos',
     noResults: 'Sin resultados para',
     proposeIt: 'Propón este icono como issue →',
+    setEmpty: 'Todavía no hay piezas aprobadas en este set.',
+    setEmptyCta: 'Lee la guía de diseño y aporta la primera',
     stroke: 'Trazo',
     iconsWord: 'iconos',
     statIcons: 'Iconos aprobados',
@@ -143,6 +147,8 @@ export const T: Record<Lang, Copy> = {
     all: 'All',
     noResults: 'No results for',
     proposeIt: 'Propose this icon as an issue →',
+    setEmpty: 'No approved pieces in this set yet.',
+    setEmptyCta: 'Read the design guide and contribute the first one',
     stroke: 'Stroke',
     iconsWord: 'icons',
     statIcons: 'Approved icons',
@@ -191,6 +197,8 @@ export const T: Record<Lang, Copy> = {
     all: 'Todos',
     noResults: 'Sem resultados para',
     proposeIt: 'Proponha este ícone como issue →',
+    setEmpty: 'Ainda não há peças aprovadas neste conjunto.',
+    setEmptyCta: 'Leia o guia de design e contribua com a primeira',
     stroke: 'Traço',
     iconsWord: 'ícones',
     statIcons: 'Ícones aprovados',
@@ -226,8 +234,9 @@ export const T: Record<Lang, Copy> = {
 
 /**
  * How each set is built, shown above the gallery: dimensions plus the basic
- * design rules. Mirrors docs/icon-design-guide.md (24×24) and
- * docs/large-icon-design-guide.md (48×48) — the docs stay the source of truth.
+ * design rules. Mirrors docs/icon-design-guide.md (24×24),
+ * docs/large-icon-design-guide.md (48×48) and docs/symbol-design-guide.md
+ * (64×64) — the docs stay the source of truth.
  */
 export type SetInfo = {
   /** Tab label. */
@@ -272,6 +281,20 @@ export const SET_INFO: Record<Lang, Record<IconSet, SetInfo>> = {
       cta: 'Leer la guía del set grande',
       note: 'Este set todavía no se publica en los paquetes de React, Angular ni Blazor. Se usa descargando el SVG o el PNG y colocándolo en tu proyecto.',
     },
+    symbols: {
+      label: 'Symbols',
+      badge: '64 px',
+      title: 'Set symbols · 64 × 64',
+      body: 'No son iconos de interfaz: son piezas gráficas que representan fauna, flora, cultura y paisaje colombiano, con los rasgos propios del referente real. Se dibujan en un lienzo de 64 × 64 px con un único grosor de 2 px —el mismo peso relativo que el set grande, 1/32 del lienzo— dejando 6 px de margen, y con separación mínima de 3 px entre trazos para que el detalle respire. Pensados para diapositivas, infografías, mapas y piezas gráficas (Canva, Figma, PowerPoint), no para botones.',
+      specs: [
+        ['Grid', '64 × 64'],
+        ['Trazo', '2 px'],
+        ['Área útil', '52 × 52'],
+        ['Uso', 'Descarga SVG · PNG'],
+      ],
+      cta: 'Leer la guía de symbols',
+      note: 'Los symbols no viajan en los paquetes de React, Angular ni Blazor: son piezas para diapositivas, infografías y piezas gráficas. Se usan descargando el SVG o el PNG.',
+    },
   },
   en: {
     base: {
@@ -301,6 +324,20 @@ export const SET_INFO: Record<Lang, Record<IconSet, SetInfo>> = {
       cta: 'Read the large set guide',
       note: 'This set is not published in the React, Angular or Blazor packages yet. You use it by downloading the SVG or PNG and dropping it into your project.',
     },
+    symbols: {
+      label: 'Symbols',
+      badge: '64 px',
+      title: 'Symbols set · 64 × 64',
+      body: 'Not interface icons: graphic pieces that represent Colombian wildlife, plants, culture and landscape, carrying the traits of the real referent. Drawn on a 64 × 64 px canvas with a single 2 px width — the same relative weight as the large set, 1/32 of the canvas — leaving a 6 px margin, and keeping at least 3 px between strokes so the detail breathes. Made for slides, infographics, maps and graphic pieces (Canva, Figma, PowerPoint), not for buttons.',
+      specs: [
+        ['Grid', '64 × 64'],
+        ['Stroke', '2 px'],
+        ['Usable area', '52 × 52'],
+        ['Use', 'SVG · PNG download'],
+      ],
+      cta: 'Read the symbols guide',
+      note: 'Symbols do not ship in the React, Angular or Blazor packages: they are pieces for slides, infographics and graphic work. You use them by downloading the SVG or the PNG.',
+    },
   },
   pt: {
     base: {
@@ -329,6 +366,20 @@ export const SET_INFO: Record<Lang, Record<IconSet, SetInfo>> = {
       ],
       cta: 'Ler o guia do conjunto grande',
       note: 'Este conjunto ainda não é publicado nos pacotes de React, Angular ou Blazor. Usa-se baixando o SVG ou o PNG e colocando-o no seu projeto.',
+    },
+    symbols: {
+      label: 'Symbols',
+      badge: '64 px',
+      title: 'Conjunto symbols · 64 × 64',
+      body: 'Não são ícones de interface: são peças gráficas que representam fauna, flora, cultura e paisagem da Colômbia, com os traços próprios do referente real. Desenhadas num canvas de 64 × 64 px com uma única espessura de 2 px — o mesmo peso relativo do conjunto grande, 1/32 do canvas — deixando 6 px de margem, e com separação mínima de 3 px entre traços para o detalhe respirar. Feitas para slides, infográficos, mapas e peças gráficas (Canva, Figma, PowerPoint), não para botões.',
+      specs: [
+        ['Grid', '64 × 64'],
+        ['Traço', '2 px'],
+        ['Área útil', '52 × 52'],
+        ['Uso', 'Download SVG · PNG'],
+      ],
+      cta: 'Ler o guia de symbols',
+      note: 'Os symbols não viajam nos pacotes de React, Angular ou Blazor: são peças para slides, infográficos e peças gráficas. Usam-se baixando o SVG ou o PNG.',
     },
   },
 }
@@ -480,9 +531,27 @@ export const GUIDE_DOC_LARGE: Record<Lang, { file: string; url: string }> = {
   },
 }
 
+/** Symbols-set guide doc, same fallback rule as GUIDE_DOC. */
+export const GUIDE_DOC_SYMBOLS: Record<Lang, { file: string; url: string }> = {
+  es: {
+    file: 'docs/guia-diseno-symbols.es.md',
+    url: 'https://github.com/Mteheran/colombia-icons/blob/main/docs/guia-diseno-symbols.es.md',
+  },
+  en: {
+    file: 'docs/symbol-design-guide.md',
+    url: 'https://github.com/Mteheran/colombia-icons/blob/main/docs/symbol-design-guide.md',
+  },
+  pt: {
+    file: 'docs/symbol-design-guide.md',
+    url: 'https://github.com/Mteheran/colombia-icons/blob/main/docs/symbol-design-guide.md',
+  },
+}
+
 /** The guide doc for a given set. */
 export function guideDoc(lang: Lang, set: IconSet) {
-  return set === 'large' ? GUIDE_DOC_LARGE[lang] : GUIDE_DOC[lang]
+  if (set === 'large') return GUIDE_DOC_LARGE[lang]
+  if (set === 'symbols') return GUIDE_DOC_SYMBOLS[lang]
+  return GUIDE_DOC[lang]
 }
 
 /** Resolve the initial language: stored choice, then browser, then Spanish. */

@@ -8,6 +8,33 @@ The three published packages (React, Angular, Blazor) share a single version.
 
 Every commit closes a minor version; major versions are cut only on request.
 
+## [0.28.0] - 2026-09-08
+
+### Added
+
+- Symbols: a third icon set, drawn on a 64 × 64 canvas with a single 2 px
+  stroke. Symbols are not interface icons — they represent Colombian wildlife,
+  plants, culture and landscape with the traits of the real referent, for
+  slides, infographics, maps and graphic pieces (Canva, Figma, PowerPoint).
+- Design guides for the symbols set, in Spanish and English:
+  `docs/guia-diseno-symbols.es.md` and `docs/symbol-design-guide.md`. They
+  cover the icon-vs-symbol distinction, the technical spec, the breathing rules
+  (6 px margin, ~52 × 52 usable area, 3 px minimum between strokes), the detail
+  priorities, naming, SVG structure and the approval checklist.
+- Site: a Symbols tab in the gallery, with its own spec strip, guide link and
+  preview sizes (32 / 64 / 128 in the icon dialog), plus an empty-set state
+  that points to the guide while no symbol is approved yet.
+
+### Changed
+
+- Site: the icon dialog now shows the code snippet and copy button only for the
+  base set — the sets that do not ship in the packages show the download note
+  instead.
+- READMEs: the design section now describes the three sets (24 × 24, 48 × 48,
+  64 × 64) in a table and links all six guides. The large-set guides were
+  missing from both READMEs.
+- All design guides cross-link to each other.
+
 ## [0.27.0] - 2026-09-04
 
 ### Fixed

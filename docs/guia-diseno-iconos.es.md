@@ -1,6 +1,8 @@
 # Guía de diseño de íconos — colombia-icons
 
 > 🇬🇧 English version: [icon-design-guide.md](./icon-design-guide.md)
+> 🔎 Set grande (48×48): [guia-diseno-iconos-large.es.md](./guia-diseno-iconos-large.es.md)
+> 🖼️ Set symbols (64×64): [guia-diseno-symbols.es.md](./guia-diseno-symbols.es.md)
 
 Esta guía define, paso a paso, los estándares que **cualquier diseñador** debe seguir para crear un ícono de `colombia-icons` manualmente en la herramienta de su preferencia (Figma, Illustrator, Inkscape, Boxy SVG, etc.). El objetivo es que cada ícono nuevo sea indistinguible del resto del set: mismo grid, mismo grosor, mismo estilo.
 

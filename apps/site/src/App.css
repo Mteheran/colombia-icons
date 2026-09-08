@@ -549,12 +549,18 @@
   overflow: hidden;
 }
 
-/* The 48 canvas needs a roomier cell than the 24 one. */
+/* The bigger canvases need roomier cells than the 24 one. */
 .icon-grid[data-set='large'] {
   grid-template-columns: repeat(auto-fill, minmax(148px, 1fr));
 }
 .icon-grid-compact[data-set='large'] {
   grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+}
+.icon-grid[data-set='symbols'] {
+  grid-template-columns: repeat(auto-fill, minmax(172px, 1fr));
+}
+.icon-grid-compact[data-set='symbols'] {
+  grid-template-columns: repeat(auto-fill, minmax(126px, 1fr));
 }
 
 .modal-note {

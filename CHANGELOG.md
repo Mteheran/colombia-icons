@@ -8,6 +8,68 @@ The three published packages (React, Angular, Blazor) share a single version.
 
 Every commit closes a minor version; major versions are cut only on request.
 
+## [0.31.0] - 2026-09-08
+
+### Changed
+
+- Site: the design guide section now covers the three sets. Tabs switch the
+  heading, the guide link, the example root `<svg>` (24 / 48 / 64) and the six
+  rules, so a contributor reads the rules of the set they are actually drawing
+  for instead of only the base one.
+
+## [0.30.0] - 2026-09-08
+
+### Added
+
+- Symbols (naturaleza): `frailejon-florecido` — the flowering frailejón that was
+  missing from the first batch, delivered as `flor-botanica.svg`. The symbols set
+  now holds nine pieces.
+
+## [0.29.0] - 2026-09-08
+
+### Added
+
+- Symbols (naturaleza): `condor-frontal`, `colibri`, `jaguar`,
+  `sabueso-fino-colombiano`, `planta-cafe`, `montanas-y-frailejones`,
+  `cascada`, `pico-nevado` — the first eight pieces of the 64 × 64 symbols set,
+  contributed by the designer and normalized to the set spec.
+- Symbols guides: a new section 2.1 documenting the two accepted delivery
+  forms — a live `stroke` (preferred, keeps the weight editable) and an
+  expanded outline (`fill` + `fill-rule="evenodd"`, what *expand stroke*
+  produces), which freezes the weight and so must ship at ~2 px already.
+
+### Changed
+
+- Site: the icon dialog reads the fill from the icon markup instead of always
+  showing `none`, so an expanded-outline symbol reports `currentColor`.
+
+## [0.28.0] - 2026-09-08
+
+### Added
+
+- Symbols: a third icon set, drawn on a 64 × 64 canvas with a single 2 px
+  stroke. Symbols are not interface icons — they represent Colombian wildlife,
+  plants, culture and landscape with the traits of the real referent, for
+  slides, infographics, maps and graphic pieces (Canva, Figma, PowerPoint).
+- Design guides for the symbols set, in Spanish and English:
+  `docs/guia-diseno-symbols.es.md` and `docs/symbol-design-guide.md`. They
+  cover the icon-vs-symbol distinction, the technical spec, the breathing rules
+  (6 px margin, ~52 × 52 usable area, 3 px minimum between strokes), the detail
+  priorities, naming, SVG structure and the approval checklist.
+- Site: a Symbols tab in the gallery, with its own spec strip, guide link and
+  preview sizes (32 / 64 / 128 in the icon dialog), plus an empty-set state
+  that points to the guide while no symbol is approved yet.
+
+### Changed
+
+- Site: the icon dialog now shows the code snippet and copy button only for the
+  base set — the sets that do not ship in the packages show the download note
+  instead.
+- READMEs: the design section now describes the three sets (24 × 24, 48 × 48,
+  64 × 64) in a table and links all six guides. The large-set guides were
+  missing from both READMEs.
+- All design guides cross-link to each other.
+
 ## [0.27.0] - 2026-09-04
 
 ### Fixed

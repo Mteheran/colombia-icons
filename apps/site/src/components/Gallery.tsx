@@ -19,7 +19,14 @@ const VIEWS: { key: View; label: string }[] = [
   { key: 'list', label: '☰' },
 ]
 
-const SETS: IconSet[] = ['base', 'large']
+const SETS: IconSet[] = ['base', 'large', 'symbols']
+
+/**
+ * Preview size per set, in grid and in list view: each one renders near its own
+ * canvas size, so the sets stay distinguishable at a glance.
+ */
+const GRID_SIZE: Record<IconSet, number> = { base: 34, large: 48, symbols: 60 }
+const LIST_SIZE: Record<IconSet, number> = { base: 26, large: 34, symbols: 40 }
 
 type Props = {
   t: Copy
@@ -73,8 +80,8 @@ export function Gallery({
   ]
 
   const isList = view === 'list'
-  const isLarge = set === 'large'
-  const iconSize = isList ? (isLarge ? 34 : 26) : isLarge ? 48 : 34
+  const isBase = set === 'base'
+  const iconSize = isList ? LIST_SIZE[set] : GRID_SIZE[set]
   const info = SET_INFO[lang][set]
   const doc = guideDoc(lang, set)
 
@@ -171,7 +178,16 @@ export function Gallery({
         </div>
       </div>
 
-      {filtered.length === 0 ? (
+      {allIcons.length === 0 ? (
+        <div className="empty">
+          <p>{t.setEmpty}</p>
+          <p>
+            <a href={doc.url} target="_blank" rel="noreferrer">
+              {t.setEmptyCta} →
+            </a>
+          </p>
+        </div>
+      ) : filtered.length === 0 ? (
         <div className="empty">
           <p>
             {t.noResults} «{query}»
@@ -196,7 +212,7 @@ export function Gallery({
                 {CATEGORY_LABELS_I18N[icon.categoria][lang]}
               </span>
               <span className="icon-row-cmp">
-                {isLarge ? '48 × 48' : componentRef(fw, icon.id)}
+                {isBase ? componentRef(fw, icon.id) : info.specs[0][1]}
               </span>
             </button>
           ))}

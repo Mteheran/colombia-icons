@@ -152,10 +152,18 @@ npm install
 
 ¿Vas a crear un ícono a mano en cualquier herramienta (Figma, Illustrator,
 Inkscape…)? Sigue los estándares de diseño para que quede idéntico al resto
-del set:
+del set. Hay tres sets independientes, cada uno con su lienzo, su trazo y su
+propósito — y su propia guía:
 
-- 🇪🇸 [Guía de diseño de íconos](./docs/guia-diseno-iconos.es.md)
-- 🇬🇧 [Icon design guide](./docs/icon-design-guide.md)
+| Set | Lienzo | Trazo | Para qué es |
+|---|---|---|---|
+| Base | 24 × 24 | 1.5 px | Íconos de UI — el set que viaja en los paquetes |
+| Grande | 48 × 48 | 1.5 px | El mismo lenguaje redibujado para detalle interior |
+| Symbols | 64 × 64 | 2 px | Referentes culturales, naturales y territoriales para diapositivas, infografías y piezas gráficas |
+
+- 🇪🇸 [Guía de diseño de íconos (24×24)](./docs/guia-diseno-iconos.es.md) · 🇬🇧 [Icon design guide](./docs/icon-design-guide.md)
+- 🇪🇸 [Guía de íconos grandes (48×48)](./docs/guia-diseno-iconos-large.es.md) · 🇬🇧 [Large icon design guide](./docs/large-icon-design-guide.md)
+- 🇪🇸 [Guía de diseño de symbols (64×64)](./docs/guia-diseno-symbols.es.md) · 🇬🇧 [Symbol design guide](./docs/symbol-design-guide.md)
 
 ## Uso con asistentes de IA (CLAUDE.md / AGENTS.md)
 

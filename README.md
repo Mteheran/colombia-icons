@@ -151,10 +151,18 @@ npm install
 ## Designing icons
 
 Creating an icon by hand in any tool (Figma, Illustrator, Inkscape…)? Follow the
-design standards so it matches the rest of the set:
+design standards so it matches the rest of the set. There are three independent
+sets, each with its own canvas, stroke and purpose — and its own guide:
 
-- 🇬🇧 [Icon design guide](./docs/icon-design-guide.md)
-- 🇪🇸 [Guía de diseño de íconos](./docs/guia-diseno-iconos.es.md)
+| Set | Canvas | Stroke | What it is for |
+|---|---|---|---|
+| Base | 24 × 24 | 1.5 px | UI icons — the set that ships in the packages |
+| Large | 48 × 48 | 1.5 px | The same language redrawn for interior detail |
+| Symbols | 64 × 64 | 2 px | Cultural, natural and territorial referents for slides, infographics and graphic pieces |
+
+- 🇬🇧 [Icon design guide (24×24)](./docs/icon-design-guide.md) · 🇪🇸 [Guía de diseño de íconos](./docs/guia-diseno-iconos.es.md)
+- 🇬🇧 [Large icon design guide (48×48)](./docs/large-icon-design-guide.md) · 🇪🇸 [Guía de íconos grandes](./docs/guia-diseno-iconos-large.es.md)
+- 🇬🇧 [Symbol design guide (64×64)](./docs/symbol-design-guide.md) · 🇪🇸 [Guía de diseño de symbols](./docs/guia-diseno-symbols.es.md)
 
 ## Using with AI assistants (CLAUDE.md / AGENTS.md)
 

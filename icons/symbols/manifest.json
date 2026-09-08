@@ -1,0 +1,175 @@
+{
+  "icons": [
+    {
+      "id": "condor-frontal",
+      "categoria": "naturaleza",
+      "estado": "aprobado",
+      "intentos": 0,
+      "notas": "trazo expandido a contorno (fill), no stroke: ver nota del set",
+      "historial": [
+        {
+          "fecha": "2026-09-08",
+          "accion": "generado",
+          "nota": "aporte del disenador (condor-frontal.svg); normalizado a viewBox 0 0 64 64, fill=currentColor y optimizado con SVGO"
+        },
+        {
+          "fecha": "2026-09-08",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "colibri",
+      "categoria": "naturaleza",
+      "estado": "aprobado",
+      "intentos": 0,
+      "notas": "trazo expandido a contorno (fill), no stroke: ver nota del set",
+      "historial": [
+        {
+          "fecha": "2026-09-08",
+          "accion": "generado",
+          "nota": "aporte del disenador (colibri.svg); normalizado a viewBox 0 0 64 64, fill=currentColor y optimizado con SVGO"
+        },
+        {
+          "fecha": "2026-09-08",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "jaguar",
+      "categoria": "naturaleza",
+      "estado": "aprobado",
+      "intentos": 0,
+      "notas": "trazo expandido a contorno (fill), no stroke: ver nota del set",
+      "historial": [
+        {
+          "fecha": "2026-09-08",
+          "accion": "generado",
+          "nota": "aporte del disenador (rostro-felino.svg); normalizado a viewBox 0 0 64 64, fill=currentColor y optimizado con SVGO"
+        },
+        {
+          "fecha": "2026-09-08",
+          "accion": "aprobado",
+          "nota": "renombrado desde rostro-felino"
+        }
+      ]
+    },
+    {
+      "id": "sabueso-fino-colombiano",
+      "categoria": "naturaleza",
+      "estado": "aprobado",
+      "intentos": 0,
+      "notas": "trazo expandido a contorno (fill), no stroke: ver nota del set",
+      "historial": [
+        {
+          "fecha": "2026-09-08",
+          "accion": "generado",
+          "nota": "aporte del disenador (perro-orejudo.svg, lienzo 267); reescalado a viewBox 0 0 64 64, fill=currentColor y optimizado con SVGO"
+        },
+        {
+          "fecha": "2026-09-08",
+          "accion": "aprobado",
+          "nota": "renombrado desde perro-orejudo"
+        }
+      ]
+    },
+    {
+      "id": "planta-cafe",
+      "categoria": "naturaleza",
+      "estado": "aprobado",
+      "intentos": 0,
+      "notas": "trazo expandido a contorno (fill), no stroke: ver nota del set",
+      "historial": [
+        {
+          "fecha": "2026-09-08",
+          "accion": "generado",
+          "nota": "aporte del disenador (rama-con-bayas.svg); normalizado a viewBox 0 0 64 64, fill=currentColor y optimizado con SVGO"
+        },
+        {
+          "fecha": "2026-09-08",
+          "accion": "aprobado",
+          "nota": "renombrado desde rama-con-bayas"
+        }
+      ]
+    },
+    {
+      "id": "frailejon-florecido",
+      "categoria": "naturaleza",
+      "estado": "aprobado",
+      "intentos": 0,
+      "notas": "trazo expandido a contorno (fill), no stroke: ver nota del set",
+      "historial": [
+        {
+          "fecha": "2026-09-08",
+          "accion": "generado",
+          "nota": "aporte del disenador (flor-botanica.svg); normalizado a viewBox 0 0 64 64, fill=currentColor y optimizado con SVGO"
+        },
+        {
+          "fecha": "2026-09-08",
+          "accion": "aprobado",
+          "nota": "renombrado desde flor-botanica"
+        }
+      ]
+    },
+    {
+      "id": "montanas-y-frailejones",
+      "categoria": "naturaleza",
+      "estado": "aprobado",
+      "intentos": 0,
+      "notas": "trazo expandido a contorno (fill), no stroke: ver nota del set",
+      "historial": [
+        {
+          "fecha": "2026-09-08",
+          "accion": "generado",
+          "nota": "aporte del disenador (montanas-y-frailejones.svg); normalizado a viewBox 0 0 64 64, fill=currentColor y optimizado con SVGO"
+        },
+        {
+          "fecha": "2026-09-08",
+          "accion": "aprobado",
+          "nota": "conserva su nombre original: el renombre a frailejon-florecido correspondia a flor-botacia.svg, un archivo aparte que aun no llega"
+        }
+      ]
+    },
+    {
+      "id": "cascada",
+      "categoria": "naturaleza",
+      "estado": "aprobado",
+      "intentos": 0,
+      "notas": "trazo expandido a contorno (fill), no stroke: ver nota del set",
+      "historial": [
+        {
+          "fecha": "2026-09-08",
+          "accion": "generado",
+          "nota": "aporte del disenador (cascada.svg); normalizado a viewBox 0 0 64 64, fill=currentColor y optimizado con SVGO"
+        },
+        {
+          "fecha": "2026-09-08",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "pico-nevado",
+      "categoria": "naturaleza",
+      "estado": "aprobado",
+      "intentos": 0,
+      "notas": "trazo expandido a contorno (fill), no stroke: ver nota del set",
+      "historial": [
+        {
+          "fecha": "2026-09-08",
+          "accion": "generado",
+          "nota": "aporte del disenador (montanas-nevadas.svg); normalizado a viewBox 0 0 64 64, fill=currentColor y optimizado con SVGO"
+        },
+        {
+          "fecha": "2026-09-08",
+          "accion": "aprobado",
+          "nota": "renombrado desde montanas-nevadas"
+        }
+      ]
+    }
+  ]
+}

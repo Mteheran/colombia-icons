@@ -5,6 +5,7 @@ import {
   icons,
   iconsOf,
   largeIcons,
+  symbols,
   svgById,
   type Categoria,
   type IconSet,
@@ -107,7 +108,11 @@ export default function App() {
           categories={activeCategories}
           set={set}
           onSet={changeSet}
-          setCounts={{ base: icons.length, large: largeIcons.length }}
+          setCounts={{
+            base: icons.length,
+            large: largeIcons.length,
+            symbols: symbols.length,
+          }}
           query={query}
           onQuery={setQuery}
           cat={cat}

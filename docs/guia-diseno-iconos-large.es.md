@@ -2,6 +2,7 @@
 
 > 🇬🇧 English version: [large-icon-design-guide.md](./large-icon-design-guide.md)
 > 📐 Set base (24×24): [guia-diseno-iconos.es.md](./guia-diseno-iconos.es.md)
+> 🖼️ Set symbols (64×64): [guia-diseno-symbols.es.md](./guia-diseno-symbols.es.md)
 
 Esta guía define los estándares para el set **large-icons**: íconos de `colombia-icons` dibujados sobre un lienzo de **48×48 px**, pensados para mostrarse en tamaño grande y con **más detalle** que el set base de 24×24. Es un set **independiente**: vive en `icons/large-icons/`, tiene su propio manifest, y **no reutiliza** los SVG del set base.
 

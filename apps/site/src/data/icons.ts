@@ -1,5 +1,6 @@
 import manifest from '../../../../icons/manifest.json'
 import largeManifest from '../../../../icons/large-icons/manifest.json'
+import symbolsManifest from '../../../../icons/symbols/manifest.json'
 
 const baseSources = import.meta.glob('../../../../icons/svg/**/*.svg', {
   query: '?raw',
@@ -8,6 +9,12 @@ const baseSources = import.meta.glob('../../../../icons/svg/**/*.svg', {
 }) as Record<string, string>
 
 const largeSources = import.meta.glob('../../../../icons/large-icons/**/*.svg', {
+  query: '?raw',
+  import: 'default',
+  eager: true,
+}) as Record<string, string>
+
+const symbolSources = import.meta.glob('../../../../icons/symbols/**/*.svg', {
   query: '?raw',
   import: 'default',
   eager: true,
@@ -24,11 +31,14 @@ export type Categoria =
   | 'genericos'
 
 /**
- * The two icon sets are independent (see docs/large-icon-design-guide.md):
- * `base` is the 24×24 set that ships in the packages, `large` the 48×48 set
- * redrawn from scratch for detail. They never share an SVG.
+ * The three sets are independent — each has its own guide, manifest and folder,
+ * and they never share an SVG:
+ *   `base`    24×24, 1.5 px — UI icons; the set that ships in the packages
+ *   `large`   48×48, 1.5 px — the same UI language redrawn for interior detail
+ *   `symbols` 64×64, 2 px   — cultural/natural referents for slides and graphics
+ * See docs/large-icon-design-guide.md and docs/symbol-design-guide.md.
  */
-export type IconSet = 'base' | 'large'
+export type IconSet = 'base' | 'large' | 'symbols'
 
 export type Icon = {
   id: string
@@ -89,6 +99,13 @@ export const largeIcons: Icon[] = loadSet(
   'large',
 )
 
+export const symbols: Icon[] = loadSet(
+  (symbolsManifest as { icons: ManifestEntry[] }).icons,
+  symbolSources,
+  'symbols',
+  'symbols',
+)
+
 /** Raw SVG markup by icon id — lets any component render an icon by name. */
 export const svgById: Record<string, string> = Object.fromEntries(
   icons.map((icon) => [icon.id, icon.svg]),
@@ -101,10 +118,16 @@ const categoriesIn = (list: Icon[]) =>
 
 export const categories = categoriesIn(icons)
 export const largeCategories = categoriesIn(largeIcons)
+export const symbolCategories = categoriesIn(symbols)
 
-export const iconsOf = (set: IconSet): Icon[] => (set === 'large' ? largeIcons : icons)
-export const categoriesOf = (set: IconSet): Categoria[] =>
-  set === 'large' ? largeCategories : categories
+const SETS_BY_KEY: Record<IconSet, { icons: Icon[]; categories: Categoria[] }> = {
+  base: { icons, categories },
+  large: { icons: largeIcons, categories: largeCategories },
+  symbols: { icons: symbols, categories: symbolCategories },
+}
+
+export const iconsOf = (set: IconSet): Icon[] => SETS_BY_KEY[set].icons
+export const categoriesOf = (set: IconSet): Categoria[] => SETS_BY_KEY[set].categories
 
 export const countByCategory = (categoria: Categoria) =>
   icons.filter((icon) => icon.categoria === categoria).length

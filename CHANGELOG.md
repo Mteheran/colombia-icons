@@ -8,6 +8,15 @@ The three published packages (React, Angular, Blazor) share a single version.
 
 Every commit closes a minor version; major versions are cut only on request.
 
+## [0.31.0] - 2026-09-08
+
+### Changed
+
+- Site: the design guide section now covers the three sets. Tabs switch the
+  heading, the guide link, the example root `<svg>` (24 / 48 / 64) and the six
+  rules, so a contributor reads the rules of the set they are actually drawing
+  for instead of only the base one.
+
 ## [0.30.0] - 2026-09-08
 
 ### Added

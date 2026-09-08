@@ -1099,6 +1099,20 @@
   color: var(--ink-70);
   text-wrap: pretty;
 }
+/* The gallery pins its tabs right; in the guide column they lead the spec. */
+.guide-tabs {
+  margin-left: 0;
+  margin-top: 24px;
+  align-self: start;
+  width: fit-content;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+.guide-tabs .set-tab {
+  padding: 8px 12px;
+  font-size: 13px;
+}
+
 .guide-spec {
   margin-top: 22px;
   font-size: 11px;

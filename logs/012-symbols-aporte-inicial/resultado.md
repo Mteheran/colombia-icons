@@ -105,3 +105,26 @@ El set queda en **9 symbols**, todos en `naturaleza`.
 - Los símbolos siguen sin cubrirse en `scripts/validate` (igual que el set large).
   Con la forma B admitida, una validación útil sería: `viewBox` correcto, color
   en `currentColor`, y `fill-rule` presente cuando no hay `stroke`.
+
+## Adenda 2 — la sección de guía del sitio
+
+La sección `#guia` sólo hablaba del set base: encabezado "Cómo diseñar un
+icono", el `<svg>` de 24 × 24 y seis reglas todas del set base. Ahora es
+set-aware, con el mismo patrón de pestañas que ya usa la galería:
+
+- Pestañas Iconos / Iconos grandes / Symbols dentro de la columna de texto.
+- Cambian con el set: el encabezado (`GUIDE_H2` — un symbol no se llama
+  "icono"), la etiqueta y el enlace al documento, el `<svg>` raíz de ejemplo
+  (24 / 48 / 64) y las seis reglas.
+- `RULES` pasó de `Record<Lang, Array<…>>` a `Record<Lang, Record<IconSet,
+  Array<…>>>`: 18 bloques de seis reglas, es/en/pt. Las de `base` no cambiaron.
+- `guideP` se reescribió en los tres idiomas para no hablar sólo de "un icono".
+
+El estado del set en la guía es **independiente** del de la galería: leer las
+reglas de un set mientras se navega otro es razonable.
+
+Verificado en los tres idiomas: encabezado, doc, snippet y reglas cambian con la
+pestaña, sin cuerpos vacíos y sin errores de consola. PT cae a los documentos en
+inglés, que es el fallback que ya existía. Sin desborde horizontal en escritorio
+ni en ancho móvil (las pestañas envuelven a dos filas y quedan dentro de la
+columna).

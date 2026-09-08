@@ -8,6 +8,15 @@ The three published packages (React, Angular, Blazor) share a single version.
 
 Every commit closes a minor version; major versions are cut only on request.
 
+## [0.32.0] - 2026-09-08
+
+### Added
+
+- Alisson Pacheco Giraldo joins the contributors table in `README.md` and
+  `README.es.md`, credited for design. Her photo is vendored into the repo
+  (`.github/contributors/`) instead of hotlinked, so the avatar does not
+  depend on an external cache that can expire.
+
 ## [0.31.0] - 2026-09-08
 
 ### Changed

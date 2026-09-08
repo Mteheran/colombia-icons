@@ -7,7 +7,7 @@
 [![Website](https://img.shields.io/badge/website-colombia--icons-2ea44f)](https://mteheran.github.io/colombia-icons/)
 [![NuGet](https://img.shields.io/nuget/v/ColombiaIcons.Blazor?logo=nuget&label=NuGet)](https://www.nuget.org/packages/ColombiaIcons.Blazor)
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg)](#contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 A line-icon (outline) SVG icon library inspired by Colombia — available for
@@ -207,6 +207,7 @@ Thanks goes to these wonderful people
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/Mteheran"><img src="https://avatars.githubusercontent.com/u/3578356?v=4?s=100" width="100px;" alt="Miguel Teheran"/><br /><sub><b>Miguel Teheran</b></sub></a><br /><a href="https://github.com/Mteheran/colombia-icons/commits?author=Mteheran" title="Code">💻</a> <a href="https://github.com/Mteheran/colombia-icons/commits?author=Mteheran" title="Documentation">📖</a> <a href="#design-Mteheran" title="Design">🎨</a> <a href="#infra-Mteheran" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#maintenance-Mteheran" title="Maintenance">🚧</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/anyiorrego"><img src="https://avatars.githubusercontent.com/u/142682665?v=4?s=100" width="100px;" alt="Anyi Orrego"/><br /><sub><b>Anyi Orrego</b></sub></a><br /><a href="#design-anyiorrego" title="Design">🎨</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://www.linkedin.com/in/alisson-pacheco-giraldo-87733a1b5/"><img src="https://raw.githubusercontent.com/Mteheran/colombia-icons/main/.github/contributors/alisson-pacheco-giraldo.jpg?s=100" width="100px;" alt="Alisson Pacheco Giraldo"/><br /><sub><b>Alisson Pacheco Giraldo</b></sub></a><br /><a href="#design-alisson-pacheco-giraldo" title="Design">🎨</a></td>
     </tr>
   </tbody>
   <tfoot>

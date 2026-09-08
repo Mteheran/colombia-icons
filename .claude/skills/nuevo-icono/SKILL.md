@@ -18,7 +18,7 @@ preguntale a Miguel en vez de asumir.
 | | **base** | **large** | **symbols** |
 |---|---|---|---|
 | Lienzo | 24 × 24 | 48 × 48 | 64 × 64 |
-| Trazo | 1.5 px | 1.5 px (+1 px detalle) | 2 px, único |
+| Trazo | 1.5 px | 1.5 px (+1 px detalle) | 2 px, único (trazo vivo o contorno expandido) |
 | Área útil | ~20 × 20 | ~40 × 40 | ~52 × 52 (margen 6 px) |
 | Carpeta | `icons/svg/<cat>/` | `icons/large-icons/<cat>/` | `icons/symbols/<cat>/` |
 | Manifest | `icons/manifest.json` | `icons/large-icons/manifest.json` | `icons/symbols/manifest.json` |
@@ -83,9 +83,26 @@ Lo que cambia por set:
 ```
 
 En **large** el único override permitido es un `<path stroke-width="1">` para
-detalle secundario. En **symbols** no hay overrides: un solo grosor, 2 px. Y
+detalle secundario. En **symbols** no hay overrides: un solo peso, 2 px. Y
 respetá su regla de respiración — 6 px de margen, mínimo 3 px (mejor 4) entre
 trazos independientes, sin nudos de tres o más líneas.
+
+**Symbols admite dos formas de entrega** (guía, sección 2.1). La de arriba es la
+forma A, trazo vivo. La forma B es el **contorno expandido** que producen
+Illustrator y Affinity al hacer *expand stroke*, y es la que suele llegar de un
+aporte externo:
+
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="currentColor" fill-rule="evenodd">
+```
+
+Al normalizar un aporte así: reescalá el `viewBox` a `0 0 64 64` si viene en
+otro lienzo, poné `fill="currentColor"` y `fill-rule="evenodd"` en el raíz, sacá
+DOCTYPE, `style`, namespaces del editor y cualquier color fijo, y pasalo por
+SVGO — verificando que **no se pierda el `fill-rule`**: sin él los huecos
+interiores se rellenan y el symbol queda como una mancha. El peso ya no se puede
+reajustar por atributo, así que si no está en ≈2 px hay que pedir el archivo de
+vuelta, no "arreglarlo".
 
 ## 3. Mostrarlo y esperar
 

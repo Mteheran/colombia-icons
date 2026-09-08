@@ -63,6 +63,10 @@ export function IconModal({ t, lang, icon, color, onColor, fw, onFw, onClose }: 
   // Only the base set ships in the packages, so only it gets a code snippet;
   // the other two are used by downloading the SVG or PNG.
   const inPackages = icon.set === 'base'
+  // Symbols can arrive as a live stroke or as an expanded outline (see
+  // docs/symbol-design-guide.md §2.1), so the fill is read off the markup
+  // instead of assumed.
+  const fillSpec = /fill="none"/.test(icon.svg) ? 'none' : 'currentColor'
   const snippet = iconSnippet(fw, icon.id, color)
 
   const copySnippet = async () => {
@@ -133,7 +137,7 @@ export function IconModal({ t, lang, icon, color, onColor, fw, onFw, onClose }: 
             </div>
             <div className="spec">
               <div className="mono-9">Fill</div>
-              <div className="spec-value">none</div>
+              <div className="spec-value">{fillSpec}</div>
             </div>
           </div>
 

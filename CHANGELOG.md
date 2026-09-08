@@ -8,6 +8,24 @@ The three published packages (React, Angular, Blazor) share a single version.
 
 Every commit closes a minor version; major versions are cut only on request.
 
+## [0.29.0] - 2026-09-08
+
+### Added
+
+- Symbols (naturaleza): `condor-frontal`, `colibri`, `jaguar`,
+  `sabueso-fino-colombiano`, `planta-cafe`, `montanas-y-frailejones`,
+  `cascada`, `pico-nevado` — the first eight pieces of the 64 × 64 symbols set,
+  contributed by the designer and normalized to the set spec.
+- Symbols guides: a new section 2.1 documenting the two accepted delivery
+  forms — a live `stroke` (preferred, keeps the weight editable) and an
+  expanded outline (`fill` + `fill-rule="evenodd"`, what *expand stroke*
+  produces), which freezes the weight and so must ship at ~2 px already.
+
+### Changed
+
+- Site: the icon dialog reads the fill from the icon markup instead of always
+  showing `none`, so an expanded-outline symbol reports `currentColor`.
+
 ## [0.28.0] - 2026-09-08
 
 ### Added

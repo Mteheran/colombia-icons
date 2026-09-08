@@ -39,11 +39,9 @@ Every symbol must meet exactly this:
 | **Visual margin** | `6 px` approx. | The symbol never touches the canvas edges |
 | **Usable area** | `≈ 52 × 52 px` | May vary slightly with the referent's shape |
 | **Style** | Line / outline | Outlines only — same family as the other two sets |
-| **Stroke width** | `2 px` | The **only** width across the symbol and the whole set |
-| **Color** | `stroke="currentColor"` | Inherits color via CSS from the consuming project |
-| **Fill** | `fill="none"` | No fixed color fill |
-| **Line caps** | `stroke-linecap="round"` | Rounded ends |
-| **Line joins** | `stroke-linejoin="round"` | Rounded corners |
+| **Line weight** | `2 px` | The **only** weight across the symbol and the whole set (see 2.1) |
+| **Color** | `currentColor` | On `stroke` or on `fill`, depending on the delivery form (see 2.1) |
+| **Caps and joins** | rounded | `round` on a live stroke; drawn into the outline when expanded |
 | **Format** | Optimized SVG (SVGO) | Editable and scalable, no metadata, no IDs |
 
 **Why 2 px and not 1.5 px:** what defines a piece's visual "weight" is stroke width **relative** to the canvas (stroke ÷ canvas), not the absolute number.
@@ -56,9 +54,29 @@ Every symbol must meet exactly this:
 
 2 px on 64 gives **exactly the same relative weight** as the large set: the three sets read as one family, and the symbol keeps enough air for its interior detail. A 1.5 px stroke at 64 px (1/42) would look fragile next to the rest; 3 px would clog the detail.
 
-> ⚠️ **One single width.** Unlike the large set, there is **no** thinner secondary stroke here. If a detail only works by thinning the line, that detail is unnecessary.
+> ⚠️ **One single weight.** Unlike the large set, there is **no** thinner secondary stroke here. If a detail only works by thinning the line, that detail is unnecessary.
 
 These values are **not negotiable per symbol**: if something forces a change, it's a global spec change discussed separately, not a local exception.
+
+### 2.1 Two delivery forms: live stroke and expanded outline
+
+The 2 px weight can arrive in two ways. **Both are valid**, but they are not equivalent:
+
+**Form A — live stroke (preferred).** The line is still a `stroke`:
+
+- `stroke="currentColor"`, `fill="none"`, `stroke-width="2"`
+- `stroke-linecap="round"` and `stroke-linejoin="round"`
+- The weight stays **editable**: the whole set can be retuned by changing one attribute.
+
+**Form B — expanded outline (accepted).** The stroke was expanded to an outline before exporting — what Illustrator and Affinity produce on *expand stroke*:
+
+- `fill="currentColor"` and `fill-rule="evenodd"` on the root `<svg>`; **no** `stroke`
+- Rounded caps and joins end up **drawn into the outline** — no `linecap` controls them, so they must be right in the editor
+- The visual weight must measure **≈2 px on the 64 canvas**, and be the same across every symbol in the set
+
+> ⚠️ **Form B freezes the weight.** Recovering the centerline of an expanded outline is not a conversion, it is a redraw. So the weight has to be right at handoff — and the designer should keep the original live-stroke file even when delivering the expanded one.
+
+What does **not** change between the two forms: `currentColor` (never a fixed color), the canvas, the margins, the breathing rule and the level of detail.
 
 ---
 
@@ -133,17 +151,26 @@ Valid categories: `naturaleza`, `cultura`, `gastronomia`, `mapas`, `urbano`, `hi
 
 ## 9. Exported SVG structure
 
-The SVG must come out **exactly** in this shape (same attribute order, all styling on the root `<svg>`, geometry in `<path>`):
+The SVG must come out **exactly** in one of these two shapes (same attribute order, all styling on the root `<svg>`, geometry in `<path>`):
 
 ```svg
+<!-- Form A — live stroke -->
 <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
   <path d="M32 12V52M12 32H52"/>
 </svg>
 ```
 
-Rules for this template:
+```svg
+<!-- Form B — expanded outline -->
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="currentColor" fill-rule="evenodd">
+  <path d="…"/>
+</svg>
+```
 
-- The styling attributes (`stroke`, `stroke-width="2"`, `linecap`, `linejoin`, `fill="none"`) live on the root `<svg>` and are **never overridden** on a `<path>`. This set has no stroke-width exceptions (section 2).
+Rules for these templates:
+
+- The styling attributes live on the root `<svg>` and are **never overridden** on a `<path>`. This set has no weight exceptions (section 2).
+- Don't mix the two forms inside one file: either everything is a `stroke`, or everything is a filled outline.
 - Prefer **the fewest paths** possible; you can put several sub-strokes in one `d` separated by a new `M` command.
 - **Not allowed** in the final SVG:
   - `fill="#..."` or any fixed color (the color is always `currentColor`)
@@ -164,7 +191,7 @@ Optimize the SVG before handing it over. The quick way, with nothing installed p
 npx svgo icons/symbols/<category>/<id>.svg
 ```
 
-After optimizing, **check by hand** that the result still meets section 9: color is `currentColor`, `fill="none"`, no `id`/`style`, the `viewBox` is still `0 0 64 64`, and `stroke-width="2"` is intact.
+After optimizing, **check by hand** that the result still meets section 9: color is `currentColor`, no `id`/`style`, the `viewBox` is still `0 0 64 64`, and — depending on the form — `stroke-width="2"` is intact (form A) or `fill-rule="evenodd"` is intact (form B; without it the interior holes fill in and the symbol turns into a blob).
 
 If you need raster versions, export them **from the master SVG** at 64, 128 and 256 px, without touching the drawing. (The site already offers a PNG download generated on the fly from that same SVG.)
 
@@ -189,10 +216,10 @@ Switch `color` to black `#000000`, gray `#6B7280`, yellow `#FCD116`, blue `#0038
 - [ ] Is the **referent recognizable** without reading its name?
 - [ ] Does the **silhouette** keep the main traits of the real object, animal, plant or landscape?
 - [ ] `64×64` canvas, `viewBox="0 0 64 64"`, ~6 px margin respected (never touching the edges)
-- [ ] **Uniform 2 px** stroke, with no `stroke-width` override anywhere
-- [ ] Outline style, **no solid fills**, no textures, shadows or gradients
-- [ ] `stroke="currentColor"` and `fill="none"`
-- [ ] `stroke-linecap="round"` and `stroke-linejoin="round"`
+- [ ] **Uniform 2 px** weight, no override anywhere, same weight as the rest of the set
+- [ ] Outline style: the shape reads as a line, **not** as a solid silhouette, and carries no textures, shadows or gradients
+- [ ] Color in `currentColor` — on `stroke` (form A) or on `fill` (form B), never a fixed hex
+- [ ] Rounded caps and joins: via `linecap`/`linejoin` (A) or drawn into the outline (B)
 - [ ] Minimum **3 px** (ideally 4) between independent strokes; no knots of 3+ lines
 - [ ] Reads well at **64 px** and **still makes sense at 32 px**
 - [ ] Perceived size consistent with the rest of the symbols set
@@ -222,7 +249,8 @@ Switch `color` to black `#000000`, gray `#6B7280`, yellow `#FCD116`, blue `#0038
 
 - Scaling a base-set or large-set icon up to 64 px instead of **redrawing** it: it comes out inflated, not detailed.
 - Drawing a **UI icon** (save, search, arrow) as a symbol. That's the base set (section 1).
-- Mixing stroke widths "for hierarchy". This set has one width: **2 px**.
+- Mixing weights "for hierarchy". This set has one weight: **2 px**.
+- Delivering an expanded outline (form B) at a weight that differs from the rest of the set: at that point no attribute can fix it, the symbol has to be redrawn.
 - Letting lines stick together into dark masses, or crossing 3+ strokes within a few pixels.
 - Turning it into illustration: textures, hatching, shadows, duotone, solid fills.
 - Filling the canvas to the edge: the 6 px margin is part of the spec.

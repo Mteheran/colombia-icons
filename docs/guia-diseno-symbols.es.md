@@ -39,11 +39,9 @@ Todo symbol debe cumplir exactamente esto:
 | **Margen visual** | `6 px` aprox. | El symbol nunca toca los límites del lienzo |
 | **Área útil** | `≈ 52 × 52 px` | Puede variar levemente según la forma del referente |
 | **Estilo** | Line / outline | Sólo contornos — misma familia que los otros dos sets |
-| **Grosor de línea** | `2 px` | **Único** grosor en todo el symbol y en todo el set |
-| **Color** | `stroke="currentColor"` | Hereda el color por CSS del proyecto consumidor |
-| **Relleno** | `fill="none"` | Ningún `fill` de color fijo |
-| **Terminaciones** | `stroke-linecap="round"` | Puntas redondeadas |
-| **Uniones** | `stroke-linejoin="round"` | Esquinas redondeadas |
+| **Peso de línea** | `2 px` | **Único** peso en todo el symbol y en todo el set (ver 2.1) |
+| **Color** | `currentColor` | En `stroke` o en `fill` según la forma de entrega (ver 2.1) |
+| **Terminaciones y uniones** | redondeadas | `round` en el trazo vivo; dibujadas en el contorno si va expandido |
 | **Formato** | SVG optimizado (SVGO) | Editable y escalable, sin metadata ni IDs |
 
 **Por qué 2 px y no 1.5 px:** lo que define el "peso" visual de una pieza es el grosor **relativo** al lienzo (grosor ÷ lienzo), no el número absoluto.
@@ -56,9 +54,29 @@ Todo symbol debe cumplir exactamente esto:
 
 2 px sobre 64 da **exactamente el mismo peso relativo** que el set large: los tres sets se leen como una sola familia, y el symbol conserva aire suficiente para su detalle interior. Un trazo de 1.5 px a 64 px (1/42) se vería frágil junto al resto; 3 px empastaría el detalle.
 
-> ⚠️ **Un solo grosor.** A diferencia del set large, aquí **no** existe un trazo secundario más fino. Si un detalle sólo funciona adelgazando la línea, ese detalle sobra.
+> ⚠️ **Un solo peso.** A diferencia del set large, aquí **no** existe un trazo secundario más fino. Si un detalle sólo funciona adelgazando la línea, ese detalle sobra.
 
 Estos valores **no son negociables por symbol**: si algo obliga a cambiarlos, es un cambio global de spec que se discute aparte, no una excepción local.
+
+### 2.1 Dos formas de entrega: trazo vivo y contorno expandido
+
+El peso de 2 px puede llegar de dos maneras. **Las dos son válidas**, pero no son equivalentes:
+
+**Forma A — trazo vivo (preferida).** La línea sigue siendo un `stroke`:
+
+- `stroke="currentColor"`, `fill="none"`, `stroke-width="2"`
+- `stroke-linecap="round"` y `stroke-linejoin="round"`
+- El grosor queda **editable**: se puede reajustar todo el set con un cambio de atributo.
+
+**Forma B — contorno expandido (aceptada).** El trazo se expandió a contorno antes de exportar, que es lo que producen Illustrator y Affinity al hacer *expand stroke*:
+
+- `fill="currentColor"` y `fill-rule="evenodd"` en el `<svg>` raíz; **sin** `stroke`
+- Las terminaciones y uniones redondeadas quedan **dibujadas dentro del contorno** — no hay `linecap` que las controle, así que tienen que estar bien desde el editor
+- El peso visual debe medir **≈2 px sobre el lienzo de 64**, y ser el mismo en todos los symbols del set
+
+> ⚠️ **En la forma B el grosor queda congelado.** Recuperar la línea central de un contorno expandido no es una conversión: es rediseñar el symbol. Por eso el peso tiene que salir correcto desde la entrega, y por eso conviene que el diseñador conserve el archivo original con el trazo vivo aunque entregue el expandido.
+
+Lo que **no** cambia entre las dos formas: `currentColor` (nunca un color fijo), el lienzo, los márgenes, la regla de respiración y el nivel de detalle.
 
 ---
 
@@ -133,17 +151,26 @@ Categorías válidas: `naturaleza`, `cultura`, `gastronomia`, `mapas`, `urbano`,
 
 ## 9. Estructura del SVG exportado
 
-El SVG debe quedar **exactamente** con esta forma (mismo orden de atributos, todo el estilo en el `<svg>` raíz, geometría en `<path>`):
+El SVG debe quedar **exactamente** con una de estas dos formas (mismo orden de atributos, todo el estilo en el `<svg>` raíz, geometría en `<path>`):
 
 ```svg
+<!-- Forma A — trazo vivo -->
 <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
   <path d="M32 12V52M12 32H52"/>
 </svg>
 ```
 
-Reglas de esta plantilla:
+```svg
+<!-- Forma B — contorno expandido -->
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="currentColor" fill-rule="evenodd">
+  <path d="…"/>
+</svg>
+```
 
-- Los atributos de estilo (`stroke`, `stroke-width="2"`, `linecap`, `linejoin`, `fill="none"`) van en el `<svg>` raíz y **no se sobreescriben** en ningún `<path>`. En este set no hay excepciones de grosor (sección 2).
+Reglas de estas plantillas:
+
+- Los atributos de estilo van en el `<svg>` raíz y **no se sobreescriben** en ningún `<path>`. En este set no hay excepciones de peso (sección 2).
+- No mezcles las dos formas dentro de un mismo archivo: o todo es `stroke`, o todo es contorno relleno.
 - Prefiere **el menor número de paths** posible; puedes usar varios subtrazos dentro de un mismo `d` separados por un nuevo comando `M`.
 - **Prohibido** dentro del SVG final:
   - `fill="#..."` o cualquier color fijo (el color siempre es `currentColor`)
@@ -164,7 +191,7 @@ Antes de entregar, optimiza el SVG. La forma rápida sin instalar nada permanent
 npx svgo icons/symbols/<categoria>/<id>.svg
 ```
 
-Después de optimizar, **verifica a mano** que el resultado siga cumpliendo la sección 9: color `currentColor`, `fill="none"`, sin `id`/`style`, `viewBox` `0 0 64 64` y `stroke-width="2"` intacto.
+Después de optimizar, **verifica a mano** que el resultado siga cumpliendo la sección 9: color `currentColor`, sin `id`/`style`, `viewBox` `0 0 64 64`, y —según la forma— `stroke-width="2"` intacto (forma A) o `fill-rule="evenodd"` intacto (forma B; sin él, los huecos interiores se rellenan y el symbol se convierte en una mancha).
 
 Si necesitas versiones raster, expórtalas **desde el SVG maestro** a 64, 128 y 256 px, sin modificar el dibujo. (El sitio ya ofrece la descarga PNG generada al vuelo desde el mismo SVG.)
 
@@ -189,10 +216,10 @@ Cambia el `color` a negro `#000000`, gris `#6B7280`, amarillo `#FCD116`, azul `#
 - [ ] ¿Se **reconoce el referente** sin leer su nombre?
 - [ ] ¿La **silueta** conserva los rasgos principales del objeto, animal, planta o paisaje real?
 - [ ] Lienzo `64×64`, `viewBox="0 0 64 64"`, margen de ~6 px respetado (no toca los bordes)
-- [ ] Grosor **2 px uniforme**, sin ningún override de `stroke-width`
-- [ ] Estilo outline, **sin rellenos sólidos**, sin texturas, sombras ni degradados
-- [ ] `stroke="currentColor"` y `fill="none"`
-- [ ] `stroke-linecap="round"` y `stroke-linejoin="round"`
+- [ ] Peso **2 px uniforme**, sin ningún override; mismo peso que el resto del set
+- [ ] Estilo outline: la figura se lee como línea, **no** como silueta maciza, y sin texturas, sombras ni degradados
+- [ ] Color en `currentColor` — `stroke` (forma A) o `fill` (forma B), nunca un hex fijo
+- [ ] Terminaciones y uniones redondeadas: por `linecap`/`linejoin` (A) o dibujadas en el contorno (B)
 - [ ] Separación mínima de **3 px** (idealmente 4) entre trazos independientes; sin nudos de 3+ líneas
 - [ ] Se lee bien a **64 px** y **sigue siendo comprensible a 32 px**
 - [ ] Tamaño percibido coherente con el resto del set symbols
@@ -222,7 +249,8 @@ Cambia el `color` a negro `#000000`, gris `#6B7280`, amarillo `#FCD116`, azul `#
 
 - Escalar un ícono del set base o del set large a 64 px en vez de **redibujarlo**: queda "inflado", no detallado.
 - Dibujar un **ícono de interfaz** (guardar, buscar, flecha) como symbol. Ese es el set base (sección 1).
-- Mezclar grosores "para dar jerarquía". En este set el grosor es uno solo: **2 px**.
+- Mezclar pesos "para dar jerarquía". En este set el peso es uno solo: **2 px**.
+- Entregar el contorno expandido (forma B) con un peso distinto al del resto del set: ahí ya no se puede corregir con un atributo, hay que rediseñar.
 - Pegar las líneas hasta formar masas oscuras, o cruzar 3+ trazos en un espacio de pocos píxeles.
 - Convertirlo en ilustración: texturas, rayados, sombras, duotono, relleno sólido.
 - Llenar el lienzo hasta el borde: el margen de 6 px es parte de la spec.

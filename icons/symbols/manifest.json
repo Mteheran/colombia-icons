@@ -96,6 +96,25 @@
       ]
     },
     {
+      "id": "frailejon-florecido",
+      "categoria": "naturaleza",
+      "estado": "aprobado",
+      "intentos": 0,
+      "notas": "trazo expandido a contorno (fill), no stroke: ver nota del set",
+      "historial": [
+        {
+          "fecha": "2026-09-08",
+          "accion": "generado",
+          "nota": "aporte del disenador (flor-botanica.svg); normalizado a viewBox 0 0 64 64, fill=currentColor y optimizado con SVGO"
+        },
+        {
+          "fecha": "2026-09-08",
+          "accion": "aprobado",
+          "nota": "renombrado desde flor-botanica"
+        }
+      ]
+    },
+    {
       "id": "montanas-y-frailejones",
       "categoria": "naturaleza",
       "estado": "aprobado",

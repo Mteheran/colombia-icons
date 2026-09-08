@@ -84,10 +84,24 @@ revise la uniformidad del set completo.
 - Prueba de color: al elegir un swatch, el `fill` se hornea al hex (`#003893`),
   confirmando que `currentColor` funciona igual en la forma B.
 
-## Pendiente
+## Adenda — el noveno symbol
 
-- **`flor-botacia.svg` no llegó.** Cuando aparezca, entra como
-  `frailejon-florecido.svg`.
+`flor-botanica.svg` (el archivo que faltaba) llegó el mismo día y entró como
+`frailejon-florecido`: un frailejón con sus flores, coherente con los que
+aparecen dentro de `montanas-y-frailejones`. Venía ya en lienzo 64 y con
+`fill="currentColor"`, así que sólo necesitó `width`/`height` y SVGO (−49 %).
+Peso medido ≈1.3 u, en la mitad fina del rango del set.
+
+El set queda en **9 symbols**, todos en `naturaleza`.
+
+> Nota de método: al medir este archivo primero salió 0.29 u, un valor absurdo.
+> La causa era el propio pipeline de medición: `qlmanage` respeta el
+> `width`/`height` intrínseco del SVG y dibuja el ícono a 64 px dentro de un
+> lienzo de 640, en vez de escalarlo. Los otros ocho se habían medido sobre los
+> archivos originales, que no traían `width`/`height`. Para medir hay que quitar
+> esos atributos primero.
+
+## Pendiente
 - Los símbolos siguen sin cubrirse en `scripts/validate` (igual que el set large).
   Con la forma B admitida, una validación útil sería: `viewBox` correcto, color
   en `currentColor`, y `fill-rule` presente cuando no hay `stroke`.

@@ -8,6 +8,14 @@ The three published packages (React, Angular, Blazor) share a single version.
 
 Every commit closes a minor version; major versions are cut only on request.
 
+## [0.30.0] - 2026-09-08
+
+### Added
+
+- Symbols (naturaleza): `frailejon-florecido` — the flowering frailejón that was
+  missing from the first batch, delivered as `flor-botanica.svg`. The symbols set
+  now holds nine pieces.
+
 ## [0.29.0] - 2026-09-08
 
 ### Added

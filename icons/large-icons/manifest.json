@@ -26,6 +26,402 @@
         { "fecha": "2026-07-31", "accion": "feedback", "nota": "conectar petalos superiores con la parte de abajo: todos convergen en el centro, sin hueco" },
         { "fecha": "2026-07-31", "accion": "aprobado", "nota": "" }
       ]
+    },
+    {
+      "id": "condor",
+      "categoria": "naturaleza",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "aporte externo: margen inferior 2.3 px y algunas plumas se cruzan; menor",
+      "historial": [
+        { "fecha": "2026-09-14", "accion": "generado", "nota": "aporte externo (Illustrator, 48x48); normalizado a la spec: sin metadata/defs/clases, stroke currentColor, transforms aplanados, shapes a path, rellenos a currentColor" },
+        { "fecha": "2026-09-14", "accion": "aprobado", "nota": "aprobado en lote por Miguel tras revision tecnica del lote de 37 (region-pacifica excluido: duplicado de region-andina)" }
+      ]
+    },
+    {
+      "id": "jaguar",
+      "categoria": "naturaleza",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        { "fecha": "2026-09-14", "accion": "generado", "nota": "aporte externo (Illustrator, 48x48); normalizado a la spec: sin metadata/defs/clases, stroke currentColor, transforms aplanados, shapes a path, rellenos a currentColor" },
+        { "fecha": "2026-09-14", "accion": "aprobado", "nota": "aprobado en lote por Miguel tras revision tecnica del lote de 37 (region-pacifica excluido: duplicado de region-andina)" }
+      ]
+    },
+    {
+      "id": "paramo",
+      "categoria": "naturaleza",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "aporte externo: muy cargado (3 frailejones superpuestos, 36 paths) y toca el borde izquierdo (x=2); candidato a simplificar",
+      "historial": [
+        { "fecha": "2026-09-14", "accion": "generado", "nota": "aporte externo (Illustrator, 48x48); normalizado a la spec: sin metadata/defs/clases, stroke currentColor, transforms aplanados, shapes a path, rellenos a currentColor" },
+        { "fecha": "2026-09-14", "accion": "aprobado", "nota": "aprobado en lote por Miguel tras revision tecnica del lote de 37 (region-pacifica excluido: duplicado de region-andina)" }
+      ]
+    },
+    {
+      "id": "selva-amazonica",
+      "categoria": "naturaleza",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        { "fecha": "2026-09-14", "accion": "generado", "nota": "aporte externo (Illustrator, 48x48); normalizado a la spec: sin metadata/defs/clases, stroke currentColor, transforms aplanados, shapes a path, rellenos a currentColor" },
+        { "fecha": "2026-09-14", "accion": "aprobado", "nota": "aprobado en lote por Miguel tras revision tecnica del lote de 37 (region-pacifica excluido: duplicado de region-andina)" }
+      ]
+    },
+    {
+      "id": "sierra-nevada-santa-marta",
+      "categoria": "naturaleza",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        { "fecha": "2026-09-14", "accion": "generado", "nota": "aporte externo (Illustrator, 48x48); normalizado a la spec: sin metadata/defs/clases, stroke currentColor, transforms aplanados, shapes a path, rellenos a currentColor" },
+        { "fecha": "2026-09-14", "accion": "aprobado", "nota": "aprobado en lote por Miguel tras revision tecnica del lote de 37 (region-pacifica excluido: duplicado de region-andina)" }
+      ]
+    },
+    {
+      "id": "salto-del-tequendama",
+      "categoria": "naturaleza",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        { "fecha": "2026-09-14", "accion": "generado", "nota": "aporte externo (Illustrator, 48x48, llego como cascada-del-salto-tequendama.svg); normalizado a la spec: sin metadata/defs/clases, stroke currentColor, transforms aplanados, shapes a path, rellenos a currentColor" },
+        { "fecha": "2026-09-14", "accion": "aprobado", "nota": "aprobado en lote por Miguel tras revision tecnica del lote de 37 (region-pacifica excluido: duplicado de region-andina)" }
+      ]
+    },
+    {
+      "id": "cocora-valle",
+      "categoria": "naturaleza",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "aporte externo: copas de las palmas muy pequenas (~6 px) para 48; candidato a agrandar",
+      "historial": [
+        { "fecha": "2026-09-14", "accion": "generado", "nota": "aporte externo (Illustrator, 48x48, llego como valle-del-cocora.svg); normalizado a la spec: sin metadata/defs/clases, stroke currentColor, transforms aplanados, shapes a path, rellenos a currentColor" },
+        { "fecha": "2026-09-14", "accion": "aprobado", "nota": "aprobado en lote por Miguel tras revision tecnica del lote de 37 (region-pacifica excluido: duplicado de region-andina)" }
+      ]
+    },
+    {
+      "id": "acordeon-vallenato",
+      "categoria": "cultura",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "aporte externo: solo un panel con botones + fuelle, sin segundo panel/teclado; candidato a completar",
+      "historial": [
+        { "fecha": "2026-09-14", "accion": "generado", "nota": "aporte externo (Illustrator, 48x48, llego como acordeon.svg); normalizado a la spec: sin metadata/defs/clases, stroke currentColor, transforms aplanados, shapes a path, rellenos a currentColor" },
+        { "fecha": "2026-09-14", "accion": "aprobado", "nota": "aprobado en lote por Miguel tras revision tecnica del lote de 37 (region-pacifica excluido: duplicado de region-andina)" }
+      ]
+    },
+    {
+      "id": "carnaval-barranquilla",
+      "categoria": "cultura",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        { "fecha": "2026-09-14", "accion": "generado", "nota": "aporte externo (Illustrator, 48x48); normalizado a la spec: sin metadata/defs/clases, stroke currentColor, transforms aplanados, shapes a path, rellenos a currentColor" },
+        { "fecha": "2026-09-14", "accion": "aprobado", "nota": "aprobado en lote por Miguel tras revision tecnica del lote de 37 (region-pacifica excluido: duplicado de region-andina)" }
+      ]
+    },
+    {
+      "id": "chiva-bus",
+      "categoria": "cultura",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        { "fecha": "2026-09-14", "accion": "generado", "nota": "aporte externo (Illustrator, 48x48, llego como chiva.svg); normalizado a la spec: sin metadata/defs/clases, stroke currentColor, transforms aplanados, shapes a path, rellenos a currentColor" },
+        { "fecha": "2026-09-14", "accion": "aprobado", "nota": "aprobado en lote por Miguel tras revision tecnica del lote de 37 (region-pacifica excluido: duplicado de region-andina)" }
+      ]
+    },
+    {
+      "id": "guacharaca",
+      "categoria": "cultura",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "llego como guaracha.svg; renombrado al id del set base",
+      "historial": [
+        { "fecha": "2026-09-14", "accion": "generado", "nota": "aporte externo (Illustrator, 48x48, llego como guaracha.svg); normalizado a la spec: sin metadata/defs/clases, stroke currentColor, transforms aplanados, shapes a path, rellenos a currentColor" },
+        { "fecha": "2026-09-14", "accion": "aprobado", "nota": "aprobado en lote por Miguel tras revision tecnica del lote de 37 (region-pacifica excluido: duplicado de region-andina)" }
+      ]
+    },
+    {
+      "id": "guiro",
+      "categoria": "cultura",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        { "fecha": "2026-09-14", "accion": "generado", "nota": "aporte externo (Illustrator, 48x48); normalizado a la spec: sin metadata/defs/clases, stroke currentColor, transforms aplanados, shapes a path, rellenos a currentColor" },
+        { "fecha": "2026-09-14", "accion": "aprobado", "nota": "aprobado en lote por Miguel tras revision tecnica del lote de 37 (region-pacifica excluido: duplicado de region-andina)" }
+      ]
+    },
+    {
+      "id": "ruana",
+      "categoria": "cultura",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        { "fecha": "2026-09-14", "accion": "generado", "nota": "aporte externo (Illustrator, 48x48); normalizado a la spec: sin metadata/defs/clases, stroke currentColor, transforms aplanados, shapes a path, rellenos a currentColor" },
+        { "fecha": "2026-09-14", "accion": "aprobado", "nota": "aprobado en lote por Miguel tras revision tecnica del lote de 37 (region-pacifica excluido: duplicado de region-andina)" }
+      ]
+    },
+    {
+      "id": "sombrero-aguadeno",
+      "categoria": "cultura",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        { "fecha": "2026-09-14", "accion": "generado", "nota": "aporte externo (Illustrator, 48x48, llego como sombrero-aguadeno-negro.svg); normalizado a la spec: sin metadata/defs/clases, stroke currentColor, transforms aplanados, shapes a path, rellenos a currentColor" },
+        { "fecha": "2026-09-14", "accion": "aprobado", "nota": "aprobado en lote por Miguel tras revision tecnica del lote de 37 (region-pacifica excluido: duplicado de region-andina)" }
+      ]
+    },
+    {
+      "id": "sombrero-vueltiao",
+      "categoria": "cultura",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "aporte externo: la copa queda abierta por la derecha; candidato a cerrar",
+      "historial": [
+        { "fecha": "2026-09-14", "accion": "generado", "nota": "aporte externo (Illustrator, 48x48); normalizado a la spec: sin metadata/defs/clases, stroke currentColor, transforms aplanados, shapes a path, rellenos a currentColor" },
+        { "fecha": "2026-09-14", "accion": "aprobado", "nota": "aprobado en lote por Miguel tras revision tecnica del lote de 37 (region-pacifica excluido: duplicado de region-andina)" }
+      ]
+    },
+    {
+      "id": "tejo",
+      "categoria": "cultura",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        { "fecha": "2026-09-14", "accion": "generado", "nota": "aporte externo (Illustrator, 48x48); normalizado a la spec: sin metadata/defs/clases, stroke currentColor, transforms aplanados, shapes a path, rellenos a currentColor" },
+        { "fecha": "2026-09-14", "accion": "aprobado", "nota": "aprobado en lote por Miguel tras revision tecnica del lote de 37 (region-pacifica excluido: duplicado de region-andina)" }
+      ]
+    },
+    {
+      "id": "ajiaco",
+      "categoria": "gastronomia",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        { "fecha": "2026-09-14", "accion": "generado", "nota": "aporte externo (Illustrator, 48x48); normalizado a la spec: sin metadata/defs/clases, stroke currentColor, transforms aplanados, shapes a path, rellenos a currentColor" },
+        { "fecha": "2026-09-14", "accion": "aprobado", "nota": "aprobado en lote por Miguel tras revision tecnica del lote de 37 (region-pacifica excluido: duplicado de region-andina)" }
+      ]
+    },
+    {
+      "id": "arepa",
+      "categoria": "gastronomia",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        { "fecha": "2026-09-14", "accion": "generado", "nota": "aporte externo (Illustrator, 48x48); normalizado a la spec: sin metadata/defs/clases, stroke currentColor, transforms aplanados, shapes a path, rellenos a currentColor" },
+        { "fecha": "2026-09-14", "accion": "aprobado", "nota": "aprobado en lote por Miguel tras revision tecnica del lote de 37 (region-pacifica excluido: duplicado de region-andina)" }
+      ]
+    },
+    {
+      "id": "arepa-boyacense",
+      "categoria": "gastronomia",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        { "fecha": "2026-09-14", "accion": "generado", "nota": "aporte externo (Illustrator, 48x48); normalizado a la spec: sin metadata/defs/clases, stroke currentColor, transforms aplanados, shapes a path, rellenos a currentColor" },
+        { "fecha": "2026-09-14", "accion": "aprobado", "nota": "aprobado en lote por Miguel tras revision tecnica del lote de 37 (region-pacifica excluido: duplicado de region-andina)" }
+      ]
+    },
+    {
+      "id": "arepa-de-choclo",
+      "categoria": "gastronomia",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        { "fecha": "2026-09-14", "accion": "generado", "nota": "aporte externo (Illustrator, 48x48); normalizado a la spec: sin metadata/defs/clases, stroke currentColor, transforms aplanados, shapes a path, rellenos a currentColor" },
+        { "fecha": "2026-09-14", "accion": "aprobado", "nota": "aprobado en lote por Miguel tras revision tecnica del lote de 37 (region-pacifica excluido: duplicado de region-andina)" }
+      ]
+    },
+    {
+      "id": "arepa-de-huevo",
+      "categoria": "gastronomia",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        { "fecha": "2026-09-14", "accion": "generado", "nota": "aporte externo (Illustrator, 48x48); normalizado a la spec: sin metadata/defs/clases, stroke currentColor, transforms aplanados, shapes a path, rellenos a currentColor" },
+        { "fecha": "2026-09-14", "accion": "aprobado", "nota": "aprobado en lote por Miguel tras revision tecnica del lote de 37 (region-pacifica excluido: duplicado de region-andina)" }
+      ]
+    },
+    {
+      "id": "bandeja-paisa",
+      "categoria": "gastronomia",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        { "fecha": "2026-09-14", "accion": "generado", "nota": "aporte externo (Illustrator, 48x48); normalizado a la spec: sin metadata/defs/clases, stroke currentColor, transforms aplanados, shapes a path, rellenos a currentColor" },
+        { "fecha": "2026-09-14", "accion": "aprobado", "nota": "aprobado en lote por Miguel tras revision tecnica del lote de 37 (region-pacifica excluido: duplicado de region-andina)" }
+      ]
+    },
+    {
+      "id": "chicharron",
+      "categoria": "gastronomia",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        { "fecha": "2026-09-14", "accion": "generado", "nota": "aporte externo (Illustrator, 48x48); normalizado a la spec: sin metadata/defs/clases, stroke currentColor, transforms aplanados, shapes a path, rellenos a currentColor" },
+        { "fecha": "2026-09-14", "accion": "aprobado", "nota": "aprobado en lote por Miguel tras revision tecnica del lote de 37 (region-pacifica excluido: duplicado de region-andina)" }
+      ]
+    },
+    {
+      "id": "empanada",
+      "categoria": "gastronomia",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        { "fecha": "2026-09-14", "accion": "generado", "nota": "aporte externo (Illustrator, 48x48); normalizado a la spec: sin metadata/defs/clases, stroke currentColor, transforms aplanados, shapes a path, rellenos a currentColor" },
+        { "fecha": "2026-09-14", "accion": "aprobado", "nota": "aprobado en lote por Miguel tras revision tecnica del lote de 37 (region-pacifica excluido: duplicado de region-andina)" }
+      ]
+    },
+    {
+      "id": "patacon",
+      "categoria": "gastronomia",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        { "fecha": "2026-09-14", "accion": "generado", "nota": "aporte externo (Illustrator, 48x48); normalizado a la spec: sin metadata/defs/clases, stroke currentColor, transforms aplanados, shapes a path, rellenos a currentColor" },
+        { "fecha": "2026-09-14", "accion": "aprobado", "nota": "aprobado en lote por Miguel tras revision tecnica del lote de 37 (region-pacifica excluido: duplicado de region-andina)" }
+      ]
+    },
+    {
+      "id": "sancocho",
+      "categoria": "gastronomia",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        { "fecha": "2026-09-14", "accion": "generado", "nota": "aporte externo (Illustrator, 48x48); normalizado a la spec: sin metadata/defs/clases, stroke currentColor, transforms aplanados, shapes a path, rellenos a currentColor" },
+        { "fecha": "2026-09-14", "accion": "aprobado", "nota": "aprobado en lote por Miguel tras revision tecnica del lote de 37 (region-pacifica excluido: duplicado de region-andina)" }
+      ]
+    },
+    {
+      "id": "silueta-colombia",
+      "categoria": "mapas",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        { "fecha": "2026-09-14", "accion": "generado", "nota": "aporte externo (Illustrator, 48x48); normalizado a la spec: sin metadata/defs/clases, stroke currentColor, transforms aplanados, shapes a path, rellenos a currentColor" },
+        { "fecha": "2026-09-14", "accion": "aprobado", "nota": "aprobado en lote por Miguel tras revision tecnica del lote de 37 (region-pacifica excluido: duplicado de region-andina)" }
+      ]
+    },
+    {
+      "id": "region-amazonica",
+      "categoria": "mapas",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        { "fecha": "2026-09-14", "accion": "generado", "nota": "aporte externo (Illustrator, 48x48); normalizado a la spec: sin metadata/defs/clases, stroke currentColor, transforms aplanados, shapes a path, rellenos a currentColor" },
+        { "fecha": "2026-09-14", "accion": "aprobado", "nota": "aprobado en lote por Miguel tras revision tecnica del lote de 37 (region-pacifica excluido: duplicado de region-andina)" }
+      ]
+    },
+    {
+      "id": "region-andina",
+      "categoria": "mapas",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        { "fecha": "2026-09-14", "accion": "generado", "nota": "aporte externo (Illustrator, 48x48); normalizado a la spec: sin metadata/defs/clases, stroke currentColor, transforms aplanados, shapes a path, rellenos a currentColor" },
+        { "fecha": "2026-09-14", "accion": "aprobado", "nota": "aprobado en lote por Miguel tras revision tecnica del lote de 37 (region-pacifica excluido: duplicado de region-andina)" }
+      ]
+    },
+    {
+      "id": "region-caribe",
+      "categoria": "mapas",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        { "fecha": "2026-09-14", "accion": "generado", "nota": "aporte externo (Illustrator, 48x48); normalizado a la spec: sin metadata/defs/clases, stroke currentColor, transforms aplanados, shapes a path, rellenos a currentColor" },
+        { "fecha": "2026-09-14", "accion": "aprobado", "nota": "aprobado en lote por Miguel tras revision tecnica del lote de 37 (region-pacifica excluido: duplicado de region-andina)" }
+      ]
+    },
+    {
+      "id": "region-orinoquia",
+      "categoria": "mapas",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        { "fecha": "2026-09-14", "accion": "generado", "nota": "aporte externo (Illustrator, 48x48); normalizado a la spec: sin metadata/defs/clases, stroke currentColor, transforms aplanados, shapes a path, rellenos a currentColor" },
+        { "fecha": "2026-09-14", "accion": "aprobado", "nota": "aprobado en lote por Miguel tras revision tecnica del lote de 37 (region-pacifica excluido: duplicado de region-andina)" }
+      ]
+    },
+    {
+      "id": "isla-san-andres",
+      "categoria": "mapas",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        { "fecha": "2026-09-14", "accion": "generado", "nota": "aporte externo (Illustrator, 48x48, llego como san-andres.svg); normalizado a la spec: sin metadata/defs/clases, stroke currentColor, transforms aplanados, shapes a path, rellenos a currentColor" },
+        { "fecha": "2026-09-14", "accion": "aprobado", "nota": "aprobado en lote por Miguel tras revision tecnica del lote de 37 (region-pacifica excluido: duplicado de region-andina)" }
+      ]
+    },
+    {
+      "id": "bogota-torre",
+      "categoria": "urbano",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        { "fecha": "2026-09-14", "accion": "generado", "nota": "aporte externo (Illustrator, 48x48, llego como bogota-torre-colpatria.svg); normalizado a la spec: sin metadata/defs/clases, stroke currentColor, transforms aplanados, shapes a path, rellenos a currentColor" },
+        { "fecha": "2026-09-14", "accion": "aprobado", "nota": "aprobado en lote por Miguel tras revision tecnica del lote de 37 (region-pacifica excluido: duplicado de region-andina)" }
+      ]
+    },
+    {
+      "id": "medellin-metro",
+      "categoria": "urbano",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        { "fecha": "2026-09-14", "accion": "generado", "nota": "aporte externo (Illustrator, 48x48, llego como metro-de-medellin.svg); normalizado a la spec: sin metadata/defs/clases, stroke currentColor, transforms aplanados, shapes a path, rellenos a currentColor" },
+        { "fecha": "2026-09-14", "accion": "aprobado", "nota": "aprobado en lote por Miguel tras revision tecnica del lote de 37 (region-pacifica excluido: duplicado de region-andina)" }
+      ]
+    },
+    {
+      "id": "cartagena-murallas",
+      "categoria": "historia",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        { "fecha": "2026-09-14", "accion": "generado", "nota": "aporte externo (Illustrator, 48x48); normalizado a la spec: sin metadata/defs/clases, stroke currentColor, transforms aplanados, shapes a path, rellenos a currentColor" },
+        { "fecha": "2026-09-14", "accion": "aprobado", "nota": "aprobado en lote por Miguel tras revision tecnica del lote de 37 (region-pacifica excluido: duplicado de region-andina)" }
+      ]
+    },
+    {
+      "id": "ciudad-perdida",
+      "categoria": "historia",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "",
+      "historial": [
+        { "fecha": "2026-09-14", "accion": "generado", "nota": "aporte externo (Illustrator, 48x48, llego como ciudad-perdida-de-teyuna.svg); normalizado a la spec: sin metadata/defs/clases, stroke currentColor, transforms aplanados, shapes a path, rellenos a currentColor" },
+        { "fecha": "2026-09-14", "accion": "aprobado", "nota": "aprobado en lote por Miguel tras revision tecnica del lote de 37 (region-pacifica excluido: duplicado de region-andina)" }
+      ]
     }
   ]
 }

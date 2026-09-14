@@ -8,6 +8,40 @@ The three published packages (React, Angular, Blazor) share a single version.
 
 Every commit closes a minor version; major versions are cut only on request.
 
+## [0.34.0] - 2026-09-14
+
+### Removed
+
+- Large icon `orquidea` (naturaleza) is withdrawn from the large set: it lacks
+  the interior detail the 48×48 set is for. The file stays in
+  `icons/large-icons/naturaleza/` marked `rechazado` in the manifest, so it no
+  longer shows in the site's large tab until it is redrawn.
+
+## [0.33.0] - 2026-09-14
+
+### Added
+
+- Large icons (48×48), a batch of 36 contributed by an external designer
+  (Illustrator export), normalized to the large-icon spec: metadata, classes
+  and transforms stripped, `stroke="currentColor"`, filled dots and bands kept
+  as `fill="currentColor"` following the base-set precedent. They are not part
+  of the packages; they show up in the site's large tab.
+  - Large icons (naturaleza): `condor`, `jaguar`, `paramo`, `selva-amazonica`,
+    `sierra-nevada-santa-marta`, `salto-del-tequendama`, `cocora-valle`
+  - Large icons (cultura): `acordeon-vallenato`, `carnaval-barranquilla`,
+    `chiva-bus`, `guacharaca`, `guiro`, `ruana`, `sombrero-aguadeno`,
+    `sombrero-vueltiao`, `tejo`
+  - Large icons (gastronomia): `ajiaco`, `arepa`, `arepa-boyacense`,
+    `arepa-de-choclo`, `arepa-de-huevo`, `bandeja-paisa`, `chicharron`,
+    `empanada`, `patacon`, `sancocho`
+  - Large icons (mapas): `silueta-colombia`, `region-amazonica`,
+    `region-andina`, `region-caribe`, `region-orinoquia`, `isla-san-andres`
+  - Large icons (urbano): `bogota-torre`, `medellin-metro`
+  - Large icons (historia): `cartagena-murallas`, `ciudad-perdida`
+
+  `region-pacifica` was left out of the batch: the delivered file was a
+  byte-for-byte duplicate of `region-andina`.
+
 ## [0.32.0] - 2026-09-08
 
 ### Added

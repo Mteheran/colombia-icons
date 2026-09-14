@@ -15,16 +15,17 @@
     {
       "id": "orquidea",
       "categoria": "naturaleza",
-      "estado": "aprobado",
+      "estado": "rechazado",
       "intentos": 6,
-      "notas": "",
+      "notas": "desactivado 2026-09-14: le falta detalle para el set large; redibujar con mas detalle interior",
       "historial": [
         { "fecha": "2026-07-31", "accion": "generado", "nota": "flor de frente Cattleya: 3 sepalos, 2 petalos, labelo con venas" },
         { "fecha": "2026-07-31", "accion": "feedback", "nota": "petalos muy finos y en punta, parecia estrella/hoja; hacerlos anchos y redondeados" },
         { "fecha": "2026-07-31", "accion": "feedback", "nota": "probar vista 3/4 (Phalaenopsis) con trompeta del labio en perspectiva" },
         { "fecha": "2026-07-31", "accion": "feedback", "nota": "la 3/4 empeoro (petalos espinosos, labio como ojo/espiral); volver a frente y reforzar labelo rizado prominente" },
         { "fecha": "2026-07-31", "accion": "feedback", "nota": "conectar petalos superiores con la parte de abajo: todos convergen en el centro, sin hueco" },
-        { "fecha": "2026-07-31", "accion": "aprobado", "nota": "" }
+        { "fecha": "2026-07-31", "accion": "aprobado", "nota": "" },
+        { "fecha": "2026-09-14", "accion": "rechazado", "nota": "desactivado por Miguel: le falta detalle; se retoma despues" }
       ]
     },
     {

@@ -8,6 +8,15 @@ The three published packages (React, Angular, Blazor) share a single version.
 
 Every commit closes a minor version; major versions are cut only on request.
 
+## [0.34.0] - 2026-09-14
+
+### Removed
+
+- Large icon `orquidea` (naturaleza) is withdrawn from the large set: it lacks
+  the interior detail the 48×48 set is for. The file stays in
+  `icons/large-icons/naturaleza/` marked `rechazado` in the manifest, so it no
+  longer shows in the site's large tab until it is redrawn.
+
 ## [0.33.0] - 2026-09-14
 
 ### Added

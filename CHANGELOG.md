@@ -8,6 +8,19 @@ The three published packages (React, Angular, Blazor) share a single version.
 
 Every commit closes a minor version; major versions are cut only on request.
 
+## [Unreleased]
+
+### Added
+
+- Symbols (naturaleza): `condor-perfil`, `jaguar-perfil`,
+  `sabueso-fino-orejas-largas` — three more contributed pieces for the 64 × 64
+  symbols set (Figma export, expanded outline). They arrived edge-to-edge on
+  64 × 65, 62 × 62 and 58 × 57 canvases and were refit to the 52 × 52 working
+  area of a 64 × 64 canvas, set to `fill="currentColor"` +
+  `fill-rule="evenodd"`, and optimized with SVGO. The symbols set now holds
+  twelve pieces. No package release: symbols do not ship in the React, Angular
+  or Blazor packages.
+
 ## [0.34.0] - 2026-09-14
 
 ### Removed

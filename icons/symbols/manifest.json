@@ -170,6 +170,63 @@
           "nota": "renombrado desde montanas-nevadas"
         }
       ]
+    },
+    {
+      "id": "condor-perfil",
+      "categoria": "naturaleza",
+      "estado": "aprobado",
+      "intentos": 0,
+      "notas": "trazo expandido a contorno (fill), no stroke: ver nota del set",
+      "historial": [
+        {
+          "fecha": "2026-09-15",
+          "accion": "generado",
+          "nota": "aporte del disenador (condorperfil.svg, lienzo 64x65 sin margen); reescalado x0.8021 a area util de 52, centrado en viewBox 0 0 64 64, fill=currentColor + fill-rule=evenodd, optimizado con SVGO (-70%)"
+        },
+        {
+          "fecha": "2026-09-15",
+          "accion": "aprobado",
+          "nota": "renombrado desde condorperfil; peso medido ~1.45 u"
+        }
+      ]
+    },
+    {
+      "id": "jaguar-perfil",
+      "categoria": "naturaleza",
+      "estado": "aprobado",
+      "intentos": 0,
+      "notas": "trazo expandido a contorno (fill), no stroke: ver nota del set",
+      "historial": [
+        {
+          "fecha": "2026-09-15",
+          "accion": "generado",
+          "nota": "aporte del disenador (Jaguarperfil.svg, lienzo 62x62 sin margen); reescalado x0.8410 a area util de 52, centrado en viewBox 0 0 64 64, fill=currentColor + fill-rule=evenodd, optimizado con SVGO (-70%)"
+        },
+        {
+          "fecha": "2026-09-15",
+          "accion": "aprobado",
+          "nota": "renombrado desde Jaguarperfil; peso medido ~1.5 u"
+        }
+      ]
+    },
+    {
+      "id": "sabueso-fino-orejas-largas",
+      "categoria": "naturaleza",
+      "estado": "aprobado",
+      "intentos": 0,
+      "notas": "trazo expandido a contorno (fill), no stroke: ver nota del set",
+      "historial": [
+        {
+          "fecha": "2026-09-15",
+          "accion": "generado",
+          "nota": "aporte del disenador (Union (3).svg, lienzo 58x57 sin margen); reescalado x0.8966 a area util de 52, centrado en viewBox 0 0 64 64, fill=currentColor + fill-rule=evenodd, optimizado con SVGO (-69%)"
+        },
+        {
+          "fecha": "2026-09-15",
+          "accion": "aprobado",
+          "nota": "nombre elegido sobre sabueso-colombiano-2 para evitar sufijo numerico; se distingue de sabueso-fino-colombiano por las orejas largas caidas; peso medido ~1.75 u"
+        }
+      ]
     }
   ]
 }

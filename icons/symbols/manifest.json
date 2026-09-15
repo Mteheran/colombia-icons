@@ -170,6 +170,299 @@
           "nota": "renombrado desde montanas-nevadas"
         }
       ]
+    },
+    {
+      "id": "condor-perfil",
+      "categoria": "naturaleza",
+      "estado": "aprobado",
+      "intentos": 0,
+      "notas": "trazo expandido a contorno (fill), no stroke: ver nota del set",
+      "historial": [
+        {
+          "fecha": "2026-09-15",
+          "accion": "generado",
+          "nota": "aporte del disenador (condorperfil.svg, lienzo 64x65 sin margen); reescalado x0.8021 a area util de 52, centrado en viewBox 0 0 64 64, fill=currentColor + fill-rule=evenodd, optimizado con SVGO (-70%)"
+        },
+        {
+          "fecha": "2026-09-15",
+          "accion": "aprobado",
+          "nota": "renombrado desde condorperfil; peso medido ~1.45 u"
+        }
+      ]
+    },
+    {
+      "id": "jaguar-perfil",
+      "categoria": "naturaleza",
+      "estado": "aprobado",
+      "intentos": 0,
+      "notas": "trazo expandido a contorno (fill), no stroke: ver nota del set",
+      "historial": [
+        {
+          "fecha": "2026-09-15",
+          "accion": "generado",
+          "nota": "aporte del disenador (Jaguarperfil.svg, lienzo 62x62 sin margen); reescalado x0.8410 a area util de 52, centrado en viewBox 0 0 64 64, fill=currentColor + fill-rule=evenodd, optimizado con SVGO (-70%)"
+        },
+        {
+          "fecha": "2026-09-15",
+          "accion": "aprobado",
+          "nota": "renombrado desde Jaguarperfil; peso medido ~1.5 u"
+        }
+      ]
+    },
+    {
+      "id": "sabueso-fino-orejas-largas",
+      "categoria": "naturaleza",
+      "estado": "aprobado",
+      "intentos": 0,
+      "notas": "trazo expandido a contorno (fill), no stroke: ver nota del set",
+      "historial": [
+        {
+          "fecha": "2026-09-15",
+          "accion": "generado",
+          "nota": "aporte del disenador (Union (3).svg, lienzo 58x57 sin margen); reescalado x0.8966 a area util de 52, centrado en viewBox 0 0 64 64, fill=currentColor + fill-rule=evenodd, optimizado con SVGO (-69%)"
+        },
+        {
+          "fecha": "2026-09-15",
+          "accion": "aprobado",
+          "nota": "nombre elegido sobre sabueso-colombiano-2 para evitar sufijo numerico; se distingue de sabueso-fino-colombiano por las orejas largas caidas; peso medido ~1.75 u"
+        }
+      ]
+    },
+    {
+      "id": "chiva",
+      "categoria": "cultura",
+      "estado": "aprobado",
+      "intentos": 3,
+      "notas": "forma A (trazo vivo 2 px); vista lateral, frente a la derecha",
+      "historial": [
+        {
+          "fecha": "2026-09-15",
+          "accion": "generado",
+          "nota": "desde cero con referencias (Wikipedia, Marca Pais, La Tadeo Dearte; Lucide truck / Tabler bus): vista lateral con costado abierto, escalera trasera, parrilla con bultos, zigzag pintado"
+        },
+        {
+          "fecha": "2026-09-15",
+          "accion": "feedback",
+          "nota": "completar la linea del piso y las ruedas; mas detalle en las ruedas (piso continuo, ruedas r6 con rin)"
+        },
+        {
+          "fecha": "2026-09-15",
+          "accion": "feedback",
+          "nota": "reducir ruedas 30% (r 4.25, rin como punto, dibujo recentrado)"
+        },
+        {
+          "fecha": "2026-09-15",
+          "accion": "feedback",
+          "nota": "que las bahias no parezcan ventanas planas: 3 bahias con bancas de perfil en L"
+        },
+        {
+          "fecha": "2026-09-15",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "bandera-colombia",
+      "categoria": "cultura",
+      "estado": "aprobado",
+      "intentos": 1,
+      "notas": "forma A (trazo vivo 2 px); asta con remate y base, tela 2:3 con franjas 50/25/25",
+      "historial": [
+        {
+          "fecha": "2026-09-15",
+          "accion": "generado",
+          "nota": "desde cero: asta con remate esferico y base, vaina de izado, tela 48x32 ondulada con dos divisiones (amarillo doble); referencias Lucide flag / Tabler flag"
+        },
+        {
+          "fecha": "2026-09-15",
+          "accion": "feedback",
+          "nota": "reducir el tamano de la bandera (tela 36x24, asta movida a x=16 para recentrar)"
+        },
+        {
+          "fecha": "2026-09-15",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "sombrero-vueltiao",
+      "categoria": "cultura",
+      "estado": "rechazado",
+      "intentos": 1,
+      "notas": "forma A; vista frontal elevada. Pendiente de retomar: la copa debe tener la curva caracteristica del hueco donde va la cabeza",
+      "historial": [
+        {
+          "fecha": "2026-09-15",
+          "accion": "generado",
+          "nota": "desde cero: copa cilindrica baja con tapa eliptica y cogollito, ala con dos vueltas concentricas, pinta en zigzag (refs PanoramaCultural, Canal Institucional, El Rincon Colombiano)"
+        },
+        {
+          "fecha": "2026-09-15",
+          "accion": "feedback",
+          "nota": "la copa debe tener una curva particular en el hueco donde se pone; copa rehecha como domo con forma de cabeza y ala levantada tipo plato (refs Sombreros Ole, Artesanias de Colombia)"
+        },
+        {
+          "fecha": "2026-09-15",
+          "accion": "rechazado",
+          "nota": "saltar por ahora; el archivo queda en icons/symbols/cultura para retomarlo"
+        }
+      ]
+    },
+    {
+      "id": "mochila-wayuu",
+      "categoria": "cultura",
+      "estado": "aprobado",
+      "intentos": 4,
+      "notas": "forma A (trazo vivo 2 px); gasa de 3.5 px entre ejes (1.5 px de aire, por debajo de la guia) por pedido explicito",
+      "historial": [
+        {
+          "fecha": "2026-09-15",
+          "accion": "generado",
+          "nota": "desde cero con referencias (Artesanias de Colombia, ESWAYUU; Lucide shopping-bag/handbag): cuerpo tipo balde, gasa ancha, rombos + dos zigzags, borla en la base"
+        },
+        {
+          "fecha": "2026-09-15",
+          "accion": "feedback",
+          "nota": "gasa mas larga, cordon arriba, mas detalle, quitar borla inferior (gasa 22 px con tramas, nudo + cordones, rombos flanqueando)"
+        },
+        {
+          "fecha": "2026-09-15",
+          "accion": "feedback",
+          "nota": "gasa aun mas larga (28.5 px; cuerpo reducido, un solo zigzag)"
+        },
+        {
+          "fecha": "2026-09-15",
+          "accion": "feedback",
+          "nota": "gasa mas delgada y recuperar los detalles del intento 2 (gasa 4 px sin tramas, dos zigzags + rombos, gasa 25.5 px)"
+        },
+        {
+          "fecha": "2026-09-15",
+          "accion": "feedback",
+          "nota": "reducir un poco mas la separacion de la gasa (3.5 px)"
+        },
+        {
+          "fecha": "2026-09-15",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "acordeon-vallenato",
+      "categoria": "cultura",
+      "estado": "aprobado",
+      "intentos": 2,
+      "notas": "forma A (trazo vivo 2 px); diatonico de botones de frente, fuelle de 10 pliegues (tramos a 2.8 px, bajo el minimo de la guia, por pedido)",
+      "historial": [
+        {
+          "fecha": "2026-09-15",
+          "accion": "generado",
+          "nota": "desde cero con referencias (Hohner Corona III / Rey del Vallenato): caja de bajos con 5 botones, fuelle de 6 pliegues con 3 aristas, caja melodica con 3 hileras de botones alternadas"
+        },
+        {
+          "fecha": "2026-09-15",
+          "accion": "feedback",
+          "nota": "mas pliegues para que se vea realista (8 pliegues, 4 aristas)"
+        },
+        {
+          "fecha": "2026-09-15",
+          "accion": "feedback",
+          "nota": "agregar mas pliegues (10 pliegues, 5 aristas; fuelle ensanchado a 28 px estrechando las cajas)"
+        },
+        {
+          "fecha": "2026-09-15",
+          "accion": "aprobado",
+          "nota": ""
+        }
+      ]
+    },
+    {
+      "id": "betty-la-fea",
+      "categoria": "cultura",
+      "estado": "rechazado",
+      "intentos": 1,
+      "notas": "forma A; caricatura generica (gafas, capul, frenillos). Personaje de RCN / Fernando Gaitan: revisar uso comercial antes de retomar",
+      "historial": [
+        {
+          "fecha": "2026-09-15",
+          "accion": "generado",
+          "nota": "desde cero: pelo frizz ondulado, flequillo, gafas gruesas, sonrisa en D con banda de frenillos, lazo al cuello (refs Wikipedia, Esbaratao, Infobae)"
+        },
+        {
+          "fecha": "2026-09-15",
+          "accion": "feedback",
+          "nota": "inspirarse en la referencia enviada y agregar detalle: cabeza redonda con capul, pelo a los hombros, gafas grandes con ojos cerrados de risa, sonrisa con dientes y brackets, hombros"
+        },
+        {
+          "fecha": "2026-09-15",
+          "accion": "rechazado",
+          "nota": "saltar por ahora; el archivo queda en icons/symbols/cultura para retomarlo"
+        }
+      ]
+    },
+    {
+      "id": "orquidea",
+      "categoria": "naturaleza",
+      "estado": "rechazado",
+      "intentos": 1,
+      "notas": "forma A; Cattleya trianae frontal. Rechazado en el primer intento; retomar con otro enfoque",
+      "historial": [
+        {
+          "fecha": "2026-09-15",
+          "accion": "generado",
+          "nota": "desde cero: labelo en trompeta con venas y borde ondulado, sepalo dorsal, dos petalos anchos rizados, dos sepalos laterales (refs Banrepcultural, Colombia.com, NaturaLista; historial del orquidea large)"
+        },
+        {
+          "fecha": "2026-09-15",
+          "accion": "rechazado",
+          "nota": "rechazada; el archivo queda en icons/symbols/naturaleza para retomarlo"
+        }
+      ]
+    },
+    {
+      "id": "arepa",
+      "categoria": "gastronomia",
+      "estado": "rechazado",
+      "intentos": 1,
+      "notas": "forma A; disco en 3/4 con marcas de parrilla y vapor. Saltado sin feedback; retomar",
+      "historial": [
+        {
+          "fecha": "2026-09-15",
+          "accion": "generado",
+          "nota": "desde cero: disco grueso en 3/4, tres marcas de parrilla, tres lineas de vapor (refs Wikipedia, Cambio, Marca Pais)"
+        },
+        {
+          "fecha": "2026-09-15",
+          "accion": "rechazado",
+          "nota": "saltar por ahora; el archivo queda en icons/symbols/gastronomia para retomarlo"
+        }
+      ]
+    },
+    {
+      "id": "ruana",
+      "categoria": "cultura",
+      "estado": "rechazado",
+      "intentos": 1,
+      "notas": "forma A; cometa con escote, abertura, franja y flecos. Saltada tras el intento con pliegues; retomar",
+      "historial": [
+        {
+          "fecha": "2026-09-15",
+          "accion": "generado",
+          "nota": "desde cero: silueta de cometa, escote en U, abertura frontal, franja doble en chevron, mecha (refs Marca Pais, El Campesino, Artes y Telares)"
+        },
+        {
+          "fecha": "2026-09-15",
+          "accion": "feedback",
+          "nota": "dobleces para dar movimiento y realismo: dobladillo curvo, cuatro pliegues, franja simple paralela al dobladillo"
+        },
+        {
+          "fecha": "2026-09-15",
+          "accion": "rechazado",
+          "nota": "saltar por ahora; el archivo queda en icons/symbols/cultura para retomarlo"
+        }
+      ]
     }
   ]
 }

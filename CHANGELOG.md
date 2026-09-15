@@ -8,6 +8,27 @@ The three published packages (React, Angular, Blazor) share a single version.
 
 Every commit closes a minor version; major versions are cut only on request.
 
+## [Unreleased]
+
+### Added
+
+- Symbols (naturaleza): `condor-perfil`, `jaguar-perfil`,
+  `sabueso-fino-orejas-largas` — three more contributed pieces for the 64 × 64
+  symbols set (Figma export, expanded outline). They arrived edge-to-edge on
+  64 × 65, 62 × 62 and 58 × 57 canvases and were refit to the 52 × 52 working
+  area of a 64 × 64 canvas, set to `fill="currentColor"` +
+  `fill-rule="evenodd"`, and optimized with SVGO. No package release: symbols
+  do not ship in the React, Angular or Blazor packages.
+- Symbols (cultura): `chiva`, `bandera-colombia`, `mochila-wayuu`,
+  `acordeon-vallenato` — the first four symbols drawn from scratch as live
+  2 px strokes (form A), and the first pieces outside `naturaleza`: the
+  bus escalera in side view with its roof rack and rear ladder, the waving
+  flag with its 50/25/25 bands, the woven bag with kanas and drawstring, and
+  the three-row diatonic button accordion. Five more drafts (`sombrero-vueltiao`,
+  `betty-la-fea`, `orquidea`, `arepa`, `ruana`) are kept as `rechazado` in the
+  manifest with their review history; they do not show on the site. The
+  symbols set now holds sixteen approved pieces.
+
 ## [0.34.0] - 2026-09-14
 
 ### Removed
